@@ -1,0 +1,5 @@
+source;share/xela_point_cloud_representation/local_setup.bash
+source;share/xela_point_cloud_representation/local_setup.dsv
+source;share/xela_point_cloud_representation/local_setup.ps1
+source;share/xela_point_cloud_representation/local_setup.sh
+source;share/xela_point_cloud_representation/local_setup.zsh

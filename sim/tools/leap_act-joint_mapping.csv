@@ -1,0 +1,40 @@
+=== MuJoCo actuators ===
+ 0  if_mcp_act
+ 1  if_rot_act
+ 2  if_pip_act
+ 3  if_dip_act
+ 4  mf_mcp_act
+ 5  mf_rot_act
+ 6  mf_pip_act
+ 7  mf_dip_act
+ 8  rf_mcp_act
+ 9  rf_rot_act
+10  rf_pip_act
+11  rf_dip_act
+12  th_cmc_act
+13  th_axl_act
+14  th_mcp_act
+15  th_ipl_act
+
+=== Retargeter config ===
+/Users/pratik/miniconda3/envs/leapxela/lib/python3.10/site-packages/dex_retargeting/configs/teleop/leap_hand_right.yml
+
+=== Retargeter joint names (in robot_qpos output order) ===
+ 0  1
+ 1  0
+ 2  2
+ 3  3
+ 4  12
+ 5  13
+ 6  14
+ 7  15
+ 8  5
+ 9  4
+10  6
+11  7
+12  9
+13  8
+14  10
+15  11
+
+robot.dof = 16

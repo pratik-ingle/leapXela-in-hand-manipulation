@@ -1,0 +1,777 @@
+running egg_info
+creating ../../build/dex_retargeting/dex_retargeting.egg-info
+writing ../../build/dex_retargeting/dex_retargeting.egg-info/PKG-INFO
+writing dependency_links to ../../build/dex_retargeting/dex_retargeting.egg-info/dependency_links.txt
+writing entry points to ../../build/dex_retargeting/dex_retargeting.egg-info/entry_points.txt
+writing requirements to ../../build/dex_retargeting/dex_retargeting.egg-info/requires.txt
+writing top-level names to ../../build/dex_retargeting/dex_retargeting.egg-info/top_level.txt
+writing manifest file '../../build/dex_retargeting/dex_retargeting.egg-info/SOURCES.txt'
+reading manifest file '../../build/dex_retargeting/dex_retargeting.egg-info/SOURCES.txt'
+writing manifest file '../../build/dex_retargeting/dex_retargeting.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/build/dex_retargeting/build
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/build/dex_retargeting/build/lib
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/build/dex_retargeting/build/lib/dex_retargeting
+copying dex_retargeting/__init__.py -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/build/dex_retargeting/build/lib/dex_retargeting
+copying dex_retargeting/kinematics_adaptor.py -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/build/dex_retargeting/build/lib/dex_retargeting
+copying dex_retargeting/single_hand_detector.py -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/build/dex_retargeting/build/lib/dex_retargeting
+copying dex_retargeting/hand_viewer.py -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/build/dex_retargeting/build/lib/dex_retargeting
+copying dex_retargeting/robot_wrapper.py -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/build/dex_retargeting/build/lib/dex_retargeting
+copying dex_retargeting/util.py -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/build/dex_retargeting/build/lib/dex_retargeting
+copying dex_retargeting/leap_xela_realsense.py -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/build/dex_retargeting/build/lib/dex_retargeting
+copying dex_retargeting/optimizer.py -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/build/dex_retargeting/build/lib/dex_retargeting
+copying dex_retargeting/constants.py -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/build/dex_retargeting/build/lib/dex_retargeting
+copying dex_retargeting/seq_retarget.py -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/build/dex_retargeting/build/lib/dex_retargeting
+copying dex_retargeting/sapien_robot_setup.py -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/build/dex_retargeting/build/lib/dex_retargeting
+copying dex_retargeting/retargeting_config.py -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/build/dex_retargeting/build/lib/dex_retargeting
+copying dex_retargeting/resource_paths.py -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/build/dex_retargeting/build/lib/dex_retargeting
+copying dex_retargeting/leap_realsense.py -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/build/dex_retargeting/build/lib/dex_retargeting
+copying dex_retargeting/yourdfpy.py -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/build/dex_retargeting/build/lib/dex_retargeting
+copying dex_retargeting/hand_pose_publisher.py -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/build/dex_retargeting/build/lib/dex_retargeting
+copying dex_retargeting/optimizer_utils.py -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/build/dex_retargeting/build/lib/dex_retargeting
+running install
+running install_lib
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/lib/python3.10/site-packages/dex_retargeting
+copying /workspace/LeapXELA_Hardware_ws/ros_ws/src/build/dex_retargeting/build/lib/dex_retargeting/__init__.py -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/lib/python3.10/site-packages/dex_retargeting
+copying /workspace/LeapXELA_Hardware_ws/ros_ws/src/build/dex_retargeting/build/lib/dex_retargeting/kinematics_adaptor.py -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/lib/python3.10/site-packages/dex_retargeting
+copying /workspace/LeapXELA_Hardware_ws/ros_ws/src/build/dex_retargeting/build/lib/dex_retargeting/single_hand_detector.py -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/lib/python3.10/site-packages/dex_retargeting
+copying /workspace/LeapXELA_Hardware_ws/ros_ws/src/build/dex_retargeting/build/lib/dex_retargeting/hand_viewer.py -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/lib/python3.10/site-packages/dex_retargeting
+copying /workspace/LeapXELA_Hardware_ws/ros_ws/src/build/dex_retargeting/build/lib/dex_retargeting/robot_wrapper.py -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/lib/python3.10/site-packages/dex_retargeting
+copying /workspace/LeapXELA_Hardware_ws/ros_ws/src/build/dex_retargeting/build/lib/dex_retargeting/util.py -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/lib/python3.10/site-packages/dex_retargeting
+copying /workspace/LeapXELA_Hardware_ws/ros_ws/src/build/dex_retargeting/build/lib/dex_retargeting/leap_xela_realsense.py -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/lib/python3.10/site-packages/dex_retargeting
+copying /workspace/LeapXELA_Hardware_ws/ros_ws/src/build/dex_retargeting/build/lib/dex_retargeting/optimizer.py -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/lib/python3.10/site-packages/dex_retargeting
+copying /workspace/LeapXELA_Hardware_ws/ros_ws/src/build/dex_retargeting/build/lib/dex_retargeting/constants.py -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/lib/python3.10/site-packages/dex_retargeting
+copying /workspace/LeapXELA_Hardware_ws/ros_ws/src/build/dex_retargeting/build/lib/dex_retargeting/seq_retarget.py -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/lib/python3.10/site-packages/dex_retargeting
+copying /workspace/LeapXELA_Hardware_ws/ros_ws/src/build/dex_retargeting/build/lib/dex_retargeting/sapien_robot_setup.py -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/lib/python3.10/site-packages/dex_retargeting
+copying /workspace/LeapXELA_Hardware_ws/ros_ws/src/build/dex_retargeting/build/lib/dex_retargeting/retargeting_config.py -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/lib/python3.10/site-packages/dex_retargeting
+copying /workspace/LeapXELA_Hardware_ws/ros_ws/src/build/dex_retargeting/build/lib/dex_retargeting/resource_paths.py -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/lib/python3.10/site-packages/dex_retargeting
+copying /workspace/LeapXELA_Hardware_ws/ros_ws/src/build/dex_retargeting/build/lib/dex_retargeting/leap_realsense.py -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/lib/python3.10/site-packages/dex_retargeting
+copying /workspace/LeapXELA_Hardware_ws/ros_ws/src/build/dex_retargeting/build/lib/dex_retargeting/yourdfpy.py -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/lib/python3.10/site-packages/dex_retargeting
+copying /workspace/LeapXELA_Hardware_ws/ros_ws/src/build/dex_retargeting/build/lib/dex_retargeting/hand_pose_publisher.py -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/lib/python3.10/site-packages/dex_retargeting
+copying /workspace/LeapXELA_Hardware_ws/ros_ws/src/build/dex_retargeting/build/lib/dex_retargeting/optimizer_utils.py -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/lib/python3.10/site-packages/dex_retargeting
+byte-compiling /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/lib/python3.10/site-packages/dex_retargeting/__init__.py to __init__.cpython-310.pyc
+byte-compiling /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/lib/python3.10/site-packages/dex_retargeting/kinematics_adaptor.py to kinematics_adaptor.cpython-310.pyc
+byte-compiling /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/lib/python3.10/site-packages/dex_retargeting/single_hand_detector.py to single_hand_detector.cpython-310.pyc
+byte-compiling /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/lib/python3.10/site-packages/dex_retargeting/hand_viewer.py to hand_viewer.cpython-310.pyc
+byte-compiling /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/lib/python3.10/site-packages/dex_retargeting/robot_wrapper.py to robot_wrapper.cpython-310.pyc
+byte-compiling /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/lib/python3.10/site-packages/dex_retargeting/util.py to util.cpython-310.pyc
+byte-compiling /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/lib/python3.10/site-packages/dex_retargeting/leap_xela_realsense.py to leap_xela_realsense.cpython-310.pyc
+byte-compiling /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/lib/python3.10/site-packages/dex_retargeting/optimizer.py to optimizer.cpython-310.pyc
+byte-compiling /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/lib/python3.10/site-packages/dex_retargeting/constants.py to constants.cpython-310.pyc
+byte-compiling /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/lib/python3.10/site-packages/dex_retargeting/seq_retarget.py to seq_retarget.cpython-310.pyc
+byte-compiling /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/lib/python3.10/site-packages/dex_retargeting/sapien_robot_setup.py to sapien_robot_setup.cpython-310.pyc
+byte-compiling /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/lib/python3.10/site-packages/dex_retargeting/retargeting_config.py to retargeting_config.cpython-310.pyc
+byte-compiling /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/lib/python3.10/site-packages/dex_retargeting/resource_paths.py to resource_paths.cpython-310.pyc
+byte-compiling /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/lib/python3.10/site-packages/dex_retargeting/leap_realsense.py to leap_realsense.cpython-310.pyc
+byte-compiling /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/lib/python3.10/site-packages/dex_retargeting/yourdfpy.py to yourdfpy.cpython-310.pyc
+byte-compiling /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/lib/python3.10/site-packages/dex_retargeting/hand_pose_publisher.py to hand_pose_publisher.cpython-310.pyc
+byte-compiling /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/lib/python3.10/site-packages/dex_retargeting/optimizer_utils.py to optimizer_utils.cpython-310.pyc
+running install_data
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/ament_index
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/ament_index/resource_index
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/ament_index/resource_index/packages
+copying resource/dex_retargeting -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/ament_index/resource_index/packages
+copying package.xml -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/launch
+copying launch/hand_pose_teleop.launch.py -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/launch
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/configs
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/configs/teleop
+copying dex_retargeting/configs/teleop/inspire_hand_right.yml -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/configs/teleop
+copying dex_retargeting/configs/teleop/shadow_hand_right.yml -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/configs/teleop
+copying dex_retargeting/configs/teleop/leap_hand_right.yml -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/configs/teleop
+copying dex_retargeting/configs/teleop/shadow_hand_right_dexpilot.yml -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/configs/teleop
+copying dex_retargeting/configs/teleop/leap_xela_right_dexpilot.yml -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/configs/teleop
+copying dex_retargeting/configs/teleop/leap_hand_left_dexpilot.yml -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/configs/teleop
+copying dex_retargeting/configs/teleop/leap_hand_right_dexpilot.yml -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/configs/teleop
+copying dex_retargeting/configs/teleop/schunk_svh_hand_right.yml -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/configs/teleop
+copying dex_retargeting/configs/teleop/allegro_hand_left_dexpilot.yml -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/configs/teleop
+copying dex_retargeting/configs/teleop/iiwa7_leap_left_dexpilot.yml -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/configs/teleop
+copying dex_retargeting/configs/teleop/leap_xela_right.yml -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/configs/teleop
+copying dex_retargeting/configs/teleop/iiwa7_leap_right_dexpilot.yml -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/configs/teleop
+copying dex_retargeting/configs/teleop/inspire_hand_right_dexpilot.yml -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/configs/teleop
+copying dex_retargeting/configs/teleop/ability_hand_left.yml -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/configs/teleop
+copying dex_retargeting/configs/teleop/shadow_hand_left_dexpilot.yml -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/configs/teleop
+copying dex_retargeting/configs/teleop/allegro_hand_left.yml -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/configs/teleop
+copying dex_retargeting/configs/teleop/schunk_svh_hand_right_dexpilot.yml -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/configs/teleop
+copying dex_retargeting/configs/teleop/leap_hand_left.yml -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/configs/teleop
+copying dex_retargeting/configs/teleop/inspire_hand_left.yml -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/configs/teleop
+copying dex_retargeting/configs/teleop/allegro_hand_right_dexpilot.yml -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/configs/teleop
+copying dex_retargeting/configs/teleop/schunk_svh_hand_left_dexpilot.yml -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/configs/teleop
+copying dex_retargeting/configs/teleop/inspire_hand_left_dexpilot.yml -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/configs/teleop
+copying dex_retargeting/configs/teleop/allegro_hand_right.yml -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/configs/teleop
+copying dex_retargeting/configs/teleop/panda_gripper.yml -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/configs/teleop
+copying dex_retargeting/configs/teleop/ability_hand_left_dexpilot.yml -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/configs/teleop
+copying dex_retargeting/configs/teleop/ability_hand_right.yml -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/configs/teleop
+copying dex_retargeting/configs/teleop/ability_hand_right_dexpilot.yml -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/configs/teleop
+copying dex_retargeting/configs/teleop/shadow_hand_left.yml -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/configs/teleop
+copying dex_retargeting/configs/teleop/panda_gripper_dexpilot.yml -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/configs/teleop
+copying dex_retargeting/configs/teleop/schunk_svh_hand_left.yml -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/configs/teleop
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/configs/offline
+copying dex_retargeting/configs/offline/inspire_hand_right.yml -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/configs/offline
+copying dex_retargeting/configs/offline/shadow_hand_right.yml -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/configs/offline
+copying dex_retargeting/configs/offline/leap_hand_right.yml -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/configs/offline
+copying dex_retargeting/configs/offline/schunk_svh_hand_right.yml -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/configs/offline
+copying dex_retargeting/configs/offline/leap_xela_right.yml -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/configs/offline
+copying dex_retargeting/configs/offline/ability_hand_left.yml -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/configs/offline
+copying dex_retargeting/configs/offline/allegro_hand_left.yml -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/configs/offline
+copying dex_retargeting/configs/offline/leap_hand_left.yml -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/configs/offline
+copying dex_retargeting/configs/offline/inspire_hand_left.yml -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/configs/offline
+copying dex_retargeting/configs/offline/allegro_hand_right.yml -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/configs/offline
+copying dex_retargeting/configs/offline/panda_gripper.yml -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/configs/offline
+copying dex_retargeting/configs/offline/ability_hand_right.yml -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/configs/offline
+copying dex_retargeting/configs/offline/shadow_hand_left.yml -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/configs/offline
+copying dex_retargeting/configs/offline/schunk_svh_hand_left.yml -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/configs/offline
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/iiwa14
+copying assets/robots/arms/iiwa14/iiwa14_glb.urdf -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/iiwa14
+copying assets/robots/arms/iiwa14/iiwa14.urdf -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/iiwa14
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/iiwa14/meshes
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/iiwa14/meshes/visual
+copying assets/robots/arms/iiwa14/meshes/visual/link_0.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/iiwa14/meshes/visual
+copying assets/robots/arms/iiwa14/meshes/visual/link_5.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/iiwa14/meshes/visual
+copying assets/robots/arms/iiwa14/meshes/visual/link_4.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/iiwa14/meshes/visual
+copying assets/robots/arms/iiwa14/meshes/visual/link_3.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/iiwa14/meshes/visual
+copying assets/robots/arms/iiwa14/meshes/visual/link_4.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/iiwa14/meshes/visual
+copying assets/robots/arms/iiwa14/meshes/visual/link_6.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/iiwa14/meshes/visual
+copying assets/robots/arms/iiwa14/meshes/visual/link_2.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/iiwa14/meshes/visual
+copying assets/robots/arms/iiwa14/meshes/visual/link_6.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/iiwa14/meshes/visual
+copying assets/robots/arms/iiwa14/meshes/visual/link_3.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/iiwa14/meshes/visual
+copying assets/robots/arms/iiwa14/meshes/visual/link_4.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/iiwa14/meshes/visual
+copying assets/robots/arms/iiwa14/meshes/visual/link_0.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/iiwa14/meshes/visual
+copying assets/robots/arms/iiwa14/meshes/visual/link_2.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/iiwa14/meshes/visual
+copying assets/robots/arms/iiwa14/meshes/visual/link_5.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/iiwa14/meshes/visual
+copying assets/robots/arms/iiwa14/meshes/visual/link_7.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/iiwa14/meshes/visual
+copying assets/robots/arms/iiwa14/meshes/visual/link_0.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/iiwa14/meshes/visual
+copying assets/robots/arms/iiwa14/meshes/visual/link_6.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/iiwa14/meshes/visual
+copying assets/robots/arms/iiwa14/meshes/visual/link_7.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/iiwa14/meshes/visual
+copying assets/robots/arms/iiwa14/meshes/visual/link_7.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/iiwa14/meshes/visual
+copying assets/robots/arms/iiwa14/meshes/visual/link_2.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/iiwa14/meshes/visual
+copying assets/robots/arms/iiwa14/meshes/visual/link_1.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/iiwa14/meshes/visual
+copying assets/robots/arms/iiwa14/meshes/visual/link_1.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/iiwa14/meshes/visual
+copying assets/robots/arms/iiwa14/meshes/visual/link_1.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/iiwa14/meshes/visual
+copying assets/robots/arms/iiwa14/meshes/visual/link_5.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/iiwa14/meshes/visual
+copying assets/robots/arms/iiwa14/meshes/visual/link_3.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/iiwa14/meshes/visual
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/iiwa14/meshes/collision
+copying assets/robots/arms/iiwa14/meshes/collision/link_0.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/iiwa14/meshes/collision
+copying assets/robots/arms/iiwa14/meshes/collision/link_3.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/iiwa14/meshes/collision
+copying assets/robots/arms/iiwa14/meshes/collision/link_4.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/iiwa14/meshes/collision
+copying assets/robots/arms/iiwa14/meshes/collision/link_6.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/iiwa14/meshes/collision
+copying assets/robots/arms/iiwa14/meshes/collision/link_7.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/iiwa14/meshes/collision
+copying assets/robots/arms/iiwa14/meshes/collision/link_2.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/iiwa14/meshes/collision
+copying assets/robots/arms/iiwa14/meshes/collision/link_1.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/iiwa14/meshes/collision
+copying assets/robots/arms/iiwa14/meshes/collision/link_5.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/iiwa14/meshes/collision
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/xarm7
+copying assets/robots/arms/xarm7/xarm7_glb.urdf -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/xarm7
+copying assets/robots/arms/xarm7/xarm7.urdf -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/xarm7
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/xarm7/meshes
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/xarm7/meshes/visual
+copying assets/robots/arms/xarm7/meshes/visual/link_base.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/xarm7/meshes/visual
+copying assets/robots/arms/xarm7/meshes/visual/link1.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/xarm7/meshes/visual
+copying assets/robots/arms/xarm7/meshes/visual/link2.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/xarm7/meshes/visual
+copying assets/robots/arms/xarm7/meshes/visual/link5.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/xarm7/meshes/visual
+copying assets/robots/arms/xarm7/meshes/visual/link1.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/xarm7/meshes/visual
+copying assets/robots/arms/xarm7/meshes/visual/link7.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/xarm7/meshes/visual
+copying assets/robots/arms/xarm7/meshes/visual/link5.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/xarm7/meshes/visual
+copying assets/robots/arms/xarm7/meshes/visual/link6.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/xarm7/meshes/visual
+copying assets/robots/arms/xarm7/meshes/visual/link4.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/xarm7/meshes/visual
+copying assets/robots/arms/xarm7/meshes/visual/link3.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/xarm7/meshes/visual
+copying assets/robots/arms/xarm7/meshes/visual/link3.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/xarm7/meshes/visual
+copying assets/robots/arms/xarm7/meshes/visual/link2.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/xarm7/meshes/visual
+copying assets/robots/arms/xarm7/meshes/visual/link_base.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/xarm7/meshes/visual
+copying assets/robots/arms/xarm7/meshes/visual/link4.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/xarm7/meshes/visual
+copying assets/robots/arms/xarm7/meshes/visual/link3.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/xarm7/meshes/visual
+copying assets/robots/arms/xarm7/meshes/visual/link5.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/xarm7/meshes/visual
+copying assets/robots/arms/xarm7/meshes/visual/link7.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/xarm7/meshes/visual
+copying assets/robots/arms/xarm7/meshes/visual/link_base.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/xarm7/meshes/visual
+copying assets/robots/arms/xarm7/meshes/visual/link2.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/xarm7/meshes/visual
+copying assets/robots/arms/xarm7/meshes/visual/link6.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/xarm7/meshes/visual
+copying assets/robots/arms/xarm7/meshes/visual/link4.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/xarm7/meshes/visual
+copying assets/robots/arms/xarm7/meshes/visual/link7.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/xarm7/meshes/visual
+copying assets/robots/arms/xarm7/meshes/visual/link1.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/xarm7/meshes/visual
+copying assets/robots/arms/xarm7/meshes/visual/link6.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/xarm7/meshes/visual
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/xarm7/meshes/collision
+copying assets/robots/arms/xarm7/meshes/collision/link7.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/xarm7/meshes/collision
+copying assets/robots/arms/xarm7/meshes/collision/link5.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/xarm7/meshes/collision
+copying assets/robots/arms/xarm7/meshes/collision/link4.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/xarm7/meshes/collision
+copying assets/robots/arms/xarm7/meshes/collision/link2.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/xarm7/meshes/collision
+copying assets/robots/arms/xarm7/meshes/collision/link3.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/xarm7/meshes/collision
+copying assets/robots/arms/xarm7/meshes/collision/link_base.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/xarm7/meshes/collision
+copying assets/robots/arms/xarm7/meshes/collision/link1.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/xarm7/meshes/collision
+copying assets/robots/arms/xarm7/meshes/collision/link6.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/xarm7/meshes/collision
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/ur10e
+copying assets/robots/arms/ur10e/ur10e_glb.urdf -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/ur10e
+copying assets/robots/arms/ur10e/ur10e.urdf -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/ur10e
+copying assets/robots/arms/ur10e/LICENSE -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/ur10e
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/ur10e/meshes
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/ur10e/meshes/visual
+copying assets/robots/arms/ur10e/meshes/visual/wrist2.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/ur10e/meshes/visual
+copying assets/robots/arms/ur10e/meshes/visual/forearm.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/ur10e/meshes/visual
+copying assets/robots/arms/ur10e/meshes/visual/wrist2.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/ur10e/meshes/visual
+copying assets/robots/arms/ur10e/meshes/visual/shoulder.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/ur10e/meshes/visual
+copying assets/robots/arms/ur10e/meshes/visual/wrist2.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/ur10e/meshes/visual
+copying assets/robots/arms/ur10e/meshes/visual/base.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/ur10e/meshes/visual
+copying assets/robots/arms/ur10e/meshes/visual/wrist3.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/ur10e/meshes/visual
+copying assets/robots/arms/ur10e/meshes/visual/shoulder.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/ur10e/meshes/visual
+copying assets/robots/arms/ur10e/meshes/visual/wrist1.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/ur10e/meshes/visual
+copying assets/robots/arms/ur10e/meshes/visual/base.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/ur10e/meshes/visual
+copying assets/robots/arms/ur10e/meshes/visual/upperarm.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/ur10e/meshes/visual
+copying assets/robots/arms/ur10e/meshes/visual/wrist1.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/ur10e/meshes/visual
+copying assets/robots/arms/ur10e/meshes/visual/upperarm.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/ur10e/meshes/visual
+copying assets/robots/arms/ur10e/meshes/visual/upperarm.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/ur10e/meshes/visual
+copying assets/robots/arms/ur10e/meshes/visual/wrist3.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/ur10e/meshes/visual
+copying assets/robots/arms/ur10e/meshes/visual/forearm.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/ur10e/meshes/visual
+copying assets/robots/arms/ur10e/meshes/visual/shoulder.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/ur10e/meshes/visual
+copying assets/robots/arms/ur10e/meshes/visual/base.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/ur10e/meshes/visual
+copying assets/robots/arms/ur10e/meshes/visual/wrist3.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/ur10e/meshes/visual
+copying assets/robots/arms/ur10e/meshes/visual/forearm.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/ur10e/meshes/visual
+copying assets/robots/arms/ur10e/meshes/visual/wrist1.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/ur10e/meshes/visual
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/ur10e/meshes/collision
+copying assets/robots/arms/ur10e/meshes/collision/wrist2.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/ur10e/meshes/collision
+copying assets/robots/arms/ur10e/meshes/collision/wrist3.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/ur10e/meshes/collision
+copying assets/robots/arms/ur10e/meshes/collision/shoulder.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/ur10e/meshes/collision
+copying assets/robots/arms/ur10e/meshes/collision/wrist1.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/ur10e/meshes/collision
+copying assets/robots/arms/ur10e/meshes/collision/base.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/ur10e/meshes/collision
+copying assets/robots/arms/ur10e/meshes/collision/upperarm.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/ur10e/meshes/collision
+copying assets/robots/arms/ur10e/meshes/collision/forearm.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/ur10e/meshes/collision
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/iiwa7
+copying assets/robots/arms/iiwa7/iiwa7_glb.urdf -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/iiwa7
+copying assets/robots/arms/iiwa7/iiwa7.urdf -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/iiwa7
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/iiwa7/meshes
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/iiwa7/meshes/visual
+copying assets/robots/arms/iiwa7/meshes/visual/link_0.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/iiwa7/meshes/visual
+copying assets/robots/arms/iiwa7/meshes/visual/link_5.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/iiwa7/meshes/visual
+copying assets/robots/arms/iiwa7/meshes/visual/link_4.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/iiwa7/meshes/visual
+copying assets/robots/arms/iiwa7/meshes/visual/link_3.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/iiwa7/meshes/visual
+copying assets/robots/arms/iiwa7/meshes/visual/link_4.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/iiwa7/meshes/visual
+copying assets/robots/arms/iiwa7/meshes/visual/link_6.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/iiwa7/meshes/visual
+copying assets/robots/arms/iiwa7/meshes/visual/link_2.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/iiwa7/meshes/visual
+copying assets/robots/arms/iiwa7/meshes/visual/link_6.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/iiwa7/meshes/visual
+copying assets/robots/arms/iiwa7/meshes/visual/link_3.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/iiwa7/meshes/visual
+copying assets/robots/arms/iiwa7/meshes/visual/link_4.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/iiwa7/meshes/visual
+copying assets/robots/arms/iiwa7/meshes/visual/link_0.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/iiwa7/meshes/visual
+copying assets/robots/arms/iiwa7/meshes/visual/link_2.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/iiwa7/meshes/visual
+copying assets/robots/arms/iiwa7/meshes/visual/link_5.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/iiwa7/meshes/visual
+copying assets/robots/arms/iiwa7/meshes/visual/link_7.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/iiwa7/meshes/visual
+copying assets/robots/arms/iiwa7/meshes/visual/link_0.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/iiwa7/meshes/visual
+copying assets/robots/arms/iiwa7/meshes/visual/link_6.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/iiwa7/meshes/visual
+copying assets/robots/arms/iiwa7/meshes/visual/link_7.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/iiwa7/meshes/visual
+copying assets/robots/arms/iiwa7/meshes/visual/link_7.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/iiwa7/meshes/visual
+copying assets/robots/arms/iiwa7/meshes/visual/link_2.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/iiwa7/meshes/visual
+copying assets/robots/arms/iiwa7/meshes/visual/link_1.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/iiwa7/meshes/visual
+copying assets/robots/arms/iiwa7/meshes/visual/link_1.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/iiwa7/meshes/visual
+copying assets/robots/arms/iiwa7/meshes/visual/link_1.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/iiwa7/meshes/visual
+copying assets/robots/arms/iiwa7/meshes/visual/link_5.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/iiwa7/meshes/visual
+copying assets/robots/arms/iiwa7/meshes/visual/link_3.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/iiwa7/meshes/visual
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/iiwa7/meshes/collision
+copying assets/robots/arms/iiwa7/meshes/collision/link_0.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/iiwa7/meshes/collision
+copying assets/robots/arms/iiwa7/meshes/collision/link_3.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/iiwa7/meshes/collision
+copying assets/robots/arms/iiwa7/meshes/collision/link_4.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/iiwa7/meshes/collision
+copying assets/robots/arms/iiwa7/meshes/collision/link_6.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/iiwa7/meshes/collision
+copying assets/robots/arms/iiwa7/meshes/collision/link_7.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/iiwa7/meshes/collision
+copying assets/robots/arms/iiwa7/meshes/collision/link_2.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/iiwa7/meshes/collision
+copying assets/robots/arms/iiwa7/meshes/collision/link_1.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/iiwa7/meshes/collision
+copying assets/robots/arms/iiwa7/meshes/collision/link_5.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/iiwa7/meshes/collision
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/rm75
+copying assets/robots/arms/rm75/rm75_glb.urdf -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/rm75
+copying assets/robots/arms/rm75/rm75.urdf -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/rm75
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/rm75/meshes
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/rm75/meshes/visual
+copying assets/robots/arms/rm75/meshes/visual/rm75_link_5.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/rm75/meshes/visual
+copying assets/robots/arms/rm75/meshes/visual/rm75_link_0.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/rm75/meshes/visual
+copying assets/robots/arms/rm75/meshes/visual/rm75_link_5.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/rm75/meshes/visual
+copying assets/robots/arms/rm75/meshes/visual/rm75_link_3.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/rm75/meshes/visual
+copying assets/robots/arms/rm75/meshes/visual/rm75_link_7.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/rm75/meshes/visual
+copying assets/robots/arms/rm75/meshes/visual/rm75_link_1.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/rm75/meshes/visual
+copying assets/robots/arms/rm75/meshes/visual/rm75_link_4.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/rm75/meshes/visual
+copying assets/robots/arms/rm75/meshes/visual/rm75_link_5.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/rm75/meshes/visual
+copying assets/robots/arms/rm75/meshes/visual/rm75_link_2.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/rm75/meshes/visual
+copying assets/robots/arms/rm75/meshes/visual/rm75_link_4.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/rm75/meshes/visual
+copying assets/robots/arms/rm75/meshes/visual/rm75_link_1.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/rm75/meshes/visual
+copying assets/robots/arms/rm75/meshes/visual/rm75_link_7.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/rm75/meshes/visual
+copying assets/robots/arms/rm75/meshes/visual/rm75_link_6.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/rm75/meshes/visual
+copying assets/robots/arms/rm75/meshes/visual/rm75_link_1.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/rm75/meshes/visual
+copying assets/robots/arms/rm75/meshes/visual/rm75_link_2.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/rm75/meshes/visual
+copying assets/robots/arms/rm75/meshes/visual/rm75_link_2.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/rm75/meshes/visual
+copying assets/robots/arms/rm75/meshes/visual/rm75_link_6.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/rm75/meshes/visual
+copying assets/robots/arms/rm75/meshes/visual/rm75_link_3.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/rm75/meshes/visual
+copying assets/robots/arms/rm75/meshes/visual/rm75_link_4.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/rm75/meshes/visual
+copying assets/robots/arms/rm75/meshes/visual/rm75_link_0.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/rm75/meshes/visual
+copying assets/robots/arms/rm75/meshes/visual/rm75_link_7.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/rm75/meshes/visual
+copying assets/robots/arms/rm75/meshes/visual/rm75_link_6.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/rm75/meshes/visual
+copying assets/robots/arms/rm75/meshes/visual/rm75_link_3.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/rm75/meshes/visual
+copying assets/robots/arms/rm75/meshes/visual/rm75_link_0.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/rm75/meshes/visual
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/rm75/meshes/collision
+copying assets/robots/arms/rm75/meshes/collision/rm75_link_5.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/rm75/meshes/collision
+copying assets/robots/arms/rm75/meshes/collision/rm75_link_7.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/rm75/meshes/collision
+copying assets/robots/arms/rm75/meshes/collision/rm75_link_2.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/rm75/meshes/collision
+copying assets/robots/arms/rm75/meshes/collision/rm75_link_1.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/rm75/meshes/collision
+copying assets/robots/arms/rm75/meshes/collision/rm75_link_6.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/rm75/meshes/collision
+copying assets/robots/arms/rm75/meshes/collision/rm75_link_4.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/rm75/meshes/collision
+copying assets/robots/arms/rm75/meshes/collision/rm75_link_0.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/rm75/meshes/collision
+copying assets/robots/arms/rm75/meshes/collision/rm75_link_3.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/rm75/meshes/collision
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/ur5e
+copying assets/robots/arms/ur5e/ur5e_glb.urdf -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/ur5e
+copying assets/robots/arms/ur5e/ur5e.urdf -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/ur5e
+copying assets/robots/arms/ur5e/LICENSE -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/ur5e
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/ur5e/meshes
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/ur5e/meshes/visual
+copying assets/robots/arms/ur5e/meshes/visual/wrist2.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/ur5e/meshes/visual
+copying assets/robots/arms/ur5e/meshes/visual/forearm.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/ur5e/meshes/visual
+copying assets/robots/arms/ur5e/meshes/visual/wrist2.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/ur5e/meshes/visual
+copying assets/robots/arms/ur5e/meshes/visual/shoulder.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/ur5e/meshes/visual
+copying assets/robots/arms/ur5e/meshes/visual/wrist2.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/ur5e/meshes/visual
+copying assets/robots/arms/ur5e/meshes/visual/base.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/ur5e/meshes/visual
+copying assets/robots/arms/ur5e/meshes/visual/wrist3.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/ur5e/meshes/visual
+copying assets/robots/arms/ur5e/meshes/visual/shoulder.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/ur5e/meshes/visual
+copying assets/robots/arms/ur5e/meshes/visual/wrist1.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/ur5e/meshes/visual
+copying assets/robots/arms/ur5e/meshes/visual/base.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/ur5e/meshes/visual
+copying assets/robots/arms/ur5e/meshes/visual/upperarm.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/ur5e/meshes/visual
+copying assets/robots/arms/ur5e/meshes/visual/wrist1.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/ur5e/meshes/visual
+copying assets/robots/arms/ur5e/meshes/visual/upperarm.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/ur5e/meshes/visual
+copying assets/robots/arms/ur5e/meshes/visual/upperarm.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/ur5e/meshes/visual
+copying assets/robots/arms/ur5e/meshes/visual/wrist3.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/ur5e/meshes/visual
+copying assets/robots/arms/ur5e/meshes/visual/forearm.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/ur5e/meshes/visual
+copying assets/robots/arms/ur5e/meshes/visual/shoulder.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/ur5e/meshes/visual
+copying assets/robots/arms/ur5e/meshes/visual/base.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/ur5e/meshes/visual
+copying assets/robots/arms/ur5e/meshes/visual/wrist3.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/ur5e/meshes/visual
+copying assets/robots/arms/ur5e/meshes/visual/forearm.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/ur5e/meshes/visual
+copying assets/robots/arms/ur5e/meshes/visual/wrist1.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/ur5e/meshes/visual
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/ur5e/meshes/collision
+copying assets/robots/arms/ur5e/meshes/collision/wrist2.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/ur5e/meshes/collision
+copying assets/robots/arms/ur5e/meshes/collision/wrist3.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/ur5e/meshes/collision
+copying assets/robots/arms/ur5e/meshes/collision/shoulder.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/ur5e/meshes/collision
+copying assets/robots/arms/ur5e/meshes/collision/wrist1.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/ur5e/meshes/collision
+copying assets/robots/arms/ur5e/meshes/collision/base.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/ur5e/meshes/collision
+copying assets/robots/arms/ur5e/meshes/collision/upperarm.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/ur5e/meshes/collision
+copying assets/robots/arms/ur5e/meshes/collision/forearm.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/arms/ur5e/meshes/collision
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/assembly
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/assembly/xarm7_ability
+copying assets/robots/assembly/xarm7_ability/xarm7_ability_right_hand_glb.urdf -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/assembly/xarm7_ability
+copying assets/robots/assembly/xarm7_ability/xarm7_ability_right_hand.urdf -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/assembly/xarm7_ability
+copying assets/robots/assembly/xarm7_ability/xarm7_ability_left_hand_glb.urdf -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/assembly/xarm7_ability
+copying assets/robots/assembly/xarm7_ability/xarm7_ability_left_hand.srdf -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/assembly/xarm7_ability
+copying assets/robots/assembly/xarm7_ability/xarm7_ability_right_hand.srdf -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/assembly/xarm7_ability
+copying assets/robots/assembly/xarm7_ability/xarm7_ability_left_hand.urdf -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/assembly/xarm7_ability
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/assembly/xarm7_ability/meshes
+copying assets/robots/assembly/xarm7_ability/meshes/hand_base.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/assembly/xarm7_ability/meshes
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/assembly/rm75_inspire
+copying assets/robots/assembly/rm75_inspire/rm75_inspire_right_hand.urdf -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/assembly/rm75_inspire
+copying assets/robots/assembly/rm75_inspire/rm75_inspire_left_hand.urdf -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/assembly/rm75_inspire
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/assembly/ur5e_shadow
+copying assets/robots/assembly/ur5e_shadow/ur5e_shadow_right_hand_glb.urdf -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/assembly/ur5e_shadow
+copying assets/robots/assembly/ur5e_shadow/ur5e_shadow_left_hand_glb.urdf -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/assembly/ur5e_shadow
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/inspire_hand
+copying assets/robots/hands/inspire_hand/inspire_hand_right_glb.urdf -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/inspire_hand
+copying assets/robots/hands/inspire_hand/inspire_hand_right.urdf -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/inspire_hand
+copying assets/robots/hands/inspire_hand/inspire_hand_left.urdf -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/inspire_hand
+copying assets/robots/hands/inspire_hand/LICENSE.txt -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/inspire_hand
+copying assets/robots/hands/inspire_hand/inspire_hand_left_glb.urdf -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/inspire_hand
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/inspire_hand/meshes
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/inspire_hand/meshes/visual
+copying assets/robots/hands/inspire_hand/meshes/visual/left_thumb_proximal.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/inspire_hand/meshes/visual
+copying assets/robots/hands/inspire_hand/meshes/visual/right_thumb_distal.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/inspire_hand/meshes/visual
+copying assets/robots/hands/inspire_hand/meshes/visual/right_index_intermediate.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/inspire_hand/meshes/visual
+copying assets/robots/hands/inspire_hand/meshes/visual/right_thumb_proximal.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/inspire_hand/meshes/visual
+copying assets/robots/hands/inspire_hand/meshes/visual/left_pinky_intermediate.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/inspire_hand/meshes/visual
+copying assets/robots/hands/inspire_hand/meshes/visual/right_thumb_intermediate.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/inspire_hand/meshes/visual
+copying assets/robots/hands/inspire_hand/meshes/visual/right_thumb_proximal_base.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/inspire_hand/meshes/visual
+copying assets/robots/hands/inspire_hand/meshes/visual/left_thumb_intermediate.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/inspire_hand/meshes/visual
+copying assets/robots/hands/inspire_hand/meshes/visual/left_base_link.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/inspire_hand/meshes/visual
+copying assets/robots/hands/inspire_hand/meshes/visual/left_thumb_proximal_base.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/inspire_hand/meshes/visual
+copying assets/robots/hands/inspire_hand/meshes/visual/left_index_proximal.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/inspire_hand/meshes/visual
+copying assets/robots/hands/inspire_hand/meshes/visual/left_thumb_distal.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/inspire_hand/meshes/visual
+copying assets/robots/hands/inspire_hand/meshes/visual/right_base_link.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/inspire_hand/meshes/visual
+copying assets/robots/hands/inspire_hand/meshes/visual/right_pinky_intermediate.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/inspire_hand/meshes/visual
+copying assets/robots/hands/inspire_hand/meshes/visual/left_middle_intermediate.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/inspire_hand/meshes/visual
+copying assets/robots/hands/inspire_hand/meshes/visual/left_index_intermediate.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/inspire_hand/meshes/visual
+copying assets/robots/hands/inspire_hand/meshes/visual/right_index_proximal.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/inspire_hand/meshes/visual
+copying assets/robots/hands/inspire_hand/meshes/visual/right_middle_intermediate.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/inspire_hand/meshes/visual
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/inspire_hand/meshes/collision
+copying assets/robots/hands/inspire_hand/meshes/collision/right_pinky_intermediate.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/inspire_hand/meshes/collision
+copying assets/robots/hands/inspire_hand/meshes/collision/left_thumb_proximal_base.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/inspire_hand/meshes/collision
+copying assets/robots/hands/inspire_hand/meshes/collision/left_middle_intermediate.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/inspire_hand/meshes/collision
+copying assets/robots/hands/inspire_hand/meshes/collision/right_middle_intermediate.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/inspire_hand/meshes/collision
+copying assets/robots/hands/inspire_hand/meshes/collision/right_index_proximal.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/inspire_hand/meshes/collision
+copying assets/robots/hands/inspire_hand/meshes/collision/left_index_proximal.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/inspire_hand/meshes/collision
+copying assets/robots/hands/inspire_hand/meshes/collision/left_thumb_distal.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/inspire_hand/meshes/collision
+copying assets/robots/hands/inspire_hand/meshes/collision/left_index_intermediate.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/inspire_hand/meshes/collision
+copying assets/robots/hands/inspire_hand/meshes/collision/left_pinky_intermediate.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/inspire_hand/meshes/collision
+copying assets/robots/hands/inspire_hand/meshes/collision/right_thumb_intermediate.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/inspire_hand/meshes/collision
+copying assets/robots/hands/inspire_hand/meshes/collision/left_thumb_proximal.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/inspire_hand/meshes/collision
+copying assets/robots/hands/inspire_hand/meshes/collision/right_thumb_proximal.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/inspire_hand/meshes/collision
+copying assets/robots/hands/inspire_hand/meshes/collision/right_thumb_distal.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/inspire_hand/meshes/collision
+copying assets/robots/hands/inspire_hand/meshes/collision/left_thumb_intermediate.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/inspire_hand/meshes/collision
+copying assets/robots/hands/inspire_hand/meshes/collision/right_thumb_proximal_base.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/inspire_hand/meshes/collision
+copying assets/robots/hands/inspire_hand/meshes/collision/right_index_intermediate.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/inspire_hand/meshes/collision
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/panda_gripper
+copying assets/robots/hands/panda_gripper/panda_gripper_glb.urdf -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/panda_gripper
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/panda_gripper/meshes
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/panda_gripper/meshes/visual
+copying assets/robots/hands/panda_gripper/meshes/visual/hand.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/panda_gripper/meshes/visual
+copying assets/robots/hands/panda_gripper/meshes/visual/finger.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/panda_gripper/meshes/visual
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/leap_xela
+copying assets/robots/hands/leap_xela/config.json -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/leap_xela
+copying assets/robots/hands/leap_xela/leap_xela_right.urdf -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/leap_xela
+copying assets/robots/hands/leap_xela/leap_xela_right_glb.urdf -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/leap_xela
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/leap_xela/assets
+copying assets/robots/hands/leap_xela/assets/fingertop_unfied.part -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/leap_xela/assets
+copying assets/robots/hands/leap_xela/assets/p4_unified.stl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/leap_xela/assets
+copying assets/robots/hands/leap_xela/assets/thp0_unified.stl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/leap_xela/assets
+copying assets/robots/hands/leap_xela/assets/fingertop_unfied.stl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/leap_xela/assets
+copying assets/robots/hands/leap_xela/assets/p5_unified.stl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/leap_xela/assets
+copying assets/robots/hands/leap_xela/assets/palm_face.part -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/leap_xela/assets
+copying assets/robots/hands/leap_xela/assets/thfingertip_unified.part -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/leap_xela/assets
+copying assets/robots/hands/leap_xela/assets/thconnector.stl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/leap_xela/assets
+copying assets/robots/hands/leap_xela/assets/p3_unified.part -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/leap_xela/assets
+copying assets/robots/hands/leap_xela/assets/thp1_unified.part -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/leap_xela/assets
+copying assets/robots/hands/leap_xela/assets/top_palm.stl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/leap_xela/assets
+copying assets/robots/hands/leap_xela/assets/leap_hand_xela_motorholder.part -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/leap_xela/assets
+copying assets/robots/hands/leap_xela/assets/clipper.part -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/leap_xela/assets
+copying assets/robots/hands/leap_xela/assets/uspa46.stl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/leap_xela/assets
+copying assets/robots/hands/leap_xela/assets/leap_hand_xela_motorholder.stl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/leap_xela/assets
+copying assets/robots/hands/leap_xela/assets/leap_hand_xela_bottom.stl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/leap_xela/assets
+copying assets/robots/hands/leap_xela/assets/leap_hand_xela_side_cover.stl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/leap_xela/assets
+copying assets/robots/hands/leap_xela/assets/p5_unified.part -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/leap_xela/assets
+copying assets/robots/hands/leap_xela/assets/p4_unified.part -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/leap_xela/assets
+copying assets/robots/hands/leap_xela/assets/leap_hand_xela_side_cover.part -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/leap_xela/assets
+copying assets/robots/hands/leap_xela/assets/clipper.stl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/leap_xela/assets
+copying assets/robots/hands/leap_xela/assets/uspa46.part -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/leap_xela/assets
+copying assets/robots/hands/leap_xela/assets/thfingertip_unified.stl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/leap_xela/assets
+copying assets/robots/hands/leap_xela/assets/leap_hand_xela_back_cover.stl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/leap_xela/assets
+copying assets/robots/hands/leap_xela/assets/top_palm.part -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/leap_xela/assets
+copying assets/robots/hands/leap_xela/assets/palm_face.stl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/leap_xela/assets
+copying assets/robots/hands/leap_xela/assets/thp1_unified.stl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/leap_xela/assets
+copying assets/robots/hands/leap_xela/assets/thconnector.part -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/leap_xela/assets
+copying assets/robots/hands/leap_xela/assets/thp0_unified.part -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/leap_xela/assets
+copying assets/robots/hands/leap_xela/assets/leap_hand_xela_back_cover.part -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/leap_xela/assets
+copying assets/robots/hands/leap_xela/assets/p3_unified.stl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/leap_xela/assets
+copying assets/robots/hands/leap_xela/assets/leap_hand_xela_bottom.part -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/leap_xela/assets
+copying assets/robots/hands/leap_xela/assets/thp2_unified.stl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/leap_xela/assets
+copying assets/robots/hands/leap_xela/assets/p2_unified.stl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/leap_xela/assets
+copying assets/robots/hands/leap_xela/assets/p2_unified.part -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/leap_xela/assets
+copying assets/robots/hands/leap_xela/assets/thp2_unified.part -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/leap_xela/assets
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/allegro_hand
+copying assets/robots/hands/allegro_hand/allegro_hand_left_glb.urdf -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/allegro_hand
+copying assets/robots/hands/allegro_hand/allegro_hand_left.urdf -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/allegro_hand
+copying assets/robots/hands/allegro_hand/allegro_hand_right_glb.urdf -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/allegro_hand
+copying assets/robots/hands/allegro_hand/allegro_hand_right.urdf -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/allegro_hand
+copying assets/robots/hands/allegro_hand/LICENSE -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/allegro_hand
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/allegro_hand/variation
+copying assets/robots/hands/allegro_hand/variation/allegro_hand_right_fsr_glb.urdf -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/allegro_hand/variation
+copying assets/robots/hands/allegro_hand/variation/allegro_hand_right_fsr_simple.urdf -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/allegro_hand/variation
+copying assets/robots/hands/allegro_hand/variation/allegro_hand_right_fsr.urdf -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/allegro_hand/variation
+copying assets/robots/hands/allegro_hand/variation/allegro_hand_right_fsr_cylinder.urdf -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/allegro_hand/variation
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/allegro_hand/variation/meshes
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/allegro_hand/variation/meshes/visual
+copying assets/robots/hands/allegro_hand/variation/meshes/visual/tactile.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/allegro_hand/variation/meshes/visual
+copying assets/robots/hands/allegro_hand/variation/meshes/visual/longer_finger_tip.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/allegro_hand/variation/meshes/visual
+copying assets/robots/hands/allegro_hand/variation/meshes/visual/tactile.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/allegro_hand/variation/meshes/visual
+copying assets/robots/hands/allegro_hand/variation/meshes/visual/longer_finger_tip.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/allegro_hand/variation/meshes/visual
+copying assets/robots/hands/allegro_hand/variation/meshes/visual/longer_finger_tip.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/allegro_hand/variation/meshes/visual
+copying assets/robots/hands/allegro_hand/variation/meshes/visual/tactile.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/allegro_hand/variation/meshes/visual
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/allegro_hand/variation/meshes/collision
+copying assets/robots/hands/allegro_hand/variation/meshes/collision/longer_finger_tip.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/allegro_hand/variation/meshes/collision
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/allegro_hand/meshes
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/allegro_hand/meshes/visual
+copying assets/robots/hands/allegro_hand/meshes/visual/link_12.0_right.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/allegro_hand/meshes/visual
+copying assets/robots/hands/allegro_hand/meshes/visual/link_12.0_left.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/allegro_hand/meshes/visual
+copying assets/robots/hands/allegro_hand/meshes/visual/link_tip.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/allegro_hand/meshes/visual
+copying assets/robots/hands/allegro_hand/meshes/visual/link_4.0.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/allegro_hand/meshes/visual
+copying assets/robots/hands/allegro_hand/meshes/visual/link_12.0_left.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/allegro_hand/meshes/visual
+copying assets/robots/hands/allegro_hand/meshes/visual/base_link_left.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/allegro_hand/meshes/visual
+copying assets/robots/hands/allegro_hand/meshes/visual/link_0.0.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/allegro_hand/meshes/visual
+copying assets/robots/hands/allegro_hand/meshes/visual/link_15.0.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/allegro_hand/meshes/visual
+copying assets/robots/hands/allegro_hand/meshes/visual/link_12.0_right.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/allegro_hand/meshes/visual
+copying assets/robots/hands/allegro_hand/meshes/visual/link_3.0.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/allegro_hand/meshes/visual
+copying assets/robots/hands/allegro_hand/meshes/visual/link_14.0.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/allegro_hand/meshes/visual
+copying assets/robots/hands/allegro_hand/meshes/visual/link_tip.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/allegro_hand/meshes/visual
+copying assets/robots/hands/allegro_hand/meshes/visual/link_13.0.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/allegro_hand/meshes/visual
+copying assets/robots/hands/allegro_hand/meshes/visual/link_3.0.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/allegro_hand/meshes/visual
+copying assets/robots/hands/allegro_hand/meshes/visual/link_tip.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/allegro_hand/meshes/visual
+copying assets/robots/hands/allegro_hand/meshes/visual/link_13.0.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/allegro_hand/meshes/visual
+copying assets/robots/hands/allegro_hand/meshes/visual/link_2.0.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/allegro_hand/meshes/visual
+copying assets/robots/hands/allegro_hand/meshes/visual/base_link.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/allegro_hand/meshes/visual
+copying assets/robots/hands/allegro_hand/meshes/visual/link_1.0.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/allegro_hand/meshes/visual
+copying assets/robots/hands/allegro_hand/meshes/visual/link_1.0.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/allegro_hand/meshes/visual
+copying assets/robots/hands/allegro_hand/meshes/visual/link_14.0.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/allegro_hand/meshes/visual
+copying assets/robots/hands/allegro_hand/meshes/visual/link_15.0.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/allegro_hand/meshes/visual
+copying assets/robots/hands/allegro_hand/meshes/visual/link_14.0.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/allegro_hand/meshes/visual
+copying assets/robots/hands/allegro_hand/meshes/visual/link_3.0.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/allegro_hand/meshes/visual
+copying assets/robots/hands/allegro_hand/meshes/visual/link_2.0.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/allegro_hand/meshes/visual
+copying assets/robots/hands/allegro_hand/meshes/visual/base_link.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/allegro_hand/meshes/visual
+copying assets/robots/hands/allegro_hand/meshes/visual/link_4.0.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/allegro_hand/meshes/visual
+copying assets/robots/hands/allegro_hand/meshes/visual/link_12.0_right.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/allegro_hand/meshes/visual
+copying assets/robots/hands/allegro_hand/meshes/visual/link_1.0.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/allegro_hand/meshes/visual
+copying assets/robots/hands/allegro_hand/meshes/visual/link_2.0.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/allegro_hand/meshes/visual
+copying assets/robots/hands/allegro_hand/meshes/visual/link_0.0.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/allegro_hand/meshes/visual
+copying assets/robots/hands/allegro_hand/meshes/visual/base_link_left.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/allegro_hand/meshes/visual
+copying assets/robots/hands/allegro_hand/meshes/visual/link_4.0.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/allegro_hand/meshes/visual
+copying assets/robots/hands/allegro_hand/meshes/visual/base_link_left.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/allegro_hand/meshes/visual
+copying assets/robots/hands/allegro_hand/meshes/visual/link_0.0.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/allegro_hand/meshes/visual
+copying assets/robots/hands/allegro_hand/meshes/visual/link_15.0.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/allegro_hand/meshes/visual
+copying assets/robots/hands/allegro_hand/meshes/visual/link_12.0_left.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/allegro_hand/meshes/visual
+copying assets/robots/hands/allegro_hand/meshes/visual/base_link.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/allegro_hand/meshes/visual
+copying assets/robots/hands/allegro_hand/meshes/visual/link_13.0.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/allegro_hand/meshes/visual
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/allegro_hand/meshes/collision
+copying assets/robots/hands/allegro_hand/meshes/collision/link_tip.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/allegro_hand/meshes/collision
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/shadow_hand
+copying assets/robots/hands/shadow_hand/shadow_hand_right_glb.urdf -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/shadow_hand
+copying assets/robots/hands/shadow_hand/README.md -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/shadow_hand
+copying assets/robots/hands/shadow_hand/shadow_hand_right.urdf -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/shadow_hand
+copying assets/robots/hands/shadow_hand/shadow_hand_left.urdf -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/shadow_hand
+copying assets/robots/hands/shadow_hand/shadow_hand_left_glb.urdf -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/shadow_hand
+copying assets/robots/hands/shadow_hand/LICENSE -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/shadow_hand
+copying assets/robots/hands/shadow_hand/bimanual.urdf -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/shadow_hand
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/shadow_hand/meshes
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/shadow_hand/meshes/visual
+copying assets/robots/hands/shadow_hand/meshes/visual/th_distal_pst.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/shadow_hand/meshes/visual
+copying assets/robots/hands/shadow_hand/meshes/visual/f_knuckle_E3M5.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/shadow_hand/meshes/visual
+copying assets/robots/hands/shadow_hand/meshes/visual/th_proximal_E3M5.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/shadow_hand/meshes/visual
+copying assets/robots/hands/shadow_hand/meshes/visual/f_middle_E3M5.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/shadow_hand/meshes/visual
+copying assets/robots/hands/shadow_hand/meshes/visual/forearm_E3M5.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/shadow_hand/meshes/visual
+copying assets/robots/hands/shadow_hand/meshes/visual/lf_metacarpal_E3M5.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/shadow_hand/meshes/visual
+copying assets/robots/hands/shadow_hand/meshes/visual/th_middle_E3M5.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/shadow_hand/meshes/visual
+copying assets/robots/hands/shadow_hand/meshes/visual/palm_E3M5.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/shadow_hand/meshes/visual
+copying assets/robots/hands/shadow_hand/meshes/visual/th_middle_E3M5.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/shadow_hand/meshes/visual
+copying assets/robots/hands/shadow_hand/meshes/visual/palm_E3M5_left.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/shadow_hand/meshes/visual
+copying assets/robots/hands/shadow_hand/meshes/visual/th_proximal_E3M5.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/shadow_hand/meshes/visual
+copying assets/robots/hands/shadow_hand/meshes/visual/f_knuckle_E3M5.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/shadow_hand/meshes/visual
+copying assets/robots/hands/shadow_hand/meshes/visual/forearm_E3M5.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/shadow_hand/meshes/visual
+copying assets/robots/hands/shadow_hand/meshes/visual/wrist_E3M5.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/shadow_hand/meshes/visual
+copying assets/robots/hands/shadow_hand/meshes/visual/f_proximal_E3M5.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/shadow_hand/meshes/visual
+copying assets/robots/hands/shadow_hand/meshes/visual/th_distal_pst.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/shadow_hand/meshes/visual
+copying assets/robots/hands/shadow_hand/meshes/visual/f_proximal_E3M5.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/shadow_hand/meshes/visual
+copying assets/robots/hands/shadow_hand/meshes/visual/wrist_E3M5.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/shadow_hand/meshes/visual
+copying assets/robots/hands/shadow_hand/meshes/visual/f_distal_pst.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/shadow_hand/meshes/visual
+copying assets/robots/hands/shadow_hand/meshes/visual/f_proximal_E3M5.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/shadow_hand/meshes/visual
+copying assets/robots/hands/shadow_hand/meshes/visual/f_distal_pst.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/shadow_hand/meshes/visual
+copying assets/robots/hands/shadow_hand/meshes/visual/th_middle_E3M5.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/shadow_hand/meshes/visual
+copying assets/robots/hands/shadow_hand/meshes/visual/forearm_E3M5.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/shadow_hand/meshes/visual
+copying assets/robots/hands/shadow_hand/meshes/visual/palm_E3M5_left.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/shadow_hand/meshes/visual
+copying assets/robots/hands/shadow_hand/meshes/visual/wrist_E3M5.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/shadow_hand/meshes/visual
+copying assets/robots/hands/shadow_hand/meshes/visual/lf_metacarpal_E3M5_left.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/shadow_hand/meshes/visual
+copying assets/robots/hands/shadow_hand/meshes/visual/lf_metacarpal_E3M5_left.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/shadow_hand/meshes/visual
+copying assets/robots/hands/shadow_hand/meshes/visual/palm_E3M5.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/shadow_hand/meshes/visual
+copying assets/robots/hands/shadow_hand/meshes/visual/f_middle_E3M5.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/shadow_hand/meshes/visual
+copying assets/robots/hands/shadow_hand/meshes/visual/th_distal_pst.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/shadow_hand/meshes/visual
+copying assets/robots/hands/shadow_hand/meshes/visual/f_knuckle_E3M5.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/shadow_hand/meshes/visual
+copying assets/robots/hands/shadow_hand/meshes/visual/lf_metacarpal_E3M5.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/shadow_hand/meshes/visual
+copying assets/robots/hands/shadow_hand/meshes/visual/palm_E3M5_left.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/shadow_hand/meshes/visual
+copying assets/robots/hands/shadow_hand/meshes/visual/palm_E3M5.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/shadow_hand/meshes/visual
+copying assets/robots/hands/shadow_hand/meshes/visual/lf_metacarpal_E3M5.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/shadow_hand/meshes/visual
+copying assets/robots/hands/shadow_hand/meshes/visual/f_middle_E3M5.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/shadow_hand/meshes/visual
+copying assets/robots/hands/shadow_hand/meshes/visual/f_distal_pst.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/shadow_hand/meshes/visual
+copying assets/robots/hands/shadow_hand/meshes/visual/lf_metacarpal_E3M5_left.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/shadow_hand/meshes/visual
+copying assets/robots/hands/shadow_hand/meshes/visual/th_proximal_E3M5.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/shadow_hand/meshes/visual
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/shadow_hand/meshes/collision
+copying assets/robots/hands/shadow_hand/meshes/collision/th_proximal_E3M5.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/shadow_hand/meshes/collision
+copying assets/robots/hands/shadow_hand/meshes/collision/th_middle_E3M5.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/shadow_hand/meshes/collision
+copying assets/robots/hands/shadow_hand/meshes/collision/forearm_E3M5.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/shadow_hand/meshes/collision
+copying assets/robots/hands/shadow_hand/meshes/collision/f_knuckle_E3M5.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/shadow_hand/meshes/collision
+copying assets/robots/hands/shadow_hand/meshes/collision/f_distal_pst.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/shadow_hand/meshes/collision
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/barrett_hand
+copying assets/robots/hands/barrett_hand/bhand_model.urdf -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/barrett_hand
+copying assets/robots/hands/barrett_hand/bhand_model_glb.urdf -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/barrett_hand
+copying assets/robots/hands/barrett_hand/LICENSE -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/barrett_hand
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/barrett_hand/meshes
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/barrett_hand/meshes/visual
+copying assets/robots/hands/barrett_hand/meshes/visual/med_link.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/barrett_hand/meshes/visual
+copying assets/robots/hands/barrett_hand/meshes/visual/dist_link.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/barrett_hand/meshes/visual
+copying assets/robots/hands/barrett_hand/meshes/visual/dist_link.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/barrett_hand/meshes/visual
+copying assets/robots/hands/barrett_hand/meshes/visual/base_link.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/barrett_hand/meshes/visual
+copying assets/robots/hands/barrett_hand/meshes/visual/prox_link.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/barrett_hand/meshes/visual
+copying assets/robots/hands/barrett_hand/meshes/visual/base_link.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/barrett_hand/meshes/visual
+copying assets/robots/hands/barrett_hand/meshes/visual/prox_link.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/barrett_hand/meshes/visual
+copying assets/robots/hands/barrett_hand/meshes/visual/dist_link.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/barrett_hand/meshes/visual
+copying assets/robots/hands/barrett_hand/meshes/visual/med_link.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/barrett_hand/meshes/visual
+copying assets/robots/hands/barrett_hand/meshes/visual/prox_link.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/barrett_hand/meshes/visual
+copying assets/robots/hands/barrett_hand/meshes/visual/med_link.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/barrett_hand/meshes/visual
+copying assets/robots/hands/barrett_hand/meshes/visual/base_link.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/barrett_hand/meshes/visual
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/barrett_hand/meshes/collision
+copying assets/robots/hands/barrett_hand/meshes/collision/prox_link_cylinder.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/barrett_hand/meshes/collision
+copying assets/robots/hands/barrett_hand/meshes/collision/base_link_cylinder.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/barrett_hand/meshes/collision
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/dclaw_gripper
+copying assets/robots/hands/dclaw_gripper/dclaw_gripper_glb.urdf -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/dclaw_gripper
+copying assets/robots/hands/dclaw_gripper/dclaw_gripper.urdf -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/dclaw_gripper
+copying assets/robots/hands/dclaw_gripper/LICENSE -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/dclaw_gripper
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/dclaw_gripper/meshes
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/dclaw_gripper/meshes/visual
+copying assets/robots/hands/dclaw_gripper/meshes/visual/link_3.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/dclaw_gripper/meshes/visual
+copying assets/robots/hands/dclaw_gripper/meshes/visual/base_link.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/dclaw_gripper/meshes/visual
+copying assets/robots/hands/dclaw_gripper/meshes/visual/link_2.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/dclaw_gripper/meshes/visual
+copying assets/robots/hands/dclaw_gripper/meshes/visual/link_3.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/dclaw_gripper/meshes/visual
+copying assets/robots/hands/dclaw_gripper/meshes/visual/link_2.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/dclaw_gripper/meshes/visual
+copying assets/robots/hands/dclaw_gripper/meshes/visual/base_link.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/dclaw_gripper/meshes/visual
+copying assets/robots/hands/dclaw_gripper/meshes/visual/base_link.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/dclaw_gripper/meshes/visual
+copying assets/robots/hands/dclaw_gripper/meshes/visual/link_2.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/dclaw_gripper/meshes/visual
+copying assets/robots/hands/dclaw_gripper/meshes/visual/link_1.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/dclaw_gripper/meshes/visual
+copying assets/robots/hands/dclaw_gripper/meshes/visual/link_1.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/dclaw_gripper/meshes/visual
+copying assets/robots/hands/dclaw_gripper/meshes/visual/link_1.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/dclaw_gripper/meshes/visual
+copying assets/robots/hands/dclaw_gripper/meshes/visual/link_3.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/dclaw_gripper/meshes/visual
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/dclaw_gripper/meshes/collision
+copying assets/robots/hands/dclaw_gripper/meshes/collision/finger_tip.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/dclaw_gripper/meshes/collision
+copying assets/robots/hands/dclaw_gripper/meshes/collision/base_link_cylinder.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/dclaw_gripper/meshes/collision
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/leap_hand
+copying assets/robots/hands/leap_hand/leap_hand_right.urdf -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/leap_hand
+copying assets/robots/hands/leap_hand/LICENSE.txt -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/leap_hand
+copying assets/robots/hands/leap_hand/leap_hand_left.urdf -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/leap_hand
+copying assets/robots/hands/leap_hand/leap_hand_right_glb.urdf -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/leap_hand
+copying assets/robots/hands/leap_hand/leap_hand_left_glb.urdf -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/leap_hand
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/leap_hand/meshes
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/leap_hand/meshes/visual
+copying assets/robots/hands/leap_hand/meshes/visual/palm_lower.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/leap_hand/meshes/visual
+copying assets/robots/hands/leap_hand/meshes/visual/dip.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/leap_hand/meshes/visual
+copying assets/robots/hands/leap_hand/meshes/visual/thumb_fingertip.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/leap_hand/meshes/visual
+copying assets/robots/hands/leap_hand/meshes/visual/thumb_pip.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/leap_hand/meshes/visual
+copying assets/robots/hands/leap_hand/meshes/visual/pip_left.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/leap_hand/meshes/visual
+copying assets/robots/hands/leap_hand/meshes/visual/thumb_fingertip.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/leap_hand/meshes/visual
+copying assets/robots/hands/leap_hand/meshes/visual/mcp_joint.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/leap_hand/meshes/visual
+copying assets/robots/hands/leap_hand/meshes/visual/thumb_dip.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/leap_hand/meshes/visual
+copying assets/robots/hands/leap_hand/meshes/visual/pip.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/leap_hand/meshes/visual
+copying assets/robots/hands/leap_hand/meshes/visual/pip_left.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/leap_hand/meshes/visual
+copying assets/robots/hands/leap_hand/meshes/visual/palm_lower_left.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/leap_hand/meshes/visual
+copying assets/robots/hands/leap_hand/meshes/visual/dip.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/leap_hand/meshes/visual
+copying assets/robots/hands/leap_hand/meshes/visual/fingertip.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/leap_hand/meshes/visual
+copying assets/robots/hands/leap_hand/meshes/visual/thumb_dip.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/leap_hand/meshes/visual
+copying assets/robots/hands/leap_hand/meshes/visual/pip.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/leap_hand/meshes/visual
+copying assets/robots/hands/leap_hand/meshes/visual/thumb_dip.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/leap_hand/meshes/visual
+copying assets/robots/hands/leap_hand/meshes/visual/palm_lower_left.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/leap_hand/meshes/visual
+copying assets/robots/hands/leap_hand/meshes/visual/thumb_fingertip.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/leap_hand/meshes/visual
+copying assets/robots/hands/leap_hand/meshes/visual/fingertip.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/leap_hand/meshes/visual
+copying assets/robots/hands/leap_hand/meshes/visual/mcp_joint.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/leap_hand/meshes/visual
+copying assets/robots/hands/leap_hand/meshes/visual/dip.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/leap_hand/meshes/visual
+copying assets/robots/hands/leap_hand/meshes/visual/palm_lower_left.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/leap_hand/meshes/visual
+copying assets/robots/hands/leap_hand/meshes/visual/mcp_joint.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/leap_hand/meshes/visual
+copying assets/robots/hands/leap_hand/meshes/visual/pip_left.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/leap_hand/meshes/visual
+copying assets/robots/hands/leap_hand/meshes/visual/thumb_pip.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/leap_hand/meshes/visual
+copying assets/robots/hands/leap_hand/meshes/visual/pip.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/leap_hand/meshes/visual
+copying assets/robots/hands/leap_hand/meshes/visual/palm_lower.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/leap_hand/meshes/visual
+copying assets/robots/hands/leap_hand/meshes/visual/palm_lower.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/leap_hand/meshes/visual
+copying assets/robots/hands/leap_hand/meshes/visual/fingertip.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/leap_hand/meshes/visual
+copying assets/robots/hands/leap_hand/meshes/visual/thumb_pip.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/leap_hand/meshes/visual
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/leap_hand/meshes/collision
+copying assets/robots/hands/leap_hand/meshes/collision/white_tip.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/leap_hand/meshes/collision
+copying assets/robots/hands/leap_hand/meshes/collision/white_tip_thumb.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/leap_hand/meshes/collision
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/ability_hand
+copying assets/robots/hands/ability_hand/ability_hand_left_glb.urdf -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/ability_hand
+copying assets/robots/hands/ability_hand/ability_hand_right.urdf -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/ability_hand
+copying assets/robots/hands/ability_hand/ability_hand_left.urdf -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/ability_hand
+copying assets/robots/hands/ability_hand/LICENSE.txt -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/ability_hand
+copying assets/robots/hands/ability_hand/ability_hand_right_glb.urdf -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/ability_hand
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/ability_hand/meshes
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/ability_hand/meshes/visual
+copying assets/robots/hands/ability_hand/meshes/visual/FB_palm_ref.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/ability_hand/meshes/visual
+copying assets/robots/hands/ability_hand/meshes/visual/idx-F2.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/ability_hand/meshes/visual
+copying assets/robots/hands/ability_hand/meshes/visual/thumb-F1-MIR.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/ability_hand/meshes/visual
+copying assets/robots/hands/ability_hand/meshes/visual/FB_palm_ref_MIR.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/ability_hand/meshes/visual
+copying assets/robots/hands/ability_hand/meshes/visual/idx-F1.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/ability_hand/meshes/visual
+copying assets/robots/hands/ability_hand/meshes/visual/thumb-F1-MIR.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/ability_hand/meshes/visual
+copying assets/robots/hands/ability_hand/meshes/visual/thumb-F1.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/ability_hand/meshes/visual
+copying assets/robots/hands/ability_hand/meshes/visual/thumb-F2.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/ability_hand/meshes/visual
+copying assets/robots/hands/ability_hand/meshes/visual/thumb-F1.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/ability_hand/meshes/visual
+copying assets/robots/hands/ability_hand/meshes/visual/idx-F1.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/ability_hand/meshes/visual
+copying assets/robots/hands/ability_hand/meshes/visual/idx-F2.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/ability_hand/meshes/visual
+copying assets/robots/hands/ability_hand/meshes/visual/idx-F2.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/ability_hand/meshes/visual
+copying assets/robots/hands/ability_hand/meshes/visual/idx-F1.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/ability_hand/meshes/visual
+copying assets/robots/hands/ability_hand/meshes/visual/FB_palm_ref.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/ability_hand/meshes/visual
+copying assets/robots/hands/ability_hand/meshes/visual/FB_palm_ref_MIR.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/ability_hand/meshes/visual
+copying assets/robots/hands/ability_hand/meshes/visual/wristmesh.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/ability_hand/meshes/visual
+copying assets/robots/hands/ability_hand/meshes/visual/thumb-F2.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/ability_hand/meshes/visual
+copying assets/robots/hands/ability_hand/meshes/visual/wristmesh.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/ability_hand/meshes/visual
+copying assets/robots/hands/ability_hand/meshes/visual/thumb-F1-MIR.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/ability_hand/meshes/visual
+copying assets/robots/hands/ability_hand/meshes/visual/FB_palm_ref_MIR.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/ability_hand/meshes/visual
+copying assets/robots/hands/ability_hand/meshes/visual/thumb-F1.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/ability_hand/meshes/visual
+copying assets/robots/hands/ability_hand/meshes/visual/thumb-F2.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/ability_hand/meshes/visual
+copying assets/robots/hands/ability_hand/meshes/visual/FB_palm_ref.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/ability_hand/meshes/visual
+copying assets/robots/hands/ability_hand/meshes/visual/wristmesh.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/ability_hand/meshes/visual
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/ability_hand/meshes/collision
+copying assets/robots/hands/ability_hand/meshes/collision/thumb-F1-MIR_C.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/ability_hand/meshes/collision
+copying assets/robots/hands/ability_hand/meshes/collision/FB_palm_ref_MIR.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/ability_hand/meshes/collision
+copying assets/robots/hands/ability_hand/meshes/collision/thumb-F2_C.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/ability_hand/meshes/collision
+copying assets/robots/hands/ability_hand/meshes/collision/wristmesh_C.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/ability_hand/meshes/collision
+copying assets/robots/hands/ability_hand/meshes/collision/FB_palm_ref.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/ability_hand/meshes/collision
+copying assets/robots/hands/ability_hand/meshes/collision/thumb-F1_C.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/ability_hand/meshes/collision
+copying assets/robots/hands/ability_hand/meshes/collision/idx-F2_C.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/ability_hand/meshes/collision
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/schunk_hand
+copying assets/robots/hands/schunk_hand/schunk_svh_hand_left.urdf -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/schunk_hand
+copying assets/robots/hands/schunk_hand/schunk_svh_hand_left_glb.urdf -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/schunk_hand
+copying assets/robots/hands/schunk_hand/schunk_svh_hand_right_glb.urdf -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/schunk_hand
+copying assets/robots/hands/schunk_hand/schunk_svh_hand_right.urdf -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/schunk_hand
+copying assets/robots/hands/schunk_hand/LICENSE -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/schunk_hand
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/schunk_hand/meshes
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/schunk_hand/meshes/visual
+copying assets/robots/hands/schunk_hand/meshes/visual/f31.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/schunk_hand/meshes/visual
+copying assets/robots/hands/schunk_hand/meshes/visual/finger_tip.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/schunk_hand/meshes/visual
+copying assets/robots/hands/schunk_hand/meshes/visual/palm.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/schunk_hand/meshes/visual
+copying assets/robots/hands/schunk_hand/meshes/visual/d10_left.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/schunk_hand/meshes/visual
+copying assets/robots/hands/schunk_hand/meshes/visual/f22_f32.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/schunk_hand/meshes/visual
+copying assets/robots/hands/schunk_hand/meshes/visual/d11_left.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/schunk_hand/meshes/visual
+copying assets/robots/hands/schunk_hand/meshes/visual/f42.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/schunk_hand/meshes/visual
+copying assets/robots/hands/schunk_hand/meshes/visual/f41.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/schunk_hand/meshes/visual
+copying assets/robots/hands/schunk_hand/meshes/visual/h11.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/schunk_hand/meshes/visual
+copying assets/robots/hands/schunk_hand/meshes/visual/f30_f40.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/schunk_hand/meshes/visual
+copying assets/robots/hands/schunk_hand/meshes/visual/f10_f20.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/schunk_hand/meshes/visual
+copying assets/robots/hands/schunk_hand/meshes/visual/h10.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/schunk_hand/meshes/visual
+copying assets/robots/hands/schunk_hand/meshes/visual/d13_left.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/schunk_hand/meshes/visual
+copying assets/robots/hands/schunk_hand/meshes/visual/f30_f40.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/schunk_hand/meshes/visual
+copying assets/robots/hands/schunk_hand/meshes/visual/f31.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/schunk_hand/meshes/visual
+copying assets/robots/hands/schunk_hand/meshes/visual/f21.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/schunk_hand/meshes/visual
+copying assets/robots/hands/schunk_hand/meshes/visual/d13_left.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/schunk_hand/meshes/visual
+copying assets/robots/hands/schunk_hand/meshes/visual/d12.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/schunk_hand/meshes/visual
+copying assets/robots/hands/schunk_hand/meshes/visual/d11_left.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/schunk_hand/meshes/visual
+copying assets/robots/hands/schunk_hand/meshes/visual/d10.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/schunk_hand/meshes/visual
+copying assets/robots/hands/schunk_hand/meshes/visual/d10.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/schunk_hand/meshes/visual
+copying assets/robots/hands/schunk_hand/meshes/visual/f10_f20.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/schunk_hand/meshes/visual
+copying assets/robots/hands/schunk_hand/meshes/visual/base10.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/schunk_hand/meshes/visual
+copying assets/robots/hands/schunk_hand/meshes/visual/finger_tip.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/schunk_hand/meshes/visual
+copying assets/robots/hands/schunk_hand/meshes/visual/d10_left.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/schunk_hand/meshes/visual
+copying assets/robots/hands/schunk_hand/meshes/visual/d13.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/schunk_hand/meshes/visual
+copying assets/robots/hands/schunk_hand/meshes/visual/d13.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/schunk_hand/meshes/visual
+copying assets/robots/hands/schunk_hand/meshes/visual/f11.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/schunk_hand/meshes/visual
+copying assets/robots/hands/schunk_hand/meshes/visual/h11_left.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/schunk_hand/meshes/visual
+copying assets/robots/hands/schunk_hand/meshes/visual/d11.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/schunk_hand/meshes/visual
+copying assets/robots/hands/schunk_hand/meshes/visual/f12.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/schunk_hand/meshes/visual
+copying assets/robots/hands/schunk_hand/meshes/visual/h10_left.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/schunk_hand/meshes/visual
+copying assets/robots/hands/schunk_hand/meshes/visual/f21.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/schunk_hand/meshes/visual
+copying assets/robots/hands/schunk_hand/meshes/visual/f22_f32.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/schunk_hand/meshes/visual
+copying assets/robots/hands/schunk_hand/meshes/visual/d11.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/schunk_hand/meshes/visual
+copying assets/robots/hands/schunk_hand/meshes/visual/base10.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/schunk_hand/meshes/visual
+copying assets/robots/hands/schunk_hand/meshes/visual/d12_left.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/schunk_hand/meshes/visual
+copying assets/robots/hands/schunk_hand/meshes/visual/h10.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/schunk_hand/meshes/visual
+copying assets/robots/hands/schunk_hand/meshes/visual/f12.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/schunk_hand/meshes/visual
+copying assets/robots/hands/schunk_hand/meshes/visual/f11.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/schunk_hand/meshes/visual
+copying assets/robots/hands/schunk_hand/meshes/visual/f41.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/schunk_hand/meshes/visual
+copying assets/robots/hands/schunk_hand/meshes/visual/h10_left.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/schunk_hand/meshes/visual
+copying assets/robots/hands/schunk_hand/meshes/visual/finger.mtl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/schunk_hand/meshes/visual
+copying assets/robots/hands/schunk_hand/meshes/visual/d12_left.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/schunk_hand/meshes/visual
+copying assets/robots/hands/schunk_hand/meshes/visual/d12.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/schunk_hand/meshes/visual
+copying assets/robots/hands/schunk_hand/meshes/visual/h11.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/schunk_hand/meshes/visual
+copying assets/robots/hands/schunk_hand/meshes/visual/f42.glb -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/schunk_hand/meshes/visual
+copying assets/robots/hands/schunk_hand/meshes/visual/h11_left.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/schunk_hand/meshes/visual
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/schunk_hand/meshes/collision
+copying assets/robots/hands/schunk_hand/meshes/collision/f31.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/schunk_hand/meshes/collision
+copying assets/robots/hands/schunk_hand/meshes/collision/finger_tip.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/schunk_hand/meshes/collision
+copying assets/robots/hands/schunk_hand/meshes/collision/f22_f32.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/schunk_hand/meshes/collision
+copying assets/robots/hands/schunk_hand/meshes/collision/d11_left.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/schunk_hand/meshes/collision
+copying assets/robots/hands/schunk_hand/meshes/collision/f42.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/schunk_hand/meshes/collision
+copying assets/robots/hands/schunk_hand/meshes/collision/f41.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/schunk_hand/meshes/collision
+copying assets/robots/hands/schunk_hand/meshes/collision/d13_left.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/schunk_hand/meshes/collision
+copying assets/robots/hands/schunk_hand/meshes/collision/d12.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/schunk_hand/meshes/collision
+copying assets/robots/hands/schunk_hand/meshes/collision/d13.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/schunk_hand/meshes/collision
+copying assets/robots/hands/schunk_hand/meshes/collision/f11.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/schunk_hand/meshes/collision
+copying assets/robots/hands/schunk_hand/meshes/collision/f21.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/schunk_hand/meshes/collision
+copying assets/robots/hands/schunk_hand/meshes/collision/d11.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/schunk_hand/meshes/collision
+copying assets/robots/hands/schunk_hand/meshes/collision/d12_left.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/schunk_hand/meshes/collision
+copying assets/robots/hands/schunk_hand/meshes/collision/f12.obj -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/share/dex_retargeting/assets/robots/hands/schunk_hand/meshes/collision
+running install_egg_info
+Copying ../../build/dex_retargeting/dex_retargeting.egg-info to /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/lib/python3.10/site-packages/dex_retargeting-0.0.0-py3.10.egg-info
+running install_scripts
+Installing hand_pose_publisher script to /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/lib/dex_retargeting
+Installing hand_viewer script to /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/lib/dex_retargeting
+Installing leap_realsense script to /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/lib/dex_retargeting
+Installing leap_xela_realsense script to /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/dex_retargeting/lib/dex_retargeting
+writing list of installed files to '/workspace/LeapXELA_Hardware_ws/ros_ws/src/build/dex_retargeting/install.log'

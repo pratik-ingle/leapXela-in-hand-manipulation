@@ -1,0 +1,13 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from xela_server_ros2/msg/SensStream.msg
+// generated code does not contain a copyright notice
+
+#include "xela_server_ros2/msg/SensorFull.idl"
+
+module xela_server_ros2 {
+  module msg {
+    struct SensStream {
+      sequence<xela_server_ros2::msg::SensorFull> sensors;
+    };
+  };
+};

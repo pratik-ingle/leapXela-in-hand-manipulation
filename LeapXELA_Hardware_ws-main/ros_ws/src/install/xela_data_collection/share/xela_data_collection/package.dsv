@@ -1,0 +1,6 @@
+source;share/xela_data_collection/hook/pythonpath.ps1
+source;share/xela_data_collection/hook/pythonpath.dsv
+source;share/xela_data_collection/hook/pythonpath.sh
+source;share/xela_data_collection/hook/ament_prefix_path.ps1
+source;share/xela_data_collection/hook/ament_prefix_path.dsv
+source;share/xela_data_collection/hook/ament_prefix_path.sh

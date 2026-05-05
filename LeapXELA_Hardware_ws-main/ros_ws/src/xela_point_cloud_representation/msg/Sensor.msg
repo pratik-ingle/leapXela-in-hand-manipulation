@@ -1,0 +1,2 @@
+string name
+Texel[] texels

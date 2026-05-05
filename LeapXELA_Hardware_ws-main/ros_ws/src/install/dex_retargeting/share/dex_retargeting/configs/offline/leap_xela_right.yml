@@ -1,0 +1,19 @@
+retargeting:
+  type: position
+  urdf_path: leap_xela/leap_xela_right.urdf
+
+  target_joint_names: null
+  target_link_names:
+    - "thumb_tip_head"
+    - "index_tip_head"
+    - "middle_tip_head"
+    - "ring_tip_head"
+    - "thp1_unified"
+    - "p2_unified_3"
+    - "p2_unified_2"
+    - "p2_unified"
+
+  target_link_human_indices: [4, 8, 12, 16, 2, 6, 10, 14]
+  add_dummy_free_joint: True
+
+  low_pass_alpha: 1

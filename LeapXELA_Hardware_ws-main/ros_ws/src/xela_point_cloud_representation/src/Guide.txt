@@ -1,0 +1,2 @@
+Build for mujoco (make sure mujoco is installed):
+ros2 run xela_point_cloud_representation process_hand_sensors_into_pointcloud --ros-args -p step_hz:=500 -p render_hz:=60

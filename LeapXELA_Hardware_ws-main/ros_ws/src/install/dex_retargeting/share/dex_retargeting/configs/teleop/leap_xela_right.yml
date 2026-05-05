@@ -1,0 +1,19 @@
+retargeting:
+  type: vector
+  urdf_path: leap_xela/leap_xela_right.urdf
+
+  target_origin_link_names:
+    - "base"
+    - "base"
+    - "base"
+    - "base"
+  target_task_link_names:
+    - "thumb_tip_head"
+    - "index_tip_head"
+    - "middle_tip_head"
+    - "ring_tip_head"
+  scaling_factor: 1.76
+
+  target_link_human_indices: [[0, 0, 0, 0], [4, 8, 12, 16]]
+
+  low_pass_alpha: 0.2

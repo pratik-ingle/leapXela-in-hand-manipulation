@@ -1,0 +1,3 @@
+[submodule "sim/dex-urdf"]
+	path = sim/dex-urdf
+	url = https://github.com/dexsuite/dex-urdf

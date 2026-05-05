@@ -1,0 +1,385 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+-- Found FastRTPS: /opt/ros/humble/include  
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Found rclpy: 3.3.21 (/opt/ros/humble/share/rclpy/cmake)
+-- Found geometry_msgs: 4.9.1 (/opt/ros/humble/share/geometry_msgs/cmake)
+-- Found rosidl_default_generators: 1.2.1 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+-- Found PythonExtra: .so  
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /workspace/LeapXELA_Hardware_ws/ros_ws/src/build/xela_server_ros2
+[  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[  3%] [34m[1mGenerating Rust code for ROS interfaces[0m
+[  4%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[  4%] Built target ament_cmake_python_copy_xela_server_ros2
+running egg_info
+creating xela_server_ros2.egg-info
+writing xela_server_ros2.egg-info/PKG-INFO
+writing dependency_links to xela_server_ros2.egg-info/dependency_links.txt
+writing top-level names to xela_server_ros2.egg-info/top_level.txt
+writing manifest file 'xela_server_ros2.egg-info/SOURCES.txt'
+reading manifest file 'xela_server_ros2.egg-info/SOURCES.txt'
+writing manifest file 'xela_server_ros2.egg-info/SOURCES.txt'
+[  4%] Built target ament_cmake_python_build_xela_server_ros2_egg
+[  4%] Built target xela_server_ros2__rs
+[  4%] Built target xela_server_ros2__cpp
+[  6%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[  7%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[  9%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[ 10%] [32mBuilding C object CMakeFiles/xela_server_ros2__rosidl_generator_c.dir/rosidl_generator_c/xela_server_ros2/msg/detail/forces__functions.c.o[0m
+[ 12%] [32mBuilding C object CMakeFiles/xela_server_ros2__rosidl_generator_c.dir/rosidl_generator_c/xela_server_ros2/srv/detail/xela_sensor_stream__functions.c.o[0m
+[ 14%] [32mBuilding C object CMakeFiles/xela_server_ros2__rosidl_generator_c.dir/rosidl_generator_c/xela_server_ros2/msg/detail/sensor_full__functions.c.o[0m
+[ 15%] [32mBuilding C object CMakeFiles/xela_server_ros2__rosidl_generator_c.dir/rosidl_generator_c/xela_server_ros2/msg/detail/taxel__functions.c.o[0m
+[ 17%] [32mBuilding C object CMakeFiles/xela_server_ros2__rosidl_generator_c.dir/rosidl_generator_c/xela_server_ros2/msg/detail/sens_stream__functions.c.o[0m
+[ 18%] [32m[1mLinking C shared library libxela_server_ros2__rosidl_generator_c.so[0m
+[ 18%] Built target xela_server_ros2__rosidl_generator_c
+[ 20%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[ 21%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[ 23%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/xela_server_ros2__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/xela_server_ros2/msg/sensor_full__type_support.cpp.o[0m
+[ 26%] [32mBuilding CXX object CMakeFiles/xela_server_ros2__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/xela_server_ros2/msg/sens_stream__type_support.cpp.o[0m
+[ 28%] [32mBuilding CXX object CMakeFiles/xela_server_ros2__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/xela_server_ros2/msg/taxel__type_support.cpp.o[0m
+[ 29%] [32mBuilding CXX object CMakeFiles/xela_server_ros2__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/xela_server_ros2/srv/xela_sensor_stream__type_support.cpp.o[0m
+[ 31%] [32mBuilding CXX object CMakeFiles/xela_server_ros2__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/xela_server_ros2/msg/forces__type_support.cpp.o[0m
+[ 32%] [32mBuilding CXX object CMakeFiles/xela_server_ros2__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/xela_server_ros2/msg/detail/sensor_full__type_support.cpp.o[0m
+[ 34%] [32mBuilding CXX object CMakeFiles/xela_server_ros2__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/xela_server_ros2/msg/detail/sens_stream__type_support.cpp.o[0m
+[ 35%] [32mBuilding CXX object CMakeFiles/xela_server_ros2__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/xela_server_ros2/msg/detail/taxel__type_support.cpp.o[0m
+[ 37%] [32mBuilding CXX object CMakeFiles/xela_server_ros2__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/xela_server_ros2/srv/detail/xela_sensor_stream__type_support.cpp.o[0m
+[ 39%] [32mBuilding CXX object CMakeFiles/xela_server_ros2__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/xela_server_ros2/msg/detail/forces__type_support.cpp.o[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/xela_server_ros2__rosidl_typesupport_c.dir/rosidl_typesupport_c/xela_server_ros2/msg/sens_stream__type_support.cpp.o[0m
+[ 42%] [32mBuilding CXX object CMakeFiles/xela_server_ros2__rosidl_typesupport_c.dir/rosidl_typesupport_c/xela_server_ros2/msg/sensor_full__type_support.cpp.o[0m
+[ 43%] [32mBuilding CXX object CMakeFiles/xela_server_ros2__rosidl_typesupport_c.dir/rosidl_typesupport_c/xela_server_ros2/msg/taxel__type_support.cpp.o[0m
+[ 45%] [32mBuilding CXX object CMakeFiles/xela_server_ros2__rosidl_typesupport_c.dir/rosidl_typesupport_c/xela_server_ros2/msg/forces__type_support.cpp.o[0m
+[ 46%] [32mBuilding CXX object CMakeFiles/xela_server_ros2__rosidl_typesupport_c.dir/rosidl_typesupport_c/xela_server_ros2/srv/xela_sensor_stream__type_support.cpp.o[0m
+[ 48%] [32m[1mLinking CXX shared library libxela_server_ros2__rosidl_typesupport_c.so[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/xela_server_ros2__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/xela_server_ros2/msg/detail/dds_fastrtps/sensor_full__type_support.cpp.o[0m
+[ 51%] [32mBuilding CXX object CMakeFiles/xela_server_ros2__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/xela_server_ros2/msg/detail/dds_fastrtps/sens_stream__type_support.cpp.o[0m
+[ 53%] [32mBuilding CXX object CMakeFiles/xela_server_ros2__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/xela_server_ros2/msg/detail/dds_fastrtps/taxel__type_support.cpp.o[0m
+[ 54%] [32mBuilding CXX object CMakeFiles/xela_server_ros2__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/xela_server_ros2/msg/detail/dds_fastrtps/forces__type_support.cpp.o[0m
+[ 54%] Built target xela_server_ros2__rosidl_typesupport_c
+[ 56%] [32mBuilding CXX object CMakeFiles/xela_server_ros2__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/xela_server_ros2/srv/detail/dds_fastrtps/xela_sensor_stream__type_support.cpp.o[0m
+[ 57%] [32mBuilding C object CMakeFiles/xela_server_ros2__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/xela_server_ros2/msg/detail/sensor_full__type_support.c.o[0m
+[ 59%] [32mBuilding C object CMakeFiles/xela_server_ros2__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/xela_server_ros2/msg/detail/sens_stream__type_support.c.o[0m
+[ 60%] [32mBuilding CXX object CMakeFiles/xela_server_ros2__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/xela_server_ros2/msg/detail/sensor_full__type_support_c.cpp.o[0m
+[ 62%] [32mBuilding C object CMakeFiles/xela_server_ros2__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/xela_server_ros2/msg/detail/taxel__type_support.c.o[0m
+[ 64%] [32mBuilding C object CMakeFiles/xela_server_ros2__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/xela_server_ros2/msg/detail/forces__type_support.c.o[0m
+[ 65%] [32mBuilding CXX object CMakeFiles/xela_server_ros2__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/xela_server_ros2/msg/detail/sens_stream__type_support_c.cpp.o[0m
+[ 67%] [32mBuilding CXX object CMakeFiles/xela_server_ros2__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/xela_server_ros2/msg/detail/taxel__type_support_c.cpp.o[0m
+[ 68%] [32mBuilding C object CMakeFiles/xela_server_ros2__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/xela_server_ros2/srv/detail/xela_sensor_stream__type_support.c.o[0m
+[ 70%] [32mBuilding CXX object CMakeFiles/xela_server_ros2__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/xela_server_ros2/msg/detail/forces__type_support_c.cpp.o[0m
+[ 71%] [32m[1mLinking C shared library libxela_server_ros2__rosidl_typesupport_introspection_c.so[0m
+[ 71%] Built target xela_server_ros2__rosidl_typesupport_introspection_c
+[ 73%] [32mBuilding CXX object CMakeFiles/xela_server_ros2__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/xela_server_ros2/srv/detail/xela_sensor_stream__type_support_c.cpp.o[0m
+[ 75%] [32m[1mLinking CXX shared library libxela_server_ros2__rosidl_typesupport_cpp.so[0m
+[ 75%] Built target xela_server_ros2__rosidl_typesupport_cpp
+[ 76%] [32m[1mLinking CXX shared library libxela_server_ros2__rosidl_typesupport_fastrtps_cpp.so[0m
+[ 76%] Built target xela_server_ros2__rosidl_typesupport_fastrtps_cpp
+[ 78%] [32m[1mLinking CXX shared library libxela_server_ros2__rosidl_typesupport_introspection_cpp.so[0m
+[ 79%] [32m[1mLinking CXX shared library libxela_server_ros2__rosidl_typesupport_fastrtps_c.so[0m
+[ 79%] Built target xela_server_ros2__rosidl_typesupport_introspection_cpp
+[ 79%] Built target xela_server_ros2__rosidl_typesupport_fastrtps_c
+[ 79%] Built target xela_server_ros2
+[ 81%] [34m[1mGenerating Python code for ROS interfaces[0m
+[ 81%] Built target xela_server_ros2__py
+[ 82%] [32mBuilding C object CMakeFiles/xela_server_ros2__rosidl_generator_py.dir/rosidl_generator_py/xela_server_ros2/msg/_sensor_full_s.c.o[0m
+[ 84%] [32mBuilding C object CMakeFiles/xela_server_ros2__rosidl_generator_py.dir/rosidl_generator_py/xela_server_ros2/msg/_sens_stream_s.c.o[0m
+[ 85%] [32mBuilding C object CMakeFiles/xela_server_ros2__rosidl_generator_py.dir/rosidl_generator_py/xela_server_ros2/msg/_taxel_s.c.o[0m
+[ 87%] [32mBuilding C object CMakeFiles/xela_server_ros2__rosidl_generator_py.dir/rosidl_generator_py/xela_server_ros2/msg/_forces_s.c.o[0m
+[ 89%] [32mBuilding C object CMakeFiles/xela_server_ros2__rosidl_generator_py.dir/rosidl_generator_py/xela_server_ros2/srv/_xela_sensor_stream_s.c.o[0m
+[ 90%] [32m[1mLinking C shared library rosidl_generator_py/xela_server_ros2/libxela_server_ros2__rosidl_generator_py.so[0m
+[ 90%] Built target xela_server_ros2__rosidl_generator_py
+[ 92%] [32mBuilding C object CMakeFiles/xela_server_ros2__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/xela_server_ros2/_xela_server_ros2_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[ 93%] [32mBuilding C object CMakeFiles/xela_server_ros2__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/xela_server_ros2/_xela_server_ros2_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[ 95%] [32mBuilding C object CMakeFiles/xela_server_ros2__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/xela_server_ros2/_xela_server_ros2_s.ep.rosidl_typesupport_c.c.o[0m
+[ 96%] [32m[1mLinking C shared library rosidl_generator_py/xela_server_ros2/xela_server_ros2_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[ 98%] [32m[1mLinking C shared library rosidl_generator_py/xela_server_ros2/xela_server_ros2_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[100%] [32m[1mLinking C shared library rosidl_generator_py/xela_server_ros2/xela_server_ros2_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[100%] Built target xela_server_ros2__rosidl_typesupport_introspection_c__pyext
+[100%] Built target xela_server_ros2__rosidl_typesupport_c__pyext
+[100%] Built target xela_server_ros2__rosidl_typesupport_fastrtps_c__pyext
+-- Install configuration: ""
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/share/ament_index/resource_index/rosidl_interfaces/xela_server_ros2
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/srv
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/srv/detail
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/srv/detail/xela_sensor_stream__struct.h
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/srv/detail/xela_sensor_stream__type_support.h
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/srv/detail/xela_sensor_stream__functions.h
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/srv/detail/xela_sensor_stream__functions.c
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/srv/xela_sensor_stream.h
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/msg
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/msg/detail
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/msg/detail/forces__struct.h
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/msg/detail/taxel__functions.c
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/msg/detail/sens_stream__functions.h
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/msg/detail/forces__functions.h
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/msg/detail/sens_stream__struct.h
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/msg/detail/sensor_full__functions.c
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/msg/detail/sens_stream__type_support.h
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/msg/detail/forces__type_support.h
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/msg/detail/sensor_full__functions.h
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/msg/detail/forces__functions.c
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/msg/detail/taxel__functions.h
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/msg/detail/sens_stream__functions.c
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/msg/detail/sensor_full__type_support.h
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/msg/detail/sensor_full__struct.h
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/msg/detail/taxel__type_support.h
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/msg/detail/taxel__struct.h
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/msg/sens_stream.h
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/msg/sensor_full.h
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/msg/taxel.h
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/msg/rosidl_generator_c__visibility_control.h
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/msg/forces.h
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/share/xela_server_ros2/environment/library_path.sh
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/share/xela_server_ros2/environment/library_path.dsv
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/lib/libxela_server_ros2__rosidl_generator_c.so
+-- Set runtime path of "/workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/lib/libxela_server_ros2__rosidl_generator_c.so" to ""
+-- Up-to-date: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2
+-- Up-to-date: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/srv
+-- Up-to-date: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/srv/detail
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/srv/detail/xela_sensor_stream__rosidl_typesupport_fastrtps_c.h
+-- Up-to-date: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/msg
+-- Up-to-date: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/msg/detail
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/msg/detail/sens_stream__rosidl_typesupport_fastrtps_c.h
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/msg/detail/taxel__rosidl_typesupport_fastrtps_c.h
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/msg/detail/forces__rosidl_typesupport_fastrtps_c.h
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/msg/detail/sensor_full__rosidl_typesupport_fastrtps_c.h
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/lib/libxela_server_ros2__rosidl_typesupport_fastrtps_c.so
+-- Set runtime path of "/workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/lib/libxela_server_ros2__rosidl_typesupport_fastrtps_c.so" to ""
+-- Up-to-date: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2
+-- Up-to-date: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/srv
+-- Up-to-date: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/srv/detail
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/srv/detail/xela_sensor_stream__traits.hpp
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/srv/detail/xela_sensor_stream__struct.hpp
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/srv/detail/xela_sensor_stream__builder.hpp
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/srv/detail/xela_sensor_stream__type_support.hpp
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/srv/xela_sensor_stream.hpp
+-- Up-to-date: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/msg
+-- Up-to-date: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/msg/detail
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/msg/detail/forces__type_support.hpp
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/msg/detail/forces__struct.hpp
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/msg/detail/sensor_full__type_support.hpp
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/msg/detail/taxel__struct.hpp
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/msg/detail/sens_stream__builder.hpp
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/msg/detail/taxel__builder.hpp
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/msg/detail/sens_stream__traits.hpp
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/msg/detail/forces__builder.hpp
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/msg/detail/sensor_full__struct.hpp
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/msg/detail/sensor_full__traits.hpp
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/msg/detail/forces__traits.hpp
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/msg/detail/taxel__traits.hpp
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/msg/detail/sens_stream__struct.hpp
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/msg/detail/taxel__type_support.hpp
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/msg/detail/sens_stream__type_support.hpp
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/msg/detail/sensor_full__builder.hpp
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/msg/forces.hpp
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/msg/sensor_full.hpp
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/msg/rosidl_generator_cpp__visibility_control.hpp
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/msg/taxel.hpp
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/msg/sens_stream.hpp
+-- Up-to-date: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2
+-- Up-to-date: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/srv
+-- Up-to-date: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/srv/detail
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/srv/detail/xela_sensor_stream__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/srv/detail/dds_fastrtps
+-- Up-to-date: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/msg
+-- Up-to-date: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/msg/detail
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/msg/detail/sens_stream__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/msg/detail/sensor_full__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/msg/detail/forces__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/msg/detail/taxel__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/msg/detail/dds_fastrtps
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/lib/libxela_server_ros2__rosidl_typesupport_fastrtps_cpp.so
+-- Set runtime path of "/workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/lib/libxela_server_ros2__rosidl_typesupport_fastrtps_cpp.so" to ""
+-- Up-to-date: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2
+-- Up-to-date: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/srv
+-- Up-to-date: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/srv/detail
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/srv/detail/xela_sensor_stream__type_support.c
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/srv/detail/xela_sensor_stream__rosidl_typesupport_introspection_c.h
+-- Up-to-date: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/msg
+-- Up-to-date: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/msg/detail
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/msg/detail/taxel__rosidl_typesupport_introspection_c.h
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/msg/detail/sensor_full__rosidl_typesupport_introspection_c.h
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/msg/detail/sens_stream__rosidl_typesupport_introspection_c.h
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/msg/detail/forces__type_support.c
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/msg/detail/forces__rosidl_typesupport_introspection_c.h
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/msg/detail/sensor_full__type_support.c
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/msg/detail/sens_stream__type_support.c
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/msg/detail/taxel__type_support.c
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/msg/rosidl_typesupport_introspection_c__visibility_control.h
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/lib/libxela_server_ros2__rosidl_typesupport_introspection_c.so
+-- Set runtime path of "/workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/lib/libxela_server_ros2__rosidl_typesupport_introspection_c.so" to ""
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/lib/libxela_server_ros2__rosidl_typesupport_c.so
+-- Set runtime path of "/workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/lib/libxela_server_ros2__rosidl_typesupport_c.so" to ""
+-- Up-to-date: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2
+-- Up-to-date: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/srv
+-- Up-to-date: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/srv/detail
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/srv/detail/xela_sensor_stream__type_support.cpp
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/srv/detail/xela_sensor_stream__rosidl_typesupport_introspection_cpp.hpp
+-- Up-to-date: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/msg
+-- Up-to-date: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/msg/detail
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/msg/detail/taxel__type_support.cpp
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/msg/detail/sens_stream__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/msg/detail/sensor_full__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/msg/detail/taxel__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/msg/detail/forces__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/msg/detail/sensor_full__type_support.cpp
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/msg/detail/forces__type_support.cpp
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/include/xela_server_ros2/xela_server_ros2/msg/detail/sens_stream__type_support.cpp
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/lib/libxela_server_ros2__rosidl_typesupport_introspection_cpp.so
+-- Set runtime path of "/workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/lib/libxela_server_ros2__rosidl_typesupport_introspection_cpp.so" to ""
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/lib/libxela_server_ros2__rosidl_typesupport_cpp.so
+-- Set runtime path of "/workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/lib/libxela_server_ros2__rosidl_typesupport_cpp.so" to ""
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/share/xela_server_ros2/environment/pythonpath.sh
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/share/xela_server_ros2/environment/pythonpath.dsv
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/local/lib/python3.10/dist-packages/xela_server_ros2-1.5.0-py3.10.egg-info
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/local/lib/python3.10/dist-packages/xela_server_ros2-1.5.0-py3.10.egg-info/dependency_links.txt
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/local/lib/python3.10/dist-packages/xela_server_ros2-1.5.0-py3.10.egg-info/SOURCES.txt
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/local/lib/python3.10/dist-packages/xela_server_ros2-1.5.0-py3.10.egg-info/PKG-INFO
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/local/lib/python3.10/dist-packages/xela_server_ros2-1.5.0-py3.10.egg-info/top_level.txt
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/local/lib/python3.10/dist-packages/xela_server_ros2
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/local/lib/python3.10/dist-packages/xela_server_ros2/__init__.py
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/local/lib/python3.10/dist-packages/xela_server_ros2/_xela_server_ros2_s.ep.rosidl_typesupport_c.c
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/local/lib/python3.10/dist-packages/xela_server_ros2/xela_server_ros2_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/local/lib/python3.10/dist-packages/xela_server_ros2/xela_server_ros2_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/local/lib/python3.10/dist-packages/xela_server_ros2/_xela_server_ros2_s.ep.rosidl_typesupport_introspection_c.c
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/local/lib/python3.10/dist-packages/xela_server_ros2/libxela_server_ros2__rosidl_generator_py.so
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/local/lib/python3.10/dist-packages/xela_server_ros2/_xela_server_ros2_s.ep.rosidl_typesupport_fastrtps_c.c
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/local/lib/python3.10/dist-packages/xela_server_ros2/srv
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/local/lib/python3.10/dist-packages/xela_server_ros2/srv/__init__.py
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/local/lib/python3.10/dist-packages/xela_server_ros2/srv/_xela_sensor_stream_s.c
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/local/lib/python3.10/dist-packages/xela_server_ros2/srv/_xela_sensor_stream.py
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/local/lib/python3.10/dist-packages/xela_server_ros2/xela_server_ros2_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/local/lib/python3.10/dist-packages/xela_server_ros2/msg
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/local/lib/python3.10/dist-packages/xela_server_ros2/msg/_taxel_s.c
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/local/lib/python3.10/dist-packages/xela_server_ros2/msg/__init__.py
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/local/lib/python3.10/dist-packages/xela_server_ros2/msg/_sens_stream.py
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/local/lib/python3.10/dist-packages/xela_server_ros2/msg/_forces.py
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/local/lib/python3.10/dist-packages/xela_server_ros2/msg/_sensor_full_s.c
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/local/lib/python3.10/dist-packages/xela_server_ros2/msg/_sens_stream_s.c
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/local/lib/python3.10/dist-packages/xela_server_ros2/msg/_sensor_full.py
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/local/lib/python3.10/dist-packages/xela_server_ros2/msg/_forces_s.c
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/local/lib/python3.10/dist-packages/xela_server_ros2/msg/_taxel.py
+Listing '/workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/local/lib/python3.10/dist-packages/xela_server_ros2'...
+Compiling '/workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/local/lib/python3.10/dist-packages/xela_server_ros2/__init__.py'...
+Listing '/workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/local/lib/python3.10/dist-packages/xela_server_ros2/msg'...
+Compiling '/workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/local/lib/python3.10/dist-packages/xela_server_ros2/msg/__init__.py'...
+Compiling '/workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/local/lib/python3.10/dist-packages/xela_server_ros2/msg/_forces.py'...
+Compiling '/workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/local/lib/python3.10/dist-packages/xela_server_ros2/msg/_sens_stream.py'...
+Compiling '/workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/local/lib/python3.10/dist-packages/xela_server_ros2/msg/_sensor_full.py'...
+Compiling '/workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/local/lib/python3.10/dist-packages/xela_server_ros2/msg/_taxel.py'...
+Listing '/workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/local/lib/python3.10/dist-packages/xela_server_ros2/srv'...
+Compiling '/workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/local/lib/python3.10/dist-packages/xela_server_ros2/srv/__init__.py'...
+Compiling '/workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/local/lib/python3.10/dist-packages/xela_server_ros2/srv/_xela_sensor_stream.py'...
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/local/lib/python3.10/dist-packages/xela_server_ros2/xela_server_ros2_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+-- Set runtime path of "/workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/local/lib/python3.10/dist-packages/xela_server_ros2/xela_server_ros2_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/local/lib/python3.10/dist-packages/xela_server_ros2/xela_server_ros2_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+-- Set runtime path of "/workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/local/lib/python3.10/dist-packages/xela_server_ros2/xela_server_ros2_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/local/lib/python3.10/dist-packages/xela_server_ros2/xela_server_ros2_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+-- Set runtime path of "/workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/local/lib/python3.10/dist-packages/xela_server_ros2/xela_server_ros2_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/lib/libxela_server_ros2__rosidl_generator_py.so
+-- Set runtime path of "/workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/lib/libxela_server_ros2__rosidl_generator_py.so" to ""
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/share/ament_index/resource_index/rust_packages/xela_server_ros2
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/share/xela_server_ros2/rust
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/share/xela_server_ros2/rust/Cargo.toml
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/share/xela_server_ros2/rust/src
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/share/xela_server_ros2/rust/src/lib.rs
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/share/xela_server_ros2/rust/src/msg.rs
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/share/xela_server_ros2/rust/src/srv
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/share/xela_server_ros2/rust/src/srv/rmw.rs
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/share/xela_server_ros2/rust/src/msg
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/share/xela_server_ros2/rust/src/msg/rmw.rs
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/share/xela_server_ros2/rust/src/srv.rs
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/share/xela_server_ros2/rust/build.rs
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/share/xela_server_ros2/msg/SensorFull.idl
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/share/xela_server_ros2/msg/SensStream.idl
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/share/xela_server_ros2/msg/Taxel.idl
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/share/xela_server_ros2/msg/Forces.idl
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/share/xela_server_ros2/srv/XelaSensorStream.idl
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/share/xela_server_ros2/msg/SensorFull.msg
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/share/xela_server_ros2/msg/SensStream.msg
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/share/xela_server_ros2/msg/Taxel.msg
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/share/xela_server_ros2/msg/Forces.msg
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/share/xela_server_ros2/srv/XelaSensorStream.srv
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/share/xela_server_ros2/srv/XelaSensorStream_Request.msg
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/share/xela_server_ros2/srv/XelaSensorStream_Response.msg
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/lib/xela_server_ros2/xela_server
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/lib/xela_server_ros2/xela_service
+-- Up-to-date: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/share/xela_server_ros2
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/share/xela_server_ros2/service.launch
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/share/ament_index/resource_index/package_run_dependencies/xela_server_ros2
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/share/ament_index/resource_index/parent_prefix_path/xela_server_ros2
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/share/xela_server_ros2/environment/ament_prefix_path.sh
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/share/xela_server_ros2/environment/ament_prefix_path.dsv
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/share/xela_server_ros2/environment/path.sh
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/share/xela_server_ros2/environment/path.dsv
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/share/xela_server_ros2/local_setup.bash
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/share/xela_server_ros2/local_setup.sh
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/share/xela_server_ros2/local_setup.zsh
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/share/xela_server_ros2/local_setup.dsv
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/share/xela_server_ros2/package.dsv
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/share/ament_index/resource_index/packages/xela_server_ros2
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/share/xela_server_ros2/cmake/export_xela_server_ros2__rosidl_generator_cExport.cmake
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/share/xela_server_ros2/cmake/export_xela_server_ros2__rosidl_generator_cExport-noconfig.cmake
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/share/xela_server_ros2/cmake/export_xela_server_ros2__rosidl_typesupport_fastrtps_cExport.cmake
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/share/xela_server_ros2/cmake/export_xela_server_ros2__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/share/xela_server_ros2/cmake/export_xela_server_ros2__rosidl_generator_cppExport.cmake
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/share/xela_server_ros2/cmake/export_xela_server_ros2__rosidl_typesupport_fastrtps_cppExport.cmake
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/share/xela_server_ros2/cmake/export_xela_server_ros2__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/share/xela_server_ros2/cmake/xela_server_ros2__rosidl_typesupport_introspection_cExport.cmake
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/share/xela_server_ros2/cmake/xela_server_ros2__rosidl_typesupport_introspection_cExport-noconfig.cmake
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/share/xela_server_ros2/cmake/xela_server_ros2__rosidl_typesupport_cExport.cmake
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/share/xela_server_ros2/cmake/xela_server_ros2__rosidl_typesupport_cExport-noconfig.cmake
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/share/xela_server_ros2/cmake/xela_server_ros2__rosidl_typesupport_introspection_cppExport.cmake
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/share/xela_server_ros2/cmake/xela_server_ros2__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/share/xela_server_ros2/cmake/xela_server_ros2__rosidl_typesupport_cppExport.cmake
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/share/xela_server_ros2/cmake/xela_server_ros2__rosidl_typesupport_cppExport-noconfig.cmake
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/share/xela_server_ros2/cmake/export_xela_server_ros2__rosidl_generator_pyExport.cmake
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/share/xela_server_ros2/cmake/export_xela_server_ros2__rosidl_generator_pyExport-noconfig.cmake
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/share/xela_server_ros2/cmake/rosidl_cmake-extras.cmake
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/share/xela_server_ros2/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/share/xela_server_ros2/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/share/xela_server_ros2/cmake/ament_cmake_export_libraries-extras.cmake
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/share/xela_server_ros2/cmake/ament_cmake_export_targets-extras.cmake
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/share/xela_server_ros2/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/share/xela_server_ros2/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/share/xela_server_ros2/cmake/xela_server_ros2Config.cmake
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/share/xela_server_ros2/cmake/xela_server_ros2Config-version.cmake
+-- Installing: /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_server_ros2/share/xela_server_ros2/package.xml

@@ -1,0 +1,58 @@
+// generated from rosidl_generator_c/resource/idl__type_support.h.em
+// with input from leap_hand:srv/LeapPosition.idl
+// generated code does not contain a copyright notice
+
+#ifndef LEAP_HAND__SRV__DETAIL__LEAP_POSITION__TYPE_SUPPORT_H_
+#define LEAP_HAND__SRV__DETAIL__LEAP_POSITION__TYPE_SUPPORT_H_
+
+#include "rosidl_typesupport_interface/macros.h"
+
+#include "leap_hand/msg/rosidl_generator_c__visibility_control.h"
+
+#ifdef __cplusplus
+extern "C"
+{
+#endif
+
+#include "rosidl_runtime_c/message_type_support_struct.h"
+
+// Forward declare the get type support functions for this type.
+ROSIDL_GENERATOR_C_PUBLIC_leap_hand
+const rosidl_message_type_support_t *
+ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
+  rosidl_typesupport_c,
+  leap_hand,
+  srv,
+  LeapPosition_Request
+)();
+
+// already included above
+// #include "rosidl_runtime_c/message_type_support_struct.h"
+
+// Forward declare the get type support functions for this type.
+ROSIDL_GENERATOR_C_PUBLIC_leap_hand
+const rosidl_message_type_support_t *
+ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
+  rosidl_typesupport_c,
+  leap_hand,
+  srv,
+  LeapPosition_Response
+)();
+
+#include "rosidl_runtime_c/service_type_support_struct.h"
+
+// Forward declare the get type support functions for this type.
+ROSIDL_GENERATOR_C_PUBLIC_leap_hand
+const rosidl_service_type_support_t *
+ROSIDL_TYPESUPPORT_INTERFACE__SERVICE_SYMBOL_NAME(
+  rosidl_typesupport_c,
+  leap_hand,
+  srv,
+  LeapPosition
+)();
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif  // LEAP_HAND__SRV__DETAIL__LEAP_POSITION__TYPE_SUPPORT_H_

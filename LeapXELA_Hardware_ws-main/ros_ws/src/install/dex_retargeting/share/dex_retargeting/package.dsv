@@ -1,0 +1,6 @@
+source;share/dex_retargeting/hook/pythonpath.ps1
+source;share/dex_retargeting/hook/pythonpath.dsv
+source;share/dex_retargeting/hook/pythonpath.sh
+source;share/dex_retargeting/hook/ament_prefix_path.ps1
+source;share/dex_retargeting/hook/ament_prefix_path.dsv
+source;share/dex_retargeting/hook/ament_prefix_path.sh

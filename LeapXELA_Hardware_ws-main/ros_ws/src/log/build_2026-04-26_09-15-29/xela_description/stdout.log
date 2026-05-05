@@ -1,0 +1,116 @@
+running egg_info
+creating ../build/xela_description/xela_description.egg-info
+writing ../build/xela_description/xela_description.egg-info/PKG-INFO
+writing dependency_links to ../build/xela_description/xela_description.egg-info/dependency_links.txt
+writing entry points to ../build/xela_description/xela_description.egg-info/entry_points.txt
+writing requirements to ../build/xela_description/xela_description.egg-info/requires.txt
+writing top-level names to ../build/xela_description/xela_description.egg-info/top_level.txt
+writing manifest file '../build/xela_description/xela_description.egg-info/SOURCES.txt'
+reading manifest file '../build/xela_description/xela_description.egg-info/SOURCES.txt'
+writing manifest file '../build/xela_description/xela_description.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/build/xela_description/build
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/build/xela_description/build/lib
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/build/xela_description/build/lib/xela_description
+copying xela_description/__init__.py -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/build/xela_description/build/lib/xela_description
+copying xela_description/visulize_hand_node.py -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/build/xela_description/build/lib/xela_description
+copying xela_description/visulize_finger_node.py -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/build/xela_description/build/lib/xela_description
+copying xela_description/visulize_node.py -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/build/xela_description/build/lib/xela_description
+copying xela_description/list_to_string.py -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/build/xela_description/build/lib/xela_description
+copying xela_description/finger.py -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/build/xela_description/build/lib/xela_description
+copying xela_description/visulize_palm_node.py -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/build/xela_description/build/lib/xela_description
+copying xela_description/thumb.py -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/build/xela_description/build/lib/xela_description
+copying xela_description/palm.py -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/build/xela_description/build/lib/xela_description
+copying xela_description/visulize_thumb_node.py -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/build/xela_description/build/lib/xela_description
+copying xela_description/hand.py -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/build/xela_description/build/lib/xela_description
+running install
+running install_lib
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_description/lib/python3.10/site-packages/xela_description
+copying /workspace/LeapXELA_Hardware_ws/ros_ws/src/build/xela_description/build/lib/xela_description/__init__.py -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_description/lib/python3.10/site-packages/xela_description
+copying /workspace/LeapXELA_Hardware_ws/ros_ws/src/build/xela_description/build/lib/xela_description/visulize_hand_node.py -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_description/lib/python3.10/site-packages/xela_description
+copying /workspace/LeapXELA_Hardware_ws/ros_ws/src/build/xela_description/build/lib/xela_description/visulize_finger_node.py -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_description/lib/python3.10/site-packages/xela_description
+copying /workspace/LeapXELA_Hardware_ws/ros_ws/src/build/xela_description/build/lib/xela_description/visulize_node.py -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_description/lib/python3.10/site-packages/xela_description
+copying /workspace/LeapXELA_Hardware_ws/ros_ws/src/build/xela_description/build/lib/xela_description/list_to_string.py -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_description/lib/python3.10/site-packages/xela_description
+copying /workspace/LeapXELA_Hardware_ws/ros_ws/src/build/xela_description/build/lib/xela_description/finger.py -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_description/lib/python3.10/site-packages/xela_description
+copying /workspace/LeapXELA_Hardware_ws/ros_ws/src/build/xela_description/build/lib/xela_description/visulize_palm_node.py -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_description/lib/python3.10/site-packages/xela_description
+copying /workspace/LeapXELA_Hardware_ws/ros_ws/src/build/xela_description/build/lib/xela_description/thumb.py -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_description/lib/python3.10/site-packages/xela_description
+copying /workspace/LeapXELA_Hardware_ws/ros_ws/src/build/xela_description/build/lib/xela_description/palm.py -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_description/lib/python3.10/site-packages/xela_description
+copying /workspace/LeapXELA_Hardware_ws/ros_ws/src/build/xela_description/build/lib/xela_description/visulize_thumb_node.py -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_description/lib/python3.10/site-packages/xela_description
+copying /workspace/LeapXELA_Hardware_ws/ros_ws/src/build/xela_description/build/lib/xela_description/hand.py -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_description/lib/python3.10/site-packages/xela_description
+byte-compiling /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_description/lib/python3.10/site-packages/xela_description/__init__.py to __init__.cpython-310.pyc
+byte-compiling /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_description/lib/python3.10/site-packages/xela_description/visulize_hand_node.py to visulize_hand_node.cpython-310.pyc
+byte-compiling /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_description/lib/python3.10/site-packages/xela_description/visulize_finger_node.py to visulize_finger_node.cpython-310.pyc
+byte-compiling /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_description/lib/python3.10/site-packages/xela_description/visulize_node.py to visulize_node.cpython-310.pyc
+byte-compiling /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_description/lib/python3.10/site-packages/xela_description/list_to_string.py to list_to_string.cpython-310.pyc
+byte-compiling /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_description/lib/python3.10/site-packages/xela_description/finger.py to finger.cpython-310.pyc
+byte-compiling /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_description/lib/python3.10/site-packages/xela_description/visulize_palm_node.py to visulize_palm_node.cpython-310.pyc
+byte-compiling /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_description/lib/python3.10/site-packages/xela_description/thumb.py to thumb.cpython-310.pyc
+byte-compiling /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_description/lib/python3.10/site-packages/xela_description/palm.py to palm.cpython-310.pyc
+byte-compiling /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_description/lib/python3.10/site-packages/xela_description/visulize_thumb_node.py to visulize_thumb_node.cpython-310.pyc
+byte-compiling /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_description/lib/python3.10/site-packages/xela_description/hand.py to hand.cpython-310.pyc
+running install_data
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_description/share/ament_index
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_description/share/ament_index/resource_index
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_description/share/ament_index/resource_index/packages
+copying resource/xela_description -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_description/share/ament_index/resource_index/packages
+copying package.xml -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_description/share/xela_description
+copying xela_description/robot.urdf -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_description/share/xela_description
+copying xela_description/finger.urdf -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_description/share/xela_description
+copying xela_description/thumb.urdf -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_description/share/xela_description
+copying xela_description/palm.urdf -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_description/share/xela_description
+copying xela_description/hand.urdf -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_description/share/xela_description
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_description/share/xela_description/launch
+copying launch/visulize.launch.py -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_description/share/xela_description/launch
+copying launch/visulize_palm_launch.py -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_description/share/xela_description/launch
+copying launch/visulize_finger_launch.py -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_description/share/xela_description/launch
+copying launch/visulize_thumb_launch.py -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_description/share/xela_description/launch
+copying launch/visulize_hand_launch.py -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_description/share/xela_description/launch
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_description/share/xela_description/launch/__pycache__
+copying launch/__pycache__/visulize_finger_launch.cpython-310.pyc -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_description/share/xela_description/launch/__pycache__
+creating /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_description/share/xela_description/assets
+copying xela_description/assets/fingertop_unfied.part -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_description/share/xela_description/assets
+copying xela_description/assets/p4_unified.stl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_description/share/xela_description/assets
+copying xela_description/assets/thp0_unified.stl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_description/share/xela_description/assets
+copying xela_description/assets/fingertop_unfied.stl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_description/share/xela_description/assets
+copying xela_description/assets/p5_unified.stl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_description/share/xela_description/assets
+copying xela_description/assets/palm_face.part -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_description/share/xela_description/assets
+copying xela_description/assets/thfingertip_unified.part -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_description/share/xela_description/assets
+copying xela_description/assets/thconnector.stl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_description/share/xela_description/assets
+copying xela_description/assets/p3_unified.part -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_description/share/xela_description/assets
+copying xela_description/assets/thp1_unified.part -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_description/share/xela_description/assets
+copying xela_description/assets/top_palm.stl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_description/share/xela_description/assets
+copying xela_description/assets/leap_hand_xela_motorholder.part -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_description/share/xela_description/assets
+copying xela_description/assets/clipper.part -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_description/share/xela_description/assets
+copying xela_description/assets/uspa46.stl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_description/share/xela_description/assets
+copying xela_description/assets/leap_hand_xela_motorholder.stl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_description/share/xela_description/assets
+copying xela_description/assets/leap_hand_xela_bottom.stl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_description/share/xela_description/assets
+copying xela_description/assets/leap_hand_xela_side_cover.stl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_description/share/xela_description/assets
+copying xela_description/assets/p5_unified.part -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_description/share/xela_description/assets
+copying xela_description/assets/p4_unified.part -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_description/share/xela_description/assets
+copying xela_description/assets/leap_hand_xela_side_cover.part -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_description/share/xela_description/assets
+copying xela_description/assets/clipper.stl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_description/share/xela_description/assets
+copying xela_description/assets/uspa46.part -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_description/share/xela_description/assets
+copying xela_description/assets/thfingertip_unified.stl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_description/share/xela_description/assets
+copying xela_description/assets/leap_hand_xela_back_cover.stl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_description/share/xela_description/assets
+copying xela_description/assets/top_palm.part -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_description/share/xela_description/assets
+copying xela_description/assets/palm_face.stl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_description/share/xela_description/assets
+copying xela_description/assets/thp1_unified.stl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_description/share/xela_description/assets
+copying xela_description/assets/thconnector.part -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_description/share/xela_description/assets
+copying xela_description/assets/thp0_unified.part -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_description/share/xela_description/assets
+copying xela_description/assets/leap_hand_xela_back_cover.part -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_description/share/xela_description/assets
+copying xela_description/assets/p3_unified.stl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_description/share/xela_description/assets
+copying xela_description/assets/leap_hand_xela_bottom.part -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_description/share/xela_description/assets
+copying xela_description/assets/thp2_unified.stl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_description/share/xela_description/assets
+copying xela_description/assets/p2_unified.stl -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_description/share/xela_description/assets
+copying xela_description/assets/p2_unified.part -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_description/share/xela_description/assets
+copying xela_description/assets/thp2_unified.part -> /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_description/share/xela_description/assets
+running install_egg_info
+Copying ../build/xela_description/xela_description.egg-info to /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_description/lib/python3.10/site-packages/xela_description-0.0.0-py3.10.egg-info
+running install_scripts
+Installing visulize script to /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_description/lib/xela_description
+Installing visulize_finger script to /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_description/lib/xela_description
+Installing visulize_hand script to /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_description/lib/xela_description
+Installing visulize_palm script to /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_description/lib/xela_description
+Installing visulize_thumb script to /workspace/LeapXELA_Hardware_ws/ros_ws/src/install/xela_description/lib/xela_description
+writing list of installed files to '/workspace/LeapXELA_Hardware_ws/ros_ws/src/build/xela_description/install.log'

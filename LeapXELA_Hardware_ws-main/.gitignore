@@ -1,0 +1,6 @@
+# ROS 2 build artifacts (LeapXELA_Hardware_ws)
+ros_ws/build/
+ros_ws/install/
+ros_ws/log/
+ros_ws/data/
+shell/linux_1.8.0_208601/

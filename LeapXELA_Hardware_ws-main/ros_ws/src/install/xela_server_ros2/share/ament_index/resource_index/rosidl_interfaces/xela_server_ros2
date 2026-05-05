@@ -1,0 +1,12 @@
+msg/Forces.idl
+msg/Forces.msg
+msg/SensStream.idl
+msg/SensStream.msg
+msg/SensorFull.idl
+msg/SensorFull.msg
+msg/Taxel.idl
+msg/Taxel.msg
+srv/XelaSensorStream.idl
+srv/XelaSensorStream.srv
+srv/XelaSensorStream_Request.msg
+srv/XelaSensorStream_Response.msg
