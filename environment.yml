@@ -1,4 +1,4 @@
-name: leapxela
+name: leapxela-mac
 channels:
   - conda-forge
   - defaults
@@ -85,4 +85,4 @@ dependencies:
       - torch==2.11.0
       - typing-extensions==4.15.0
       - zipp==3.23.1
-prefix: /Users/pratik/miniconda3/envs/leapxela
+prefix: /Users/pratik/miniconda3/envs/leapxela-mac

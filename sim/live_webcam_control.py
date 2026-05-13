@@ -1,9 +1,9 @@
-import os
 import multiprocessing
 import queue
 import signal
 import threading
 import time
+from pathlib import Path
 
 import cv2
 import mediapipe as mp
@@ -21,9 +21,22 @@ from mediapipe.tasks import python
 from mediapipe.tasks.python import vision
 
 
-SCENE = "/Users/pratik/Documents/PhD/Research_stay/leapXela/LeapXELA_Hardware_ws-main/mujoco_c_example/mjcf/scene.xml"
-URDF_DIR = "/Users/pratik/Documents/PhD/Research_stay/leapXela/sim/dex-urdf/robots/hands"
-MODEL_PATH = os.path.join(os.path.dirname(__file__), "assets", "hand_landmarker.task")
+SIM_DIR = Path(__file__).resolve().parent
+REPO_ROOT = SIM_DIR.parent
+
+SCENE = REPO_ROOT / "LeapXELA_Hardware_ws-main" / "mujoco_c_example" / "mjcf" / "scene.xml"
+URDF_DIR = (
+    REPO_ROOT
+    / "LeapXELA_Hardware_ws-main"
+    / "ros_ws"
+    / "src"
+    / "xela_telelop"
+    / "dex_retargeting"
+    / "assets"
+    / "robots"
+    / "hands"
+)
+MODEL_PATH = SIM_DIR / "assets" / "hand_landmarker.task"
 
 # MediaPipe landmarks used by the LEAP vector-retargeting config:
 # [thumb_tip, index_tip, middle_tip, ring_tip]
@@ -161,14 +174,14 @@ def start_command_reader():
 
 
 def main():
-    RetargetingConfig.set_default_urdf_dir(URDF_DIR)
+    RetargetingConfig.set_default_urdf_dir(str(URDF_DIR))
     cfg_path = get_default_config_path(
         RobotName.leap, RetargetingType.vector, HandType.right
     )
     retargeter = RetargetingConfig.load_from_file(str(cfg_path)).build()
     print("retargeter joints:", retargeter.joint_names)
 
-    model = mj.MjModel.from_xml_path(SCENE)
+    model = mj.MjModel.from_xml_path(str(SCENE))
     data = mj.MjData(model)
 
     joint_to_actuator = []
@@ -236,7 +249,7 @@ def main():
     alpha_smooth = np.ones(4, dtype=np.float32)
     latest_alpha = None
 
-    base_options = python.BaseOptions(model_asset_path=MODEL_PATH)
+    base_options = python.BaseOptions(model_asset_path=str(MODEL_PATH))
     options = vision.HandLandmarkerOptions(
         base_options=base_options,
         num_hands=1,

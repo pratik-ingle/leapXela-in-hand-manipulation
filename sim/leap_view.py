@@ -1,12 +1,14 @@
 import time
 import mujoco as mj
 import mujoco.viewer
+from pathlib import Path
 
-scene = "/Users/pratik/Documents/PhD/Research_stay/leapXela/LeapXELA_Hardware_ws-main/mujoco_c_example/mjcf/scene.xml"
+REPO_ROOT = Path(__file__).resolve().parents[1]
+scene = REPO_ROOT / "LeapXELA_Hardware_ws-main" / "mujoco_c_example" / "mjcf" / "scene.xml"
 
 # spec = mj.MjSpec.from_file(scene)
 # model = spec.compile()
-model = mj.MjModel.from_xml_path(scene)
+model = mj.MjModel.from_xml_path(str(scene))
 data = mj.MjData(model)
 
 with mujoco.viewer.launch_passive(
