@@ -168,6 +168,10 @@ RUN pip install mujoco==${MUJOCO_VERSION}
 RUN pip install perlin-noise
 ###### open3d ######
 RUN pip install open3d
+###### xacro ######
+RUN apt-get update && apt-get install -y ros-humble-xacro
+##### Joint state publisher ######
+RUN apt-get update && apt-get install -y ros-humble-joint-state-publisher-gui
 ###### WorkDir #######
 WORKDIR workspace
 

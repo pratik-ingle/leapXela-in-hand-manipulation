@@ -68,9 +68,86 @@ def _list_data_files(data_dir: Path) -> List[Path]:
     return sorted(files, key=key)
 
 
+def _xela_taxel_rows(xt_grp: Any) -> List[List[Any]]:
+    """One row per sensor from HDF5 `xela_taxels` group (matches Storage._write_sens_stream)."""
+    rows: List[List[Any]] = []
+    keys = sorted([k for k in xt_grp.keys() if str(k).startswith("sensor_")])
+    for k in keys:
+        sg = xt_grp[k]
+        taxels = np.asarray(sg["taxels"][()]) if "taxels" in sg else np.zeros((0, 3), dtype=np.uint16)
+        forces = np.asarray(sg["forces"][()]) if "forces" in sg else np.zeros((0, 3), dtype=np.float32)
+        rows.append(
+            [
+                str(k),
+                int(sg.attrs.get("message", 0)),
+                float(sg.attrs.get("time", 0.0)),
+                str(sg.attrs.get("model", "")),
+                int(sg.attrs.get("sensor_pos", 0)),
+                int(taxels.shape[0]),
+                int(forces.shape[0]),
+            ]
+        )
+    return rows
+
+
+def _xela_taxel_xyz_rows(xt_grp: Any) -> List[List[Any]]:
+    """One row per taxel: sensor id, index within sensor, x, y, z (uint16 from HDF5)."""
+    out: List[List[Any]] = []
+    keys = sorted([k for k in xt_grp.keys() if str(k).startswith("sensor_")])
+    for k in keys:
+        sg = xt_grp[k]
+        taxels = np.asarray(sg["taxels"][()]) if "taxels" in sg else np.zeros((0, 3), dtype=np.uint16)
+        for j in range(int(taxels.shape[0])):
+            out.append(
+                [
+                    str(k),
+                    int(j),
+                    int(taxels[j, 0]),
+                    int(taxels[j, 1]),
+                    int(taxels[j, 2]),
+                ]
+            )
+    return out
+
+
+def _raw_image_channel_rows(raw: np.ndarray) -> Tuple[List[List[Any]], List[List[Any]], List[List[Any]]]:
+    """
+    One 2D table per channel (x, y, z): each row is a row of pixels, values are as stored (e.g. int32).
+    """
+    r = np.asarray(raw)
+    if r.size == 0:
+        empty: List[List[Any]] = [[0]]
+        return empty, empty, empty
+    if r.ndim == 2:
+        r = r[:, :, np.newaxis]
+    if r.shape[-1] == 1:
+        r = np.repeat(r, 3, axis=-1)
+    elif r.shape[-1] < 3:
+        pad_shape = (*r.shape[:-1], 3 - int(r.shape[-1]))
+        r = np.concatenate([r, np.zeros(pad_shape, dtype=r.dtype)], axis=-1)
+    elif r.shape[-1] > 3:
+        r = r[:, :, :3]
+    return (
+        r[:, :, 0].tolist(),
+        r[:, :, 1].tolist(),
+        r[:, :, 2].tolist(),
+    )
+
+
 def _load_sample(
     h5_path: Path, stream: str, index: int
-) -> Tuple[np.ndarray, np.ndarray, np.ndarray, List[List[Any]], Dict[str, Any]]:
+) -> Tuple[
+    List[List[Any]],
+    List[List[Any]],
+    List[List[Any]],
+    np.ndarray,
+    np.ndarray,
+    np.ndarray,
+    List[List[Any]],
+    List[List[Any]],
+    List[List[Any]],
+    Dict[str, Any],
+]:
     try:
         import h5py  # type: ignore
     except Exception as e:
@@ -99,6 +176,11 @@ def _load_sample(
 
         grp = g[idx_key]
 
+        if "raw_image" in grp:
+            raw = np.asarray(grp["raw_image"])
+        else:
+            raw = np.asarray(grp["normalized_image"])
+
         norm = np.asarray(grp["normalized_image"])
 
         st = grp["state"]
@@ -118,21 +200,44 @@ def _load_sample(
                 ]
             )
 
+        xela_rows: List[List[Any]] = []
+        xela_xyz_rows: List[List[Any]] = []
+        if "xela_taxels" in grp:
+            xt = grp["xela_taxels"]
+            xela_rows = _xela_taxel_rows(xt)
+            xela_xyz_rows = _xela_taxel_xyz_rows(xt)
+
+        raw_arr = np.asarray(raw)
         meta: Dict[str, Any] = {
             "stream": stream,
             "index": int(index),
             "index_key": idx_key,
+            "raw_image_stored": "raw_image" in grp,
+            "raw_image_shape": [int(x) for x in raw_arr.shape],
+            "raw_image_dtype": str(raw_arr.dtype),
+            "raw_image_attrs": (
+                {k: _jsonable(grp["raw_image"].attrs.get(k)) for k in grp["raw_image"].attrs.keys()}
+                if "raw_image" in grp
+                else {}
+            ),
             "normalized_image_attrs": {
                 k: _jsonable(grp["normalized_image"].attrs.get(k)) for k in grp["normalized_image"].attrs.keys()
             },
             "state_attrs": {k: _jsonable(st.attrs.get(k)) for k in st.attrs.keys()},
+            "xela_taxels_group_attrs": (
+                {k: _jsonable(grp["xela_taxels"].attrs.get(k)) for k in grp["xela_taxels"].attrs.keys()}
+                if "xela_taxels" in grp
+                else {}
+            ),
         }
+
+    raw_x_rows, raw_y_rows, raw_z_rows = _raw_image_channel_rows(raw)
 
     norm_u8 = _to_uint8_image(norm)
     ch0 = _upscale_for_display(_channel_to_rgb(norm_u8, 0), target_height=420)
     ch1 = _upscale_for_display(_channel_to_rgb(norm_u8, 1), target_height=420)
     ch2 = _upscale_for_display(_channel_to_rgb(norm_u8, 2), target_height=420)
-    return ch0, ch1, ch2, rows, meta
+    return raw_x_rows, raw_y_rows, raw_z_rows, ch0, ch1, ch2, rows, xela_rows, xela_xyz_rows, meta
 
 
 def _jsonable(v: Any) -> Any:
@@ -260,6 +365,32 @@ def visulize_dataset() -> None:
             step=1,
         )
 
+        gr.Markdown(
+            "### raw_image (per channel)\n"
+            "Each table is the 2D slice `raw_image[:, :, c]` (rows = image height, columns = width). "
+            "See metadata for `raw_image_shape` and `raw_image_dtype`."
+        )
+        with gr.Row(equal_height=True):
+            raw_ch0_out = gr.Dataframe(
+                label="raw_image[:, :, 0] (x)",
+                datatype="number",
+                interactive=False,
+                wrap=True,
+            )
+            raw_ch1_out = gr.Dataframe(
+                label="raw_image[:, :, 1] (y)",
+                datatype="number",
+                interactive=False,
+                wrap=True,
+            )
+            raw_ch2_out = gr.Dataframe(
+                label="raw_image[:, :, 2] (z)",
+                datatype="number",
+                interactive=False,
+                wrap=True,
+            )
+
+        gr.Markdown("### normalized_image (per channel)")
         with gr.Row(equal_height=True):
             ch0_out = gr.Image(label="normalized_image x", type="numpy", height=420)
             ch1_out = gr.Image(label="normalized_image y", type="numpy", height=420)
@@ -273,17 +404,58 @@ def visulize_dataset() -> None:
             interactive=False,
             wrap=True,
         )
+        xela_out = gr.Dataframe(
+            label="xela_taxels (per sensor summary)",
+            value=[["", None, None, "", None, None, None]],
+            headers=[
+                "sensor",
+                "message",
+                "time",
+                "model",
+                "sensor_pos",
+                "n_taxels",
+                "n_forces",
+            ],
+            datatype=["str", "number", "number", "str", "number", "number", "number"],
+            interactive=False,
+            wrap=True,
+        )
+        xela_xyz_out = gr.Dataframe(
+            label="taxel x, y, z (all taxels)",
+            value=[["", None, None, None, None]],
+            headers=["sensor", "index", "x", "y", "z"],
+            datatype=["str", "number", "number", "number", "number"],
+            interactive=False,
+            wrap=True,
+        )
         meta_out = gr.JSON(label="metadata")
 
         def update(dataset_file: str, h5_path: str, stream_name: str, index: int):
             p = _resolve_in_data_dir(dataset_file if str(dataset_file).strip() else h5_path, data_dir)
-            ch0, ch1, ch2, rows, meta = _load_sample(p, stream_name, int(index))
-            return ch0, ch1, ch2, rows, meta
+            r0, r1, r2, ch0, ch1, ch2, rows, xela_rows, xela_xyz_rows, meta = _load_sample(
+                p, stream_name, int(index)
+            )
+            if not xela_rows:
+                xela_rows = [["", None, None, "", None, None, None]]
+            if not xela_xyz_rows:
+                xela_xyz_rows = [["", None, None, None, None]]
+            return r0, r1, r2, ch0, ch1, ch2, rows, xela_rows, xela_xyz_rows, meta
 
         idx.change(
             update,
             inputs=[dataset_file_in, h5_path_in, stream_in, idx],
-            outputs=[ch0_out, ch1_out, ch2_out, state_out, meta_out],
+            outputs=[
+                raw_ch0_out,
+                raw_ch1_out,
+                raw_ch2_out,
+                ch0_out,
+                ch1_out,
+                ch2_out,
+                state_out,
+                xela_out,
+                xela_xyz_out,
+                meta_out,
+            ],
         )
 
         def refresh(dataset_file: str, h5_path: str, stream_name: str):
@@ -307,15 +479,26 @@ def visulize_dataset() -> None:
             if n_local <= 0:
                 raise RuntimeError(f"No samples found in {p} under stream '{stream_name}'.")
             # update slider range and also load index 0
-            ch0, ch1, ch2, rows, meta = _load_sample(p, stream_name, 0)
+            r0, r1, r2, ch0, ch1, ch2, rows, xela_rows, xela_xyz_rows, meta = _load_sample(
+                p, stream_name, 0
+            )
+            if not xela_rows:
+                xela_rows = [["", None, None, "", None, None, None]]
+            if not xela_xyz_rows:
+                xela_xyz_rows = [["", None, None, None, None]]
             return (
                 str(p),
                 stream_name,
                 gr.Slider(minimum=0, maximum=max(0, n_local - 1), value=0, step=1, label="current_index"),
+                r0,
+                r1,
+                r2,
                 ch0,
                 ch1,
                 ch2,
                 rows,
+                xela_rows,
+                xela_xyz_rows,
                 meta,
             )
 
@@ -323,7 +506,21 @@ def visulize_dataset() -> None:
         refresh_btn.click(
             refresh,
             inputs=[dataset_file_in, h5_path_in, stream_in],
-            outputs=[h5_path_in, stream_in, idx, ch0_out, ch1_out, ch2_out, state_out, meta_out],
+            outputs=[
+                h5_path_in,
+                stream_in,
+                idx,
+                raw_ch0_out,
+                raw_ch1_out,
+                raw_ch2_out,
+                ch0_out,
+                ch1_out,
+                ch2_out,
+                state_out,
+                xela_out,
+                xela_xyz_out,
+                meta_out,
+            ],
         )
 
         def set_path_from_dropdown(dataset_file: str) -> str:

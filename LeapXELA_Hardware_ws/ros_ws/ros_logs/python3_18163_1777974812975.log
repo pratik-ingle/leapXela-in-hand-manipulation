@@ -1,0 +1,3 @@
+[INFO] [1777974813.316875590] [pybullet_xacro_viewer]: Loading xacro: /workspace/LeapXELA_Hardware_ws/ros_ws/install/xela_models/share/xela_models/urdf/aftf.xacro
+[INFO] [1777974813.481097589] [pybullet_xacro_viewer]: Expanded URDF written to: /tmp/tmp1tf4jo5q.urdf
+[INFO] [1777974814.261931801] [pybullet_xacro_viewer]: PyBullet viewer running.

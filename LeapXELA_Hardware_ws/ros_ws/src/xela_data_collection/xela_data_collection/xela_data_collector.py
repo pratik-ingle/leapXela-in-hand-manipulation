@@ -10,6 +10,8 @@ from pathlib import Path
 
 from leap_hand.srv import LeapState
 from sensor_msgs.msg import JointState
+from xela_server_ros2.msg import SensStream
+
 
 from datetime import datetime
 
@@ -22,24 +24,32 @@ class Storage:
         self._file = None
         self._ensure_open()
     
-    def store(self, raw_image: Image, normalized_image: Image, state: JointState):
+    def store(
+        self,
+        raw_image: np.ndarray,
+        normalized_image: np.ndarray,
+        state: JointState,
+        xela_taxels: SensStream,
+        raw_msg: Image,
+        norm_msg: Image,
+    ):
         self._ensure_open()
         idx = f"{self.current_index:06d}"
         grp = self._root.require_group(idx)
 
-        raw_arr = self._decode_ros_image(raw_image)
-        norm_arr = self._decode_ros_image(normalized_image)
+        self._write_or_replace_dataset(grp, "raw_image", raw_image)
+        self._write_or_replace_dataset(grp, "normalized_image", normalized_image)
 
-        self._write_or_replace_dataset(grp, "raw_image", raw_arr)
-        self._write_or_replace_dataset(grp, "normalized_image", norm_arr)
-
-        self._write_image_attrs(grp["raw_image"], raw_image)
-        self._write_image_attrs(grp["normalized_image"], normalized_image)
+        self._write_image_attrs(grp["raw_image"], raw_msg)
+        self._write_image_attrs(grp["normalized_image"], norm_msg)
 
         st = grp.require_group("state")
         self._write_or_replace_dataset(st, "position", np.asarray(state.position, dtype=np.float64))
         self._write_or_replace_dataset(st, "velocity", np.asarray(state.velocity, dtype=np.float64))
         self._write_or_replace_dataset(st, "effort", np.asarray(state.effort, dtype=np.float64))
+
+        xt_grp = grp.require_group("xela_taxels")
+        self._write_sens_stream(xt_grp, xela_taxels)
 
         name_dt = self._h5py.string_dtype(encoding="utf-8")
         self._write_or_replace_dataset(
@@ -85,31 +95,7 @@ class Storage:
         self._file = self._h5py.File(self._path, "a")
         self._root = self._file.require_group(self.stream_name)
 
-    def _decode_ros_image(self, msg: Image) -> np.ndarray:
-        self._ensure_open()
-        h, w = int(msg.height), int(msg.width)
-        channels = 3
 
-        enc = (msg.encoding or "").upper()
-        if "32F" in enc:
-            dtype = np.float32
-        elif "32S" in enc or "32I" in enc:
-            dtype = np.int32
-        elif "16U" in enc:
-            dtype = np.uint16
-        elif "8U" in enc:
-            dtype = np.uint8
-        else:
-            dtype = np.float32
-
-        arr = np.frombuffer(msg.data, dtype=dtype)
-        expected = h * w * channels
-        if arr.size != expected:
-            raise ValueError(
-                f"Unexpected image buffer size: got {arr.size}, expected {expected} "
-                f"(h={h}, w={w}, channels={channels}, dtype={dtype}, enc={msg.encoding})."
-            )
-        return arr.reshape((h, w, channels))
 
     def _write_or_replace_dataset(self, group, name: str, data: np.ndarray) -> None:
         self._ensure_open()
@@ -118,6 +104,34 @@ class Storage:
         group.create_dataset(
             name, data=data, compression="gzip", compression_opts=4, shuffle=True
         )
+
+    def _write_sens_stream(self, xt_grp, stream: SensStream) -> None:
+        """Serialize SensStream (SensorFull[], each with Taxel[] and Forces[])."""
+        sensors = stream.sensors
+        xt_grp.attrs["num_sensors"] = int(len(sensors))
+
+        for i, sensor in enumerate(sensors):
+            sg = xt_grp.require_group(f"sensor_{i:03d}")
+            sg.attrs["message"] = int(sensor.message)
+            sg.attrs["time"] = float(sensor.time)
+            sg.attrs["model"] = str(sensor.model)
+            sg.attrs["sensor_pos"] = int(sensor.sensor_pos)
+
+            if sensor.taxels:
+                taxels = np.array(
+                    [[t.x, t.y, t.z] for t in sensor.taxels], dtype=np.uint16
+                )
+            else:
+                taxels = np.zeros((0, 3), dtype=np.uint16)
+            self._write_or_replace_dataset(sg, "taxels", taxels)
+
+            if sensor.forces:
+                forces = np.array(
+                    [[f.x, f.y, f.z] for f in sensor.forces], dtype=np.float32
+                )
+            else:
+                forces = np.zeros((0, 3), dtype=np.float32)
+            self._write_or_replace_dataset(sg, "forces", forces)
 
     def _write_image_attrs(self, ds, msg: Image) -> None:
         ds.attrs["height"] = int(msg.height)
@@ -152,6 +166,7 @@ class XelaDataCollector(Node):
         self._last_raw: Image | None = None
         self._last_norm: Image | None = None
         self._last_state: JointState | None = None
+        self._last_xela_taxels: SensStream | None = None
         # Prefer synchronized callbacks when possible
         try:
             from message_filters import Subscriber, ApproximateTimeSynchronizer
@@ -159,9 +174,15 @@ class XelaDataCollector(Node):
             self._raw_sub = Subscriber(self, Image, "/leap_image")
             self._norm_sub = Subscriber(self, Image, "/leap_image_normalized")
             self._state_sub = Subscriber(self, JointState, "/leap_state")
+            self._xela_taxels_sub = Subscriber(self, SensStream, "/xServTopic")
             # Reasonable defaults for two topics at ~same rate
             self._sync = ApproximateTimeSynchronizer(
-                [self._raw_sub, self._norm_sub, self._state_sub],
+                [
+                    self._raw_sub,
+                    self._norm_sub,
+                    self._state_sub,
+                    self._xela_taxels_sub,
+                ],
                 queue_size=30,
                 slop=0.05,
                 allow_headerless=False,
@@ -177,8 +198,9 @@ class XelaDataCollector(Node):
             self._sub_norm = self.create_subscription(
                 Image, "/leap_image_normalized", self._on_norm, 10
             )
+            self._xela_taxels = self.create_subscription(SensStream, "/xServTopic", self.on_xela_sensor_stream, 10)
             self._state_sub = self.create_subscription(JointState, "/leap_state", self._on_state, 10)
-    
+        
     
     def _decode_image(self, msg: Image, *, dtype: np.dtype) -> np.ndarray:
         # Publisher uses 3 channels and packs raw bytes.
@@ -193,20 +215,19 @@ class XelaDataCollector(Node):
             )
         return arr.reshape((h, w, 3))
 
-    def _on_synced_images(self, raw_msg: Image, norm_msg: Image, state_msg: JointState):
+    def _on_synced_images(self, raw_msg: Image, norm_msg: Image, state_msg: JointState, xela_taxel_msg: SensStream):
         self._last_raw = raw_msg
         self._last_norm = norm_msg
         self._last_state = state_msg
-        # Note: xela_image_publisher sets encoding "32FC3" for both topics, but
-        # /leap_image is currently filled from an int32 array. We decode raw as int32
-        # and normalized as float32 to match the actual byte content.
-
-        self.storage.store(raw_msg, norm_msg, state_msg)
+        self._last_xela_taxels = xela_taxel_msg
+      
         try:
             raw = self._decode_image(raw_msg, dtype=np.int32)
             norm = self._decode_image(norm_msg, dtype=np.float32)
+            # TODO: rewrite storage
+            self.storage.store(raw, norm, state_msg, xela_taxel_msg, raw_msg, norm_msg)
         except Exception as e:
-            self.get_logger().error(f"Failed to decode images: {e}")
+            self.get_logger().error(f"Failed to store synced frame: {e}")
             return
 
         self.get_logger().info(
@@ -233,6 +254,10 @@ class XelaDataCollector(Node):
     def _on_state(self, msg: JointState):
         self._last_state = msg
         self.get_logger().debug(f"Hand state received: {msg.position} {msg.velocity} {msg.effort}")
+    
+    def on_xela_sensor_stream(self, msg: SensStream):
+        self._last_xela_taxels = msg
+        self.get_logger().debug(f"Xela sensor stream received: {msg.sensors}")
 
 
 def main(args=None):

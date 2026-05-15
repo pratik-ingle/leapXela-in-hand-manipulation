@@ -1,0 +1,1939 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot name="allegro_fingertip_curved">
+  
+  <material name="black">
+    <color rgba="0.1 0.1 0.1 1.0" />
+  </material>
+  <material name="blue">
+    <color rgba="0.0 0.0 0.8 1.0" />
+  </material>
+  <material name="green">
+    <color rgba="0.0 0.8 0.0 1.0" />
+  </material>
+  <material name="grey">
+    <color rgba="0.2 0.2 0.2 1.0" />
+  </material>
+  <material name="orange">
+    <color rgba="1.0 0.4235294117647059 0.0392156862745098 1.0" />
+  </material>
+  <material name="brown">
+    <color rgba="0.8705882352941177 0.8117647058823529 0.7647058823529411 1.0" />
+  </material>
+  <material name="red">
+    <color rgba="0.8 0.0 0.0 1.0" />
+  </material>
+  <material name="white">
+    <color rgba="1.0 1.0 1.0 1.0" />
+  </material>
+  
+  <link name="1_aftc_base_link">
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="ft_c.stl" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="ft_c.stl" />
+      </geometry>
+      <material name="red" />
+    </visual>
+    <inertial>
+      <mass value="0.005" />
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" />
+    </inertial>
+  </link>
+  <link name="1_aftc_1_taxel_base_link">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="1_aftc_1_base2x">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.0101 0.0306 0.01254" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="1_aftc_1_x2y">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="j_1_x" type="prismatic">
+    <origin rpy="0.0 1.5707963267948966 0.5235987755982988" xyz="0.0101 0.0306 0.01254" />
+    <parent link="1_aftc_base_link" />
+    <child link="1_aftc_1_base2x" />
+    <axis xyz="1 0 0" />
+    <limit effort="100.0" lower="-0.0015" upper="0.0015" velocity="0.5" />
+  </joint>
+  <joint name="j_1_y" type="prismatic">
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0" />
+    <parent link="1_aftc_1_base2x" />
+    <child link="1_aftc_1_x2y" />
+    <axis xyz="0 1 0" />
+    <limit effort="100.0" lower="-0.0015" upper="0.0015" velocity="0.5" />
+  </joint>
+  <joint name="j_1_z" type="prismatic">
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0" />
+    <parent link="1_aftc_1_x2y" />
+    <child link="1_aftc_1_taxel_base_link" />
+    <axis xyz="0 0 1" />
+    <limit effort="100.0" lower="-0.001" upper="0.000" velocity="0.5" />
+  </joint>
+  <link name="1_aftc_2_taxel_base_link">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="1_aftc_2_base2x">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.0126 0.0236 0.01254" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="1_aftc_2_x2y">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="j_2_x" type="prismatic">
+    <origin rpy="0.0 1.5707963267948966 0.17453292519943295" xyz="0.0126 0.0236 0.01254" />
+    <parent link="1_aftc_base_link" />
+    <child link="1_aftc_2_base2x" />
+    <axis xyz="1 0 0" />
+    <limit effort="100.0" lower="-0.0015" upper="0.0015" velocity="0.5" />
+  </joint>
+  <joint name="j_2_y" type="prismatic">
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0" />
+    <parent link="1_aftc_2_base2x" />
+    <child link="1_aftc_2_x2y" />
+    <axis xyz="0 1 0" />
+    <limit effort="100.0" lower="-0.0015" upper="0.0015" velocity="0.5" />
+  </joint>
+  <joint name="j_2_z" type="prismatic">
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0" />
+    <parent link="1_aftc_2_x2y" />
+    <child link="1_aftc_2_taxel_base_link" />
+    <axis xyz="0 0 1" />
+    <limit effort="100.0" lower="-0.001" upper="0.000" velocity="0.5" />
+  </joint>
+  <link name="1_aftc_3_taxel_base_link">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="1_aftc_3_base2x">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.0138 0.0173 0.01254" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="1_aftc_3_x2y">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="j_3_x" type="prismatic">
+    <origin rpy="0.0 1.5707963267948966 0.17453292519943295" xyz="0.0138 0.0173 0.01254" />
+    <parent link="1_aftc_base_link" />
+    <child link="1_aftc_3_base2x" />
+    <axis xyz="1 0 0" />
+    <limit effort="100.0" lower="-0.0015" upper="0.0015" velocity="0.5" />
+  </joint>
+  <joint name="j_3_y" type="prismatic">
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0" />
+    <parent link="1_aftc_3_base2x" />
+    <child link="1_aftc_3_x2y" />
+    <axis xyz="0 1 0" />
+    <limit effort="100.0" lower="-0.0015" upper="0.0015" velocity="0.5" />
+  </joint>
+  <joint name="j_3_z" type="prismatic">
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0" />
+    <parent link="1_aftc_3_x2y" />
+    <child link="1_aftc_3_taxel_base_link" />
+    <axis xyz="0 0 1" />
+    <limit effort="100.0" lower="-0.001" upper="0.000" velocity="0.5" />
+  </joint>
+  <link name="1_aftc_4_taxel_base_link">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="1_aftc_4_base2x">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.0143 0.0103 0.01254" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="1_aftc_4_x2y">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="j_4_x" type="prismatic">
+    <origin rpy="0.0 1.5707963267948966 0.0" xyz="0.0143 0.0103 0.01254" />
+    <parent link="1_aftc_base_link" />
+    <child link="1_aftc_4_base2x" />
+    <axis xyz="1 0 0" />
+    <limit effort="100.0" lower="-0.0015" upper="0.0015" velocity="0.5" />
+  </joint>
+  <joint name="j_4_y" type="prismatic">
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0" />
+    <parent link="1_aftc_4_base2x" />
+    <child link="1_aftc_4_x2y" />
+    <axis xyz="0 1 0" />
+    <limit effort="100.0" lower="-0.0015" upper="0.0015" velocity="0.5" />
+  </joint>
+  <joint name="j_4_z" type="prismatic">
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0" />
+    <parent link="1_aftc_4_x2y" />
+    <child link="1_aftc_4_taxel_base_link" />
+    <axis xyz="0 0 1" />
+    <limit effort="100.0" lower="-0.001" upper="0.000" velocity="0.5" />
+  </joint>
+  <link name="1_aftc_5_taxel_base_link">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="1_aftc_5_base2x">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.0143 0.0038 0.01254" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="1_aftc_5_x2y">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="j_5_x" type="prismatic">
+    <origin rpy="0.0 1.5707963267948966 0.0" xyz="0.0143 0.0038 0.01254" />
+    <parent link="1_aftc_base_link" />
+    <child link="1_aftc_5_base2x" />
+    <axis xyz="1 0 0" />
+    <limit effort="100.0" lower="-0.0015" upper="0.0015" velocity="0.5" />
+  </joint>
+  <joint name="j_5_y" type="prismatic">
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0" />
+    <parent link="1_aftc_5_base2x" />
+    <child link="1_aftc_5_x2y" />
+    <axis xyz="0 1 0" />
+    <limit effort="100.0" lower="-0.0015" upper="0.0015" velocity="0.5" />
+  </joint>
+  <joint name="j_5_z" type="prismatic">
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0" />
+    <parent link="1_aftc_5_x2y" />
+    <child link="1_aftc_5_taxel_base_link" />
+    <axis xyz="0 0 1" />
+    <limit effort="100.0" lower="-0.001" upper="0.000" velocity="0.5" />
+  </joint>
+  <link name="1_aftc_6_taxel_base_link">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="1_aftc_6_base2x">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.0098 0.023 0.02" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="1_aftc_6_x2y">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="j_6_x" type="prismatic">
+    <origin rpy="0.0 0.8726646259971648 0.17453292519943295" xyz="0.0098 0.023 0.02" />
+    <parent link="1_aftc_base_link" />
+    <child link="1_aftc_6_base2x" />
+    <axis xyz="1 0 0" />
+    <limit effort="100.0" lower="-0.0015" upper="0.0015" velocity="0.5" />
+  </joint>
+  <joint name="j_6_y" type="prismatic">
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0" />
+    <parent link="1_aftc_6_base2x" />
+    <child link="1_aftc_6_x2y" />
+    <axis xyz="0 1 0" />
+    <limit effort="100.0" lower="-0.0015" upper="0.0015" velocity="0.5" />
+  </joint>
+  <joint name="j_6_z" type="prismatic">
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0" />
+    <parent link="1_aftc_6_x2y" />
+    <child link="1_aftc_6_taxel_base_link" />
+    <axis xyz="0 0 1" />
+    <limit effort="100.0" lower="-0.001" upper="0.000" velocity="0.5" />
+  </joint>
+  <link name="1_aftc_7_taxel_base_link">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="1_aftc_7_base2x">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.011 0.0167 0.02" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="1_aftc_7_x2y">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="j_7_x" type="prismatic">
+    <origin rpy="0.0 0.8726646259971648 0.17453292519943295" xyz="0.011 0.0167 0.02" />
+    <parent link="1_aftc_base_link" />
+    <child link="1_aftc_7_base2x" />
+    <axis xyz="1 0 0" />
+    <limit effort="100.0" lower="-0.0015" upper="0.0015" velocity="0.5" />
+  </joint>
+  <joint name="j_7_y" type="prismatic">
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0" />
+    <parent link="1_aftc_7_base2x" />
+    <child link="1_aftc_7_x2y" />
+    <axis xyz="0 1 0" />
+    <limit effort="100.0" lower="-0.0015" upper="0.0015" velocity="0.5" />
+  </joint>
+  <joint name="j_7_z" type="prismatic">
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0" />
+    <parent link="1_aftc_7_x2y" />
+    <child link="1_aftc_7_taxel_base_link" />
+    <axis xyz="0 0 1" />
+    <limit effort="100.0" lower="-0.001" upper="0.000" velocity="0.5" />
+  </joint>
+  <link name="1_aftc_8_taxel_base_link">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="1_aftc_8_base2x">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.0115 0.0103 0.02" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="1_aftc_8_x2y">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="j_8_x" type="prismatic">
+    <origin rpy="0.0 0.8726646259971648 0.0" xyz="0.0115 0.0103 0.02" />
+    <parent link="1_aftc_base_link" />
+    <child link="1_aftc_8_base2x" />
+    <axis xyz="1 0 0" />
+    <limit effort="100.0" lower="-0.0015" upper="0.0015" velocity="0.5" />
+  </joint>
+  <joint name="j_8_y" type="prismatic">
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0" />
+    <parent link="1_aftc_8_base2x" />
+    <child link="1_aftc_8_x2y" />
+    <axis xyz="0 1 0" />
+    <limit effort="100.0" lower="-0.0015" upper="0.0015" velocity="0.5" />
+  </joint>
+  <joint name="j_8_z" type="prismatic">
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0" />
+    <parent link="1_aftc_8_x2y" />
+    <child link="1_aftc_8_taxel_base_link" />
+    <axis xyz="0 0 1" />
+    <limit effort="100.0" lower="-0.001" upper="0.000" velocity="0.5" />
+  </joint>
+  <link name="1_aftc_9_taxel_base_link">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="1_aftc_9_base2x">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.0115 0.0038 0.02" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="1_aftc_9_x2y">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="j_9_x" type="prismatic">
+    <origin rpy="0.0 0.8726646259971648 0.0" xyz="0.0115 0.0038 0.02" />
+    <parent link="1_aftc_base_link" />
+    <child link="1_aftc_9_base2x" />
+    <axis xyz="1 0 0" />
+    <limit effort="100.0" lower="-0.0015" upper="0.0015" velocity="0.5" />
+  </joint>
+  <joint name="j_9_y" type="prismatic">
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0" />
+    <parent link="1_aftc_9_base2x" />
+    <child link="1_aftc_9_x2y" />
+    <axis xyz="0 1 0" />
+    <limit effort="100.0" lower="-0.0015" upper="0.0015" velocity="0.5" />
+  </joint>
+  <joint name="j_9_z" type="prismatic">
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0" />
+    <parent link="1_aftc_9_x2y" />
+    <child link="1_aftc_9_taxel_base_link" />
+    <axis xyz="0 0 1" />
+    <limit effort="100.0" lower="-0.001" upper="0.000" velocity="0.5" />
+  </joint>
+  <link name="1_aftc_10_taxel_base_link">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="1_aftc_10_base2x">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.0037 0.0338 0.0173" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="1_aftc_10_x2y">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="j_10_x" type="prismatic">
+    <origin rpy="-0.8377580409572782 0.5061454830783556 0.0" xyz="0.0037 0.0338 0.0173" />
+    <parent link="1_aftc_base_link" />
+    <child link="1_aftc_10_base2x" />
+    <axis xyz="1 0 0" />
+    <limit effort="100.0" lower="-0.0015" upper="0.0015" velocity="0.5" />
+  </joint>
+  <joint name="j_10_y" type="prismatic">
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0" />
+    <parent link="1_aftc_10_base2x" />
+    <child link="1_aftc_10_x2y" />
+    <axis xyz="0 1 0" />
+    <limit effort="100.0" lower="-0.0015" upper="0.0015" velocity="0.5" />
+  </joint>
+  <joint name="j_10_z" type="prismatic">
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0" />
+    <parent link="1_aftc_10_x2y" />
+    <child link="1_aftc_10_taxel_base_link" />
+    <axis xyz="0 0 1" />
+    <limit effort="100.0" lower="-0.001" upper="0.000" velocity="0.5" />
+  </joint>
+  <link name="1_aftc_11_taxel_base_link">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="1_aftc_11_base2x">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.0039 0.0296 0.02155" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="1_aftc_11_x2y">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="j_11_x" type="prismatic">
+    <origin rpy="-0.5410520681182421 0.4537856055185257 0.0" xyz="0.0039 0.0296 0.02155" />
+    <parent link="1_aftc_base_link" />
+    <child link="1_aftc_11_base2x" />
+    <axis xyz="1 0 0" />
+    <limit effort="100.0" lower="-0.0015" upper="0.0015" velocity="0.5" />
+  </joint>
+  <joint name="j_11_y" type="prismatic">
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0" />
+    <parent link="1_aftc_11_base2x" />
+    <child link="1_aftc_11_x2y" />
+    <axis xyz="0 1 0" />
+    <limit effort="100.0" lower="-0.0015" upper="0.0015" velocity="0.5" />
+  </joint>
+  <joint name="j_11_z" type="prismatic">
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0" />
+    <parent link="1_aftc_11_x2y" />
+    <child link="1_aftc_11_taxel_base_link" />
+    <axis xyz="0 0 1" />
+    <limit effort="100.0" lower="-0.001" upper="0.000" velocity="0.5" />
+  </joint>
+  <link name="1_aftc_12_taxel_base_link">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="1_aftc_12_base2x">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.0039 0.023 0.02444" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="1_aftc_12_x2y">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="j_12_x" type="prismatic">
+    <origin rpy="-0.17453292519943295 0.3839724354387525 0.0" xyz="0.0039 0.023 0.02444" />
+    <parent link="1_aftc_base_link" />
+    <child link="1_aftc_12_base2x" />
+    <axis xyz="1 0 0" />
+    <limit effort="100.0" lower="-0.0015" upper="0.0015" velocity="0.5" />
+  </joint>
+  <joint name="j_12_y" type="prismatic">
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0" />
+    <parent link="1_aftc_12_base2x" />
+    <child link="1_aftc_12_x2y" />
+    <axis xyz="0 1 0" />
+    <limit effort="100.0" lower="-0.0015" upper="0.0015" velocity="0.5" />
+  </joint>
+  <joint name="j_12_z" type="prismatic">
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0" />
+    <parent link="1_aftc_12_x2y" />
+    <child link="1_aftc_12_taxel_base_link" />
+    <axis xyz="0 0 1" />
+    <limit effort="100.0" lower="-0.001" upper="0.000" velocity="0.5" />
+  </joint>
+  <link name="1_aftc_13_taxel_base_link">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="1_aftc_13_base2x">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.0039 0.0169 0.02544" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="1_aftc_13_x2y">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="j_13_x" type="prismatic">
+    <origin rpy="-0.17453292519943295 0.3665191429188092 0.0" xyz="0.0039 0.0169 0.02544" />
+    <parent link="1_aftc_base_link" />
+    <child link="1_aftc_13_base2x" />
+    <axis xyz="1 0 0" />
+    <limit effort="100.0" lower="-0.0015" upper="0.0015" velocity="0.5" />
+  </joint>
+  <joint name="j_13_y" type="prismatic">
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0" />
+    <parent link="1_aftc_13_base2x" />
+    <child link="1_aftc_13_x2y" />
+    <axis xyz="0 1 0" />
+    <limit effort="100.0" lower="-0.0015" upper="0.0015" velocity="0.5" />
+  </joint>
+  <joint name="j_13_z" type="prismatic">
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0" />
+    <parent link="1_aftc_13_x2y" />
+    <child link="1_aftc_13_taxel_base_link" />
+    <axis xyz="0 0 1" />
+    <limit effort="100.0" lower="-0.001" upper="0.000" velocity="0.5" />
+  </joint>
+  <link name="1_aftc_14_taxel_base_link">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="1_aftc_14_base2x">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.0039 0.0103 0.02574" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="1_aftc_14_x2y">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="j_14_x" type="prismatic">
+    <origin rpy="0.0 0.3141592653589793 0.0" xyz="0.0039 0.0103 0.02574" />
+    <parent link="1_aftc_base_link" />
+    <child link="1_aftc_14_base2x" />
+    <axis xyz="1 0 0" />
+    <limit effort="100.0" lower="-0.0015" upper="0.0015" velocity="0.5" />
+  </joint>
+  <joint name="j_14_y" type="prismatic">
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0" />
+    <parent link="1_aftc_14_base2x" />
+    <child link="1_aftc_14_x2y" />
+    <axis xyz="0 1 0" />
+    <limit effort="100.0" lower="-0.0015" upper="0.0015" velocity="0.5" />
+  </joint>
+  <joint name="j_14_z" type="prismatic">
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0" />
+    <parent link="1_aftc_14_x2y" />
+    <child link="1_aftc_14_taxel_base_link" />
+    <axis xyz="0 0 1" />
+    <limit effort="100.0" lower="-0.001" upper="0.000" velocity="0.5" />
+  </joint>
+  <link name="1_aftc_15_taxel_base_link">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="1_aftc_15_base2x">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.0039 0.0038 0.02574" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="1_aftc_15_x2y">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="j_15_x" type="prismatic">
+    <origin rpy="0.0 0.3141592653589793 0.0" xyz="0.0039 0.0038 0.02574" />
+    <parent link="1_aftc_base_link" />
+    <child link="1_aftc_15_base2x" />
+    <axis xyz="1 0 0" />
+    <limit effort="100.0" lower="-0.0015" upper="0.0015" velocity="0.5" />
+  </joint>
+  <joint name="j_15_y" type="prismatic">
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0" />
+    <parent link="1_aftc_15_base2x" />
+    <child link="1_aftc_15_x2y" />
+    <axis xyz="0 1 0" />
+    <limit effort="100.0" lower="-0.0015" upper="0.0015" velocity="0.5" />
+  </joint>
+  <joint name="j_15_z" type="prismatic">
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0" />
+    <parent link="1_aftc_15_x2y" />
+    <child link="1_aftc_15_taxel_base_link" />
+    <axis xyz="0 0 1" />
+    <limit effort="100.0" lower="-0.001" upper="0.000" velocity="0.5" />
+  </joint>
+  <link name="1_aftc_16_taxel_base_link">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="1_aftc_16_base2x">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="-0.0037 0.0338 0.0173" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="1_aftc_16_x2y">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="j_16_x" type="prismatic">
+    <origin rpy="-0.8377580409572782 -0.5061454830783556 0.0" xyz="-0.0037 0.0338 0.0173" />
+    <parent link="1_aftc_base_link" />
+    <child link="1_aftc_16_base2x" />
+    <axis xyz="1 0 0" />
+    <limit effort="100.0" lower="-0.0015" upper="0.0015" velocity="0.5" />
+  </joint>
+  <joint name="j_16_y" type="prismatic">
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0" />
+    <parent link="1_aftc_16_base2x" />
+    <child link="1_aftc_16_x2y" />
+    <axis xyz="0 1 0" />
+    <limit effort="100.0" lower="-0.0015" upper="0.0015" velocity="0.5" />
+  </joint>
+  <joint name="j_16_z" type="prismatic">
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0" />
+    <parent link="1_aftc_16_x2y" />
+    <child link="1_aftc_16_taxel_base_link" />
+    <axis xyz="0 0 1" />
+    <limit effort="100.0" lower="-0.001" upper="0.000" velocity="0.5" />
+  </joint>
+  <link name="1_aftc_17_taxel_base_link">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="1_aftc_17_base2x">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="-0.0039 0.0296 0.02155" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="1_aftc_17_x2y">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="j_17_x" type="prismatic">
+    <origin rpy="-0.5410520681182421 -0.4537856055185257 0.0" xyz="-0.0039 0.0296 0.02155" />
+    <parent link="1_aftc_base_link" />
+    <child link="1_aftc_17_base2x" />
+    <axis xyz="1 0 0" />
+    <limit effort="100.0" lower="-0.0015" upper="0.0015" velocity="0.5" />
+  </joint>
+  <joint name="j_17_y" type="prismatic">
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0" />
+    <parent link="1_aftc_17_base2x" />
+    <child link="1_aftc_17_x2y" />
+    <axis xyz="0 1 0" />
+    <limit effort="100.0" lower="-0.0015" upper="0.0015" velocity="0.5" />
+  </joint>
+  <joint name="j_17_z" type="prismatic">
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0" />
+    <parent link="1_aftc_17_x2y" />
+    <child link="1_aftc_17_taxel_base_link" />
+    <axis xyz="0 0 1" />
+    <limit effort="100.0" lower="-0.001" upper="0.000" velocity="0.5" />
+  </joint>
+  <link name="1_aftc_18_taxel_base_link">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="1_aftc_18_base2x">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="-0.0039 0.023 0.02444" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="1_aftc_18_x2y">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="j_18_x" type="prismatic">
+    <origin rpy="-0.17453292519943295 -0.3839724354387525 0.0" xyz="-0.0039 0.023 0.02444" />
+    <parent link="1_aftc_base_link" />
+    <child link="1_aftc_18_base2x" />
+    <axis xyz="1 0 0" />
+    <limit effort="100.0" lower="-0.0015" upper="0.0015" velocity="0.5" />
+  </joint>
+  <joint name="j_18_y" type="prismatic">
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0" />
+    <parent link="1_aftc_18_base2x" />
+    <child link="1_aftc_18_x2y" />
+    <axis xyz="0 1 0" />
+    <limit effort="100.0" lower="-0.0015" upper="0.0015" velocity="0.5" />
+  </joint>
+  <joint name="j_18_z" type="prismatic">
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0" />
+    <parent link="1_aftc_18_x2y" />
+    <child link="1_aftc_18_taxel_base_link" />
+    <axis xyz="0 0 1" />
+    <limit effort="100.0" lower="-0.001" upper="0.000" velocity="0.5" />
+  </joint>
+  <link name="1_aftc_19_taxel_base_link">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="1_aftc_19_base2x">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="-0.0039 0.0169 0.02544" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="1_aftc_19_x2y">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="j_19_x" type="prismatic">
+    <origin rpy="-0.17453292519943295 -0.3665191429188092 0.0" xyz="-0.0039 0.0169 0.02544" />
+    <parent link="1_aftc_base_link" />
+    <child link="1_aftc_19_base2x" />
+    <axis xyz="1 0 0" />
+    <limit effort="100.0" lower="-0.0015" upper="0.0015" velocity="0.5" />
+  </joint>
+  <joint name="j_19_y" type="prismatic">
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0" />
+    <parent link="1_aftc_19_base2x" />
+    <child link="1_aftc_19_x2y" />
+    <axis xyz="0 1 0" />
+    <limit effort="100.0" lower="-0.0015" upper="0.0015" velocity="0.5" />
+  </joint>
+  <joint name="j_19_z" type="prismatic">
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0" />
+    <parent link="1_aftc_19_x2y" />
+    <child link="1_aftc_19_taxel_base_link" />
+    <axis xyz="0 0 1" />
+    <limit effort="100.0" lower="-0.001" upper="0.000" velocity="0.5" />
+  </joint>
+  <link name="1_aftc_20_taxel_base_link">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="1_aftc_20_base2x">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="-0.0039 0.0103 0.02574" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="1_aftc_20_x2y">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="j_20_x" type="prismatic">
+    <origin rpy="0.0 -0.3141592653589793 0.0" xyz="-0.0039 0.0103 0.02574" />
+    <parent link="1_aftc_base_link" />
+    <child link="1_aftc_20_base2x" />
+    <axis xyz="1 0 0" />
+    <limit effort="100.0" lower="-0.0015" upper="0.0015" velocity="0.5" />
+  </joint>
+  <joint name="j_20_y" type="prismatic">
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0" />
+    <parent link="1_aftc_20_base2x" />
+    <child link="1_aftc_20_x2y" />
+    <axis xyz="0 1 0" />
+    <limit effort="100.0" lower="-0.0015" upper="0.0015" velocity="0.5" />
+  </joint>
+  <joint name="j_20_z" type="prismatic">
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0" />
+    <parent link="1_aftc_20_x2y" />
+    <child link="1_aftc_20_taxel_base_link" />
+    <axis xyz="0 0 1" />
+    <limit effort="100.0" lower="-0.001" upper="0.000" velocity="0.5" />
+  </joint>
+  <link name="1_aftc_21_taxel_base_link">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="1_aftc_21_base2x">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="-0.0039 0.0038 0.02574" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="1_aftc_21_x2y">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="j_21_x" type="prismatic">
+    <origin rpy="0.0 -0.3141592653589793 0.0" xyz="-0.0039 0.0038 0.02574" />
+    <parent link="1_aftc_base_link" />
+    <child link="1_aftc_21_base2x" />
+    <axis xyz="1 0 0" />
+    <limit effort="100.0" lower="-0.0015" upper="0.0015" velocity="0.5" />
+  </joint>
+  <joint name="j_21_y" type="prismatic">
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0" />
+    <parent link="1_aftc_21_base2x" />
+    <child link="1_aftc_21_x2y" />
+    <axis xyz="0 1 0" />
+    <limit effort="100.0" lower="-0.0015" upper="0.0015" velocity="0.5" />
+  </joint>
+  <joint name="j_21_z" type="prismatic">
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0" />
+    <parent link="1_aftc_21_x2y" />
+    <child link="1_aftc_21_taxel_base_link" />
+    <axis xyz="0 0 1" />
+    <limit effort="100.0" lower="-0.001" upper="0.000" velocity="0.5" />
+  </joint>
+  <link name="1_aftc_22_taxel_base_link">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="1_aftc_22_base2x">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="-0.0098 0.023 0.02" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="1_aftc_22_x2y">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="j_22_x" type="prismatic">
+    <origin rpy="0.0 -0.8726646259971648 -0.17453292519943295" xyz="-0.0098 0.023 0.02" />
+    <parent link="1_aftc_base_link" />
+    <child link="1_aftc_22_base2x" />
+    <axis xyz="1 0 0" />
+    <limit effort="100.0" lower="-0.0015" upper="0.0015" velocity="0.5" />
+  </joint>
+  <joint name="j_22_y" type="prismatic">
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0" />
+    <parent link="1_aftc_22_base2x" />
+    <child link="1_aftc_22_x2y" />
+    <axis xyz="0 1 0" />
+    <limit effort="100.0" lower="-0.0015" upper="0.0015" velocity="0.5" />
+  </joint>
+  <joint name="j_22_z" type="prismatic">
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0" />
+    <parent link="1_aftc_22_x2y" />
+    <child link="1_aftc_22_taxel_base_link" />
+    <axis xyz="0 0 1" />
+    <limit effort="100.0" lower="-0.001" upper="0.000" velocity="0.5" />
+  </joint>
+  <link name="1_aftc_23_taxel_base_link">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="1_aftc_23_base2x">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="-0.011 0.0167 0.02" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="1_aftc_23_x2y">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="j_23_x" type="prismatic">
+    <origin rpy="0.0 -0.8726646259971648 -0.17453292519943295" xyz="-0.011 0.0167 0.02" />
+    <parent link="1_aftc_base_link" />
+    <child link="1_aftc_23_base2x" />
+    <axis xyz="1 0 0" />
+    <limit effort="100.0" lower="-0.0015" upper="0.0015" velocity="0.5" />
+  </joint>
+  <joint name="j_23_y" type="prismatic">
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0" />
+    <parent link="1_aftc_23_base2x" />
+    <child link="1_aftc_23_x2y" />
+    <axis xyz="0 1 0" />
+    <limit effort="100.0" lower="-0.0015" upper="0.0015" velocity="0.5" />
+  </joint>
+  <joint name="j_23_z" type="prismatic">
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0" />
+    <parent link="1_aftc_23_x2y" />
+    <child link="1_aftc_23_taxel_base_link" />
+    <axis xyz="0 0 1" />
+    <limit effort="100.0" lower="-0.001" upper="0.000" velocity="0.5" />
+  </joint>
+  <link name="1_aftc_24_taxel_base_link">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="1_aftc_24_base2x">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="-0.0115 0.0103 0.02" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="1_aftc_24_x2y">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="j_24_x" type="prismatic">
+    <origin rpy="0.0 -0.8726646259971648 0.0" xyz="-0.0115 0.0103 0.02" />
+    <parent link="1_aftc_base_link" />
+    <child link="1_aftc_24_base2x" />
+    <axis xyz="1 0 0" />
+    <limit effort="100.0" lower="-0.0015" upper="0.0015" velocity="0.5" />
+  </joint>
+  <joint name="j_24_y" type="prismatic">
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0" />
+    <parent link="1_aftc_24_base2x" />
+    <child link="1_aftc_24_x2y" />
+    <axis xyz="0 1 0" />
+    <limit effort="100.0" lower="-0.0015" upper="0.0015" velocity="0.5" />
+  </joint>
+  <joint name="j_24_z" type="prismatic">
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0" />
+    <parent link="1_aftc_24_x2y" />
+    <child link="1_aftc_24_taxel_base_link" />
+    <axis xyz="0 0 1" />
+    <limit effort="100.0" lower="-0.001" upper="0.000" velocity="0.5" />
+  </joint>
+  <link name="1_aftc_25_taxel_base_link">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="1_aftc_25_base2x">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="-0.0115 0.0038 0.02" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="1_aftc_25_x2y">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="j_25_x" type="prismatic">
+    <origin rpy="0.0 -0.8726646259971648 0.0" xyz="-0.0115 0.0038 0.02" />
+    <parent link="1_aftc_base_link" />
+    <child link="1_aftc_25_base2x" />
+    <axis xyz="1 0 0" />
+    <limit effort="100.0" lower="-0.0015" upper="0.0015" velocity="0.5" />
+  </joint>
+  <joint name="j_25_y" type="prismatic">
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0" />
+    <parent link="1_aftc_25_base2x" />
+    <child link="1_aftc_25_x2y" />
+    <axis xyz="0 1 0" />
+    <limit effort="100.0" lower="-0.0015" upper="0.0015" velocity="0.5" />
+  </joint>
+  <joint name="j_25_z" type="prismatic">
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0" />
+    <parent link="1_aftc_25_x2y" />
+    <child link="1_aftc_25_taxel_base_link" />
+    <axis xyz="0 0 1" />
+    <limit effort="100.0" lower="-0.001" upper="0.000" velocity="0.5" />
+  </joint>
+  <link name="1_aftc_26_taxel_base_link">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="1_aftc_26_base2x">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="-0.0101 0.0306 0.01254" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="1_aftc_26_x2y">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="j_26_x" type="prismatic">
+    <origin rpy="0.0 -1.5707963267948966 -0.5235987755982988" xyz="-0.0101 0.0306 0.01254" />
+    <parent link="1_aftc_base_link" />
+    <child link="1_aftc_26_base2x" />
+    <axis xyz="1 0 0" />
+    <limit effort="100.0" lower="-0.0015" upper="0.0015" velocity="0.5" />
+  </joint>
+  <joint name="j_26_y" type="prismatic">
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0" />
+    <parent link="1_aftc_26_base2x" />
+    <child link="1_aftc_26_x2y" />
+    <axis xyz="0 1 0" />
+    <limit effort="100.0" lower="-0.0015" upper="0.0015" velocity="0.5" />
+  </joint>
+  <joint name="j_26_z" type="prismatic">
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0" />
+    <parent link="1_aftc_26_x2y" />
+    <child link="1_aftc_26_taxel_base_link" />
+    <axis xyz="0 0 1" />
+    <limit effort="100.0" lower="-0.001" upper="0.000" velocity="0.5" />
+  </joint>
+  <link name="1_aftc_27_taxel_base_link">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="1_aftc_27_base2x">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="-0.0126 0.0236 0.01254" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="1_aftc_27_x2y">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="j_27_x" type="prismatic">
+    <origin rpy="0.0 -1.5707963267948966 -0.17453292519943295" xyz="-0.0126 0.0236 0.01254" />
+    <parent link="1_aftc_base_link" />
+    <child link="1_aftc_27_base2x" />
+    <axis xyz="1 0 0" />
+    <limit effort="100.0" lower="-0.0015" upper="0.0015" velocity="0.5" />
+  </joint>
+  <joint name="j_27_y" type="prismatic">
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0" />
+    <parent link="1_aftc_27_base2x" />
+    <child link="1_aftc_27_x2y" />
+    <axis xyz="0 1 0" />
+    <limit effort="100.0" lower="-0.0015" upper="0.0015" velocity="0.5" />
+  </joint>
+  <joint name="j_27_z" type="prismatic">
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0" />
+    <parent link="1_aftc_27_x2y" />
+    <child link="1_aftc_27_taxel_base_link" />
+    <axis xyz="0 0 1" />
+    <limit effort="100.0" lower="-0.001" upper="0.000" velocity="0.5" />
+  </joint>
+  <link name="1_aftc_28_taxel_base_link">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="1_aftc_28_base2x">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="-0.0138 0.0173 0.01254" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="1_aftc_28_x2y">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="j_28_x" type="prismatic">
+    <origin rpy="0.0 -1.5707963267948966 -0.17453292519943295" xyz="-0.0138 0.0173 0.01254" />
+    <parent link="1_aftc_base_link" />
+    <child link="1_aftc_28_base2x" />
+    <axis xyz="1 0 0" />
+    <limit effort="100.0" lower="-0.0015" upper="0.0015" velocity="0.5" />
+  </joint>
+  <joint name="j_28_y" type="prismatic">
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0" />
+    <parent link="1_aftc_28_base2x" />
+    <child link="1_aftc_28_x2y" />
+    <axis xyz="0 1 0" />
+    <limit effort="100.0" lower="-0.0015" upper="0.0015" velocity="0.5" />
+  </joint>
+  <joint name="j_28_z" type="prismatic">
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0" />
+    <parent link="1_aftc_28_x2y" />
+    <child link="1_aftc_28_taxel_base_link" />
+    <axis xyz="0 0 1" />
+    <limit effort="100.0" lower="-0.001" upper="0.000" velocity="0.5" />
+  </joint>
+  <link name="1_aftc_29_taxel_base_link">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="1_aftc_29_base2x">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="-0.0143 0.0103 0.01254" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="1_aftc_29_x2y">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="j_29_x" type="prismatic">
+    <origin rpy="0.0 -1.5707963267948966 0.0" xyz="-0.0143 0.0103 0.01254" />
+    <parent link="1_aftc_base_link" />
+    <child link="1_aftc_29_base2x" />
+    <axis xyz="1 0 0" />
+    <limit effort="100.0" lower="-0.0015" upper="0.0015" velocity="0.5" />
+  </joint>
+  <joint name="j_29_y" type="prismatic">
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0" />
+    <parent link="1_aftc_29_base2x" />
+    <child link="1_aftc_29_x2y" />
+    <axis xyz="0 1 0" />
+    <limit effort="100.0" lower="-0.0015" upper="0.0015" velocity="0.5" />
+  </joint>
+  <joint name="j_29_z" type="prismatic">
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0" />
+    <parent link="1_aftc_29_x2y" />
+    <child link="1_aftc_29_taxel_base_link" />
+    <axis xyz="0 0 1" />
+    <limit effort="100.0" lower="-0.001" upper="0.000" velocity="0.5" />
+  </joint>
+  <link name="1_aftc_30_taxel_base_link">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="1_aftc_30_base2x">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="-0.0143 0.0038 0.01254" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="1_aftc_30_x2y">
+    <inertial><origin xyz="0 0 0" rpy="0 0 0" /><mass value="0.005" /><inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" /></inertial><visual>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.0 0.0 0.0" />
+      <material name="blue" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.0001" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="j_30_x" type="prismatic">
+    <origin rpy="0.0 -1.5707963267948966 0.0" xyz="-0.0143 0.0038 0.01254" />
+    <parent link="1_aftc_base_link" />
+    <child link="1_aftc_30_base2x" />
+    <axis xyz="1 0 0" />
+    <limit effort="100.0" lower="-0.0015" upper="0.0015" velocity="0.5" />
+  </joint>
+  <joint name="j_30_y" type="prismatic">
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0" />
+    <parent link="1_aftc_30_base2x" />
+    <child link="1_aftc_30_x2y" />
+    <axis xyz="0 1 0" />
+    <limit effort="100.0" lower="-0.0015" upper="0.0015" velocity="0.5" />
+  </joint>
+  <joint name="j_30_z" type="prismatic">
+    <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0" />
+    <parent link="1_aftc_30_x2y" />
+    <child link="1_aftc_30_taxel_base_link" />
+    <axis xyz="0 0 1" />
+    <limit effort="100.0" lower="-0.001" upper="0.000" velocity="0.5" />
+  </joint>
+</robot>

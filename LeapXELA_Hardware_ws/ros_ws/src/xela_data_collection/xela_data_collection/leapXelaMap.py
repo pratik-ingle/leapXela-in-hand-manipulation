@@ -67,7 +67,6 @@ LEAP_XELA_ID = np.array(
 )
 
 
-
 def bracket_representation(
     grid: np.ndarray,
     *,

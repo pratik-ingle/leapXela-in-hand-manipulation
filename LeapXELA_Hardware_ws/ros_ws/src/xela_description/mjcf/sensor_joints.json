@@ -1,743 +1,1273 @@
 {
-    "if_bs_uspa44": {
+    "mf_bs": {
         "0_0": {
-            "x": "if_bs_uspa44_sensor_patch_0_0_slide_x",
-            "y": "if_bs_uspa44_sensor_patch_0_0_slide_y",
-            "z": "if_bs_uspa44_sensor_patch_0_0_slide_z"
+            "x": "mf_bs_4_4_sensor_patch_0_0_slide_x",
+            "y": "mf_bs_4_4_sensor_patch_0_0_slide_y",
+            "z": "mf_bs_4_4_sensor_patch_0_0_slide_z"
         },
         "1_0": {
-            "x": "if_bs_uspa44_sensor_patch_1_0_slide_x",
-            "y": "if_bs_uspa44_sensor_patch_1_0_slide_y",
-            "z": "if_bs_uspa44_sensor_patch_1_0_slide_z"
+            "x": "mf_bs_4_4_sensor_patch_1_0_slide_x",
+            "y": "mf_bs_4_4_sensor_patch_1_0_slide_y",
+            "z": "mf_bs_4_4_sensor_patch_1_0_slide_z"
         },
         "2_0": {
-            "x": "if_bs_uspa44_sensor_patch_2_0_slide_x",
-            "y": "if_bs_uspa44_sensor_patch_2_0_slide_y",
-            "z": "if_bs_uspa44_sensor_patch_2_0_slide_z"
+            "x": "mf_bs_4_4_sensor_patch_2_0_slide_x",
+            "y": "mf_bs_4_4_sensor_patch_2_0_slide_y",
+            "z": "mf_bs_4_4_sensor_patch_2_0_slide_z"
         },
         "3_0": {
-            "x": "if_bs_uspa44_sensor_patch_3_0_slide_x",
-            "y": "if_bs_uspa44_sensor_patch_3_0_slide_y",
-            "z": "if_bs_uspa44_sensor_patch_3_0_slide_z"
+            "x": "mf_bs_4_4_sensor_patch_3_0_slide_x",
+            "y": "mf_bs_4_4_sensor_patch_3_0_slide_y",
+            "z": "mf_bs_4_4_sensor_patch_3_0_slide_z"
         },
         "0_1": {
-            "x": "if_bs_uspa44_sensor_patch_0_1_slide_x",
-            "y": "if_bs_uspa44_sensor_patch_0_1_slide_y",
-            "z": "if_bs_uspa44_sensor_patch_0_1_slide_z"
+            "x": "mf_bs_4_4_sensor_patch_0_1_slide_x",
+            "y": "mf_bs_4_4_sensor_patch_0_1_slide_y",
+            "z": "mf_bs_4_4_sensor_patch_0_1_slide_z"
         },
         "1_1": {
-            "x": "if_bs_uspa44_sensor_patch_1_1_slide_x",
-            "y": "if_bs_uspa44_sensor_patch_1_1_slide_y",
-            "z": "if_bs_uspa44_sensor_patch_1_1_slide_z"
+            "x": "mf_bs_4_4_sensor_patch_1_1_slide_x",
+            "y": "mf_bs_4_4_sensor_patch_1_1_slide_y",
+            "z": "mf_bs_4_4_sensor_patch_1_1_slide_z"
         },
         "2_1": {
-            "x": "if_bs_uspa44_sensor_patch_2_1_slide_x",
-            "y": "if_bs_uspa44_sensor_patch_2_1_slide_y",
-            "z": "if_bs_uspa44_sensor_patch_2_1_slide_z"
+            "x": "mf_bs_4_4_sensor_patch_2_1_slide_x",
+            "y": "mf_bs_4_4_sensor_patch_2_1_slide_y",
+            "z": "mf_bs_4_4_sensor_patch_2_1_slide_z"
         },
         "3_1": {
-            "x": "if_bs_uspa44_sensor_patch_3_1_slide_x",
-            "y": "if_bs_uspa44_sensor_patch_3_1_slide_y",
-            "z": "if_bs_uspa44_sensor_patch_3_1_slide_z"
+            "x": "mf_bs_4_4_sensor_patch_3_1_slide_x",
+            "y": "mf_bs_4_4_sensor_patch_3_1_slide_y",
+            "z": "mf_bs_4_4_sensor_patch_3_1_slide_z"
         },
         "0_2": {
-            "x": "if_bs_uspa44_sensor_patch_0_2_slide_x",
-            "y": "if_bs_uspa44_sensor_patch_0_2_slide_y",
-            "z": "if_bs_uspa44_sensor_patch_0_2_slide_z"
+            "x": "mf_bs_4_4_sensor_patch_0_2_slide_x",
+            "y": "mf_bs_4_4_sensor_patch_0_2_slide_y",
+            "z": "mf_bs_4_4_sensor_patch_0_2_slide_z"
         },
         "1_2": {
-            "x": "if_bs_uspa44_sensor_patch_1_2_slide_x",
-            "y": "if_bs_uspa44_sensor_patch_1_2_slide_y",
-            "z": "if_bs_uspa44_sensor_patch_1_2_slide_z"
+            "x": "mf_bs_4_4_sensor_patch_1_2_slide_x",
+            "y": "mf_bs_4_4_sensor_patch_1_2_slide_y",
+            "z": "mf_bs_4_4_sensor_patch_1_2_slide_z"
         },
         "2_2": {
-            "x": "if_bs_uspa44_sensor_patch_2_2_slide_x",
-            "y": "if_bs_uspa44_sensor_patch_2_2_slide_y",
-            "z": "if_bs_uspa44_sensor_patch_2_2_slide_z"
+            "x": "mf_bs_4_4_sensor_patch_2_2_slide_x",
+            "y": "mf_bs_4_4_sensor_patch_2_2_slide_y",
+            "z": "mf_bs_4_4_sensor_patch_2_2_slide_z"
         },
         "3_2": {
-            "x": "if_bs_uspa44_sensor_patch_3_2_slide_x",
-            "y": "if_bs_uspa44_sensor_patch_3_2_slide_y",
-            "z": "if_bs_uspa44_sensor_patch_3_2_slide_z"
+            "x": "mf_bs_4_4_sensor_patch_3_2_slide_x",
+            "y": "mf_bs_4_4_sensor_patch_3_2_slide_y",
+            "z": "mf_bs_4_4_sensor_patch_3_2_slide_z"
         },
         "0_3": {
-            "x": "if_bs_uspa44_sensor_patch_0_3_slide_x",
-            "y": "if_bs_uspa44_sensor_patch_0_3_slide_y",
-            "z": "if_bs_uspa44_sensor_patch_0_3_slide_z"
+            "x": "mf_bs_4_4_sensor_patch_0_3_slide_x",
+            "y": "mf_bs_4_4_sensor_patch_0_3_slide_y",
+            "z": "mf_bs_4_4_sensor_patch_0_3_slide_z"
         },
         "1_3": {
-            "x": "if_bs_uspa44_sensor_patch_1_3_slide_x",
-            "y": "if_bs_uspa44_sensor_patch_1_3_slide_y",
-            "z": "if_bs_uspa44_sensor_patch_1_3_slide_z"
+            "x": "mf_bs_4_4_sensor_patch_1_3_slide_x",
+            "y": "mf_bs_4_4_sensor_patch_1_3_slide_y",
+            "z": "mf_bs_4_4_sensor_patch_1_3_slide_z"
         },
         "2_3": {
-            "x": "if_bs_uspa44_sensor_patch_2_3_slide_x",
-            "y": "if_bs_uspa44_sensor_patch_2_3_slide_y",
-            "z": "if_bs_uspa44_sensor_patch_2_3_slide_z"
+            "x": "mf_bs_4_4_sensor_patch_2_3_slide_x",
+            "y": "mf_bs_4_4_sensor_patch_2_3_slide_y",
+            "z": "mf_bs_4_4_sensor_patch_2_3_slide_z"
         },
         "3_3": {
-            "x": "if_bs_uspa44_sensor_patch_3_3_slide_x",
-            "y": "if_bs_uspa44_sensor_patch_3_3_slide_y",
-            "z": "if_bs_uspa44_sensor_patch_3_3_slide_z"
+            "x": "mf_bs_4_4_sensor_patch_3_3_slide_x",
+            "y": "mf_bs_4_4_sensor_patch_3_3_slide_y",
+            "z": "mf_bs_4_4_sensor_patch_3_3_slide_z"
         }
     },
-    "mf_bs_uspa44": {
+    "rf_bs": {
         "0_0": {
-            "x": "mf_bs_uspa44_sensor_patch_0_0_slide_x",
-            "y": "mf_bs_uspa44_sensor_patch_0_0_slide_y",
-            "z": "mf_bs_uspa44_sensor_patch_0_0_slide_z"
+            "x": "rf_bs_4_4_sensor_patch_0_0_slide_x",
+            "y": "rf_bs_4_4_sensor_patch_0_0_slide_y",
+            "z": "rf_bs_4_4_sensor_patch_0_0_slide_z"
         },
         "1_0": {
-            "x": "mf_bs_uspa44_sensor_patch_1_0_slide_x",
-            "y": "mf_bs_uspa44_sensor_patch_1_0_slide_y",
-            "z": "mf_bs_uspa44_sensor_patch_1_0_slide_z"
+            "x": "rf_bs_4_4_sensor_patch_1_0_slide_x",
+            "y": "rf_bs_4_4_sensor_patch_1_0_slide_y",
+            "z": "rf_bs_4_4_sensor_patch_1_0_slide_z"
         },
         "2_0": {
-            "x": "mf_bs_uspa44_sensor_patch_2_0_slide_x",
-            "y": "mf_bs_uspa44_sensor_patch_2_0_slide_y",
-            "z": "mf_bs_uspa44_sensor_patch_2_0_slide_z"
+            "x": "rf_bs_4_4_sensor_patch_2_0_slide_x",
+            "y": "rf_bs_4_4_sensor_patch_2_0_slide_y",
+            "z": "rf_bs_4_4_sensor_patch_2_0_slide_z"
         },
         "3_0": {
-            "x": "mf_bs_uspa44_sensor_patch_3_0_slide_x",
-            "y": "mf_bs_uspa44_sensor_patch_3_0_slide_y",
-            "z": "mf_bs_uspa44_sensor_patch_3_0_slide_z"
+            "x": "rf_bs_4_4_sensor_patch_3_0_slide_x",
+            "y": "rf_bs_4_4_sensor_patch_3_0_slide_y",
+            "z": "rf_bs_4_4_sensor_patch_3_0_slide_z"
         },
         "0_1": {
-            "x": "mf_bs_uspa44_sensor_patch_0_1_slide_x",
-            "y": "mf_bs_uspa44_sensor_patch_0_1_slide_y",
-            "z": "mf_bs_uspa44_sensor_patch_0_1_slide_z"
+            "x": "rf_bs_4_4_sensor_patch_0_1_slide_x",
+            "y": "rf_bs_4_4_sensor_patch_0_1_slide_y",
+            "z": "rf_bs_4_4_sensor_patch_0_1_slide_z"
         },
         "1_1": {
-            "x": "mf_bs_uspa44_sensor_patch_1_1_slide_x",
-            "y": "mf_bs_uspa44_sensor_patch_1_1_slide_y",
-            "z": "mf_bs_uspa44_sensor_patch_1_1_slide_z"
+            "x": "rf_bs_4_4_sensor_patch_1_1_slide_x",
+            "y": "rf_bs_4_4_sensor_patch_1_1_slide_y",
+            "z": "rf_bs_4_4_sensor_patch_1_1_slide_z"
         },
         "2_1": {
-            "x": "mf_bs_uspa44_sensor_patch_2_1_slide_x",
-            "y": "mf_bs_uspa44_sensor_patch_2_1_slide_y",
-            "z": "mf_bs_uspa44_sensor_patch_2_1_slide_z"
+            "x": "rf_bs_4_4_sensor_patch_2_1_slide_x",
+            "y": "rf_bs_4_4_sensor_patch_2_1_slide_y",
+            "z": "rf_bs_4_4_sensor_patch_2_1_slide_z"
         },
         "3_1": {
-            "x": "mf_bs_uspa44_sensor_patch_3_1_slide_x",
-            "y": "mf_bs_uspa44_sensor_patch_3_1_slide_y",
-            "z": "mf_bs_uspa44_sensor_patch_3_1_slide_z"
+            "x": "rf_bs_4_4_sensor_patch_3_1_slide_x",
+            "y": "rf_bs_4_4_sensor_patch_3_1_slide_y",
+            "z": "rf_bs_4_4_sensor_patch_3_1_slide_z"
         },
         "0_2": {
-            "x": "mf_bs_uspa44_sensor_patch_0_2_slide_x",
-            "y": "mf_bs_uspa44_sensor_patch_0_2_slide_y",
-            "z": "mf_bs_uspa44_sensor_patch_0_2_slide_z"
+            "x": "rf_bs_4_4_sensor_patch_0_2_slide_x",
+            "y": "rf_bs_4_4_sensor_patch_0_2_slide_y",
+            "z": "rf_bs_4_4_sensor_patch_0_2_slide_z"
         },
         "1_2": {
-            "x": "mf_bs_uspa44_sensor_patch_1_2_slide_x",
-            "y": "mf_bs_uspa44_sensor_patch_1_2_slide_y",
-            "z": "mf_bs_uspa44_sensor_patch_1_2_slide_z"
+            "x": "rf_bs_4_4_sensor_patch_1_2_slide_x",
+            "y": "rf_bs_4_4_sensor_patch_1_2_slide_y",
+            "z": "rf_bs_4_4_sensor_patch_1_2_slide_z"
         },
         "2_2": {
-            "x": "mf_bs_uspa44_sensor_patch_2_2_slide_x",
-            "y": "mf_bs_uspa44_sensor_patch_2_2_slide_y",
-            "z": "mf_bs_uspa44_sensor_patch_2_2_slide_z"
+            "x": "rf_bs_4_4_sensor_patch_2_2_slide_x",
+            "y": "rf_bs_4_4_sensor_patch_2_2_slide_y",
+            "z": "rf_bs_4_4_sensor_patch_2_2_slide_z"
         },
         "3_2": {
-            "x": "mf_bs_uspa44_sensor_patch_3_2_slide_x",
-            "y": "mf_bs_uspa44_sensor_patch_3_2_slide_y",
-            "z": "mf_bs_uspa44_sensor_patch_3_2_slide_z"
+            "x": "rf_bs_4_4_sensor_patch_3_2_slide_x",
+            "y": "rf_bs_4_4_sensor_patch_3_2_slide_y",
+            "z": "rf_bs_4_4_sensor_patch_3_2_slide_z"
         },
         "0_3": {
-            "x": "mf_bs_uspa44_sensor_patch_0_3_slide_x",
-            "y": "mf_bs_uspa44_sensor_patch_0_3_slide_y",
-            "z": "mf_bs_uspa44_sensor_patch_0_3_slide_z"
+            "x": "rf_bs_4_4_sensor_patch_0_3_slide_x",
+            "y": "rf_bs_4_4_sensor_patch_0_3_slide_y",
+            "z": "rf_bs_4_4_sensor_patch_0_3_slide_z"
         },
         "1_3": {
-            "x": "mf_bs_uspa44_sensor_patch_1_3_slide_x",
-            "y": "mf_bs_uspa44_sensor_patch_1_3_slide_y",
-            "z": "mf_bs_uspa44_sensor_patch_1_3_slide_z"
+            "x": "rf_bs_4_4_sensor_patch_1_3_slide_x",
+            "y": "rf_bs_4_4_sensor_patch_1_3_slide_y",
+            "z": "rf_bs_4_4_sensor_patch_1_3_slide_z"
         },
         "2_3": {
-            "x": "mf_bs_uspa44_sensor_patch_2_3_slide_x",
-            "y": "mf_bs_uspa44_sensor_patch_2_3_slide_y",
-            "z": "mf_bs_uspa44_sensor_patch_2_3_slide_z"
+            "x": "rf_bs_4_4_sensor_patch_2_3_slide_x",
+            "y": "rf_bs_4_4_sensor_patch_2_3_slide_y",
+            "z": "rf_bs_4_4_sensor_patch_2_3_slide_z"
         },
         "3_3": {
-            "x": "mf_bs_uspa44_sensor_patch_3_3_slide_x",
-            "y": "mf_bs_uspa44_sensor_patch_3_3_slide_y",
-            "z": "mf_bs_uspa44_sensor_patch_3_3_slide_z"
+            "x": "rf_bs_4_4_sensor_patch_3_3_slide_x",
+            "y": "rf_bs_4_4_sensor_patch_3_3_slide_y",
+            "z": "rf_bs_4_4_sensor_patch_3_3_slide_z"
         }
     },
-    "rf_bs_uspa44": {
+    "if_bs": {
         "0_0": {
-            "x": "rf_bs_uspa44_sensor_patch_0_0_slide_x",
-            "y": "rf_bs_uspa44_sensor_patch_0_0_slide_y",
-            "z": "rf_bs_uspa44_sensor_patch_0_0_slide_z"
+            "x": "if_bs_4_4_sensor_patch_0_0_slide_x",
+            "y": "if_bs_4_4_sensor_patch_0_0_slide_y",
+            "z": "if_bs_4_4_sensor_patch_0_0_slide_z"
         },
         "1_0": {
-            "x": "rf_bs_uspa44_sensor_patch_1_0_slide_x",
-            "y": "rf_bs_uspa44_sensor_patch_1_0_slide_y",
-            "z": "rf_bs_uspa44_sensor_patch_1_0_slide_z"
+            "x": "if_bs_4_4_sensor_patch_1_0_slide_x",
+            "y": "if_bs_4_4_sensor_patch_1_0_slide_y",
+            "z": "if_bs_4_4_sensor_patch_1_0_slide_z"
         },
         "2_0": {
-            "x": "rf_bs_uspa44_sensor_patch_2_0_slide_x",
-            "y": "rf_bs_uspa44_sensor_patch_2_0_slide_y",
-            "z": "rf_bs_uspa44_sensor_patch_2_0_slide_z"
+            "x": "if_bs_4_4_sensor_patch_2_0_slide_x",
+            "y": "if_bs_4_4_sensor_patch_2_0_slide_y",
+            "z": "if_bs_4_4_sensor_patch_2_0_slide_z"
         },
         "3_0": {
-            "x": "rf_bs_uspa44_sensor_patch_3_0_slide_x",
-            "y": "rf_bs_uspa44_sensor_patch_3_0_slide_y",
-            "z": "rf_bs_uspa44_sensor_patch_3_0_slide_z"
+            "x": "if_bs_4_4_sensor_patch_3_0_slide_x",
+            "y": "if_bs_4_4_sensor_patch_3_0_slide_y",
+            "z": "if_bs_4_4_sensor_patch_3_0_slide_z"
         },
         "0_1": {
-            "x": "rf_bs_uspa44_sensor_patch_0_1_slide_x",
-            "y": "rf_bs_uspa44_sensor_patch_0_1_slide_y",
-            "z": "rf_bs_uspa44_sensor_patch_0_1_slide_z"
+            "x": "if_bs_4_4_sensor_patch_0_1_slide_x",
+            "y": "if_bs_4_4_sensor_patch_0_1_slide_y",
+            "z": "if_bs_4_4_sensor_patch_0_1_slide_z"
         },
         "1_1": {
-            "x": "rf_bs_uspa44_sensor_patch_1_1_slide_x",
-            "y": "rf_bs_uspa44_sensor_patch_1_1_slide_y",
-            "z": "rf_bs_uspa44_sensor_patch_1_1_slide_z"
+            "x": "if_bs_4_4_sensor_patch_1_1_slide_x",
+            "y": "if_bs_4_4_sensor_patch_1_1_slide_y",
+            "z": "if_bs_4_4_sensor_patch_1_1_slide_z"
         },
         "2_1": {
-            "x": "rf_bs_uspa44_sensor_patch_2_1_slide_x",
-            "y": "rf_bs_uspa44_sensor_patch_2_1_slide_y",
-            "z": "rf_bs_uspa44_sensor_patch_2_1_slide_z"
+            "x": "if_bs_4_4_sensor_patch_2_1_slide_x",
+            "y": "if_bs_4_4_sensor_patch_2_1_slide_y",
+            "z": "if_bs_4_4_sensor_patch_2_1_slide_z"
         },
         "3_1": {
-            "x": "rf_bs_uspa44_sensor_patch_3_1_slide_x",
-            "y": "rf_bs_uspa44_sensor_patch_3_1_slide_y",
-            "z": "rf_bs_uspa44_sensor_patch_3_1_slide_z"
+            "x": "if_bs_4_4_sensor_patch_3_1_slide_x",
+            "y": "if_bs_4_4_sensor_patch_3_1_slide_y",
+            "z": "if_bs_4_4_sensor_patch_3_1_slide_z"
         },
         "0_2": {
-            "x": "rf_bs_uspa44_sensor_patch_0_2_slide_x",
-            "y": "rf_bs_uspa44_sensor_patch_0_2_slide_y",
-            "z": "rf_bs_uspa44_sensor_patch_0_2_slide_z"
+            "x": "if_bs_4_4_sensor_patch_0_2_slide_x",
+            "y": "if_bs_4_4_sensor_patch_0_2_slide_y",
+            "z": "if_bs_4_4_sensor_patch_0_2_slide_z"
         },
         "1_2": {
-            "x": "rf_bs_uspa44_sensor_patch_1_2_slide_x",
-            "y": "rf_bs_uspa44_sensor_patch_1_2_slide_y",
-            "z": "rf_bs_uspa44_sensor_patch_1_2_slide_z"
+            "x": "if_bs_4_4_sensor_patch_1_2_slide_x",
+            "y": "if_bs_4_4_sensor_patch_1_2_slide_y",
+            "z": "if_bs_4_4_sensor_patch_1_2_slide_z"
         },
         "2_2": {
-            "x": "rf_bs_uspa44_sensor_patch_2_2_slide_x",
-            "y": "rf_bs_uspa44_sensor_patch_2_2_slide_y",
-            "z": "rf_bs_uspa44_sensor_patch_2_2_slide_z"
+            "x": "if_bs_4_4_sensor_patch_2_2_slide_x",
+            "y": "if_bs_4_4_sensor_patch_2_2_slide_y",
+            "z": "if_bs_4_4_sensor_patch_2_2_slide_z"
         },
         "3_2": {
-            "x": "rf_bs_uspa44_sensor_patch_3_2_slide_x",
-            "y": "rf_bs_uspa44_sensor_patch_3_2_slide_y",
-            "z": "rf_bs_uspa44_sensor_patch_3_2_slide_z"
+            "x": "if_bs_4_4_sensor_patch_3_2_slide_x",
+            "y": "if_bs_4_4_sensor_patch_3_2_slide_y",
+            "z": "if_bs_4_4_sensor_patch_3_2_slide_z"
         },
         "0_3": {
-            "x": "rf_bs_uspa44_sensor_patch_0_3_slide_x",
-            "y": "rf_bs_uspa44_sensor_patch_0_3_slide_y",
-            "z": "rf_bs_uspa44_sensor_patch_0_3_slide_z"
+            "x": "if_bs_4_4_sensor_patch_0_3_slide_x",
+            "y": "if_bs_4_4_sensor_patch_0_3_slide_y",
+            "z": "if_bs_4_4_sensor_patch_0_3_slide_z"
         },
         "1_3": {
-            "x": "rf_bs_uspa44_sensor_patch_1_3_slide_x",
-            "y": "rf_bs_uspa44_sensor_patch_1_3_slide_y",
-            "z": "rf_bs_uspa44_sensor_patch_1_3_slide_z"
+            "x": "if_bs_4_4_sensor_patch_1_3_slide_x",
+            "y": "if_bs_4_4_sensor_patch_1_3_slide_y",
+            "z": "if_bs_4_4_sensor_patch_1_3_slide_z"
         },
         "2_3": {
-            "x": "rf_bs_uspa44_sensor_patch_2_3_slide_x",
-            "y": "rf_bs_uspa44_sensor_patch_2_3_slide_y",
-            "z": "rf_bs_uspa44_sensor_patch_2_3_slide_z"
+            "x": "if_bs_4_4_sensor_patch_2_3_slide_x",
+            "y": "if_bs_4_4_sensor_patch_2_3_slide_y",
+            "z": "if_bs_4_4_sensor_patch_2_3_slide_z"
         },
         "3_3": {
-            "x": "rf_bs_uspa44_sensor_patch_3_3_slide_x",
-            "y": "rf_bs_uspa44_sensor_patch_3_3_slide_y",
-            "z": "rf_bs_uspa44_sensor_patch_3_3_slide_z"
+            "x": "if_bs_4_4_sensor_patch_3_3_slide_x",
+            "y": "if_bs_4_4_sensor_patch_3_3_slide_y",
+            "z": "if_bs_4_4_sensor_patch_3_3_slide_z"
         }
     },
-    "if_md_uspa44": {
+    "rf_md": {
         "0_0": {
-            "x": "if_md_uspa44_sensor_patch_0_0_slide_x",
-            "y": "if_md_uspa44_sensor_patch_0_0_slide_y",
-            "z": "if_md_uspa44_sensor_patch_0_0_slide_z"
+            "x": "rf_md_4_4_sensor_patch_0_0_slide_x",
+            "y": "rf_md_4_4_sensor_patch_0_0_slide_y",
+            "z": "rf_md_4_4_sensor_patch_0_0_slide_z"
         },
         "1_0": {
-            "x": "if_md_uspa44_sensor_patch_1_0_slide_x",
-            "y": "if_md_uspa44_sensor_patch_1_0_slide_y",
-            "z": "if_md_uspa44_sensor_patch_1_0_slide_z"
+            "x": "rf_md_4_4_sensor_patch_1_0_slide_x",
+            "y": "rf_md_4_4_sensor_patch_1_0_slide_y",
+            "z": "rf_md_4_4_sensor_patch_1_0_slide_z"
         },
         "2_0": {
-            "x": "if_md_uspa44_sensor_patch_2_0_slide_x",
-            "y": "if_md_uspa44_sensor_patch_2_0_slide_y",
-            "z": "if_md_uspa44_sensor_patch_2_0_slide_z"
+            "x": "rf_md_4_4_sensor_patch_2_0_slide_x",
+            "y": "rf_md_4_4_sensor_patch_2_0_slide_y",
+            "z": "rf_md_4_4_sensor_patch_2_0_slide_z"
         },
         "3_0": {
-            "x": "if_md_uspa44_sensor_patch_3_0_slide_x",
-            "y": "if_md_uspa44_sensor_patch_3_0_slide_y",
-            "z": "if_md_uspa44_sensor_patch_3_0_slide_z"
+            "x": "rf_md_4_4_sensor_patch_3_0_slide_x",
+            "y": "rf_md_4_4_sensor_patch_3_0_slide_y",
+            "z": "rf_md_4_4_sensor_patch_3_0_slide_z"
         },
         "0_1": {
-            "x": "if_md_uspa44_sensor_patch_0_1_slide_x",
-            "y": "if_md_uspa44_sensor_patch_0_1_slide_y",
-            "z": "if_md_uspa44_sensor_patch_0_1_slide_z"
+            "x": "rf_md_4_4_sensor_patch_0_1_slide_x",
+            "y": "rf_md_4_4_sensor_patch_0_1_slide_y",
+            "z": "rf_md_4_4_sensor_patch_0_1_slide_z"
         },
         "1_1": {
-            "x": "if_md_uspa44_sensor_patch_1_1_slide_x",
-            "y": "if_md_uspa44_sensor_patch_1_1_slide_y",
-            "z": "if_md_uspa44_sensor_patch_1_1_slide_z"
+            "x": "rf_md_4_4_sensor_patch_1_1_slide_x",
+            "y": "rf_md_4_4_sensor_patch_1_1_slide_y",
+            "z": "rf_md_4_4_sensor_patch_1_1_slide_z"
         },
         "2_1": {
-            "x": "if_md_uspa44_sensor_patch_2_1_slide_x",
-            "y": "if_md_uspa44_sensor_patch_2_1_slide_y",
-            "z": "if_md_uspa44_sensor_patch_2_1_slide_z"
+            "x": "rf_md_4_4_sensor_patch_2_1_slide_x",
+            "y": "rf_md_4_4_sensor_patch_2_1_slide_y",
+            "z": "rf_md_4_4_sensor_patch_2_1_slide_z"
         },
         "3_1": {
-            "x": "if_md_uspa44_sensor_patch_3_1_slide_x",
-            "y": "if_md_uspa44_sensor_patch_3_1_slide_y",
-            "z": "if_md_uspa44_sensor_patch_3_1_slide_z"
+            "x": "rf_md_4_4_sensor_patch_3_1_slide_x",
+            "y": "rf_md_4_4_sensor_patch_3_1_slide_y",
+            "z": "rf_md_4_4_sensor_patch_3_1_slide_z"
         },
         "0_2": {
-            "x": "if_md_uspa44_sensor_patch_0_2_slide_x",
-            "y": "if_md_uspa44_sensor_patch_0_2_slide_y",
-            "z": "if_md_uspa44_sensor_patch_0_2_slide_z"
+            "x": "rf_md_4_4_sensor_patch_0_2_slide_x",
+            "y": "rf_md_4_4_sensor_patch_0_2_slide_y",
+            "z": "rf_md_4_4_sensor_patch_0_2_slide_z"
         },
         "1_2": {
-            "x": "if_md_uspa44_sensor_patch_1_2_slide_x",
-            "y": "if_md_uspa44_sensor_patch_1_2_slide_y",
-            "z": "if_md_uspa44_sensor_patch_1_2_slide_z"
+            "x": "rf_md_4_4_sensor_patch_1_2_slide_x",
+            "y": "rf_md_4_4_sensor_patch_1_2_slide_y",
+            "z": "rf_md_4_4_sensor_patch_1_2_slide_z"
         },
         "2_2": {
-            "x": "if_md_uspa44_sensor_patch_2_2_slide_x",
-            "y": "if_md_uspa44_sensor_patch_2_2_slide_y",
-            "z": "if_md_uspa44_sensor_patch_2_2_slide_z"
+            "x": "rf_md_4_4_sensor_patch_2_2_slide_x",
+            "y": "rf_md_4_4_sensor_patch_2_2_slide_y",
+            "z": "rf_md_4_4_sensor_patch_2_2_slide_z"
         },
         "3_2": {
-            "x": "if_md_uspa44_sensor_patch_3_2_slide_x",
-            "y": "if_md_uspa44_sensor_patch_3_2_slide_y",
-            "z": "if_md_uspa44_sensor_patch_3_2_slide_z"
+            "x": "rf_md_4_4_sensor_patch_3_2_slide_x",
+            "y": "rf_md_4_4_sensor_patch_3_2_slide_y",
+            "z": "rf_md_4_4_sensor_patch_3_2_slide_z"
         },
         "0_3": {
-            "x": "if_md_uspa44_sensor_patch_0_3_slide_x",
-            "y": "if_md_uspa44_sensor_patch_0_3_slide_y",
-            "z": "if_md_uspa44_sensor_patch_0_3_slide_z"
+            "x": "rf_md_4_4_sensor_patch_0_3_slide_x",
+            "y": "rf_md_4_4_sensor_patch_0_3_slide_y",
+            "z": "rf_md_4_4_sensor_patch_0_3_slide_z"
         },
         "1_3": {
-            "x": "if_md_uspa44_sensor_patch_1_3_slide_x",
-            "y": "if_md_uspa44_sensor_patch_1_3_slide_y",
-            "z": "if_md_uspa44_sensor_patch_1_3_slide_z"
+            "x": "rf_md_4_4_sensor_patch_1_3_slide_x",
+            "y": "rf_md_4_4_sensor_patch_1_3_slide_y",
+            "z": "rf_md_4_4_sensor_patch_1_3_slide_z"
         },
         "2_3": {
-            "x": "if_md_uspa44_sensor_patch_2_3_slide_x",
-            "y": "if_md_uspa44_sensor_patch_2_3_slide_y",
-            "z": "if_md_uspa44_sensor_patch_2_3_slide_z"
+            "x": "rf_md_4_4_sensor_patch_2_3_slide_x",
+            "y": "rf_md_4_4_sensor_patch_2_3_slide_y",
+            "z": "rf_md_4_4_sensor_patch_2_3_slide_z"
         },
         "3_3": {
-            "x": "if_md_uspa44_sensor_patch_3_3_slide_x",
-            "y": "if_md_uspa44_sensor_patch_3_3_slide_y",
-            "z": "if_md_uspa44_sensor_patch_3_3_slide_z"
+            "x": "rf_md_4_4_sensor_patch_3_3_slide_x",
+            "y": "rf_md_4_4_sensor_patch_3_3_slide_y",
+            "z": "rf_md_4_4_sensor_patch_3_3_slide_z"
         }
     },
-    "mf_md_uspa44": {
+    "rf_ds": {
         "0_0": {
-            "x": "mf_md_uspa44_sensor_patch_0_0_slide_x",
-            "y": "mf_md_uspa44_sensor_patch_0_0_slide_y",
-            "z": "mf_md_uspa44_sensor_patch_0_0_slide_z"
+            "x": "rf_ds_4_4_sensor_patch_0_0_slide_x",
+            "y": "rf_ds_4_4_sensor_patch_0_0_slide_y",
+            "z": "rf_ds_4_4_sensor_patch_0_0_slide_z"
         },
         "1_0": {
-            "x": "mf_md_uspa44_sensor_patch_1_0_slide_x",
-            "y": "mf_md_uspa44_sensor_patch_1_0_slide_y",
-            "z": "mf_md_uspa44_sensor_patch_1_0_slide_z"
+            "x": "rf_ds_4_4_sensor_patch_1_0_slide_x",
+            "y": "rf_ds_4_4_sensor_patch_1_0_slide_y",
+            "z": "rf_ds_4_4_sensor_patch_1_0_slide_z"
         },
         "2_0": {
-            "x": "mf_md_uspa44_sensor_patch_2_0_slide_x",
-            "y": "mf_md_uspa44_sensor_patch_2_0_slide_y",
-            "z": "mf_md_uspa44_sensor_patch_2_0_slide_z"
+            "x": "rf_ds_4_4_sensor_patch_2_0_slide_x",
+            "y": "rf_ds_4_4_sensor_patch_2_0_slide_y",
+            "z": "rf_ds_4_4_sensor_patch_2_0_slide_z"
         },
         "3_0": {
-            "x": "mf_md_uspa44_sensor_patch_3_0_slide_x",
-            "y": "mf_md_uspa44_sensor_patch_3_0_slide_y",
-            "z": "mf_md_uspa44_sensor_patch_3_0_slide_z"
+            "x": "rf_ds_4_4_sensor_patch_3_0_slide_x",
+            "y": "rf_ds_4_4_sensor_patch_3_0_slide_y",
+            "z": "rf_ds_4_4_sensor_patch_3_0_slide_z"
         },
         "0_1": {
-            "x": "mf_md_uspa44_sensor_patch_0_1_slide_x",
-            "y": "mf_md_uspa44_sensor_patch_0_1_slide_y",
-            "z": "mf_md_uspa44_sensor_patch_0_1_slide_z"
+            "x": "rf_ds_4_4_sensor_patch_0_1_slide_x",
+            "y": "rf_ds_4_4_sensor_patch_0_1_slide_y",
+            "z": "rf_ds_4_4_sensor_patch_0_1_slide_z"
         },
         "1_1": {
-            "x": "mf_md_uspa44_sensor_patch_1_1_slide_x",
-            "y": "mf_md_uspa44_sensor_patch_1_1_slide_y",
-            "z": "mf_md_uspa44_sensor_patch_1_1_slide_z"
+            "x": "rf_ds_4_4_sensor_patch_1_1_slide_x",
+            "y": "rf_ds_4_4_sensor_patch_1_1_slide_y",
+            "z": "rf_ds_4_4_sensor_patch_1_1_slide_z"
         },
         "2_1": {
-            "x": "mf_md_uspa44_sensor_patch_2_1_slide_x",
-            "y": "mf_md_uspa44_sensor_patch_2_1_slide_y",
-            "z": "mf_md_uspa44_sensor_patch_2_1_slide_z"
+            "x": "rf_ds_4_4_sensor_patch_2_1_slide_x",
+            "y": "rf_ds_4_4_sensor_patch_2_1_slide_y",
+            "z": "rf_ds_4_4_sensor_patch_2_1_slide_z"
         },
         "3_1": {
-            "x": "mf_md_uspa44_sensor_patch_3_1_slide_x",
-            "y": "mf_md_uspa44_sensor_patch_3_1_slide_y",
-            "z": "mf_md_uspa44_sensor_patch_3_1_slide_z"
+            "x": "rf_ds_4_4_sensor_patch_3_1_slide_x",
+            "y": "rf_ds_4_4_sensor_patch_3_1_slide_y",
+            "z": "rf_ds_4_4_sensor_patch_3_1_slide_z"
         },
         "0_2": {
-            "x": "mf_md_uspa44_sensor_patch_0_2_slide_x",
-            "y": "mf_md_uspa44_sensor_patch_0_2_slide_y",
-            "z": "mf_md_uspa44_sensor_patch_0_2_slide_z"
+            "x": "rf_ds_4_4_sensor_patch_0_2_slide_x",
+            "y": "rf_ds_4_4_sensor_patch_0_2_slide_y",
+            "z": "rf_ds_4_4_sensor_patch_0_2_slide_z"
         },
         "1_2": {
-            "x": "mf_md_uspa44_sensor_patch_1_2_slide_x",
-            "y": "mf_md_uspa44_sensor_patch_1_2_slide_y",
-            "z": "mf_md_uspa44_sensor_patch_1_2_slide_z"
+            "x": "rf_ds_4_4_sensor_patch_1_2_slide_x",
+            "y": "rf_ds_4_4_sensor_patch_1_2_slide_y",
+            "z": "rf_ds_4_4_sensor_patch_1_2_slide_z"
         },
         "2_2": {
-            "x": "mf_md_uspa44_sensor_patch_2_2_slide_x",
-            "y": "mf_md_uspa44_sensor_patch_2_2_slide_y",
-            "z": "mf_md_uspa44_sensor_patch_2_2_slide_z"
+            "x": "rf_ds_4_4_sensor_patch_2_2_slide_x",
+            "y": "rf_ds_4_4_sensor_patch_2_2_slide_y",
+            "z": "rf_ds_4_4_sensor_patch_2_2_slide_z"
         },
         "3_2": {
-            "x": "mf_md_uspa44_sensor_patch_3_2_slide_x",
-            "y": "mf_md_uspa44_sensor_patch_3_2_slide_y",
-            "z": "mf_md_uspa44_sensor_patch_3_2_slide_z"
+            "x": "rf_ds_4_4_sensor_patch_3_2_slide_x",
+            "y": "rf_ds_4_4_sensor_patch_3_2_slide_y",
+            "z": "rf_ds_4_4_sensor_patch_3_2_slide_z"
         },
         "0_3": {
-            "x": "mf_md_uspa44_sensor_patch_0_3_slide_x",
-            "y": "mf_md_uspa44_sensor_patch_0_3_slide_y",
-            "z": "mf_md_uspa44_sensor_patch_0_3_slide_z"
+            "x": "rf_ds_4_4_sensor_patch_0_3_slide_x",
+            "y": "rf_ds_4_4_sensor_patch_0_3_slide_y",
+            "z": "rf_ds_4_4_sensor_patch_0_3_slide_z"
         },
         "1_3": {
-            "x": "mf_md_uspa44_sensor_patch_1_3_slide_x",
-            "y": "mf_md_uspa44_sensor_patch_1_3_slide_y",
-            "z": "mf_md_uspa44_sensor_patch_1_3_slide_z"
+            "x": "rf_ds_4_4_sensor_patch_1_3_slide_x",
+            "y": "rf_ds_4_4_sensor_patch_1_3_slide_y",
+            "z": "rf_ds_4_4_sensor_patch_1_3_slide_z"
         },
         "2_3": {
-            "x": "mf_md_uspa44_sensor_patch_2_3_slide_x",
-            "y": "mf_md_uspa44_sensor_patch_2_3_slide_y",
-            "z": "mf_md_uspa44_sensor_patch_2_3_slide_z"
+            "x": "rf_ds_4_4_sensor_patch_2_3_slide_x",
+            "y": "rf_ds_4_4_sensor_patch_2_3_slide_y",
+            "z": "rf_ds_4_4_sensor_patch_2_3_slide_z"
         },
         "3_3": {
-            "x": "mf_md_uspa44_sensor_patch_3_3_slide_x",
-            "y": "mf_md_uspa44_sensor_patch_3_3_slide_y",
-            "z": "mf_md_uspa44_sensor_patch_3_3_slide_z"
+            "x": "rf_ds_4_4_sensor_patch_3_3_slide_x",
+            "y": "rf_ds_4_4_sensor_patch_3_3_slide_y",
+            "z": "rf_ds_4_4_sensor_patch_3_3_slide_z"
         }
     },
-    "rf_md_uspa44": {
+    "mf_md": {
         "0_0": {
-            "x": "rf_md_uspa44_sensor_patch_0_0_slide_x",
-            "y": "rf_md_uspa44_sensor_patch_0_0_slide_y",
-            "z": "rf_md_uspa44_sensor_patch_0_0_slide_z"
+            "x": "mf_md_4_4_sensor_patch_0_0_slide_x",
+            "y": "mf_md_4_4_sensor_patch_0_0_slide_y",
+            "z": "mf_md_4_4_sensor_patch_0_0_slide_z"
         },
         "1_0": {
-            "x": "rf_md_uspa44_sensor_patch_1_0_slide_x",
-            "y": "rf_md_uspa44_sensor_patch_1_0_slide_y",
-            "z": "rf_md_uspa44_sensor_patch_1_0_slide_z"
+            "x": "mf_md_4_4_sensor_patch_1_0_slide_x",
+            "y": "mf_md_4_4_sensor_patch_1_0_slide_y",
+            "z": "mf_md_4_4_sensor_patch_1_0_slide_z"
         },
         "2_0": {
-            "x": "rf_md_uspa44_sensor_patch_2_0_slide_x",
-            "y": "rf_md_uspa44_sensor_patch_2_0_slide_y",
-            "z": "rf_md_uspa44_sensor_patch_2_0_slide_z"
+            "x": "mf_md_4_4_sensor_patch_2_0_slide_x",
+            "y": "mf_md_4_4_sensor_patch_2_0_slide_y",
+            "z": "mf_md_4_4_sensor_patch_2_0_slide_z"
         },
         "3_0": {
-            "x": "rf_md_uspa44_sensor_patch_3_0_slide_x",
-            "y": "rf_md_uspa44_sensor_patch_3_0_slide_y",
-            "z": "rf_md_uspa44_sensor_patch_3_0_slide_z"
+            "x": "mf_md_4_4_sensor_patch_3_0_slide_x",
+            "y": "mf_md_4_4_sensor_patch_3_0_slide_y",
+            "z": "mf_md_4_4_sensor_patch_3_0_slide_z"
         },
         "0_1": {
-            "x": "rf_md_uspa44_sensor_patch_0_1_slide_x",
-            "y": "rf_md_uspa44_sensor_patch_0_1_slide_y",
-            "z": "rf_md_uspa44_sensor_patch_0_1_slide_z"
+            "x": "mf_md_4_4_sensor_patch_0_1_slide_x",
+            "y": "mf_md_4_4_sensor_patch_0_1_slide_y",
+            "z": "mf_md_4_4_sensor_patch_0_1_slide_z"
         },
         "1_1": {
-            "x": "rf_md_uspa44_sensor_patch_1_1_slide_x",
-            "y": "rf_md_uspa44_sensor_patch_1_1_slide_y",
-            "z": "rf_md_uspa44_sensor_patch_1_1_slide_z"
+            "x": "mf_md_4_4_sensor_patch_1_1_slide_x",
+            "y": "mf_md_4_4_sensor_patch_1_1_slide_y",
+            "z": "mf_md_4_4_sensor_patch_1_1_slide_z"
         },
         "2_1": {
-            "x": "rf_md_uspa44_sensor_patch_2_1_slide_x",
-            "y": "rf_md_uspa44_sensor_patch_2_1_slide_y",
-            "z": "rf_md_uspa44_sensor_patch_2_1_slide_z"
+            "x": "mf_md_4_4_sensor_patch_2_1_slide_x",
+            "y": "mf_md_4_4_sensor_patch_2_1_slide_y",
+            "z": "mf_md_4_4_sensor_patch_2_1_slide_z"
         },
         "3_1": {
-            "x": "rf_md_uspa44_sensor_patch_3_1_slide_x",
-            "y": "rf_md_uspa44_sensor_patch_3_1_slide_y",
-            "z": "rf_md_uspa44_sensor_patch_3_1_slide_z"
+            "x": "mf_md_4_4_sensor_patch_3_1_slide_x",
+            "y": "mf_md_4_4_sensor_patch_3_1_slide_y",
+            "z": "mf_md_4_4_sensor_patch_3_1_slide_z"
         },
         "0_2": {
-            "x": "rf_md_uspa44_sensor_patch_0_2_slide_x",
-            "y": "rf_md_uspa44_sensor_patch_0_2_slide_y",
-            "z": "rf_md_uspa44_sensor_patch_0_2_slide_z"
+            "x": "mf_md_4_4_sensor_patch_0_2_slide_x",
+            "y": "mf_md_4_4_sensor_patch_0_2_slide_y",
+            "z": "mf_md_4_4_sensor_patch_0_2_slide_z"
         },
         "1_2": {
-            "x": "rf_md_uspa44_sensor_patch_1_2_slide_x",
-            "y": "rf_md_uspa44_sensor_patch_1_2_slide_y",
-            "z": "rf_md_uspa44_sensor_patch_1_2_slide_z"
+            "x": "mf_md_4_4_sensor_patch_1_2_slide_x",
+            "y": "mf_md_4_4_sensor_patch_1_2_slide_y",
+            "z": "mf_md_4_4_sensor_patch_1_2_slide_z"
         },
         "2_2": {
-            "x": "rf_md_uspa44_sensor_patch_2_2_slide_x",
-            "y": "rf_md_uspa44_sensor_patch_2_2_slide_y",
-            "z": "rf_md_uspa44_sensor_patch_2_2_slide_z"
+            "x": "mf_md_4_4_sensor_patch_2_2_slide_x",
+            "y": "mf_md_4_4_sensor_patch_2_2_slide_y",
+            "z": "mf_md_4_4_sensor_patch_2_2_slide_z"
         },
         "3_2": {
-            "x": "rf_md_uspa44_sensor_patch_3_2_slide_x",
-            "y": "rf_md_uspa44_sensor_patch_3_2_slide_y",
-            "z": "rf_md_uspa44_sensor_patch_3_2_slide_z"
+            "x": "mf_md_4_4_sensor_patch_3_2_slide_x",
+            "y": "mf_md_4_4_sensor_patch_3_2_slide_y",
+            "z": "mf_md_4_4_sensor_patch_3_2_slide_z"
         },
         "0_3": {
-            "x": "rf_md_uspa44_sensor_patch_0_3_slide_x",
-            "y": "rf_md_uspa44_sensor_patch_0_3_slide_y",
-            "z": "rf_md_uspa44_sensor_patch_0_3_slide_z"
+            "x": "mf_md_4_4_sensor_patch_0_3_slide_x",
+            "y": "mf_md_4_4_sensor_patch_0_3_slide_y",
+            "z": "mf_md_4_4_sensor_patch_0_3_slide_z"
         },
         "1_3": {
-            "x": "rf_md_uspa44_sensor_patch_1_3_slide_x",
-            "y": "rf_md_uspa44_sensor_patch_1_3_slide_y",
-            "z": "rf_md_uspa44_sensor_patch_1_3_slide_z"
+            "x": "mf_md_4_4_sensor_patch_1_3_slide_x",
+            "y": "mf_md_4_4_sensor_patch_1_3_slide_y",
+            "z": "mf_md_4_4_sensor_patch_1_3_slide_z"
         },
         "2_3": {
-            "x": "rf_md_uspa44_sensor_patch_2_3_slide_x",
-            "y": "rf_md_uspa44_sensor_patch_2_3_slide_y",
-            "z": "rf_md_uspa44_sensor_patch_2_3_slide_z"
+            "x": "mf_md_4_4_sensor_patch_2_3_slide_x",
+            "y": "mf_md_4_4_sensor_patch_2_3_slide_y",
+            "z": "mf_md_4_4_sensor_patch_2_3_slide_z"
         },
         "3_3": {
-            "x": "rf_md_uspa44_sensor_patch_3_3_slide_x",
-            "y": "rf_md_uspa44_sensor_patch_3_3_slide_y",
-            "z": "rf_md_uspa44_sensor_patch_3_3_slide_z"
+            "x": "mf_md_4_4_sensor_patch_3_3_slide_x",
+            "y": "mf_md_4_4_sensor_patch_3_3_slide_y",
+            "z": "mf_md_4_4_sensor_patch_3_3_slide_z"
         }
     },
-    "if_px_uspa44": {
+    "mf_ds": {
         "0_0": {
-            "x": "if_px_uspa44_sensor_patch_0_0_slide_x",
-            "y": "if_px_uspa44_sensor_patch_0_0_slide_y",
-            "z": "if_px_uspa44_sensor_patch_0_0_slide_z"
+            "x": "mf_ds_4_4_sensor_patch_0_0_slide_x",
+            "y": "mf_ds_4_4_sensor_patch_0_0_slide_y",
+            "z": "mf_ds_4_4_sensor_patch_0_0_slide_z"
         },
         "1_0": {
-            "x": "if_px_uspa44_sensor_patch_1_0_slide_x",
-            "y": "if_px_uspa44_sensor_patch_1_0_slide_y",
-            "z": "if_px_uspa44_sensor_patch_1_0_slide_z"
+            "x": "mf_ds_4_4_sensor_patch_1_0_slide_x",
+            "y": "mf_ds_4_4_sensor_patch_1_0_slide_y",
+            "z": "mf_ds_4_4_sensor_patch_1_0_slide_z"
         },
         "2_0": {
-            "x": "if_px_uspa44_sensor_patch_2_0_slide_x",
-            "y": "if_px_uspa44_sensor_patch_2_0_slide_y",
-            "z": "if_px_uspa44_sensor_patch_2_0_slide_z"
+            "x": "mf_ds_4_4_sensor_patch_2_0_slide_x",
+            "y": "mf_ds_4_4_sensor_patch_2_0_slide_y",
+            "z": "mf_ds_4_4_sensor_patch_2_0_slide_z"
         },
         "3_0": {
-            "x": "if_px_uspa44_sensor_patch_3_0_slide_x",
-            "y": "if_px_uspa44_sensor_patch_3_0_slide_y",
-            "z": "if_px_uspa44_sensor_patch_3_0_slide_z"
+            "x": "mf_ds_4_4_sensor_patch_3_0_slide_x",
+            "y": "mf_ds_4_4_sensor_patch_3_0_slide_y",
+            "z": "mf_ds_4_4_sensor_patch_3_0_slide_z"
         },
         "0_1": {
-            "x": "if_px_uspa44_sensor_patch_0_1_slide_x",
-            "y": "if_px_uspa44_sensor_patch_0_1_slide_y",
-            "z": "if_px_uspa44_sensor_patch_0_1_slide_z"
+            "x": "mf_ds_4_4_sensor_patch_0_1_slide_x",
+            "y": "mf_ds_4_4_sensor_patch_0_1_slide_y",
+            "z": "mf_ds_4_4_sensor_patch_0_1_slide_z"
         },
         "1_1": {
-            "x": "if_px_uspa44_sensor_patch_1_1_slide_x",
-            "y": "if_px_uspa44_sensor_patch_1_1_slide_y",
-            "z": "if_px_uspa44_sensor_patch_1_1_slide_z"
+            "x": "mf_ds_4_4_sensor_patch_1_1_slide_x",
+            "y": "mf_ds_4_4_sensor_patch_1_1_slide_y",
+            "z": "mf_ds_4_4_sensor_patch_1_1_slide_z"
         },
         "2_1": {
-            "x": "if_px_uspa44_sensor_patch_2_1_slide_x",
-            "y": "if_px_uspa44_sensor_patch_2_1_slide_y",
-            "z": "if_px_uspa44_sensor_patch_2_1_slide_z"
+            "x": "mf_ds_4_4_sensor_patch_2_1_slide_x",
+            "y": "mf_ds_4_4_sensor_patch_2_1_slide_y",
+            "z": "mf_ds_4_4_sensor_patch_2_1_slide_z"
         },
         "3_1": {
-            "x": "if_px_uspa44_sensor_patch_3_1_slide_x",
-            "y": "if_px_uspa44_sensor_patch_3_1_slide_y",
-            "z": "if_px_uspa44_sensor_patch_3_1_slide_z"
+            "x": "mf_ds_4_4_sensor_patch_3_1_slide_x",
+            "y": "mf_ds_4_4_sensor_patch_3_1_slide_y",
+            "z": "mf_ds_4_4_sensor_patch_3_1_slide_z"
         },
         "0_2": {
-            "x": "if_px_uspa44_sensor_patch_0_2_slide_x",
-            "y": "if_px_uspa44_sensor_patch_0_2_slide_y",
-            "z": "if_px_uspa44_sensor_patch_0_2_slide_z"
+            "x": "mf_ds_4_4_sensor_patch_0_2_slide_x",
+            "y": "mf_ds_4_4_sensor_patch_0_2_slide_y",
+            "z": "mf_ds_4_4_sensor_patch_0_2_slide_z"
         },
         "1_2": {
-            "x": "if_px_uspa44_sensor_patch_1_2_slide_x",
-            "y": "if_px_uspa44_sensor_patch_1_2_slide_y",
-            "z": "if_px_uspa44_sensor_patch_1_2_slide_z"
+            "x": "mf_ds_4_4_sensor_patch_1_2_slide_x",
+            "y": "mf_ds_4_4_sensor_patch_1_2_slide_y",
+            "z": "mf_ds_4_4_sensor_patch_1_2_slide_z"
         },
         "2_2": {
-            "x": "if_px_uspa44_sensor_patch_2_2_slide_x",
-            "y": "if_px_uspa44_sensor_patch_2_2_slide_y",
-            "z": "if_px_uspa44_sensor_patch_2_2_slide_z"
+            "x": "mf_ds_4_4_sensor_patch_2_2_slide_x",
+            "y": "mf_ds_4_4_sensor_patch_2_2_slide_y",
+            "z": "mf_ds_4_4_sensor_patch_2_2_slide_z"
         },
         "3_2": {
-            "x": "if_px_uspa44_sensor_patch_3_2_slide_x",
-            "y": "if_px_uspa44_sensor_patch_3_2_slide_y",
-            "z": "if_px_uspa44_sensor_patch_3_2_slide_z"
+            "x": "mf_ds_4_4_sensor_patch_3_2_slide_x",
+            "y": "mf_ds_4_4_sensor_patch_3_2_slide_y",
+            "z": "mf_ds_4_4_sensor_patch_3_2_slide_z"
         },
         "0_3": {
-            "x": "if_px_uspa44_sensor_patch_0_3_slide_x",
-            "y": "if_px_uspa44_sensor_patch_0_3_slide_y",
-            "z": "if_px_uspa44_sensor_patch_0_3_slide_z"
+            "x": "mf_ds_4_4_sensor_patch_0_3_slide_x",
+            "y": "mf_ds_4_4_sensor_patch_0_3_slide_y",
+            "z": "mf_ds_4_4_sensor_patch_0_3_slide_z"
         },
         "1_3": {
-            "x": "if_px_uspa44_sensor_patch_1_3_slide_x",
-            "y": "if_px_uspa44_sensor_patch_1_3_slide_y",
-            "z": "if_px_uspa44_sensor_patch_1_3_slide_z"
+            "x": "mf_ds_4_4_sensor_patch_1_3_slide_x",
+            "y": "mf_ds_4_4_sensor_patch_1_3_slide_y",
+            "z": "mf_ds_4_4_sensor_patch_1_3_slide_z"
         },
         "2_3": {
-            "x": "if_px_uspa44_sensor_patch_2_3_slide_x",
-            "y": "if_px_uspa44_sensor_patch_2_3_slide_y",
-            "z": "if_px_uspa44_sensor_patch_2_3_slide_z"
+            "x": "mf_ds_4_4_sensor_patch_2_3_slide_x",
+            "y": "mf_ds_4_4_sensor_patch_2_3_slide_y",
+            "z": "mf_ds_4_4_sensor_patch_2_3_slide_z"
         },
         "3_3": {
-            "x": "if_px_uspa44_sensor_patch_3_3_slide_x",
-            "y": "if_px_uspa44_sensor_patch_3_3_slide_y",
-            "z": "if_px_uspa44_sensor_patch_3_3_slide_z"
+            "x": "mf_ds_4_4_sensor_patch_3_3_slide_x",
+            "y": "mf_ds_4_4_sensor_patch_3_3_slide_y",
+            "z": "mf_ds_4_4_sensor_patch_3_3_slide_z"
         }
     },
-    "mf_px_uspa44": {
+    "if_md": {
         "0_0": {
-            "x": "mf_px_uspa44_sensor_patch_0_0_slide_x",
-            "y": "mf_px_uspa44_sensor_patch_0_0_slide_y",
-            "z": "mf_px_uspa44_sensor_patch_0_0_slide_z"
+            "x": "if_md_4_4_sensor_patch_0_0_slide_x",
+            "y": "if_md_4_4_sensor_patch_0_0_slide_y",
+            "z": "if_md_4_4_sensor_patch_0_0_slide_z"
         },
         "1_0": {
-            "x": "mf_px_uspa44_sensor_patch_1_0_slide_x",
-            "y": "mf_px_uspa44_sensor_patch_1_0_slide_y",
-            "z": "mf_px_uspa44_sensor_patch_1_0_slide_z"
+            "x": "if_md_4_4_sensor_patch_1_0_slide_x",
+            "y": "if_md_4_4_sensor_patch_1_0_slide_y",
+            "z": "if_md_4_4_sensor_patch_1_0_slide_z"
         },
         "2_0": {
-            "x": "mf_px_uspa44_sensor_patch_2_0_slide_x",
-            "y": "mf_px_uspa44_sensor_patch_2_0_slide_y",
-            "z": "mf_px_uspa44_sensor_patch_2_0_slide_z"
+            "x": "if_md_4_4_sensor_patch_2_0_slide_x",
+            "y": "if_md_4_4_sensor_patch_2_0_slide_y",
+            "z": "if_md_4_4_sensor_patch_2_0_slide_z"
         },
         "3_0": {
-            "x": "mf_px_uspa44_sensor_patch_3_0_slide_x",
-            "y": "mf_px_uspa44_sensor_patch_3_0_slide_y",
-            "z": "mf_px_uspa44_sensor_patch_3_0_slide_z"
+            "x": "if_md_4_4_sensor_patch_3_0_slide_x",
+            "y": "if_md_4_4_sensor_patch_3_0_slide_y",
+            "z": "if_md_4_4_sensor_patch_3_0_slide_z"
         },
         "0_1": {
-            "x": "mf_px_uspa44_sensor_patch_0_1_slide_x",
-            "y": "mf_px_uspa44_sensor_patch_0_1_slide_y",
-            "z": "mf_px_uspa44_sensor_patch_0_1_slide_z"
+            "x": "if_md_4_4_sensor_patch_0_1_slide_x",
+            "y": "if_md_4_4_sensor_patch_0_1_slide_y",
+            "z": "if_md_4_4_sensor_patch_0_1_slide_z"
         },
         "1_1": {
-            "x": "mf_px_uspa44_sensor_patch_1_1_slide_x",
-            "y": "mf_px_uspa44_sensor_patch_1_1_slide_y",
-            "z": "mf_px_uspa44_sensor_patch_1_1_slide_z"
+            "x": "if_md_4_4_sensor_patch_1_1_slide_x",
+            "y": "if_md_4_4_sensor_patch_1_1_slide_y",
+            "z": "if_md_4_4_sensor_patch_1_1_slide_z"
         },
         "2_1": {
-            "x": "mf_px_uspa44_sensor_patch_2_1_slide_x",
-            "y": "mf_px_uspa44_sensor_patch_2_1_slide_y",
-            "z": "mf_px_uspa44_sensor_patch_2_1_slide_z"
+            "x": "if_md_4_4_sensor_patch_2_1_slide_x",
+            "y": "if_md_4_4_sensor_patch_2_1_slide_y",
+            "z": "if_md_4_4_sensor_patch_2_1_slide_z"
         },
         "3_1": {
-            "x": "mf_px_uspa44_sensor_patch_3_1_slide_x",
-            "y": "mf_px_uspa44_sensor_patch_3_1_slide_y",
-            "z": "mf_px_uspa44_sensor_patch_3_1_slide_z"
+            "x": "if_md_4_4_sensor_patch_3_1_slide_x",
+            "y": "if_md_4_4_sensor_patch_3_1_slide_y",
+            "z": "if_md_4_4_sensor_patch_3_1_slide_z"
         },
         "0_2": {
-            "x": "mf_px_uspa44_sensor_patch_0_2_slide_x",
-            "y": "mf_px_uspa44_sensor_patch_0_2_slide_y",
-            "z": "mf_px_uspa44_sensor_patch_0_2_slide_z"
+            "x": "if_md_4_4_sensor_patch_0_2_slide_x",
+            "y": "if_md_4_4_sensor_patch_0_2_slide_y",
+            "z": "if_md_4_4_sensor_patch_0_2_slide_z"
         },
         "1_2": {
-            "x": "mf_px_uspa44_sensor_patch_1_2_slide_x",
-            "y": "mf_px_uspa44_sensor_patch_1_2_slide_y",
-            "z": "mf_px_uspa44_sensor_patch_1_2_slide_z"
+            "x": "if_md_4_4_sensor_patch_1_2_slide_x",
+            "y": "if_md_4_4_sensor_patch_1_2_slide_y",
+            "z": "if_md_4_4_sensor_patch_1_2_slide_z"
         },
         "2_2": {
-            "x": "mf_px_uspa44_sensor_patch_2_2_slide_x",
-            "y": "mf_px_uspa44_sensor_patch_2_2_slide_y",
-            "z": "mf_px_uspa44_sensor_patch_2_2_slide_z"
+            "x": "if_md_4_4_sensor_patch_2_2_slide_x",
+            "y": "if_md_4_4_sensor_patch_2_2_slide_y",
+            "z": "if_md_4_4_sensor_patch_2_2_slide_z"
         },
         "3_2": {
-            "x": "mf_px_uspa44_sensor_patch_3_2_slide_x",
-            "y": "mf_px_uspa44_sensor_patch_3_2_slide_y",
-            "z": "mf_px_uspa44_sensor_patch_3_2_slide_z"
+            "x": "if_md_4_4_sensor_patch_3_2_slide_x",
+            "y": "if_md_4_4_sensor_patch_3_2_slide_y",
+            "z": "if_md_4_4_sensor_patch_3_2_slide_z"
         },
         "0_3": {
-            "x": "mf_px_uspa44_sensor_patch_0_3_slide_x",
-            "y": "mf_px_uspa44_sensor_patch_0_3_slide_y",
-            "z": "mf_px_uspa44_sensor_patch_0_3_slide_z"
+            "x": "if_md_4_4_sensor_patch_0_3_slide_x",
+            "y": "if_md_4_4_sensor_patch_0_3_slide_y",
+            "z": "if_md_4_4_sensor_patch_0_3_slide_z"
         },
         "1_3": {
-            "x": "mf_px_uspa44_sensor_patch_1_3_slide_x",
-            "y": "mf_px_uspa44_sensor_patch_1_3_slide_y",
-            "z": "mf_px_uspa44_sensor_patch_1_3_slide_z"
+            "x": "if_md_4_4_sensor_patch_1_3_slide_x",
+            "y": "if_md_4_4_sensor_patch_1_3_slide_y",
+            "z": "if_md_4_4_sensor_patch_1_3_slide_z"
         },
         "2_3": {
-            "x": "mf_px_uspa44_sensor_patch_2_3_slide_x",
-            "y": "mf_px_uspa44_sensor_patch_2_3_slide_y",
-            "z": "mf_px_uspa44_sensor_patch_2_3_slide_z"
+            "x": "if_md_4_4_sensor_patch_2_3_slide_x",
+            "y": "if_md_4_4_sensor_patch_2_3_slide_y",
+            "z": "if_md_4_4_sensor_patch_2_3_slide_z"
         },
         "3_3": {
-            "x": "mf_px_uspa44_sensor_patch_3_3_slide_x",
-            "y": "mf_px_uspa44_sensor_patch_3_3_slide_y",
-            "z": "mf_px_uspa44_sensor_patch_3_3_slide_z"
-        }
-    },
-    "rf_px_uspa44": {
-        "0_0": {
-            "x": "rf_px_uspa44_sensor_patch_0_0_slide_x",
-            "y": "rf_px_uspa44_sensor_patch_0_0_slide_y",
-            "z": "rf_px_uspa44_sensor_patch_0_0_slide_z"
-        },
-        "1_0": {
-            "x": "rf_px_uspa44_sensor_patch_1_0_slide_x",
-            "y": "rf_px_uspa44_sensor_patch_1_0_slide_y",
-            "z": "rf_px_uspa44_sensor_patch_1_0_slide_z"
-        },
-        "2_0": {
-            "x": "rf_px_uspa44_sensor_patch_2_0_slide_x",
-            "y": "rf_px_uspa44_sensor_patch_2_0_slide_y",
-            "z": "rf_px_uspa44_sensor_patch_2_0_slide_z"
-        },
-        "3_0": {
-            "x": "rf_px_uspa44_sensor_patch_3_0_slide_x",
-            "y": "rf_px_uspa44_sensor_patch_3_0_slide_y",
-            "z": "rf_px_uspa44_sensor_patch_3_0_slide_z"
-        },
-        "0_1": {
-            "x": "rf_px_uspa44_sensor_patch_0_1_slide_x",
-            "y": "rf_px_uspa44_sensor_patch_0_1_slide_y",
-            "z": "rf_px_uspa44_sensor_patch_0_1_slide_z"
-        },
-        "1_1": {
-            "x": "rf_px_uspa44_sensor_patch_1_1_slide_x",
-            "y": "rf_px_uspa44_sensor_patch_1_1_slide_y",
-            "z": "rf_px_uspa44_sensor_patch_1_1_slide_z"
-        },
-        "2_1": {
-            "x": "rf_px_uspa44_sensor_patch_2_1_slide_x",
-            "y": "rf_px_uspa44_sensor_patch_2_1_slide_y",
-            "z": "rf_px_uspa44_sensor_patch_2_1_slide_z"
-        },
-        "3_1": {
-            "x": "rf_px_uspa44_sensor_patch_3_1_slide_x",
-            "y": "rf_px_uspa44_sensor_patch_3_1_slide_y",
-            "z": "rf_px_uspa44_sensor_patch_3_1_slide_z"
-        },
-        "0_2": {
-            "x": "rf_px_uspa44_sensor_patch_0_2_slide_x",
-            "y": "rf_px_uspa44_sensor_patch_0_2_slide_y",
-            "z": "rf_px_uspa44_sensor_patch_0_2_slide_z"
-        },
-        "1_2": {
-            "x": "rf_px_uspa44_sensor_patch_1_2_slide_x",
-            "y": "rf_px_uspa44_sensor_patch_1_2_slide_y",
-            "z": "rf_px_uspa44_sensor_patch_1_2_slide_z"
-        },
-        "2_2": {
-            "x": "rf_px_uspa44_sensor_patch_2_2_slide_x",
-            "y": "rf_px_uspa44_sensor_patch_2_2_slide_y",
-            "z": "rf_px_uspa44_sensor_patch_2_2_slide_z"
-        },
-        "3_2": {
-            "x": "rf_px_uspa44_sensor_patch_3_2_slide_x",
-            "y": "rf_px_uspa44_sensor_patch_3_2_slide_y",
-            "z": "rf_px_uspa44_sensor_patch_3_2_slide_z"
-        },
-        "0_3": {
-            "x": "rf_px_uspa44_sensor_patch_0_3_slide_x",
-            "y": "rf_px_uspa44_sensor_patch_0_3_slide_y",
-            "z": "rf_px_uspa44_sensor_patch_0_3_slide_z"
-        },
-        "1_3": {
-            "x": "rf_px_uspa44_sensor_patch_1_3_slide_x",
-            "y": "rf_px_uspa44_sensor_patch_1_3_slide_y",
-            "z": "rf_px_uspa44_sensor_patch_1_3_slide_z"
-        },
-        "2_3": {
-            "x": "rf_px_uspa44_sensor_patch_2_3_slide_x",
-            "y": "rf_px_uspa44_sensor_patch_2_3_slide_y",
-            "z": "rf_px_uspa44_sensor_patch_2_3_slide_z"
-        },
-        "3_3": {
-            "x": "rf_px_uspa44_sensor_patch_3_3_slide_x",
-            "y": "rf_px_uspa44_sensor_patch_3_3_slide_y",
-            "z": "rf_px_uspa44_sensor_patch_3_3_slide_z"
+            "x": "if_md_4_4_sensor_patch_3_3_slide_x",
+            "y": "if_md_4_4_sensor_patch_3_3_slide_y",
+            "z": "if_md_4_4_sensor_patch_3_3_slide_z"
         }
     },
     "if_ds": {
+        "0_0": {
+            "x": "if_ds_4_4_sensor_patch_0_0_slide_x",
+            "y": "if_ds_4_4_sensor_patch_0_0_slide_y",
+            "z": "if_ds_4_4_sensor_patch_0_0_slide_z"
+        },
+        "1_0": {
+            "x": "if_ds_4_4_sensor_patch_1_0_slide_x",
+            "y": "if_ds_4_4_sensor_patch_1_0_slide_y",
+            "z": "if_ds_4_4_sensor_patch_1_0_slide_z"
+        },
+        "2_0": {
+            "x": "if_ds_4_4_sensor_patch_2_0_slide_x",
+            "y": "if_ds_4_4_sensor_patch_2_0_slide_y",
+            "z": "if_ds_4_4_sensor_patch_2_0_slide_z"
+        },
+        "3_0": {
+            "x": "if_ds_4_4_sensor_patch_3_0_slide_x",
+            "y": "if_ds_4_4_sensor_patch_3_0_slide_y",
+            "z": "if_ds_4_4_sensor_patch_3_0_slide_z"
+        },
+        "0_1": {
+            "x": "if_ds_4_4_sensor_patch_0_1_slide_x",
+            "y": "if_ds_4_4_sensor_patch_0_1_slide_y",
+            "z": "if_ds_4_4_sensor_patch_0_1_slide_z"
+        },
+        "1_1": {
+            "x": "if_ds_4_4_sensor_patch_1_1_slide_x",
+            "y": "if_ds_4_4_sensor_patch_1_1_slide_y",
+            "z": "if_ds_4_4_sensor_patch_1_1_slide_z"
+        },
+        "2_1": {
+            "x": "if_ds_4_4_sensor_patch_2_1_slide_x",
+            "y": "if_ds_4_4_sensor_patch_2_1_slide_y",
+            "z": "if_ds_4_4_sensor_patch_2_1_slide_z"
+        },
+        "3_1": {
+            "x": "if_ds_4_4_sensor_patch_3_1_slide_x",
+            "y": "if_ds_4_4_sensor_patch_3_1_slide_y",
+            "z": "if_ds_4_4_sensor_patch_3_1_slide_z"
+        },
+        "0_2": {
+            "x": "if_ds_4_4_sensor_patch_0_2_slide_x",
+            "y": "if_ds_4_4_sensor_patch_0_2_slide_y",
+            "z": "if_ds_4_4_sensor_patch_0_2_slide_z"
+        },
+        "1_2": {
+            "x": "if_ds_4_4_sensor_patch_1_2_slide_x",
+            "y": "if_ds_4_4_sensor_patch_1_2_slide_y",
+            "z": "if_ds_4_4_sensor_patch_1_2_slide_z"
+        },
+        "2_2": {
+            "x": "if_ds_4_4_sensor_patch_2_2_slide_x",
+            "y": "if_ds_4_4_sensor_patch_2_2_slide_y",
+            "z": "if_ds_4_4_sensor_patch_2_2_slide_z"
+        },
+        "3_2": {
+            "x": "if_ds_4_4_sensor_patch_3_2_slide_x",
+            "y": "if_ds_4_4_sensor_patch_3_2_slide_y",
+            "z": "if_ds_4_4_sensor_patch_3_2_slide_z"
+        },
+        "0_3": {
+            "x": "if_ds_4_4_sensor_patch_0_3_slide_x",
+            "y": "if_ds_4_4_sensor_patch_0_3_slide_y",
+            "z": "if_ds_4_4_sensor_patch_0_3_slide_z"
+        },
+        "1_3": {
+            "x": "if_ds_4_4_sensor_patch_1_3_slide_x",
+            "y": "if_ds_4_4_sensor_patch_1_3_slide_y",
+            "z": "if_ds_4_4_sensor_patch_1_3_slide_z"
+        },
+        "2_3": {
+            "x": "if_ds_4_4_sensor_patch_2_3_slide_x",
+            "y": "if_ds_4_4_sensor_patch_2_3_slide_y",
+            "z": "if_ds_4_4_sensor_patch_2_3_slide_z"
+        },
+        "3_3": {
+            "x": "if_ds_4_4_sensor_patch_3_3_slide_x",
+            "y": "if_ds_4_4_sensor_patch_3_3_slide_y",
+            "z": "if_ds_4_4_sensor_patch_3_3_slide_z"
+        }
+    },
+    "th_px": {
+        "0_0": {
+            "x": "th_px_4_4_sensor_patch_0_0_slide_x",
+            "y": "th_px_4_4_sensor_patch_0_0_slide_y",
+            "z": "th_px_4_4_sensor_patch_0_0_slide_z"
+        },
+        "1_0": {
+            "x": "th_px_4_4_sensor_patch_1_0_slide_x",
+            "y": "th_px_4_4_sensor_patch_1_0_slide_y",
+            "z": "th_px_4_4_sensor_patch_1_0_slide_z"
+        },
+        "2_0": {
+            "x": "th_px_4_4_sensor_patch_2_0_slide_x",
+            "y": "th_px_4_4_sensor_patch_2_0_slide_y",
+            "z": "th_px_4_4_sensor_patch_2_0_slide_z"
+        },
+        "3_0": {
+            "x": "th_px_4_4_sensor_patch_3_0_slide_x",
+            "y": "th_px_4_4_sensor_patch_3_0_slide_y",
+            "z": "th_px_4_4_sensor_patch_3_0_slide_z"
+        },
+        "0_1": {
+            "x": "th_px_4_4_sensor_patch_0_1_slide_x",
+            "y": "th_px_4_4_sensor_patch_0_1_slide_y",
+            "z": "th_px_4_4_sensor_patch_0_1_slide_z"
+        },
+        "1_1": {
+            "x": "th_px_4_4_sensor_patch_1_1_slide_x",
+            "y": "th_px_4_4_sensor_patch_1_1_slide_y",
+            "z": "th_px_4_4_sensor_patch_1_1_slide_z"
+        },
+        "2_1": {
+            "x": "th_px_4_4_sensor_patch_2_1_slide_x",
+            "y": "th_px_4_4_sensor_patch_2_1_slide_y",
+            "z": "th_px_4_4_sensor_patch_2_1_slide_z"
+        },
+        "3_1": {
+            "x": "th_px_4_4_sensor_patch_3_1_slide_x",
+            "y": "th_px_4_4_sensor_patch_3_1_slide_y",
+            "z": "th_px_4_4_sensor_patch_3_1_slide_z"
+        },
+        "0_2": {
+            "x": "th_px_4_4_sensor_patch_0_2_slide_x",
+            "y": "th_px_4_4_sensor_patch_0_2_slide_y",
+            "z": "th_px_4_4_sensor_patch_0_2_slide_z"
+        },
+        "1_2": {
+            "x": "th_px_4_4_sensor_patch_1_2_slide_x",
+            "y": "th_px_4_4_sensor_patch_1_2_slide_y",
+            "z": "th_px_4_4_sensor_patch_1_2_slide_z"
+        },
+        "2_2": {
+            "x": "th_px_4_4_sensor_patch_2_2_slide_x",
+            "y": "th_px_4_4_sensor_patch_2_2_slide_y",
+            "z": "th_px_4_4_sensor_patch_2_2_slide_z"
+        },
+        "3_2": {
+            "x": "th_px_4_4_sensor_patch_3_2_slide_x",
+            "y": "th_px_4_4_sensor_patch_3_2_slide_y",
+            "z": "th_px_4_4_sensor_patch_3_2_slide_z"
+        },
+        "0_3": {
+            "x": "th_px_4_4_sensor_patch_0_3_slide_x",
+            "y": "th_px_4_4_sensor_patch_0_3_slide_y",
+            "z": "th_px_4_4_sensor_patch_0_3_slide_z"
+        },
+        "1_3": {
+            "x": "th_px_4_4_sensor_patch_1_3_slide_x",
+            "y": "th_px_4_4_sensor_patch_1_3_slide_y",
+            "z": "th_px_4_4_sensor_patch_1_3_slide_z"
+        },
+        "2_3": {
+            "x": "th_px_4_4_sensor_patch_2_3_slide_x",
+            "y": "th_px_4_4_sensor_patch_2_3_slide_y",
+            "z": "th_px_4_4_sensor_patch_2_3_slide_z"
+        },
+        "3_3": {
+            "x": "th_px_4_4_sensor_patch_3_3_slide_x",
+            "y": "th_px_4_4_sensor_patch_3_3_slide_y",
+            "z": "th_px_4_4_sensor_patch_3_3_slide_z"
+        }
+    },
+    "th_ds": {
+        "0_0": {
+            "x": "th_ds_4_4_sensor_patch_0_0_slide_x",
+            "y": "th_ds_4_4_sensor_patch_0_0_slide_y",
+            "z": "th_ds_4_4_sensor_patch_0_0_slide_z"
+        },
+        "1_0": {
+            "x": "th_ds_4_4_sensor_patch_1_0_slide_x",
+            "y": "th_ds_4_4_sensor_patch_1_0_slide_y",
+            "z": "th_ds_4_4_sensor_patch_1_0_slide_z"
+        },
+        "2_0": {
+            "x": "th_ds_4_4_sensor_patch_2_0_slide_x",
+            "y": "th_ds_4_4_sensor_patch_2_0_slide_y",
+            "z": "th_ds_4_4_sensor_patch_2_0_slide_z"
+        },
+        "3_0": {
+            "x": "th_ds_4_4_sensor_patch_3_0_slide_x",
+            "y": "th_ds_4_4_sensor_patch_3_0_slide_y",
+            "z": "th_ds_4_4_sensor_patch_3_0_slide_z"
+        },
+        "0_1": {
+            "x": "th_ds_4_4_sensor_patch_0_1_slide_x",
+            "y": "th_ds_4_4_sensor_patch_0_1_slide_y",
+            "z": "th_ds_4_4_sensor_patch_0_1_slide_z"
+        },
+        "1_1": {
+            "x": "th_ds_4_4_sensor_patch_1_1_slide_x",
+            "y": "th_ds_4_4_sensor_patch_1_1_slide_y",
+            "z": "th_ds_4_4_sensor_patch_1_1_slide_z"
+        },
+        "2_1": {
+            "x": "th_ds_4_4_sensor_patch_2_1_slide_x",
+            "y": "th_ds_4_4_sensor_patch_2_1_slide_y",
+            "z": "th_ds_4_4_sensor_patch_2_1_slide_z"
+        },
+        "3_1": {
+            "x": "th_ds_4_4_sensor_patch_3_1_slide_x",
+            "y": "th_ds_4_4_sensor_patch_3_1_slide_y",
+            "z": "th_ds_4_4_sensor_patch_3_1_slide_z"
+        },
+        "0_2": {
+            "x": "th_ds_4_4_sensor_patch_0_2_slide_x",
+            "y": "th_ds_4_4_sensor_patch_0_2_slide_y",
+            "z": "th_ds_4_4_sensor_patch_0_2_slide_z"
+        },
+        "1_2": {
+            "x": "th_ds_4_4_sensor_patch_1_2_slide_x",
+            "y": "th_ds_4_4_sensor_patch_1_2_slide_y",
+            "z": "th_ds_4_4_sensor_patch_1_2_slide_z"
+        },
+        "2_2": {
+            "x": "th_ds_4_4_sensor_patch_2_2_slide_x",
+            "y": "th_ds_4_4_sensor_patch_2_2_slide_y",
+            "z": "th_ds_4_4_sensor_patch_2_2_slide_z"
+        },
+        "3_2": {
+            "x": "th_ds_4_4_sensor_patch_3_2_slide_x",
+            "y": "th_ds_4_4_sensor_patch_3_2_slide_y",
+            "z": "th_ds_4_4_sensor_patch_3_2_slide_z"
+        },
+        "0_3": {
+            "x": "th_ds_4_4_sensor_patch_0_3_slide_x",
+            "y": "th_ds_4_4_sensor_patch_0_3_slide_y",
+            "z": "th_ds_4_4_sensor_patch_0_3_slide_z"
+        },
+        "1_3": {
+            "x": "th_ds_4_4_sensor_patch_1_3_slide_x",
+            "y": "th_ds_4_4_sensor_patch_1_3_slide_y",
+            "z": "th_ds_4_4_sensor_patch_1_3_slide_z"
+        },
+        "2_3": {
+            "x": "th_ds_4_4_sensor_patch_2_3_slide_x",
+            "y": "th_ds_4_4_sensor_patch_2_3_slide_y",
+            "z": "th_ds_4_4_sensor_patch_2_3_slide_z"
+        },
+        "3_3": {
+            "x": "th_ds_4_4_sensor_patch_3_3_slide_x",
+            "y": "th_ds_4_4_sensor_patch_3_3_slide_y",
+            "z": "th_ds_4_4_sensor_patch_3_3_slide_z"
+        }
+    },
+    "palm_down_left_pad": {
+        "0_0": {
+            "x": "palm_down_left_pad_4_6_sensor_patch_0_0_slide_x",
+            "y": "palm_down_left_pad_4_6_sensor_patch_0_0_slide_y",
+            "z": "palm_down_left_pad_4_6_sensor_patch_0_0_slide_z"
+        },
+        "1_0": {
+            "x": "palm_down_left_pad_4_6_sensor_patch_1_0_slide_x",
+            "y": "palm_down_left_pad_4_6_sensor_patch_1_0_slide_y",
+            "z": "palm_down_left_pad_4_6_sensor_patch_1_0_slide_z"
+        },
+        "2_0": {
+            "x": "palm_down_left_pad_4_6_sensor_patch_2_0_slide_x",
+            "y": "palm_down_left_pad_4_6_sensor_patch_2_0_slide_y",
+            "z": "palm_down_left_pad_4_6_sensor_patch_2_0_slide_z"
+        },
+        "3_0": {
+            "x": "palm_down_left_pad_4_6_sensor_patch_3_0_slide_x",
+            "y": "palm_down_left_pad_4_6_sensor_patch_3_0_slide_y",
+            "z": "palm_down_left_pad_4_6_sensor_patch_3_0_slide_z"
+        },
+        "4_0": {
+            "x": "palm_down_left_pad_4_6_sensor_patch_4_0_slide_x",
+            "y": "palm_down_left_pad_4_6_sensor_patch_4_0_slide_y",
+            "z": "palm_down_left_pad_4_6_sensor_patch_4_0_slide_z"
+        },
+        "5_0": {
+            "x": "palm_down_left_pad_4_6_sensor_patch_5_0_slide_x",
+            "y": "palm_down_left_pad_4_6_sensor_patch_5_0_slide_y",
+            "z": "palm_down_left_pad_4_6_sensor_patch_5_0_slide_z"
+        },
+        "0_1": {
+            "x": "palm_down_left_pad_4_6_sensor_patch_0_1_slide_x",
+            "y": "palm_down_left_pad_4_6_sensor_patch_0_1_slide_y",
+            "z": "palm_down_left_pad_4_6_sensor_patch_0_1_slide_z"
+        },
+        "1_1": {
+            "x": "palm_down_left_pad_4_6_sensor_patch_1_1_slide_x",
+            "y": "palm_down_left_pad_4_6_sensor_patch_1_1_slide_y",
+            "z": "palm_down_left_pad_4_6_sensor_patch_1_1_slide_z"
+        },
+        "2_1": {
+            "x": "palm_down_left_pad_4_6_sensor_patch_2_1_slide_x",
+            "y": "palm_down_left_pad_4_6_sensor_patch_2_1_slide_y",
+            "z": "palm_down_left_pad_4_6_sensor_patch_2_1_slide_z"
+        },
+        "3_1": {
+            "x": "palm_down_left_pad_4_6_sensor_patch_3_1_slide_x",
+            "y": "palm_down_left_pad_4_6_sensor_patch_3_1_slide_y",
+            "z": "palm_down_left_pad_4_6_sensor_patch_3_1_slide_z"
+        },
+        "4_1": {
+            "x": "palm_down_left_pad_4_6_sensor_patch_4_1_slide_x",
+            "y": "palm_down_left_pad_4_6_sensor_patch_4_1_slide_y",
+            "z": "palm_down_left_pad_4_6_sensor_patch_4_1_slide_z"
+        },
+        "5_1": {
+            "x": "palm_down_left_pad_4_6_sensor_patch_5_1_slide_x",
+            "y": "palm_down_left_pad_4_6_sensor_patch_5_1_slide_y",
+            "z": "palm_down_left_pad_4_6_sensor_patch_5_1_slide_z"
+        },
+        "0_2": {
+            "x": "palm_down_left_pad_4_6_sensor_patch_0_2_slide_x",
+            "y": "palm_down_left_pad_4_6_sensor_patch_0_2_slide_y",
+            "z": "palm_down_left_pad_4_6_sensor_patch_0_2_slide_z"
+        },
+        "1_2": {
+            "x": "palm_down_left_pad_4_6_sensor_patch_1_2_slide_x",
+            "y": "palm_down_left_pad_4_6_sensor_patch_1_2_slide_y",
+            "z": "palm_down_left_pad_4_6_sensor_patch_1_2_slide_z"
+        },
+        "2_2": {
+            "x": "palm_down_left_pad_4_6_sensor_patch_2_2_slide_x",
+            "y": "palm_down_left_pad_4_6_sensor_patch_2_2_slide_y",
+            "z": "palm_down_left_pad_4_6_sensor_patch_2_2_slide_z"
+        },
+        "3_2": {
+            "x": "palm_down_left_pad_4_6_sensor_patch_3_2_slide_x",
+            "y": "palm_down_left_pad_4_6_sensor_patch_3_2_slide_y",
+            "z": "palm_down_left_pad_4_6_sensor_patch_3_2_slide_z"
+        },
+        "4_2": {
+            "x": "palm_down_left_pad_4_6_sensor_patch_4_2_slide_x",
+            "y": "palm_down_left_pad_4_6_sensor_patch_4_2_slide_y",
+            "z": "palm_down_left_pad_4_6_sensor_patch_4_2_slide_z"
+        },
+        "5_2": {
+            "x": "palm_down_left_pad_4_6_sensor_patch_5_2_slide_x",
+            "y": "palm_down_left_pad_4_6_sensor_patch_5_2_slide_y",
+            "z": "palm_down_left_pad_4_6_sensor_patch_5_2_slide_z"
+        },
+        "0_3": {
+            "x": "palm_down_left_pad_4_6_sensor_patch_0_3_slide_x",
+            "y": "palm_down_left_pad_4_6_sensor_patch_0_3_slide_y",
+            "z": "palm_down_left_pad_4_6_sensor_patch_0_3_slide_z"
+        },
+        "1_3": {
+            "x": "palm_down_left_pad_4_6_sensor_patch_1_3_slide_x",
+            "y": "palm_down_left_pad_4_6_sensor_patch_1_3_slide_y",
+            "z": "palm_down_left_pad_4_6_sensor_patch_1_3_slide_z"
+        },
+        "2_3": {
+            "x": "palm_down_left_pad_4_6_sensor_patch_2_3_slide_x",
+            "y": "palm_down_left_pad_4_6_sensor_patch_2_3_slide_y",
+            "z": "palm_down_left_pad_4_6_sensor_patch_2_3_slide_z"
+        },
+        "3_3": {
+            "x": "palm_down_left_pad_4_6_sensor_patch_3_3_slide_x",
+            "y": "palm_down_left_pad_4_6_sensor_patch_3_3_slide_y",
+            "z": "palm_down_left_pad_4_6_sensor_patch_3_3_slide_z"
+        },
+        "4_3": {
+            "x": "palm_down_left_pad_4_6_sensor_patch_4_3_slide_x",
+            "y": "palm_down_left_pad_4_6_sensor_patch_4_3_slide_y",
+            "z": "palm_down_left_pad_4_6_sensor_patch_4_3_slide_z"
+        },
+        "5_3": {
+            "x": "palm_down_left_pad_4_6_sensor_patch_5_3_slide_x",
+            "y": "palm_down_left_pad_4_6_sensor_patch_5_3_slide_y",
+            "z": "palm_down_left_pad_4_6_sensor_patch_5_3_slide_z"
+        }
+    },
+    "palm_right_pad": {
+        "0_0": {
+            "x": "palm_right_pad_4_6_sensor_patch_0_0_slide_x",
+            "y": "palm_right_pad_4_6_sensor_patch_0_0_slide_y",
+            "z": "palm_right_pad_4_6_sensor_patch_0_0_slide_z"
+        },
+        "1_0": {
+            "x": "palm_right_pad_4_6_sensor_patch_1_0_slide_x",
+            "y": "palm_right_pad_4_6_sensor_patch_1_0_slide_y",
+            "z": "palm_right_pad_4_6_sensor_patch_1_0_slide_z"
+        },
+        "2_0": {
+            "x": "palm_right_pad_4_6_sensor_patch_2_0_slide_x",
+            "y": "palm_right_pad_4_6_sensor_patch_2_0_slide_y",
+            "z": "palm_right_pad_4_6_sensor_patch_2_0_slide_z"
+        },
+        "3_0": {
+            "x": "palm_right_pad_4_6_sensor_patch_3_0_slide_x",
+            "y": "palm_right_pad_4_6_sensor_patch_3_0_slide_y",
+            "z": "palm_right_pad_4_6_sensor_patch_3_0_slide_z"
+        },
+        "4_0": {
+            "x": "palm_right_pad_4_6_sensor_patch_4_0_slide_x",
+            "y": "palm_right_pad_4_6_sensor_patch_4_0_slide_y",
+            "z": "palm_right_pad_4_6_sensor_patch_4_0_slide_z"
+        },
+        "5_0": {
+            "x": "palm_right_pad_4_6_sensor_patch_5_0_slide_x",
+            "y": "palm_right_pad_4_6_sensor_patch_5_0_slide_y",
+            "z": "palm_right_pad_4_6_sensor_patch_5_0_slide_z"
+        },
+        "0_1": {
+            "x": "palm_right_pad_4_6_sensor_patch_0_1_slide_x",
+            "y": "palm_right_pad_4_6_sensor_patch_0_1_slide_y",
+            "z": "palm_right_pad_4_6_sensor_patch_0_1_slide_z"
+        },
+        "1_1": {
+            "x": "palm_right_pad_4_6_sensor_patch_1_1_slide_x",
+            "y": "palm_right_pad_4_6_sensor_patch_1_1_slide_y",
+            "z": "palm_right_pad_4_6_sensor_patch_1_1_slide_z"
+        },
+        "2_1": {
+            "x": "palm_right_pad_4_6_sensor_patch_2_1_slide_x",
+            "y": "palm_right_pad_4_6_sensor_patch_2_1_slide_y",
+            "z": "palm_right_pad_4_6_sensor_patch_2_1_slide_z"
+        },
+        "3_1": {
+            "x": "palm_right_pad_4_6_sensor_patch_3_1_slide_x",
+            "y": "palm_right_pad_4_6_sensor_patch_3_1_slide_y",
+            "z": "palm_right_pad_4_6_sensor_patch_3_1_slide_z"
+        },
+        "4_1": {
+            "x": "palm_right_pad_4_6_sensor_patch_4_1_slide_x",
+            "y": "palm_right_pad_4_6_sensor_patch_4_1_slide_y",
+            "z": "palm_right_pad_4_6_sensor_patch_4_1_slide_z"
+        },
+        "5_1": {
+            "x": "palm_right_pad_4_6_sensor_patch_5_1_slide_x",
+            "y": "palm_right_pad_4_6_sensor_patch_5_1_slide_y",
+            "z": "palm_right_pad_4_6_sensor_patch_5_1_slide_z"
+        },
+        "0_2": {
+            "x": "palm_right_pad_4_6_sensor_patch_0_2_slide_x",
+            "y": "palm_right_pad_4_6_sensor_patch_0_2_slide_y",
+            "z": "palm_right_pad_4_6_sensor_patch_0_2_slide_z"
+        },
+        "1_2": {
+            "x": "palm_right_pad_4_6_sensor_patch_1_2_slide_x",
+            "y": "palm_right_pad_4_6_sensor_patch_1_2_slide_y",
+            "z": "palm_right_pad_4_6_sensor_patch_1_2_slide_z"
+        },
+        "2_2": {
+            "x": "palm_right_pad_4_6_sensor_patch_2_2_slide_x",
+            "y": "palm_right_pad_4_6_sensor_patch_2_2_slide_y",
+            "z": "palm_right_pad_4_6_sensor_patch_2_2_slide_z"
+        },
+        "3_2": {
+            "x": "palm_right_pad_4_6_sensor_patch_3_2_slide_x",
+            "y": "palm_right_pad_4_6_sensor_patch_3_2_slide_y",
+            "z": "palm_right_pad_4_6_sensor_patch_3_2_slide_z"
+        },
+        "4_2": {
+            "x": "palm_right_pad_4_6_sensor_patch_4_2_slide_x",
+            "y": "palm_right_pad_4_6_sensor_patch_4_2_slide_y",
+            "z": "palm_right_pad_4_6_sensor_patch_4_2_slide_z"
+        },
+        "5_2": {
+            "x": "palm_right_pad_4_6_sensor_patch_5_2_slide_x",
+            "y": "palm_right_pad_4_6_sensor_patch_5_2_slide_y",
+            "z": "palm_right_pad_4_6_sensor_patch_5_2_slide_z"
+        },
+        "0_3": {
+            "x": "palm_right_pad_4_6_sensor_patch_0_3_slide_x",
+            "y": "palm_right_pad_4_6_sensor_patch_0_3_slide_y",
+            "z": "palm_right_pad_4_6_sensor_patch_0_3_slide_z"
+        },
+        "1_3": {
+            "x": "palm_right_pad_4_6_sensor_patch_1_3_slide_x",
+            "y": "palm_right_pad_4_6_sensor_patch_1_3_slide_y",
+            "z": "palm_right_pad_4_6_sensor_patch_1_3_slide_z"
+        },
+        "2_3": {
+            "x": "palm_right_pad_4_6_sensor_patch_2_3_slide_x",
+            "y": "palm_right_pad_4_6_sensor_patch_2_3_slide_y",
+            "z": "palm_right_pad_4_6_sensor_patch_2_3_slide_z"
+        },
+        "3_3": {
+            "x": "palm_right_pad_4_6_sensor_patch_3_3_slide_x",
+            "y": "palm_right_pad_4_6_sensor_patch_3_3_slide_y",
+            "z": "palm_right_pad_4_6_sensor_patch_3_3_slide_z"
+        },
+        "4_3": {
+            "x": "palm_right_pad_4_6_sensor_patch_4_3_slide_x",
+            "y": "palm_right_pad_4_6_sensor_patch_4_3_slide_y",
+            "z": "palm_right_pad_4_6_sensor_patch_4_3_slide_z"
+        },
+        "5_3": {
+            "x": "palm_right_pad_4_6_sensor_patch_5_3_slide_x",
+            "y": "palm_right_pad_4_6_sensor_patch_5_3_slide_y",
+            "z": "palm_right_pad_4_6_sensor_patch_5_3_slide_z"
+        }
+    },
+    "palm_up_left_pad": {
+        "0_0": {
+            "x": "palm_up_left_pad_4_6_sensor_patch_0_0_slide_x",
+            "y": "palm_up_left_pad_4_6_sensor_patch_0_0_slide_y",
+            "z": "palm_up_left_pad_4_6_sensor_patch_0_0_slide_z"
+        },
+        "1_0": {
+            "x": "palm_up_left_pad_4_6_sensor_patch_1_0_slide_x",
+            "y": "palm_up_left_pad_4_6_sensor_patch_1_0_slide_y",
+            "z": "palm_up_left_pad_4_6_sensor_patch_1_0_slide_z"
+        },
+        "2_0": {
+            "x": "palm_up_left_pad_4_6_sensor_patch_2_0_slide_x",
+            "y": "palm_up_left_pad_4_6_sensor_patch_2_0_slide_y",
+            "z": "palm_up_left_pad_4_6_sensor_patch_2_0_slide_z"
+        },
+        "3_0": {
+            "x": "palm_up_left_pad_4_6_sensor_patch_3_0_slide_x",
+            "y": "palm_up_left_pad_4_6_sensor_patch_3_0_slide_y",
+            "z": "palm_up_left_pad_4_6_sensor_patch_3_0_slide_z"
+        },
+        "4_0": {
+            "x": "palm_up_left_pad_4_6_sensor_patch_4_0_slide_x",
+            "y": "palm_up_left_pad_4_6_sensor_patch_4_0_slide_y",
+            "z": "palm_up_left_pad_4_6_sensor_patch_4_0_slide_z"
+        },
+        "5_0": {
+            "x": "palm_up_left_pad_4_6_sensor_patch_5_0_slide_x",
+            "y": "palm_up_left_pad_4_6_sensor_patch_5_0_slide_y",
+            "z": "palm_up_left_pad_4_6_sensor_patch_5_0_slide_z"
+        },
+        "0_1": {
+            "x": "palm_up_left_pad_4_6_sensor_patch_0_1_slide_x",
+            "y": "palm_up_left_pad_4_6_sensor_patch_0_1_slide_y",
+            "z": "palm_up_left_pad_4_6_sensor_patch_0_1_slide_z"
+        },
+        "1_1": {
+            "x": "palm_up_left_pad_4_6_sensor_patch_1_1_slide_x",
+            "y": "palm_up_left_pad_4_6_sensor_patch_1_1_slide_y",
+            "z": "palm_up_left_pad_4_6_sensor_patch_1_1_slide_z"
+        },
+        "2_1": {
+            "x": "palm_up_left_pad_4_6_sensor_patch_2_1_slide_x",
+            "y": "palm_up_left_pad_4_6_sensor_patch_2_1_slide_y",
+            "z": "palm_up_left_pad_4_6_sensor_patch_2_1_slide_z"
+        },
+        "3_1": {
+            "x": "palm_up_left_pad_4_6_sensor_patch_3_1_slide_x",
+            "y": "palm_up_left_pad_4_6_sensor_patch_3_1_slide_y",
+            "z": "palm_up_left_pad_4_6_sensor_patch_3_1_slide_z"
+        },
+        "4_1": {
+            "x": "palm_up_left_pad_4_6_sensor_patch_4_1_slide_x",
+            "y": "palm_up_left_pad_4_6_sensor_patch_4_1_slide_y",
+            "z": "palm_up_left_pad_4_6_sensor_patch_4_1_slide_z"
+        },
+        "5_1": {
+            "x": "palm_up_left_pad_4_6_sensor_patch_5_1_slide_x",
+            "y": "palm_up_left_pad_4_6_sensor_patch_5_1_slide_y",
+            "z": "palm_up_left_pad_4_6_sensor_patch_5_1_slide_z"
+        },
+        "0_2": {
+            "x": "palm_up_left_pad_4_6_sensor_patch_0_2_slide_x",
+            "y": "palm_up_left_pad_4_6_sensor_patch_0_2_slide_y",
+            "z": "palm_up_left_pad_4_6_sensor_patch_0_2_slide_z"
+        },
+        "1_2": {
+            "x": "palm_up_left_pad_4_6_sensor_patch_1_2_slide_x",
+            "y": "palm_up_left_pad_4_6_sensor_patch_1_2_slide_y",
+            "z": "palm_up_left_pad_4_6_sensor_patch_1_2_slide_z"
+        },
+        "2_2": {
+            "x": "palm_up_left_pad_4_6_sensor_patch_2_2_slide_x",
+            "y": "palm_up_left_pad_4_6_sensor_patch_2_2_slide_y",
+            "z": "palm_up_left_pad_4_6_sensor_patch_2_2_slide_z"
+        },
+        "3_2": {
+            "x": "palm_up_left_pad_4_6_sensor_patch_3_2_slide_x",
+            "y": "palm_up_left_pad_4_6_sensor_patch_3_2_slide_y",
+            "z": "palm_up_left_pad_4_6_sensor_patch_3_2_slide_z"
+        },
+        "4_2": {
+            "x": "palm_up_left_pad_4_6_sensor_patch_4_2_slide_x",
+            "y": "palm_up_left_pad_4_6_sensor_patch_4_2_slide_y",
+            "z": "palm_up_left_pad_4_6_sensor_patch_4_2_slide_z"
+        },
+        "5_2": {
+            "x": "palm_up_left_pad_4_6_sensor_patch_5_2_slide_x",
+            "y": "palm_up_left_pad_4_6_sensor_patch_5_2_slide_y",
+            "z": "palm_up_left_pad_4_6_sensor_patch_5_2_slide_z"
+        },
+        "0_3": {
+            "x": "palm_up_left_pad_4_6_sensor_patch_0_3_slide_x",
+            "y": "palm_up_left_pad_4_6_sensor_patch_0_3_slide_y",
+            "z": "palm_up_left_pad_4_6_sensor_patch_0_3_slide_z"
+        },
+        "1_3": {
+            "x": "palm_up_left_pad_4_6_sensor_patch_1_3_slide_x",
+            "y": "palm_up_left_pad_4_6_sensor_patch_1_3_slide_y",
+            "z": "palm_up_left_pad_4_6_sensor_patch_1_3_slide_z"
+        },
+        "2_3": {
+            "x": "palm_up_left_pad_4_6_sensor_patch_2_3_slide_x",
+            "y": "palm_up_left_pad_4_6_sensor_patch_2_3_slide_y",
+            "z": "palm_up_left_pad_4_6_sensor_patch_2_3_slide_z"
+        },
+        "3_3": {
+            "x": "palm_up_left_pad_4_6_sensor_patch_3_3_slide_x",
+            "y": "palm_up_left_pad_4_6_sensor_patch_3_3_slide_y",
+            "z": "palm_up_left_pad_4_6_sensor_patch_3_3_slide_z"
+        },
+        "4_3": {
+            "x": "palm_up_left_pad_4_6_sensor_patch_4_3_slide_x",
+            "y": "palm_up_left_pad_4_6_sensor_patch_4_3_slide_y",
+            "z": "palm_up_left_pad_4_6_sensor_patch_4_3_slide_z"
+        },
+        "5_3": {
+            "x": "palm_up_left_pad_4_6_sensor_patch_5_3_slide_x",
+            "y": "palm_up_left_pad_4_6_sensor_patch_5_3_slide_y",
+            "z": "palm_up_left_pad_4_6_sensor_patch_5_3_slide_z"
+        }
+    },
+    "if_tip": {
         "1": {
             "x": "if_sensor_1_slide_x",
             "y": "if_sensor_1_slide_y",
@@ -889,7 +1419,7 @@
             "z": "if_sensor_30_slide_z"
         }
     },
-    "mf_ds": {
+    "mf_tip": {
         "1": {
             "x": "mf_sensor_1_slide_x",
             "y": "mf_sensor_1_slide_y",
@@ -1041,7 +1571,7 @@
             "z": "mf_sensor_30_slide_z"
         }
     },
-    "rf_ds": {
+    "rf_tip": {
         "1": {
             "x": "rf_sensor_1_slide_x",
             "y": "rf_sensor_1_slide_y",
@@ -1193,7 +1723,7 @@
             "z": "rf_sensor_30_slide_z"
         }
     },
-    "th_ds": {
+    "th_tip": {
         "1": {
             "x": "th_sensor_1_slide_x",
             "y": "th_sensor_1_slide_y",
@@ -1343,536 +1873,6 @@
             "x": "th_sensor_30_slide_x",
             "y": "th_sensor_30_slide_y",
             "z": "th_sensor_30_slide_z"
-        }
-    },
-    "th_px_uspa44": {
-        "0_0": {
-            "x": "th_px_uspa44_sensor_patch_0_0_slide_x",
-            "y": "th_px_uspa44_sensor_patch_0_0_slide_y",
-            "z": "th_px_uspa44_sensor_patch_0_0_slide_z"
-        },
-        "1_0": {
-            "x": "th_px_uspa44_sensor_patch_1_0_slide_x",
-            "y": "th_px_uspa44_sensor_patch_1_0_slide_y",
-            "z": "th_px_uspa44_sensor_patch_1_0_slide_z"
-        },
-        "2_0": {
-            "x": "th_px_uspa44_sensor_patch_2_0_slide_x",
-            "y": "th_px_uspa44_sensor_patch_2_0_slide_y",
-            "z": "th_px_uspa44_sensor_patch_2_0_slide_z"
-        },
-        "3_0": {
-            "x": "th_px_uspa44_sensor_patch_3_0_slide_x",
-            "y": "th_px_uspa44_sensor_patch_3_0_slide_y",
-            "z": "th_px_uspa44_sensor_patch_3_0_slide_z"
-        },
-        "0_1": {
-            "x": "th_px_uspa44_sensor_patch_0_1_slide_x",
-            "y": "th_px_uspa44_sensor_patch_0_1_slide_y",
-            "z": "th_px_uspa44_sensor_patch_0_1_slide_z"
-        },
-        "1_1": {
-            "x": "th_px_uspa44_sensor_patch_1_1_slide_x",
-            "y": "th_px_uspa44_sensor_patch_1_1_slide_y",
-            "z": "th_px_uspa44_sensor_patch_1_1_slide_z"
-        },
-        "2_1": {
-            "x": "th_px_uspa44_sensor_patch_2_1_slide_x",
-            "y": "th_px_uspa44_sensor_patch_2_1_slide_y",
-            "z": "th_px_uspa44_sensor_patch_2_1_slide_z"
-        },
-        "3_1": {
-            "x": "th_px_uspa44_sensor_patch_3_1_slide_x",
-            "y": "th_px_uspa44_sensor_patch_3_1_slide_y",
-            "z": "th_px_uspa44_sensor_patch_3_1_slide_z"
-        },
-        "0_2": {
-            "x": "th_px_uspa44_sensor_patch_0_2_slide_x",
-            "y": "th_px_uspa44_sensor_patch_0_2_slide_y",
-            "z": "th_px_uspa44_sensor_patch_0_2_slide_z"
-        },
-        "1_2": {
-            "x": "th_px_uspa44_sensor_patch_1_2_slide_x",
-            "y": "th_px_uspa44_sensor_patch_1_2_slide_y",
-            "z": "th_px_uspa44_sensor_patch_1_2_slide_z"
-        },
-        "2_2": {
-            "x": "th_px_uspa44_sensor_patch_2_2_slide_x",
-            "y": "th_px_uspa44_sensor_patch_2_2_slide_y",
-            "z": "th_px_uspa44_sensor_patch_2_2_slide_z"
-        },
-        "3_2": {
-            "x": "th_px_uspa44_sensor_patch_3_2_slide_x",
-            "y": "th_px_uspa44_sensor_patch_3_2_slide_y",
-            "z": "th_px_uspa44_sensor_patch_3_2_slide_z"
-        },
-        "0_3": {
-            "x": "th_px_uspa44_sensor_patch_0_3_slide_x",
-            "y": "th_px_uspa44_sensor_patch_0_3_slide_y",
-            "z": "th_px_uspa44_sensor_patch_0_3_slide_z"
-        },
-        "1_3": {
-            "x": "th_px_uspa44_sensor_patch_1_3_slide_x",
-            "y": "th_px_uspa44_sensor_patch_1_3_slide_y",
-            "z": "th_px_uspa44_sensor_patch_1_3_slide_z"
-        },
-        "2_3": {
-            "x": "th_px_uspa44_sensor_patch_2_3_slide_x",
-            "y": "th_px_uspa44_sensor_patch_2_3_slide_y",
-            "z": "th_px_uspa44_sensor_patch_2_3_slide_z"
-        },
-        "3_3": {
-            "x": "th_px_uspa44_sensor_patch_3_3_slide_x",
-            "y": "th_px_uspa44_sensor_patch_3_3_slide_y",
-            "z": "th_px_uspa44_sensor_patch_3_3_slide_z"
-        }
-    },
-    "th_ds_uspa44": {
-        "0_0": {
-            "x": "th_ds_uspa44_sensor_patch_0_0_slide_x",
-            "y": "th_ds_uspa44_sensor_patch_0_0_slide_y",
-            "z": "th_ds_uspa44_sensor_patch_0_0_slide_z"
-        },
-        "1_0": {
-            "x": "th_ds_uspa44_sensor_patch_1_0_slide_x",
-            "y": "th_ds_uspa44_sensor_patch_1_0_slide_y",
-            "z": "th_ds_uspa44_sensor_patch_1_0_slide_z"
-        },
-        "2_0": {
-            "x": "th_ds_uspa44_sensor_patch_2_0_slide_x",
-            "y": "th_ds_uspa44_sensor_patch_2_0_slide_y",
-            "z": "th_ds_uspa44_sensor_patch_2_0_slide_z"
-        },
-        "3_0": {
-            "x": "th_ds_uspa44_sensor_patch_3_0_slide_x",
-            "y": "th_ds_uspa44_sensor_patch_3_0_slide_y",
-            "z": "th_ds_uspa44_sensor_patch_3_0_slide_z"
-        },
-        "0_1": {
-            "x": "th_ds_uspa44_sensor_patch_0_1_slide_x",
-            "y": "th_ds_uspa44_sensor_patch_0_1_slide_y",
-            "z": "th_ds_uspa44_sensor_patch_0_1_slide_z"
-        },
-        "1_1": {
-            "x": "th_ds_uspa44_sensor_patch_1_1_slide_x",
-            "y": "th_ds_uspa44_sensor_patch_1_1_slide_y",
-            "z": "th_ds_uspa44_sensor_patch_1_1_slide_z"
-        },
-        "2_1": {
-            "x": "th_ds_uspa44_sensor_patch_2_1_slide_x",
-            "y": "th_ds_uspa44_sensor_patch_2_1_slide_y",
-            "z": "th_ds_uspa44_sensor_patch_2_1_slide_z"
-        },
-        "3_1": {
-            "x": "th_ds_uspa44_sensor_patch_3_1_slide_x",
-            "y": "th_ds_uspa44_sensor_patch_3_1_slide_y",
-            "z": "th_ds_uspa44_sensor_patch_3_1_slide_z"
-        },
-        "0_2": {
-            "x": "th_ds_uspa44_sensor_patch_0_2_slide_x",
-            "y": "th_ds_uspa44_sensor_patch_0_2_slide_y",
-            "z": "th_ds_uspa44_sensor_patch_0_2_slide_z"
-        },
-        "1_2": {
-            "x": "th_ds_uspa44_sensor_patch_1_2_slide_x",
-            "y": "th_ds_uspa44_sensor_patch_1_2_slide_y",
-            "z": "th_ds_uspa44_sensor_patch_1_2_slide_z"
-        },
-        "2_2": {
-            "x": "th_ds_uspa44_sensor_patch_2_2_slide_x",
-            "y": "th_ds_uspa44_sensor_patch_2_2_slide_y",
-            "z": "th_ds_uspa44_sensor_patch_2_2_slide_z"
-        },
-        "3_2": {
-            "x": "th_ds_uspa44_sensor_patch_3_2_slide_x",
-            "y": "th_ds_uspa44_sensor_patch_3_2_slide_y",
-            "z": "th_ds_uspa44_sensor_patch_3_2_slide_z"
-        },
-        "0_3": {
-            "x": "th_ds_uspa44_sensor_patch_0_3_slide_x",
-            "y": "th_ds_uspa44_sensor_patch_0_3_slide_y",
-            "z": "th_ds_uspa44_sensor_patch_0_3_slide_z"
-        },
-        "1_3": {
-            "x": "th_ds_uspa44_sensor_patch_1_3_slide_x",
-            "y": "th_ds_uspa44_sensor_patch_1_3_slide_y",
-            "z": "th_ds_uspa44_sensor_patch_1_3_slide_z"
-        },
-        "2_3": {
-            "x": "th_ds_uspa44_sensor_patch_2_3_slide_x",
-            "y": "th_ds_uspa44_sensor_patch_2_3_slide_y",
-            "z": "th_ds_uspa44_sensor_patch_2_3_slide_z"
-        },
-        "3_3": {
-            "x": "th_ds_uspa44_sensor_patch_3_3_slide_x",
-            "y": "th_ds_uspa44_sensor_patch_3_3_slide_y",
-            "z": "th_ds_uspa44_sensor_patch_3_3_slide_z"
-        }
-    },
-    "uspa46_1": {
-        "0_0": {
-            "x": "uspa46_1_sensor_patch_0_0_slide_x",
-            "y": "uspa46_1_sensor_patch_0_0_slide_y",
-            "z": "uspa46_1_sensor_patch_0_0_slide_z"
-        },
-        "1_0": {
-            "x": "uspa46_1_sensor_patch_1_0_slide_x",
-            "y": "uspa46_1_sensor_patch_1_0_slide_y",
-            "z": "uspa46_1_sensor_patch_1_0_slide_z"
-        },
-        "2_0": {
-            "x": "uspa46_1_sensor_patch_2_0_slide_x",
-            "y": "uspa46_1_sensor_patch_2_0_slide_y",
-            "z": "uspa46_1_sensor_patch_2_0_slide_z"
-        },
-        "3_0": {
-            "x": "uspa46_1_sensor_patch_3_0_slide_x",
-            "y": "uspa46_1_sensor_patch_3_0_slide_y",
-            "z": "uspa46_1_sensor_patch_3_0_slide_z"
-        },
-        "4_0": {
-            "x": "uspa46_1_sensor_patch_4_0_slide_x",
-            "y": "uspa46_1_sensor_patch_4_0_slide_y",
-            "z": "uspa46_1_sensor_patch_4_0_slide_z"
-        },
-        "5_0": {
-            "x": "uspa46_1_sensor_patch_5_0_slide_x",
-            "y": "uspa46_1_sensor_patch_5_0_slide_y",
-            "z": "uspa46_1_sensor_patch_5_0_slide_z"
-        },
-        "0_1": {
-            "x": "uspa46_1_sensor_patch_0_1_slide_x",
-            "y": "uspa46_1_sensor_patch_0_1_slide_y",
-            "z": "uspa46_1_sensor_patch_0_1_slide_z"
-        },
-        "1_1": {
-            "x": "uspa46_1_sensor_patch_1_1_slide_x",
-            "y": "uspa46_1_sensor_patch_1_1_slide_y",
-            "z": "uspa46_1_sensor_patch_1_1_slide_z"
-        },
-        "2_1": {
-            "x": "uspa46_1_sensor_patch_2_1_slide_x",
-            "y": "uspa46_1_sensor_patch_2_1_slide_y",
-            "z": "uspa46_1_sensor_patch_2_1_slide_z"
-        },
-        "3_1": {
-            "x": "uspa46_1_sensor_patch_3_1_slide_x",
-            "y": "uspa46_1_sensor_patch_3_1_slide_y",
-            "z": "uspa46_1_sensor_patch_3_1_slide_z"
-        },
-        "4_1": {
-            "x": "uspa46_1_sensor_patch_4_1_slide_x",
-            "y": "uspa46_1_sensor_patch_4_1_slide_y",
-            "z": "uspa46_1_sensor_patch_4_1_slide_z"
-        },
-        "5_1": {
-            "x": "uspa46_1_sensor_patch_5_1_slide_x",
-            "y": "uspa46_1_sensor_patch_5_1_slide_y",
-            "z": "uspa46_1_sensor_patch_5_1_slide_z"
-        },
-        "0_2": {
-            "x": "uspa46_1_sensor_patch_0_2_slide_x",
-            "y": "uspa46_1_sensor_patch_0_2_slide_y",
-            "z": "uspa46_1_sensor_patch_0_2_slide_z"
-        },
-        "1_2": {
-            "x": "uspa46_1_sensor_patch_1_2_slide_x",
-            "y": "uspa46_1_sensor_patch_1_2_slide_y",
-            "z": "uspa46_1_sensor_patch_1_2_slide_z"
-        },
-        "2_2": {
-            "x": "uspa46_1_sensor_patch_2_2_slide_x",
-            "y": "uspa46_1_sensor_patch_2_2_slide_y",
-            "z": "uspa46_1_sensor_patch_2_2_slide_z"
-        },
-        "3_2": {
-            "x": "uspa46_1_sensor_patch_3_2_slide_x",
-            "y": "uspa46_1_sensor_patch_3_2_slide_y",
-            "z": "uspa46_1_sensor_patch_3_2_slide_z"
-        },
-        "4_2": {
-            "x": "uspa46_1_sensor_patch_4_2_slide_x",
-            "y": "uspa46_1_sensor_patch_4_2_slide_y",
-            "z": "uspa46_1_sensor_patch_4_2_slide_z"
-        },
-        "5_2": {
-            "x": "uspa46_1_sensor_patch_5_2_slide_x",
-            "y": "uspa46_1_sensor_patch_5_2_slide_y",
-            "z": "uspa46_1_sensor_patch_5_2_slide_z"
-        },
-        "0_3": {
-            "x": "uspa46_1_sensor_patch_0_3_slide_x",
-            "y": "uspa46_1_sensor_patch_0_3_slide_y",
-            "z": "uspa46_1_sensor_patch_0_3_slide_z"
-        },
-        "1_3": {
-            "x": "uspa46_1_sensor_patch_1_3_slide_x",
-            "y": "uspa46_1_sensor_patch_1_3_slide_y",
-            "z": "uspa46_1_sensor_patch_1_3_slide_z"
-        },
-        "2_3": {
-            "x": "uspa46_1_sensor_patch_2_3_slide_x",
-            "y": "uspa46_1_sensor_patch_2_3_slide_y",
-            "z": "uspa46_1_sensor_patch_2_3_slide_z"
-        },
-        "3_3": {
-            "x": "uspa46_1_sensor_patch_3_3_slide_x",
-            "y": "uspa46_1_sensor_patch_3_3_slide_y",
-            "z": "uspa46_1_sensor_patch_3_3_slide_z"
-        },
-        "4_3": {
-            "x": "uspa46_1_sensor_patch_4_3_slide_x",
-            "y": "uspa46_1_sensor_patch_4_3_slide_y",
-            "z": "uspa46_1_sensor_patch_4_3_slide_z"
-        },
-        "5_3": {
-            "x": "uspa46_1_sensor_patch_5_3_slide_x",
-            "y": "uspa46_1_sensor_patch_5_3_slide_y",
-            "z": "uspa46_1_sensor_patch_5_3_slide_z"
-        }
-    },
-    "uspa46_2": {
-        "0_0": {
-            "x": "uspa46_2_sensor_patch_0_0_slide_x",
-            "y": "uspa46_2_sensor_patch_0_0_slide_y",
-            "z": "uspa46_2_sensor_patch_0_0_slide_z"
-        },
-        "1_0": {
-            "x": "uspa46_2_sensor_patch_1_0_slide_x",
-            "y": "uspa46_2_sensor_patch_1_0_slide_y",
-            "z": "uspa46_2_sensor_patch_1_0_slide_z"
-        },
-        "2_0": {
-            "x": "uspa46_2_sensor_patch_2_0_slide_x",
-            "y": "uspa46_2_sensor_patch_2_0_slide_y",
-            "z": "uspa46_2_sensor_patch_2_0_slide_z"
-        },
-        "3_0": {
-            "x": "uspa46_2_sensor_patch_3_0_slide_x",
-            "y": "uspa46_2_sensor_patch_3_0_slide_y",
-            "z": "uspa46_2_sensor_patch_3_0_slide_z"
-        },
-        "4_0": {
-            "x": "uspa46_2_sensor_patch_4_0_slide_x",
-            "y": "uspa46_2_sensor_patch_4_0_slide_y",
-            "z": "uspa46_2_sensor_patch_4_0_slide_z"
-        },
-        "5_0": {
-            "x": "uspa46_2_sensor_patch_5_0_slide_x",
-            "y": "uspa46_2_sensor_patch_5_0_slide_y",
-            "z": "uspa46_2_sensor_patch_5_0_slide_z"
-        },
-        "0_1": {
-            "x": "uspa46_2_sensor_patch_0_1_slide_x",
-            "y": "uspa46_2_sensor_patch_0_1_slide_y",
-            "z": "uspa46_2_sensor_patch_0_1_slide_z"
-        },
-        "1_1": {
-            "x": "uspa46_2_sensor_patch_1_1_slide_x",
-            "y": "uspa46_2_sensor_patch_1_1_slide_y",
-            "z": "uspa46_2_sensor_patch_1_1_slide_z"
-        },
-        "2_1": {
-            "x": "uspa46_2_sensor_patch_2_1_slide_x",
-            "y": "uspa46_2_sensor_patch_2_1_slide_y",
-            "z": "uspa46_2_sensor_patch_2_1_slide_z"
-        },
-        "3_1": {
-            "x": "uspa46_2_sensor_patch_3_1_slide_x",
-            "y": "uspa46_2_sensor_patch_3_1_slide_y",
-            "z": "uspa46_2_sensor_patch_3_1_slide_z"
-        },
-        "4_1": {
-            "x": "uspa46_2_sensor_patch_4_1_slide_x",
-            "y": "uspa46_2_sensor_patch_4_1_slide_y",
-            "z": "uspa46_2_sensor_patch_4_1_slide_z"
-        },
-        "5_1": {
-            "x": "uspa46_2_sensor_patch_5_1_slide_x",
-            "y": "uspa46_2_sensor_patch_5_1_slide_y",
-            "z": "uspa46_2_sensor_patch_5_1_slide_z"
-        },
-        "0_2": {
-            "x": "uspa46_2_sensor_patch_0_2_slide_x",
-            "y": "uspa46_2_sensor_patch_0_2_slide_y",
-            "z": "uspa46_2_sensor_patch_0_2_slide_z"
-        },
-        "1_2": {
-            "x": "uspa46_2_sensor_patch_1_2_slide_x",
-            "y": "uspa46_2_sensor_patch_1_2_slide_y",
-            "z": "uspa46_2_sensor_patch_1_2_slide_z"
-        },
-        "2_2": {
-            "x": "uspa46_2_sensor_patch_2_2_slide_x",
-            "y": "uspa46_2_sensor_patch_2_2_slide_y",
-            "z": "uspa46_2_sensor_patch_2_2_slide_z"
-        },
-        "3_2": {
-            "x": "uspa46_2_sensor_patch_3_2_slide_x",
-            "y": "uspa46_2_sensor_patch_3_2_slide_y",
-            "z": "uspa46_2_sensor_patch_3_2_slide_z"
-        },
-        "4_2": {
-            "x": "uspa46_2_sensor_patch_4_2_slide_x",
-            "y": "uspa46_2_sensor_patch_4_2_slide_y",
-            "z": "uspa46_2_sensor_patch_4_2_slide_z"
-        },
-        "5_2": {
-            "x": "uspa46_2_sensor_patch_5_2_slide_x",
-            "y": "uspa46_2_sensor_patch_5_2_slide_y",
-            "z": "uspa46_2_sensor_patch_5_2_slide_z"
-        },
-        "0_3": {
-            "x": "uspa46_2_sensor_patch_0_3_slide_x",
-            "y": "uspa46_2_sensor_patch_0_3_slide_y",
-            "z": "uspa46_2_sensor_patch_0_3_slide_z"
-        },
-        "1_3": {
-            "x": "uspa46_2_sensor_patch_1_3_slide_x",
-            "y": "uspa46_2_sensor_patch_1_3_slide_y",
-            "z": "uspa46_2_sensor_patch_1_3_slide_z"
-        },
-        "2_3": {
-            "x": "uspa46_2_sensor_patch_2_3_slide_x",
-            "y": "uspa46_2_sensor_patch_2_3_slide_y",
-            "z": "uspa46_2_sensor_patch_2_3_slide_z"
-        },
-        "3_3": {
-            "x": "uspa46_2_sensor_patch_3_3_slide_x",
-            "y": "uspa46_2_sensor_patch_3_3_slide_y",
-            "z": "uspa46_2_sensor_patch_3_3_slide_z"
-        },
-        "4_3": {
-            "x": "uspa46_2_sensor_patch_4_3_slide_x",
-            "y": "uspa46_2_sensor_patch_4_3_slide_y",
-            "z": "uspa46_2_sensor_patch_4_3_slide_z"
-        },
-        "5_3": {
-            "x": "uspa46_2_sensor_patch_5_3_slide_x",
-            "y": "uspa46_2_sensor_patch_5_3_slide_y",
-            "z": "uspa46_2_sensor_patch_5_3_slide_z"
-        }
-    },
-    "uspa46_3": {
-        "0_0": {
-            "x": "uspa46_3_sensor_patch_0_0_slide_x",
-            "y": "uspa46_3_sensor_patch_0_0_slide_y",
-            "z": "uspa46_3_sensor_patch_0_0_slide_z"
-        },
-        "1_0": {
-            "x": "uspa46_3_sensor_patch_1_0_slide_x",
-            "y": "uspa46_3_sensor_patch_1_0_slide_y",
-            "z": "uspa46_3_sensor_patch_1_0_slide_z"
-        },
-        "2_0": {
-            "x": "uspa46_3_sensor_patch_2_0_slide_x",
-            "y": "uspa46_3_sensor_patch_2_0_slide_y",
-            "z": "uspa46_3_sensor_patch_2_0_slide_z"
-        },
-        "3_0": {
-            "x": "uspa46_3_sensor_patch_3_0_slide_x",
-            "y": "uspa46_3_sensor_patch_3_0_slide_y",
-            "z": "uspa46_3_sensor_patch_3_0_slide_z"
-        },
-        "4_0": {
-            "x": "uspa46_3_sensor_patch_4_0_slide_x",
-            "y": "uspa46_3_sensor_patch_4_0_slide_y",
-            "z": "uspa46_3_sensor_patch_4_0_slide_z"
-        },
-        "5_0": {
-            "x": "uspa46_3_sensor_patch_5_0_slide_x",
-            "y": "uspa46_3_sensor_patch_5_0_slide_y",
-            "z": "uspa46_3_sensor_patch_5_0_slide_z"
-        },
-        "0_1": {
-            "x": "uspa46_3_sensor_patch_0_1_slide_x",
-            "y": "uspa46_3_sensor_patch_0_1_slide_y",
-            "z": "uspa46_3_sensor_patch_0_1_slide_z"
-        },
-        "1_1": {
-            "x": "uspa46_3_sensor_patch_1_1_slide_x",
-            "y": "uspa46_3_sensor_patch_1_1_slide_y",
-            "z": "uspa46_3_sensor_patch_1_1_slide_z"
-        },
-        "2_1": {
-            "x": "uspa46_3_sensor_patch_2_1_slide_x",
-            "y": "uspa46_3_sensor_patch_2_1_slide_y",
-            "z": "uspa46_3_sensor_patch_2_1_slide_z"
-        },
-        "3_1": {
-            "x": "uspa46_3_sensor_patch_3_1_slide_x",
-            "y": "uspa46_3_sensor_patch_3_1_slide_y",
-            "z": "uspa46_3_sensor_patch_3_1_slide_z"
-        },
-        "4_1": {
-            "x": "uspa46_3_sensor_patch_4_1_slide_x",
-            "y": "uspa46_3_sensor_patch_4_1_slide_y",
-            "z": "uspa46_3_sensor_patch_4_1_slide_z"
-        },
-        "5_1": {
-            "x": "uspa46_3_sensor_patch_5_1_slide_x",
-            "y": "uspa46_3_sensor_patch_5_1_slide_y",
-            "z": "uspa46_3_sensor_patch_5_1_slide_z"
-        },
-        "0_2": {
-            "x": "uspa46_3_sensor_patch_0_2_slide_x",
-            "y": "uspa46_3_sensor_patch_0_2_slide_y",
-            "z": "uspa46_3_sensor_patch_0_2_slide_z"
-        },
-        "1_2": {
-            "x": "uspa46_3_sensor_patch_1_2_slide_x",
-            "y": "uspa46_3_sensor_patch_1_2_slide_y",
-            "z": "uspa46_3_sensor_patch_1_2_slide_z"
-        },
-        "2_2": {
-            "x": "uspa46_3_sensor_patch_2_2_slide_x",
-            "y": "uspa46_3_sensor_patch_2_2_slide_y",
-            "z": "uspa46_3_sensor_patch_2_2_slide_z"
-        },
-        "3_2": {
-            "x": "uspa46_3_sensor_patch_3_2_slide_x",
-            "y": "uspa46_3_sensor_patch_3_2_slide_y",
-            "z": "uspa46_3_sensor_patch_3_2_slide_z"
-        },
-        "4_2": {
-            "x": "uspa46_3_sensor_patch_4_2_slide_x",
-            "y": "uspa46_3_sensor_patch_4_2_slide_y",
-            "z": "uspa46_3_sensor_patch_4_2_slide_z"
-        },
-        "5_2": {
-            "x": "uspa46_3_sensor_patch_5_2_slide_x",
-            "y": "uspa46_3_sensor_patch_5_2_slide_y",
-            "z": "uspa46_3_sensor_patch_5_2_slide_z"
-        },
-        "0_3": {
-            "x": "uspa46_3_sensor_patch_0_3_slide_x",
-            "y": "uspa46_3_sensor_patch_0_3_slide_y",
-            "z": "uspa46_3_sensor_patch_0_3_slide_z"
-        },
-        "1_3": {
-            "x": "uspa46_3_sensor_patch_1_3_slide_x",
-            "y": "uspa46_3_sensor_patch_1_3_slide_y",
-            "z": "uspa46_3_sensor_patch_1_3_slide_z"
-        },
-        "2_3": {
-            "x": "uspa46_3_sensor_patch_2_3_slide_x",
-            "y": "uspa46_3_sensor_patch_2_3_slide_y",
-            "z": "uspa46_3_sensor_patch_2_3_slide_z"
-        },
-        "3_3": {
-            "x": "uspa46_3_sensor_patch_3_3_slide_x",
-            "y": "uspa46_3_sensor_patch_3_3_slide_y",
-            "z": "uspa46_3_sensor_patch_3_3_slide_z"
-        },
-        "4_3": {
-            "x": "uspa46_3_sensor_patch_4_3_slide_x",
-            "y": "uspa46_3_sensor_patch_4_3_slide_y",
-            "z": "uspa46_3_sensor_patch_4_3_slide_z"
-        },
-        "5_3": {
-            "x": "uspa46_3_sensor_patch_5_3_slide_x",
-            "y": "uspa46_3_sensor_patch_5_3_slide_y",
-            "z": "uspa46_3_sensor_patch_5_3_slide_z"
         }
     }
 }

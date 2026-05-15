@@ -2,6 +2,7 @@
 
 import json
 import time
+from pathlib import Path
 
 import rclpy
 from rclpy.node import Node
@@ -9,7 +10,20 @@ from perlin_noise import PerlinNoise
 import numpy as np
 from ament_index_python.packages import get_package_share_directory
 
-from xela_point_cloud_representation.msg import Sensor, Texel, HandSensors
+from xela_point_cloud_representation.msg import  Texel, HandSensors
+
+
+from leap_taxel_map import (
+    get_flatten_hand,
+    get_sorted_1D_hand_taxels_map,
+    LEAP_XELA_ID,
+    sorted_1D_hand_taxel_name,
+    taxel_location_map_for_image_representation,
+)
+
+
+
+
 
 def generate_perlin_noise(dim=(4, 6), seed=None):
     """
@@ -30,62 +44,52 @@ def generate_perlin_noise(dim=(4, 6), seed=None):
             field[y, x] = noise([(x + 0.5) / width, (y + 0.5) / height])
     return field
 
+def generate_perlin_noise_for_leap():
+    #shape (26, 31)
+    noise = generate_perlin_noise(dim=(26, 31))
+    return noise
 
-def generate_sensor_msg_for_uspa46(sensor_joints, sensor_name):
-    sensor_msg = Sensor()
-    sensor_msg.name = sensor_name
-    sensor_locations = sensor_joints[sensor_name]
-    noise = generate_perlin_noise(dim=(4,6))*-1
-    for y in range(4):
-        for x in range(6):
-            texel = Texel()
-            texel.loc = str(x)+"_"+str(y)
-            texel.x = 0.0
-            texel.y = 0.0
-            texel.z = float(noise[y, x])
-            texel.joint_x = sensor_locations[str(x)+"_"+str(y)]["x"]
-            texel.joint_y = sensor_locations[str(x)+"_"+str(y)]["y"]
-            texel.joint_z = sensor_locations[str(x)+"_"+str(y)]["z"]
-            sensor_msg.texels.append(texel)
-    return sensor_msg
+def perlin_noise_to_1D_texels_array(noise):
+    texels_array = []
+    texel_loc_map = taxel_location_map_for_image_representation(LEAP_XELA_ID)
+    for taxel_id, loc in texel_loc_map.items():
+        texel = noise[loc[0], loc[1]]
+        texels_array.append(texel)
+    return texels_array
 
-def generate_sensor_msg_for_uspa44(sensor_joints, sensor_name):
-    sensor_msg = Sensor()
-    sensor_msg.name = sensor_name
-    sensor_locations = sensor_joints[sensor_name]
-    noise = generate_perlin_noise(dim=(4,4))
-    # rclpy.logging.get_logger("sensor_value_publisher_fake").info(f"noise: {noise}")
-    for y in range(4):
-        for x in range(4):
-            texel = Texel()
-            texel.loc = str(x)+"_"+str(y)
-            texel.x = 0.0
-            texel.y = 0.0
-            texel.z = float(noise[y, x])
-            # rclpy.logging.get_logger("sensor_value_publisher_fake").info(f"texel.z: {texel.z}")
-            texel.joint_x = sensor_locations[str(x)+"_"+str(y)]["x"]
-            texel.joint_y = sensor_locations[str(x)+"_"+str(y)]["y"]
-            texel.joint_z = sensor_locations[str(x)+"_"+str(y)]["z"]
-            sensor_msg.texels.append(texel)
-    return sensor_msg
+def taxel_1d_sensor_names():
+    map_path = Path(__file__).resolve().parent / "leap_sensor_taxel_map.json"
+    with open(map_path, "r") as f:
+        map_dict = json.load(f)
 
-def generate_sensor_msg_for_fingertip_30(sensor_joints, sensor_name):
-    sensor_msg = Sensor()
-    sensor_msg.name = sensor_name
-    sensor_locations = sensor_joints[sensor_name]
-    noise = generate_perlin_noise(dim=(3,10))
-    noise = noise.flatten()
-    for idx in range(0,30):
+    hand_hw_flat, hand_sim_flat = get_flatten_hand(map_dict)
+    map_ = get_sorted_1D_hand_taxels_map(hand_hw_flat, hand_sim_flat)
+    sorted_sim = sorted_1D_hand_taxel_name(map_, hand_hw_flat)
+    
+    return sorted_sim
+
+
+def generate_sensor_msg_for_leap():
+    noise = generate_perlin_noise_for_leap()
+    texels_array_1d = perlin_noise_to_1D_texels_array(noise)
+    sensor_names_1d = taxel_1d_sensor_names()
+
+    sensor_msg = HandSensors()
+    idx = 0
+    for sensor_name, texel_z in zip(sensor_names_1d, texels_array_1d):
         texel = Texel()
-        texel.loc = str(idx+1)
-        texel.x = 0.0
-        texel.y = 0.0
-        texel.z = float(noise[idx])
-        texel.joint_x = sensor_locations[str(idx+1)]["x"]
-        texel.joint_y = sensor_locations[str(idx+1)]["y"]
-        texel.joint_z = sensor_locations[str(idx+1)]["z"]
+        texel.sensor_name = sensor_name
+        print(f"Sensor name: {sensor_name}", "texel_z: ", texel_z)
+        texel.z = texel_z
+        texel.taxel_id = idx
+        texel.joint_x = sensor_name+"_slide_x"
+        texel.joint_y = sensor_name+"_slide_y"
+        texel.joint_z = sensor_name+"_slide_z"
         sensor_msg.texels.append(texel)
+        idx += 1
+    
     return sensor_msg
+
 
 class SensorValuePublisherFake(Node):
     def __init__(self) -> None:
@@ -109,26 +113,8 @@ class SensorValuePublisherFake(Node):
             return json.load(f)
 
     def publish_sensor_values(self):
-        # sensor_msg = generate_sensor_msg_for_uspa44(self.sensor_joints, "if_bs_uspa44")
-        hand_sensors_msg = HandSensors()
-        hand_sensors_msg.if_bs_uspa44 = generate_sensor_msg_for_uspa44(self.sensor_joints, "if_bs_uspa44")
-        hand_sensors_msg.mf_bs_uspa44 = generate_sensor_msg_for_uspa44(self.sensor_joints, "mf_bs_uspa44")
-        hand_sensors_msg.rf_bs_uspa44 = generate_sensor_msg_for_uspa44(self.sensor_joints, "rf_bs_uspa44")
-        hand_sensors_msg.if_md_uspa44 = generate_sensor_msg_for_uspa44(self.sensor_joints, "if_md_uspa44")
-        hand_sensors_msg.mf_md_uspa44 = generate_sensor_msg_for_uspa44(self.sensor_joints, "mf_md_uspa44")
-        hand_sensors_msg.rf_md_uspa44 = generate_sensor_msg_for_uspa44(self.sensor_joints, "rf_md_uspa44")
-        hand_sensors_msg.if_px_uspa44 = generate_sensor_msg_for_uspa44(self.sensor_joints, "if_px_uspa44")
-        hand_sensors_msg.mf_px_uspa44 = generate_sensor_msg_for_uspa44(self.sensor_joints, "mf_px_uspa44")
-        hand_sensors_msg.rf_px_uspa44 = generate_sensor_msg_for_uspa44(self.sensor_joints, "rf_px_uspa44")
-        hand_sensors_msg.th_px_uspa44 = generate_sensor_msg_for_uspa44(self.sensor_joints, "th_px_uspa44")
-        hand_sensors_msg.th_ds_uspa44 = generate_sensor_msg_for_uspa44(self.sensor_joints, "th_ds_uspa44")
-        hand_sensors_msg.uspa46_1 = generate_sensor_msg_for_uspa46(self.sensor_joints, "uspa46_1")
-        hand_sensors_msg.uspa46_2 = generate_sensor_msg_for_uspa46(self.sensor_joints, "uspa46_2")
-        hand_sensors_msg.uspa46_3 = generate_sensor_msg_for_uspa46(self.sensor_joints, "uspa46_3")
-        hand_sensors_msg.if_ds = generate_sensor_msg_for_fingertip_30(self.sensor_joints, "if_ds")
-        hand_sensors_msg.mf_ds = generate_sensor_msg_for_fingertip_30(self.sensor_joints, "mf_ds")
-        hand_sensors_msg.rf_ds = generate_sensor_msg_for_fingertip_30(self.sensor_joints, "rf_ds")
-        hand_sensors_msg.th_ds = generate_sensor_msg_for_fingertip_30(self.sensor_joints, "th_ds")
+        hand_sensors_msg = generate_sensor_msg_for_leap()
+
         self.publisher_.publish(hand_sensors_msg)
     
 def main(args=None) -> None:

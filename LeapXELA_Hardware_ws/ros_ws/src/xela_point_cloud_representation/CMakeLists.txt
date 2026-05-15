@@ -15,7 +15,6 @@ find_package(OpenGL REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/Texel.msg"
-  "msg/Sensor.msg"
   "msg/HandSensors.msg"
 )
 
@@ -54,7 +53,13 @@ install(TARGETS process_hand_sensors_into_pointcloud
 install(PROGRAMS
   src/hand_controller.py
   src/hand_touch_point_cloud.py
+  src/leap_taxel_map.py
   src/sensor_value_publisher_fake.py
+  DESTINATION lib/${PROJECT_NAME}
+)
+
+install(FILES
+  src/leap_sensor_taxel_map.json
   DESTINATION lib/${PROJECT_NAME}
 )
 

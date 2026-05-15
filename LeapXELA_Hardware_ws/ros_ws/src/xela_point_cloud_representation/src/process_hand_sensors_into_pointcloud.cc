@@ -5,8 +5,8 @@
 #include <sensor_msgs/msg/joint_state.hpp>
 #include <sensor_msgs/msg/point_cloud2.hpp>
 #include <sensor_msgs/point_cloud2_iterator.hpp>
-#include <xela_point_cloud_representation/msg/sensor.hpp>
 #include <xela_point_cloud_representation/msg/hand_sensors.hpp>
+#include <xela_point_cloud_representation/msg/texel.hpp>
 
 // ament
 #include <ament_index_cpp/get_package_share_directory.hpp>
@@ -320,11 +320,11 @@ private:
     }
   }
 
-  void apply_sensor_locked(
-    const xela_point_cloud_representation::msg::Sensor & sensor, bool & updated_any,
+  void apply_texels_locked(
+    const std::vector<xela_point_cloud_representation::msg::Texel> & texels, bool & updated_any,
     std::vector<std::string> & changed_joints)
   {
-    for (const auto & texel : sensor.texels) {
+    for (const auto & texel : texels) {
       if (!texel.joint_x.empty()) {
         const bool changed = set_joint_qpos_locked(texel.joint_x, static_cast<double>(texel.x));
         updated_any |= changed;
@@ -358,31 +358,9 @@ private:
     std::lock_guard<std::mutex> lk(mj_mutex_);
     bool updated_any = false;
     std::vector<std::string> changed_joints;
-    changed_joints.reserve(256);
+    changed_joints.reserve(367+16);
 
-    apply_sensor_locked(msg->if_bs_uspa44, updated_any, changed_joints);
-    apply_sensor_locked(msg->mf_bs_uspa44, updated_any, changed_joints);
-    apply_sensor_locked(msg->rf_bs_uspa44, updated_any, changed_joints);
-
-    apply_sensor_locked(msg->if_md_uspa44, updated_any, changed_joints);
-    apply_sensor_locked(msg->mf_md_uspa44, updated_any, changed_joints);
-    apply_sensor_locked(msg->rf_md_uspa44, updated_any, changed_joints);
-
-    apply_sensor_locked(msg->if_px_uspa44, updated_any, changed_joints);
-    apply_sensor_locked(msg->mf_px_uspa44, updated_any, changed_joints);
-    apply_sensor_locked(msg->rf_px_uspa44, updated_any, changed_joints);
-
-    apply_sensor_locked(msg->th_px_uspa44, updated_any, changed_joints);
-    apply_sensor_locked(msg->th_ds_uspa44, updated_any, changed_joints);
-
-    apply_sensor_locked(msg->if_ds, updated_any, changed_joints);
-    apply_sensor_locked(msg->mf_ds, updated_any, changed_joints);
-    apply_sensor_locked(msg->rf_ds, updated_any, changed_joints);
-    apply_sensor_locked(msg->th_ds, updated_any, changed_joints);
-
-    apply_sensor_locked(msg->uspa46_1, updated_any, changed_joints);
-    apply_sensor_locked(msg->uspa46_2, updated_any, changed_joints);
-    apply_sensor_locked(msg->uspa46_3, updated_any, changed_joints);
+    apply_texels_locked(msg->texels, updated_any, changed_joints);
 
     if (updated_any) {
       api_.mj_forward(model_, data_);

@@ -440,6 +440,8 @@ class ServiceNode(Node):
         with self.__lock:
             self.data = data
         obj = SensStream()
+        obj.header.stamp = self.get_clock().now().to_msg()
+        obj.header.frame_id = "xela"
         obj.sensors = tuple(data.values())
         self.publisher_.publish(obj)
 

@@ -1,0 +1,4 @@
+1777974769.4774778 [INFO] [launch]: All log files can be found below /workspace/LeapXELA_Hardware_ws/ros_ws/ros_logs/2026-05-05-09-52-49-475171-Blade-17462
+1777974769.4777787 [INFO] [launch]: Default logging verbosity is set to INFO
+1777974769.5647249 [INFO] [pybullet_xacro_viewer-1]: process started with pid [17463]
+1777974770.5871644 [ERROR] [pybullet_xacro_viewer-1]: process has died [pid 17463, exit code 1, cmd '/workspace/LeapXELA_Hardware_ws/ros_ws/install/xela_pybullet_viewer/lib/xela_pybullet_viewer/pybullet_xacro_viewer --ros-args -r __node:=pybullet_xacro_viewer --params-file /tmp/launch_params_wdwcc7_k'].

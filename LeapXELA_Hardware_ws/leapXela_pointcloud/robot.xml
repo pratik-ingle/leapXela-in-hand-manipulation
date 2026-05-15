@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <!-- Generated using onshape-to-robot -->
-<!-- Onshape https://cad.onshape.com/documents/8570a76a8c0c31c84724c6f7/w/72ba6e2072d2b92f117e67a0/e/4616741f8203d341b4c11c90 -->
+<!-- Onshape https://cad.onshape.com/documents/8570a76a8c0c31c84724c6f7/w/c9d7fe5a7e1c98ade57ae24b/e/4616741f8203d341b4c11c90 -->
 <mujoco model="leapXela_pointcloud">
   <compiler angle="radian" meshdir="assets" autolimits="true"/>
   <default>
@@ -19,13 +19,10 @@
     <!-- Link leap_hand_xela_back_cover -->
     <body name="leap_hand_xela_back_cover" pos="0 0 0" quat="1 0 0 0" childclass="leapXela_pointcloud">
       <freejoint name="leap_hand_xela_back_cover_freejoint"/>
-      <inertial pos="-0.000780549 -0.00686016 0.0718797" mass="1.50836" fullinertia="0.00330843 0.00420899 0.00177685 6.79303e-05 -0.000176923 0.000182026"/>
+      <inertial pos="-0.000749197 -0.00686016 0.0718797" mass="1.50836" fullinertia="0.00330843 0.004204 0.00177186 6.89908e-05 -0.000176508 0.000182026"/>
       <!-- Part leap_hand_xela_motorholder -->
       <geom type="mesh" class="visual" pos="0.0180627 0.023 0.0834096" quat="0 0.707107 0 -0.707107" mesh="leap_hand_xela_motorholder" material="leap_hand_xela_motorholder_material"/>
       <geom type="mesh" class="collision" pos="0.0180627 0.023 0.0834096" quat="0 0.707107 0 -0.707107" mesh="leap_hand_xela_motorholder" material="leap_hand_xela_motorholder_material"/>
-      <!-- Part uspa46 -->
-      <geom type="mesh" class="visual" pos="-0.005515 -0.027 0.0631" quat="0 -0 -0 -1" mesh="uspa46" material="uspa46_material"/>
-      <geom type="mesh" class="collision" pos="-0.005515 -0.027 0.0631" quat="0 -0 -0 -1" mesh="uspa46" material="uspa46_material"/>
       <!-- Part thp0_unified -->
       <geom type="mesh" class="visual" pos="0.0235627 -0.013 0.0845" quat="0.707107 -0 -0 0.707107" mesh="thp0_unified" material="thp0_unified_material"/>
       <geom type="mesh" class="collision" pos="0.0235627 -0.013 0.0845" quat="0.707107 -0 -0 0.707107" mesh="thp0_unified" material="thp0_unified_material"/>
@@ -38,15 +35,9 @@
       <!-- Part p5_unified_2 -->
       <geom type="mesh" class="visual" pos="0.00778 -0.009 0.1306" quat="0.5 0.5 -0.5 0.5" mesh="p5_unified" material="p5_unified_material"/>
       <geom type="mesh" class="collision" pos="0.00778 -0.009 0.1306" quat="0.5 0.5 -0.5 0.5" mesh="p5_unified" material="p5_unified_material"/>
-      <!-- Part uspa46_2 -->
-      <geom type="mesh" class="visual" pos="-0.005515 -0.027 0.0962" quat="0 -0 -0 -1" mesh="uspa46" material="uspa46_material"/>
-      <geom type="mesh" class="collision" pos="-0.005515 -0.027 0.0962" quat="0 -0 -0 -1" mesh="uspa46" material="uspa46_material"/>
       <!-- Part p5_unified_3 -->
       <geom type="mesh" class="visual" pos="0.05323 -0.009 0.1306" quat="0.5 0.5 -0.5 0.5" mesh="p5_unified" material="p5_unified_material"/>
       <geom type="mesh" class="collision" pos="0.05323 -0.009 0.1306" quat="0.5 0.5 -0.5 0.5" mesh="p5_unified" material="p5_unified_material"/>
-      <!-- Part uspa46_3 -->
-      <geom type="mesh" class="visual" pos="0.044015 -0.027 0.0962" quat="0 -1 0 0" mesh="uspa46" material="uspa46_material"/>
-      <geom type="mesh" class="collision" pos="0.044015 -0.027 0.0962" quat="0 -1 0 0" mesh="uspa46" material="uspa46_material"/>
       <!-- Part leap_hand_xela_back_cover -->
       <geom type="mesh" class="visual" pos="-0.0293149 0.023 0.131221" quat="0.707107 -0 -0.707107 0" mesh="leap_hand_xela_back_cover" material="leap_hand_xela_back_cover_material"/>
       <geom type="mesh" class="collision" pos="-0.0293149 0.023 0.131221" quat="0.707107 -0 -0.707107 0" mesh="leap_hand_xela_back_cover" material="leap_hand_xela_back_cover_material"/>
@@ -59,6 +50,24 @@
       <!-- Part palm_face -->
       <geom type="mesh" class="visual" pos="-0.0283776 -0.029 0.131221" quat="0.707107 -0 -0.707107 0" mesh="palm_face" material="palm_face_material"/>
       <geom type="mesh" class="collision" pos="-0.0283776 -0.029 0.131221" quat="0.707107 -0 -0.707107 0" mesh="palm_face" material="palm_face_material"/>
+      <!-- Part 4_6_origin -->
+      <geom type="mesh" class="visual" pos="0.018 -0.027 0.0478" quat="0 -0 -0.707107 -0.707107" mesh="4_6_origin" material="4_6_origin_material"/>
+      <geom type="mesh" class="collision" pos="0.018 -0.027 0.0478" quat="0 -0 -0.707107 -0.707107" mesh="4_6_origin" material="4_6_origin_material"/>
+      <!-- Part uspa46 -->
+      <geom type="mesh" class="visual" pos="-0.00455 -0.027 0.0631" quat="0 0 -0 1" mesh="uspa46" material="uspa46_material"/>
+      <geom type="mesh" class="collision" pos="-0.00455 -0.027 0.0631" quat="0 0 -0 1" mesh="uspa46" material="uspa46_material"/>
+      <!-- Part 4_6_origin_2 -->
+      <geom type="mesh" class="visual" pos="0.0205 -0.027 0.1115" quat="0.707107 -0.707107 0 0" mesh="4_6_origin" material="4_6_origin_material"/>
+      <geom type="mesh" class="collision" pos="0.0205 -0.027 0.1115" quat="0.707107 -0.707107 0 0" mesh="4_6_origin" material="4_6_origin_material"/>
+      <!-- Part uspa46_2 -->
+      <geom type="mesh" class="visual" pos="0.04305 -0.027 0.0962" quat="0 1 0 -0" mesh="uspa46" material="uspa46_material"/>
+      <geom type="mesh" class="collision" pos="0.04305 -0.027 0.0962" quat="0 1 0 -0" mesh="uspa46" material="uspa46_material"/>
+      <!-- Part 4_6_origin_3 -->
+      <geom type="mesh" class="visual" pos="0.018 -0.027 0.0809" quat="0 -0 -0.707107 -0.707107" mesh="4_6_origin" material="4_6_origin_material"/>
+      <geom type="mesh" class="collision" pos="0.018 -0.027 0.0809" quat="0 -0 -0.707107 -0.707107" mesh="4_6_origin" material="4_6_origin_material"/>
+      <!-- Part uspa46_3 -->
+      <geom type="mesh" class="visual" pos="-0.00455 -0.027 0.0962" quat="0 0 -0 1" mesh="uspa46" material="uspa46_material"/>
+      <geom type="mesh" class="collision" pos="-0.00455 -0.027 0.0962" quat="0 0 -0 1" mesh="uspa46" material="uspa46_material"/>
       <!-- Link p4_unified -->
       <body name="p4_unified" pos="-0.02317 -0.0165 0.1436" quat="0 0.707107 -0 0.707107">
         <!-- Joint from leap_hand_xela_back_cover to p4_unified -->
@@ -91,99 +100,12 @@
               <!-- Part fingertip_fix -->
               <geom type="mesh" class="visual" pos="-0.000739103 -0.025 0.0144961" quat="0.5 -0.5 -0.5 -0.5" mesh="fingertip_fix" material="fingertip_fix_material"/>
               <geom type="mesh" class="collision" pos="-0.000739103 -0.025 0.0144961" quat="0.5 -0.5 -0.5 -0.5" mesh="fingertip_fix" material="fingertip_fix_material"/>
-              <!-- Part pointcloud -->
-              <geom type="mesh" class="visual" pos="-0 -0.04313 0.00255" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="-0 -0.04313 0.00255" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_2 -->
-              <geom type="mesh" class="visual" pos="0.01181 -0.03 0.01807" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="0.01181 -0.03 0.01807" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_3 -->
-              <geom type="mesh" class="visual" pos="-0 -0.03 0.02701" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="-0 -0.03 0.02701" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_4 -->
-              <geom type="mesh" class="visual" pos="0.0106 -0.04953 0.01093" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="0.0106 -0.04953 0.01093" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_5 -->
-              <geom type="mesh" class="visual" pos="0.00678 -0.0365 0.0038" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="0.00678 -0.0365 0.0038" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_6 -->
-              <geom type="mesh" class="visual" pos="-0 -0.05574 0.00625" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="-0 -0.05574 0.00625" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_7 -->
-              <geom type="mesh" class="visual" pos="-0 -0.05574 0.02275" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="-0 -0.05574 0.02275" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_8 -->
-              <geom type="mesh" class="visual" pos="0.01157 -0.0365 0.01093" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="0.01157 -0.0365 0.01093" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_9 -->
-              <geom type="mesh" class="visual" pos="-0 -0.0365 0.00199" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="-0 -0.0365 0.00199" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_10 -->
-              <geom type="mesh" class="visual" pos="0.00826 -0.05593 0.01093" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="0.00826 -0.05593 0.01093" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_11 -->
-              <geom type="mesh" class="visual" pos="0.01181 -0.03 0.01093" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="0.01181 -0.03 0.01093" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_12 -->
-              <geom type="mesh" class="visual" pos="-0 -0.04939 0.02479" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="-0 -0.04939 0.02479" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_13 -->
-              <geom type="mesh" class="visual" pos="0.0106 -0.04953 0.01807" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="0.0106 -0.04953 0.01807" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_14 -->
-              <geom type="mesh" class="visual" pos="0.00678 -0.04313 0.0044" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="0.00678 -0.04313 0.0044" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_15 -->
-              <geom type="mesh" class="visual" pos="-0 -0.0365 0.02701" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="-0 -0.0365 0.02701" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_16 -->
-              <geom type="mesh" class="visual" pos="0.00374 -0.05996 0.01093" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="0.00374 -0.05996 0.01093" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_17 -->
-              <geom type="mesh" class="visual" pos="0.01157 -0.0365 0.01807" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="0.01157 -0.0365 0.01807" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
               <!-- Part part_2 -->
-              <geom type="mesh" class="visual" pos="-0 -0.025 0.0145" quat="0.707107 -0 -0.707107 0" mesh="part_2" material="part_2_material"/>
-              <geom type="mesh" class="collision" pos="-0 -0.025 0.0145" quat="0.707107 -0 -0.707107 0" mesh="part_2" material="part_2_material"/>
-              <!-- Part pointcloud_18 -->
-              <geom type="mesh" class="visual" pos="0.01149 -0.04313 0.01093" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="0.01149 -0.04313 0.01093" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_19 -->
-              <geom type="mesh" class="visual" pos="0.00374 -0.05996 0.01807" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="0.00374 -0.05996 0.01807" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_20 -->
-              <geom type="mesh" class="visual" pos="-0 -0.03 0.00199" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="-0 -0.03 0.00199" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_21 -->
-              <geom type="mesh" class="visual" pos="0.00678 -0.03 0.02524" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="0.00678 -0.03 0.02524" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_22 -->
-              <geom type="mesh" class="visual" pos="0.01149 -0.04313 0.01807" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="0.01149 -0.04313 0.01807" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_23 -->
-              <geom type="mesh" class="visual" pos="0.00678 -0.04313 0.0246" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="0.00678 -0.04313 0.0246" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_24 -->
-              <geom type="mesh" class="visual" pos="0.00678 -0.04953 0.0233" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="0.00678 -0.04953 0.0233" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_25 -->
-              <geom type="mesh" class="visual" pos="0.00678 -0.03 0.00376" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="0.00678 -0.03 0.00376" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_26 -->
-              <geom type="mesh" class="visual" pos="-0 -0.04939 0.00431" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="-0 -0.04939 0.00431" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_27 -->
-              <geom type="mesh" class="visual" pos="0.00826 -0.05593 0.01807" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="0.00826 -0.05593 0.01807" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_28 -->
-              <geom type="mesh" class="visual" pos="0.00678 -0.0365 0.0252" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="0.00678 -0.0365 0.0252" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_29 -->
-              <geom type="mesh" class="visual" pos="-0 -0.04313 0.02645" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="-0 -0.04313 0.02645" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_30 -->
-              <geom type="mesh" class="visual" pos="0.00678 -0.04953 0.0057" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="0.00678 -0.04953 0.0057" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
+              <geom type="mesh" class="visual" pos="-0 -0.03 0.0145" quat="0 0.707107 -0 0.707107" mesh="part_2" material="part_2_material"/>
+              <geom type="mesh" class="collision" pos="-0 -0.03 0.0145" quat="0 0.707107 -0 0.707107" mesh="part_2" material="part_2_material"/>
+              <!-- Part pointcloud -->
+              <geom type="mesh" class="visual" pos="-0.0139201 -0.025 0.0145" quat="0.5 0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
+              <geom type="mesh" class="collision" pos="-0.0139201 -0.025 0.0145" quat="0.5 0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
             </body>
           </body>
         </body>
@@ -220,99 +142,12 @@
               <!-- Part fingertip_fix_2 -->
               <geom type="mesh" class="visual" pos="-0.000739103 -0.025 0.0144961" quat="0.5 -0.5 -0.5 -0.5" mesh="fingertip_fix" material="fingertip_fix_material"/>
               <geom type="mesh" class="collision" pos="-0.000739103 -0.025 0.0144961" quat="0.5 -0.5 -0.5 -0.5" mesh="fingertip_fix" material="fingertip_fix_material"/>
-              <!-- Part pointcloud_31 -->
-              <geom type="mesh" class="visual" pos="-0 -0.04313 0.00255" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="-0 -0.04313 0.00255" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_32 -->
-              <geom type="mesh" class="visual" pos="0.01181 -0.03 0.01807" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="0.01181 -0.03 0.01807" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_33 -->
-              <geom type="mesh" class="visual" pos="-0 -0.03 0.02701" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="-0 -0.03 0.02701" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_34 -->
-              <geom type="mesh" class="visual" pos="0.0106 -0.04953 0.01093" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="0.0106 -0.04953 0.01093" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_35 -->
-              <geom type="mesh" class="visual" pos="0.00678 -0.0365 0.0038" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="0.00678 -0.0365 0.0038" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_36 -->
-              <geom type="mesh" class="visual" pos="-0 -0.05574 0.00625" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="-0 -0.05574 0.00625" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_37 -->
-              <geom type="mesh" class="visual" pos="-0 -0.05574 0.02275" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="-0 -0.05574 0.02275" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_38 -->
-              <geom type="mesh" class="visual" pos="0.01157 -0.0365 0.01093" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="0.01157 -0.0365 0.01093" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_39 -->
-              <geom type="mesh" class="visual" pos="-0 -0.0365 0.00199" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="-0 -0.0365 0.00199" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_40 -->
-              <geom type="mesh" class="visual" pos="0.00826 -0.05593 0.01093" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="0.00826 -0.05593 0.01093" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_41 -->
-              <geom type="mesh" class="visual" pos="0.01181 -0.03 0.01093" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="0.01181 -0.03 0.01093" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_42 -->
-              <geom type="mesh" class="visual" pos="-0 -0.04939 0.02479" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="-0 -0.04939 0.02479" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_43 -->
-              <geom type="mesh" class="visual" pos="0.0106 -0.04953 0.01807" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="0.0106 -0.04953 0.01807" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_44 -->
-              <geom type="mesh" class="visual" pos="0.00678 -0.04313 0.0044" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="0.00678 -0.04313 0.0044" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_45 -->
-              <geom type="mesh" class="visual" pos="-0 -0.0365 0.02701" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="-0 -0.0365 0.02701" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_46 -->
-              <geom type="mesh" class="visual" pos="0.00374 -0.05996 0.01093" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="0.00374 -0.05996 0.01093" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_47 -->
-              <geom type="mesh" class="visual" pos="0.01157 -0.0365 0.01807" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="0.01157 -0.0365 0.01807" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
               <!-- Part part_2_2 -->
-              <geom type="mesh" class="visual" pos="-0 -0.025 0.0145" quat="0.707107 -0 -0.707107 0" mesh="part_2" material="part_2_material"/>
-              <geom type="mesh" class="collision" pos="-0 -0.025 0.0145" quat="0.707107 -0 -0.707107 0" mesh="part_2" material="part_2_material"/>
-              <!-- Part pointcloud_48 -->
-              <geom type="mesh" class="visual" pos="0.01149 -0.04313 0.01093" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="0.01149 -0.04313 0.01093" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_49 -->
-              <geom type="mesh" class="visual" pos="0.00374 -0.05996 0.01807" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="0.00374 -0.05996 0.01807" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_50 -->
-              <geom type="mesh" class="visual" pos="-0 -0.03 0.00199" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="-0 -0.03 0.00199" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_51 -->
-              <geom type="mesh" class="visual" pos="0.00678 -0.03 0.02524" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="0.00678 -0.03 0.02524" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_52 -->
-              <geom type="mesh" class="visual" pos="0.01149 -0.04313 0.01807" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="0.01149 -0.04313 0.01807" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_53 -->
-              <geom type="mesh" class="visual" pos="0.00678 -0.04313 0.0246" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="0.00678 -0.04313 0.0246" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_54 -->
-              <geom type="mesh" class="visual" pos="0.00678 -0.04953 0.0233" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="0.00678 -0.04953 0.0233" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_55 -->
-              <geom type="mesh" class="visual" pos="0.00678 -0.03 0.00376" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="0.00678 -0.03 0.00376" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_56 -->
-              <geom type="mesh" class="visual" pos="-0 -0.04939 0.00431" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="-0 -0.04939 0.00431" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_57 -->
-              <geom type="mesh" class="visual" pos="0.00826 -0.05593 0.01807" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="0.00826 -0.05593 0.01807" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_58 -->
-              <geom type="mesh" class="visual" pos="0.00678 -0.0365 0.0252" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="0.00678 -0.0365 0.0252" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_59 -->
-              <geom type="mesh" class="visual" pos="-0 -0.04313 0.02645" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="-0 -0.04313 0.02645" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_60 -->
-              <geom type="mesh" class="visual" pos="0.00678 -0.04953 0.0057" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="0.00678 -0.04953 0.0057" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
+              <geom type="mesh" class="visual" pos="-0 -0.03 0.0145" quat="0 0.707107 -0 0.707107" mesh="part_2" material="part_2_material"/>
+              <geom type="mesh" class="collision" pos="-0 -0.03 0.0145" quat="0 0.707107 -0 0.707107" mesh="part_2" material="part_2_material"/>
+              <!-- Part pointcloud_2 -->
+              <geom type="mesh" class="visual" pos="-0.0139201 -0.025 0.0145" quat="0.5 0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
+              <geom type="mesh" class="collision" pos="-0.0139201 -0.025 0.0145" quat="0.5 0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
             </body>
           </body>
         </body>
@@ -349,99 +184,12 @@
               <!-- Part fingertip_fix_3 -->
               <geom type="mesh" class="visual" pos="-0.000739103 -0.025 0.0144961" quat="0.5 -0.5 -0.5 -0.5" mesh="fingertip_fix" material="fingertip_fix_material"/>
               <geom type="mesh" class="collision" pos="-0.000739103 -0.025 0.0144961" quat="0.5 -0.5 -0.5 -0.5" mesh="fingertip_fix" material="fingertip_fix_material"/>
-              <!-- Part pointcloud_61 -->
-              <geom type="mesh" class="visual" pos="-0 -0.04313 0.00255" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="-0 -0.04313 0.00255" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_62 -->
-              <geom type="mesh" class="visual" pos="0.01181 -0.03 0.01807" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="0.01181 -0.03 0.01807" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_63 -->
-              <geom type="mesh" class="visual" pos="-0 -0.03 0.02701" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="-0 -0.03 0.02701" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_64 -->
-              <geom type="mesh" class="visual" pos="0.0106 -0.04953 0.01093" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="0.0106 -0.04953 0.01093" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_65 -->
-              <geom type="mesh" class="visual" pos="0.00678 -0.0365 0.0038" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="0.00678 -0.0365 0.0038" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_66 -->
-              <geom type="mesh" class="visual" pos="-0 -0.05574 0.00625" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="-0 -0.05574 0.00625" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_67 -->
-              <geom type="mesh" class="visual" pos="-0 -0.05574 0.02275" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="-0 -0.05574 0.02275" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_68 -->
-              <geom type="mesh" class="visual" pos="0.01157 -0.0365 0.01093" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="0.01157 -0.0365 0.01093" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_69 -->
-              <geom type="mesh" class="visual" pos="-0 -0.0365 0.00199" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="-0 -0.0365 0.00199" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_70 -->
-              <geom type="mesh" class="visual" pos="0.00826 -0.05593 0.01093" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="0.00826 -0.05593 0.01093" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_71 -->
-              <geom type="mesh" class="visual" pos="0.01181 -0.03 0.01093" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="0.01181 -0.03 0.01093" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_72 -->
-              <geom type="mesh" class="visual" pos="-0 -0.04939 0.02479" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="-0 -0.04939 0.02479" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_73 -->
-              <geom type="mesh" class="visual" pos="0.0106 -0.04953 0.01807" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="0.0106 -0.04953 0.01807" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_74 -->
-              <geom type="mesh" class="visual" pos="0.00678 -0.04313 0.0044" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="0.00678 -0.04313 0.0044" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_75 -->
-              <geom type="mesh" class="visual" pos="-0 -0.0365 0.02701" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="-0 -0.0365 0.02701" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_76 -->
-              <geom type="mesh" class="visual" pos="0.00374 -0.05996 0.01093" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="0.00374 -0.05996 0.01093" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_77 -->
-              <geom type="mesh" class="visual" pos="0.01157 -0.0365 0.01807" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="0.01157 -0.0365 0.01807" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
               <!-- Part part_2_3 -->
-              <geom type="mesh" class="visual" pos="-0 -0.025 0.0145" quat="0.707107 -0 -0.707107 0" mesh="part_2" material="part_2_material"/>
-              <geom type="mesh" class="collision" pos="-0 -0.025 0.0145" quat="0.707107 -0 -0.707107 0" mesh="part_2" material="part_2_material"/>
-              <!-- Part pointcloud_78 -->
-              <geom type="mesh" class="visual" pos="0.01149 -0.04313 0.01093" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="0.01149 -0.04313 0.01093" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_79 -->
-              <geom type="mesh" class="visual" pos="0.00374 -0.05996 0.01807" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="0.00374 -0.05996 0.01807" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_80 -->
-              <geom type="mesh" class="visual" pos="-0 -0.03 0.00199" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="-0 -0.03 0.00199" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_81 -->
-              <geom type="mesh" class="visual" pos="0.00678 -0.03 0.02524" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="0.00678 -0.03 0.02524" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_82 -->
-              <geom type="mesh" class="visual" pos="0.01149 -0.04313 0.01807" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="0.01149 -0.04313 0.01807" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_83 -->
-              <geom type="mesh" class="visual" pos="0.00678 -0.04313 0.0246" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="0.00678 -0.04313 0.0246" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_84 -->
-              <geom type="mesh" class="visual" pos="0.00678 -0.04953 0.0233" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="0.00678 -0.04953 0.0233" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_85 -->
-              <geom type="mesh" class="visual" pos="0.00678 -0.03 0.00376" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="0.00678 -0.03 0.00376" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_86 -->
-              <geom type="mesh" class="visual" pos="-0 -0.04939 0.00431" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="-0 -0.04939 0.00431" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_87 -->
-              <geom type="mesh" class="visual" pos="0.00826 -0.05593 0.01807" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="0.00826 -0.05593 0.01807" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_88 -->
-              <geom type="mesh" class="visual" pos="0.00678 -0.0365 0.0252" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="0.00678 -0.0365 0.0252" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_89 -->
-              <geom type="mesh" class="visual" pos="-0 -0.04313 0.02645" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="-0 -0.04313 0.02645" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_90 -->
-              <geom type="mesh" class="visual" pos="0.00678 -0.04953 0.0057" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="0.00678 -0.04953 0.0057" quat="0.5 -0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
+              <geom type="mesh" class="visual" pos="-0 -0.03 0.0145" quat="0 0.707107 -0 0.707107" mesh="part_2" material="part_2_material"/>
+              <geom type="mesh" class="collision" pos="-0 -0.03 0.0145" quat="0 0.707107 -0 0.707107" mesh="part_2" material="part_2_material"/>
+              <!-- Part pointcloud_3 -->
+              <geom type="mesh" class="visual" pos="-0.0139201 -0.025 0.0145" quat="0.5 0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
+              <geom type="mesh" class="collision" pos="-0.0139201 -0.025 0.0145" quat="0.5 0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
             </body>
           </body>
         </body>
@@ -474,109 +222,22 @@
             <geom type="mesh" class="visual" pos="-0 0.0245 0.0145" quat="1 0 0 0" mesh="thp1_unified" material="thp1_unified_material"/>
             <geom type="mesh" class="collision" pos="-0 0.0245 0.0145" quat="1 0 0 0" mesh="thp1_unified" material="thp1_unified_material"/>
             <!-- Link thumb -->
-            <body name="thumb" pos="-0 0.0446 0" quat="0 1 0 0">
+            <body name="thumb" pos="-0 0.0446 0" quat="0 0 0 -1">
               <!-- Joint from thp1_unified to thumb -->
               <joint axis="0 0 1" name="th_ipl" type="hinge"/>
-              <inertial pos="0.0117549 -0.0183374 -0.0150425" mass="0.0815862" fullinertia="2.39909e-05 1.17597e-05 2.24416e-05 -1.95138e-06 1.96643e-07 6.68473e-07"/>
+              <inertial pos="-0.0117549 -0.0183374 0.0150425" mass="0.0815862" fullinertia="2.39909e-05 1.17597e-05 2.24416e-05 1.95138e-06 1.96643e-07 -6.68473e-07"/>
               <!-- Part servo_unified -->
-              <geom type="mesh" class="visual" pos="0 0 -0.0065" quat="1 0 0 0" mesh="servo_unified" material="servo_unified_material"/>
-              <geom type="mesh" class="collision" pos="0 0 -0.0065" quat="1 0 0 0" mesh="servo_unified" material="servo_unified_material"/>
+              <geom type="mesh" class="visual" pos="0 0 0.0065" quat="0 0 1 0" mesh="servo_unified" material="servo_unified_material"/>
+              <geom type="mesh" class="collision" pos="0 0 0.0065" quat="0 0 1 0" mesh="servo_unified" material="servo_unified_material"/>
               <!-- Part part10 -->
-              <geom type="mesh" class="visual" pos="0 -0.0275 -0.014504" quat="0 0 -0.707107 0.707107" mesh="part10" material="part10_material"/>
-              <geom type="mesh" class="collision" pos="0 -0.0275 -0.014504" quat="0 0 -0.707107 0.707107" mesh="part10" material="part10_material"/>
-              <!-- Part pointcloud_91 -->
-              <geom type="mesh" class="visual" pos="-0 -0.0481303 -0.002554" quat="0.5 0.5 0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="-0 -0.0481303 -0.002554" quat="0.5 0.5 0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_92 -->
-              <geom type="mesh" class="visual" pos="-0.01181 -0.0350003 -0.018074" quat="0.5 0.5 0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="-0.01181 -0.0350003 -0.018074" quat="0.5 0.5 0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_93 -->
-              <geom type="mesh" class="visual" pos="-0 -0.0350003 -0.027014" quat="0.5 0.5 0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="-0 -0.0350003 -0.027014" quat="0.5 0.5 0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_94 -->
-              <geom type="mesh" class="visual" pos="-0.0106 -0.0545303 -0.010934" quat="0.5 0.5 0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="-0.0106 -0.0545303 -0.010934" quat="0.5 0.5 0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_95 -->
-              <geom type="mesh" class="visual" pos="-0.00678 -0.0415003 -0.003804" quat="0.5 0.5 0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="-0.00678 -0.0415003 -0.003804" quat="0.5 0.5 0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_96 -->
-              <geom type="mesh" class="visual" pos="0 -0.0607403 -0.006254" quat="0.5 0.5 0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="0 -0.0607403 -0.006254" quat="0.5 0.5 0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_97 -->
-              <geom type="mesh" class="visual" pos="-0 -0.0607403 -0.022754" quat="0.5 0.5 0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="-0 -0.0607403 -0.022754" quat="0.5 0.5 0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_98 -->
-              <geom type="mesh" class="visual" pos="-0.01157 -0.0415003 -0.010934" quat="0.5 0.5 0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="-0.01157 -0.0415003 -0.010934" quat="0.5 0.5 0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_99 -->
-              <geom type="mesh" class="visual" pos="-0 -0.0415003 -0.001994" quat="0.5 0.5 0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="-0 -0.0415003 -0.001994" quat="0.5 0.5 0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_100 -->
-              <geom type="mesh" class="visual" pos="-0.00826 -0.0609303 -0.010934" quat="0.5 0.5 0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="-0.00826 -0.0609303 -0.010934" quat="0.5 0.5 0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_101 -->
-              <geom type="mesh" class="visual" pos="-0.01181 -0.0350003 -0.010934" quat="0.5 0.5 0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="-0.01181 -0.0350003 -0.010934" quat="0.5 0.5 0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_102 -->
-              <geom type="mesh" class="visual" pos="-0 -0.0543903 -0.024794" quat="0.5 0.5 0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="-0 -0.0543903 -0.024794" quat="0.5 0.5 0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_103 -->
-              <geom type="mesh" class="visual" pos="-0.0106 -0.0545303 -0.018074" quat="0.5 0.5 0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="-0.0106 -0.0545303 -0.018074" quat="0.5 0.5 0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_104 -->
-              <geom type="mesh" class="visual" pos="-0.00678 -0.0481303 -0.004404" quat="0.5 0.5 0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="-0.00678 -0.0481303 -0.004404" quat="0.5 0.5 0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_105 -->
-              <geom type="mesh" class="visual" pos="-0 -0.0415003 -0.027014" quat="0.5 0.5 0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="-0 -0.0415003 -0.027014" quat="0.5 0.5 0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_106 -->
-              <geom type="mesh" class="visual" pos="-0.00374 -0.0649603 -0.010934" quat="0.5 0.5 0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="-0.00374 -0.0649603 -0.010934" quat="0.5 0.5 0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_107 -->
-              <geom type="mesh" class="visual" pos="-0.01157 -0.0415003 -0.018074" quat="0.5 0.5 0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="-0.01157 -0.0415003 -0.018074" quat="0.5 0.5 0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
+              <geom type="mesh" class="visual" pos="-0 -0.0275 0.014504" quat="0.707107 0.707107 0 -0" mesh="part10" material="part10_material"/>
+              <geom type="mesh" class="collision" pos="-0 -0.0275 0.014504" quat="0.707107 0.707107 0 -0" mesh="part10" material="part10_material"/>
               <!-- Part part_2_4 -->
-              <geom type="mesh" class="visual" pos="-0 -0.0300003 -0.014504" quat="0.707107 -0 0.707107 -0" mesh="part_2" material="part_2_material"/>
-              <geom type="mesh" class="collision" pos="-0 -0.0300003 -0.014504" quat="0.707107 -0 0.707107 -0" mesh="part_2" material="part_2_material"/>
-              <!-- Part pointcloud_108 -->
-              <geom type="mesh" class="visual" pos="-0.01149 -0.0481303 -0.010934" quat="0.5 0.5 0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="-0.01149 -0.0481303 -0.010934" quat="0.5 0.5 0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_109 -->
-              <geom type="mesh" class="visual" pos="-0.00374 -0.0649603 -0.018074" quat="0.5 0.5 0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="-0.00374 -0.0649603 -0.018074" quat="0.5 0.5 0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_110 -->
-              <geom type="mesh" class="visual" pos="-0 -0.0350003 -0.001994" quat="0.5 0.5 0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="-0 -0.0350003 -0.001994" quat="0.5 0.5 0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_111 -->
-              <geom type="mesh" class="visual" pos="-0.00678 -0.0350003 -0.025244" quat="0.5 0.5 0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="-0.00678 -0.0350003 -0.025244" quat="0.5 0.5 0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_112 -->
-              <geom type="mesh" class="visual" pos="-0.01149 -0.0481303 -0.018074" quat="0.5 0.5 0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="-0.01149 -0.0481303 -0.018074" quat="0.5 0.5 0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_113 -->
-              <geom type="mesh" class="visual" pos="-0.00678 -0.0481303 -0.024604" quat="0.5 0.5 0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="-0.00678 -0.0481303 -0.024604" quat="0.5 0.5 0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_114 -->
-              <geom type="mesh" class="visual" pos="-0.00678 -0.0545303 -0.023304" quat="0.5 0.5 0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="-0.00678 -0.0545303 -0.023304" quat="0.5 0.5 0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_115 -->
-              <geom type="mesh" class="visual" pos="-0.00678 -0.0350003 -0.003764" quat="0.5 0.5 0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="-0.00678 -0.0350003 -0.003764" quat="0.5 0.5 0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_116 -->
-              <geom type="mesh" class="visual" pos="0 -0.0543903 -0.004314" quat="0.5 0.5 0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="0 -0.0543903 -0.004314" quat="0.5 0.5 0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_117 -->
-              <geom type="mesh" class="visual" pos="-0.00826 -0.0609303 -0.018074" quat="0.5 0.5 0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="-0.00826 -0.0609303 -0.018074" quat="0.5 0.5 0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_118 -->
-              <geom type="mesh" class="visual" pos="-0.00678 -0.0415003 -0.025204" quat="0.5 0.5 0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="-0.00678 -0.0415003 -0.025204" quat="0.5 0.5 0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_119 -->
-              <geom type="mesh" class="visual" pos="-0 -0.0481303 -0.026454" quat="0.5 0.5 0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="-0 -0.0481303 -0.026454" quat="0.5 0.5 0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <!-- Part pointcloud_120 -->
-              <geom type="mesh" class="visual" pos="-0.00678 -0.0545303 -0.005704" quat="0.5 0.5 0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
-              <geom type="mesh" class="collision" pos="-0.00678 -0.0545303 -0.005704" quat="0.5 0.5 0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
+              <geom type="mesh" class="visual" pos="0 -0.0350003 0.014504" quat="0 -0.707107 0 -0.707107" mesh="part_2" material="part_2_material"/>
+              <geom type="mesh" class="collision" pos="0 -0.0350003 0.014504" quat="0 -0.707107 0 -0.707107" mesh="part_2" material="part_2_material"/>
+              <!-- Part pointcloud_4 -->
+              <geom type="mesh" class="visual" pos="-0.0139201 -0.0300003 0.014504" quat="0.5 0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
+              <geom type="mesh" class="collision" pos="-0.0139201 -0.0300003 0.014504" quat="0.5 0.5 -0.5 0.5" mesh="pointcloud" material="pointcloud_material"/>
             </body>
           </body>
         </body>
@@ -584,29 +245,29 @@
     </body>
   </worldbody>
   <asset>
-    <mesh file="p3_unified.stl"/>
-    <mesh file="fingertip_fix.stl"/>
-    <mesh file="palm_face.stl"/>
-    <mesh file="leap_hand_xela_bottom.stl"/>
-    <mesh file="thp2_unified.stl"/>
-    <mesh file="top_palm.stl"/>
-    <mesh file="thp1_unified.stl"/>
-    <mesh file="thconnector.stl"/>
-    <mesh file="servo_unified.stl"/>
-    <mesh file="part10.stl"/>
-    <mesh file="uspa46.stl"/>
-    <mesh file="p4_unified.stl"/>
-    <mesh file="clipper.stl"/>
     <mesh file="leap_hand_xela_back_cover.stl"/>
-    <mesh file="thp0_unified.stl"/>
+    <mesh file="thconnector.stl"/>
     <mesh file="leap_hand_xela_side_cover.stl"/>
     <mesh file="p5_unified.stl"/>
-    <mesh file="part_2.stl"/>
-    <mesh file="pointcloud.stl"/>
-    <mesh file="leap_hand_xela_motorholder.stl"/>
+    <mesh file="servo_unified.stl"/>
+    <mesh file="thp0_unified.stl"/>
+    <mesh file="leap_hand_xela_bottom.stl"/>
     <mesh file="p2_unified.stl"/>
+    <mesh file="part10.stl"/>
+    <mesh file="thp2_unified.stl"/>
+    <mesh file="4_6_origin.stl"/>
+    <mesh file="palm_face.stl"/>
+    <mesh file="clipper.stl"/>
+    <mesh file="top_palm.stl"/>
+    <mesh file="pointcloud.stl"/>
+    <mesh file="p4_unified.stl"/>
+    <mesh file="p3_unified.stl"/>
+    <mesh file="uspa46.stl"/>
+    <mesh file="thp1_unified.stl"/>
+    <mesh file="leap_hand_xela_motorholder.stl"/>
+    <mesh file="fingertip_fix.stl"/>
+    <mesh file="part_2.stl"/>
     <material name="leap_hand_xela_motorholder_material" rgba="0.792157 0.819608 0.933333 1"/>
-    <material name="uspa46_material" rgba="0.792157 0.819608 0.933333 1"/>
     <material name="thp0_unified_material" rgba="0.498039 0.498039 0.498039 1"/>
     <material name="p5_unified_material" rgba="0.980392 0.713725 0.00392157 1"/>
     <material name="top_palm_material" rgba="0.792157 0.819608 0.933333 1"/>
@@ -614,12 +275,14 @@
     <material name="leap_hand_xela_side_cover_material" rgba="0.792157 0.819608 0.933333 1"/>
     <material name="leap_hand_xela_bottom_material" rgba="0.792157 0.819608 0.933333 1"/>
     <material name="palm_face_material" rgba="0.792157 0.819608 0.933333 1"/>
+    <material name="4_6_origin_material" rgba="0.615686 0.811765 0.929412 1"/>
+    <material name="uspa46_material" rgba="0.792157 0.819608 0.933333 1"/>
     <material name="p4_unified_material" rgba="0.972549 0.529412 0.00392157 1"/>
     <material name="p3_unified_material" rgba="0.972549 0.529412 0.00392157 1"/>
     <material name="p2_unified_material" rgba="0.768627 0.886275 0.952941 1"/>
     <material name="fingertip_fix_material" rgba="0.792157 0.819608 0.933333 1"/>
-    <material name="pointcloud_material" rgba="0.615686 0.811765 0.929412 1"/>
     <material name="part_2_material" rgba="0.647059 0.647059 0.647059 1"/>
+    <material name="pointcloud_material" rgba="0.615686 0.811765 0.929412 1"/>
     <material name="thp2_unified_material" rgba="0.980392 0.713725 0.00392157 1"/>
     <material name="thconnector_material" rgba="0.792157 0.819608 0.933333 1"/>
     <material name="clipper_material" rgba="0.792157 0.819608 0.933333 1"/>
