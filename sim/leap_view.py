@@ -4,7 +4,7 @@ import mujoco.viewer
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
-scene = REPO_ROOT / "LeapXELA_Hardware_ws-main" / "mujoco_c_example" / "mjcf" / "scene.xml"
+scene = REPO_ROOT / "LeapXELA_Hardware_ws" / "mujoco_c_example" / "mjcf" / "scene.xml"
 
 # spec = mj.MjSpec.from_file(scene)
 # model = spec.compile()

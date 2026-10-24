@@ -1,5 +1,6 @@
 # mjpython sim/static_retarget_test.py
 import os
+from pathlib import Path
 import time
 import numpy as np
 import mujoco as mj
@@ -9,8 +10,9 @@ from dex_retargeting.constants import (
     get_default_config_path, RobotName, RetargetingType, HandType,
 )
 
-SCENE    = "/Users/pratik/Documents/PhD/Research_stay/leapXela/LeapXELA_Hardware_ws-main/mujoco_c_example/mjcf/scene.xml"
-URDF_DIR = "/Users/pratik/Documents/PhD/Research_stay/leapXela/sim/dex-urdf/robots/hands"
+REPO_ROOT = Path(__file__).resolve().parents[1]
+SCENE    = str(REPO_ROOT / "LeapXELA_Hardware_ws" / "mujoco_c_example/mjcf/scene.xml")
+URDF_DIR = str(REPO_ROOT / "sim/dex-urdf/robots/hands")
 
 # --- 1. Build retargeter ---
 RetargetingConfig.set_default_urdf_dir(URDF_DIR)

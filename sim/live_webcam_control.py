@@ -24,10 +24,10 @@ from mediapipe.tasks.python import vision
 SIM_DIR = Path(__file__).resolve().parent
 REPO_ROOT = SIM_DIR.parent
 
-SCENE = REPO_ROOT / "LeapXELA_Hardware_ws-main" / "mujoco_c_example" / "mjcf" / "scene.xml"
+SCENE = REPO_ROOT / "LeapXELA_Hardware_ws" / "mujoco_c_example" / "mjcf" / "scene.xml"
 URDF_DIR = (
     REPO_ROOT
-    / "LeapXELA_Hardware_ws-main"
+    / "LeapXELA_Hardware_ws"
     / "ros_ws"
     / "src"
     / "xela_telelop"

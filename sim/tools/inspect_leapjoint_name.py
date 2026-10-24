@@ -1,13 +1,15 @@
 # mjpython sim/tools/inspect_leapjoint_name.py
 import os
+from pathlib import Path
 import mujoco as mj
 from dex_retargeting.retargeting_config import RetargetingConfig
 from dex_retargeting.constants import (
     get_default_config_path, RobotName, RetargetingType, HandType,
 )
 
-SCENE = "/Users/pratik/Documents/PhD/Research_stay/leapXela/LeapXELA_Hardware_ws-main/mujoco_c_example/mjcf/scene.xml"
-URDF_DIR = "/Users/pratik/Documents/PhD/Research_stay/leapXela/sim/dex-urdf/robots/hands"
+REPO_ROOT = Path(__file__).resolve().parents[2]
+SCENE = str(REPO_ROOT / "LeapXELA_Hardware_ws" / "mujoco_c_example/mjcf/scene.xml")
+URDF_DIR = str(REPO_ROOT / "sim/dex-urdf/robots/hands")
 
 # --- MuJoCo actuators ---
 model = mj.MjModel.from_xml_path(SCENE)

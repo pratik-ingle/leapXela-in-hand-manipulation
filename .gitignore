@@ -7,13 +7,34 @@ __pycache__/
 venv/
 dist/
 build/
+.pytest_cache/
+.ruff_cache/
 
-# ROS 2 build artifacts
-LeapXELA_Hardware_ws-main/ros_ws/build/
-LeapXELA_Hardware_ws-main/ros_ws/install/
-LeapXELA_Hardware_ws-main/ros_ws/log/
-LeapXELA_Hardware_ws-main/ros_ws/data/
-LeapXELA_Hardware_ws-main/shell/linux_1.8.0_208601/
+# Run outputs (datasets, generated models). Hundreds of GB; never commit.
+/data/
 
-# macOS
+# Vendored Sparsh: keep code, drop the dataset and the paper PDF
+sparsh-multisensory-touch-main/sparsh-skin-dataset/
+sparsh-multisensory-touch-main/Sparshskin.pdf
+sparsh-multisensory-touch-main/outputs/
+
+# ROS 2 build artifacts and logs (LeapXELA_Hardware_ws)
+LeapXELA_Hardware_ws/ros_ws/build/
+LeapXELA_Hardware_ws/ros_ws/install/
+LeapXELA_Hardware_ws/ros_ws/log/
+LeapXELA_Hardware_ws/ros_ws/data/
+LeapXELA_Hardware_ws/ros_ws/ros_logs/
+LeapXELA_Hardware_ws/ros_ws/src/install/
+LeapXELA_Hardware_ws/ros_ws/src/build/
+LeapXELA_Hardware_ws/ros_ws/src/log/
+LeapXELA_Hardware_ws/shell/linux_1.8.0_208601/
+*.log
+
+# Media: only the curated demo assets under docs/media are tracked
+*.mp4
+!docs/media/*.mp4
+
+# OS / editor
 .DS_Store
+.vscode/
+.idea/
