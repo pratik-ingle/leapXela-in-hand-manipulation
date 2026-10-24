@@ -9,12 +9,12 @@ The repository has three parts:
 3. **`sim/`**: webcam teleoperation of the simulated hand. MediaPipe tracks hand landmarks and `dex-retargeting` maps them onto LEAP hand joints.
 
 <p align="center">
-  <a href="docs/media/demo_disk_squeeze.mp4">
-    <img src="docs/media/demo_disk_squeeze.gif" alt="LEAP hand squeezing a disk on the palm, with live XELA taxel forces" width="760">
+  <a href="docs/media/demo_3cubes_regrasp.mp4">
+    <img src="docs/media/demo_3cubes_regrasp.gif" alt="LEAP hand repeatedly re-grasping three cubes on its palm, with live XELA taxel forces" width="800">
   </a>
   <br>
-  <em>A <code>disk</code> held on the palm under the <code>squeeze</code> grasp pattern. Left: the rendered hand with a 2D taxel heatmap inset. Right: the 368-taxel point cloud, coloured by SPARSH normal force (0 to 0.5 N).<br>
-  Full-resolution video: <a href="docs/media/demo_disk_squeeze.mp4"><code>docs/media/demo_disk_squeeze.mp4</code></a></em>
+  <em>Three cubes on the palm under the <code>regrasp</code> pattern: the hand closes, releases and closes again. Left: the rendered hand with a 2D taxel heatmap inset. Right: the 368-taxel SPARSH force cloud. Bottom: total active-taxel force on the palm pads (orange) and fingers (blue). Finger contacts appear and vanish with each grasp, while the palm stays loaded by the cubes.<br>
+  Full-resolution video: <a href="docs/media/demo_3cubes_regrasp.mp4"><code>docs/media/demo_3cubes_regrasp.mp4</code></a> · single-disk example: <a href="docs/media/demo_disk_squeeze.mp4"><code>demo_disk_squeeze.mp4</code></a></em>
 </p>
 
 ---
@@ -50,10 +50,11 @@ The repository has three parts:
 │   ├── hardware/                 #   Calibration inputs copied from LeapXELA_Hardware_ws (taxel poses, ID map)
 │   └── legacy/                   #   Abandoned sensor approaches (raycast, site-array, MJX), kept for reference
 ├── tests/                        # pytest suite; tests/sparsh_compare/ holds cross-env parity drivers
+├── tools/                        # make_demo_video.py: episode -> README demo MP4 + GIF
 ├── docs/                         # Design notes and demo media
 │   ├── SPARSH_SENSOR_PARITY.md
 │   ├── taxel_tip_pos.md
-│   └── media/                    #   Demo video, GIF, taxel ID map
+│   └── media/                    #   Demo videos, GIF preview, taxel ID map
 ├── LeapXELA_Hardware_ws/         # Real-robot workspace: Docker, XELA server, CAN, ROS 2 packages
 ├── sim/                          # MediaPipe → dex-retargeting webcam teleop of the LEAP hand in MuJoCo
 │   └── dex-urdf/                 #   git submodule (dexsuite/dex-urdf)
@@ -130,7 +131,15 @@ Every tool takes `--help`. For `leapxela-collect`, settings are applied in the o
 ### Quick start
 
 ```bash
-# Render one episode like the demo above (single disk, squeeze pattern, SPARSH sensor)
+# Reproduce the demo above: three cubes, regrasp, fixed camera, SPARSH sensor
+# (MUJOCO_GL=egl renders headless; drop it when a display is available)
+MUJOCO_GL=egl leapxela-episode --objects box --multi-count 3 --multi-shapes box \
+  --multi-scale-range 0.5 0.5 --grasp-pattern regrasp --sensor-mode sparsh --seed 7 \
+  --orbit-revolutions 0 --cloud-source sparsh --force-scale 0.05 --grip-fraction 0.85 \
+  --output-root data/demo
+python tools/make_demo_video.py data/demo/box_x3_regrasp docs/media/demo_3cubes_regrasp
+
+# Single disk, squeeze pattern, orbiting camera
 leapxela-episode --objects disk --object-scale 0.5 --grasp-pattern squeeze --sensor-mode sparsh --seed 7
 
 # Three mixed objects on the palm, holding the grasp, both sensors recorded
