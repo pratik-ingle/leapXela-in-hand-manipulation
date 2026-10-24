@@ -1,0 +1,28 @@
+# Conda environment for the LeapXELA flex-taxel hand (leapxela package).
+#
+# Separate from environment.yml because this needs MuJoCo >= 3.11 for the
+# MjSpec/flex APIs, pair/adhesion, and exact Sparsh-sensor parity, while the
+# MANTARAY membrane pipeline is
+# pinned to 3.1.1. Tactile data is NOT comparable across that boundary -- 3.11
+# moved flex elasticity into the CG constraint solver -- so the two envs must
+# stay separate rather than converging on one pin. The LeapXELA extra pins
+# MuJoCo 3.11.0 and installs torch/pytorch-kinematics/einops for Sparsh FK.
+#
+# Create:
+#   conda env create -f environment-leapxela.yml
+#   conda run --no-capture-output -n leapxela pip install -e ".[leapxela]"
+#
+# Run (--no-capture-output keeps MuJoCo's progress output streaming):
+#   conda run --no-capture-output -n leapxela python -m leapxela.collect_flex_dataset
+#
+# mjpython is only needed for the interactive viewer; headless stepping and
+# offscreen mj.Renderer work under plain python.
+
+name: leapxela
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12.2
+  - pip>=24.0
+  - pip:
+      - -e .[leapxela]

@@ -1,0 +1,19 @@
+# Smallest useful run: one shape, one count, short episodes.
+# For checking a change to the hand, sensor or placement end to end before
+# committing to a real collection. Not a dataset -- 2 samples proves nothing.
+#
+#   conda run -n leapxela python -m leapxela.collect_flex_dataset \
+#       --config leapxela/configs/quick_smoke.yaml
+
+collection:
+  shapes: [box]
+  counts: [1]
+  samples: 2
+  scale: 0.4            # fixed, so the calibration sweep is skipped entirely
+  duration: 3.0
+  workers: 2
+  sensor_mode: contact
+  output_root: ../../data/leapxela_smoke   # relative to this file
+
+render:
+  video_samples: 0      # no video: rendering dominates the wall clock at this size

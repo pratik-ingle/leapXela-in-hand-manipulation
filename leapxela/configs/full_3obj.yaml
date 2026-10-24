@@ -1,0 +1,376 @@
+# Full shape x count collection: every collector argument, annotated.
+#
+# Counts 1..3 and every placeable shape. Shape and size are passed together as
+# `scale: {shape: number}` (YAML-only; the CLI cannot take a mapping). Each
+# entry is that shape's n=3 cap under zone placement (README.md), so cylinder
+# (0.30) can sit next to O (0.75) without a shared size refusing the run.
+# sphere is retired (rolls into the pad gap, reads 0).
+#
+# Precedence is CLI > this file > argparse default, so one knob can be swept
+# without editing:
+#
+#   conda run --no-capture-output -n leapxela python -m leapxela.collect_flex_dataset \
+#       --config leapxela/configs/full_3obj.yaml
+#   conda run --no-capture-output -n leapxela python -m leapxela.collect_flex_dataset \
+#       --config leapxela/configs/full_3obj.yaml --samples 50 --sensor-mode both
+#
+# Unknown sections/keys are refused. Relative paths resolve against this file.
+
+# ---------------------------------------------------------------------------
+# collection — the sweep, its cost, and which tactile arrays are written
+# ---------------------------------------------------------------------------
+collection:
+
+  # Which shapes become buckets (one folder per shape). Sets the shape_label /
+  # shape_index training label. Must list every key in `scale` below (omitted
+  # shapes are not collected; extra scale keys are ignored). shape_index is
+  # append-only: box=0, cylinder=1, sphere=2 (slot kept), I=3 J=4 L=5 O=6 S=7
+  # T=8 Z=9, disk=10.
+  #
+  # Choices (PLACEABLE_SHAPES): box, cylinder, disk, I, J, L, O, S, T, Z.
+  # n=3 caps (zone placement, README.md):
+  #   box 0.50  disk 0.50  cylinder 0.30
+  #   I 0.60  J 0.55  L 0.55  O 0.75  S 0.65  T 0.70  Z 0.65
+  # sphere is retired and refused by per-pad placement.
+  shapes: [box, disk, cylinder, I, J, L, O, S, T, Z]
+
+  # Object counts collected. One folder per count; sets the quantity label.
+  # Integer >= 1. Objects can now share a pad and cluster on the fingerward
+  # strip, so 3 no longer needs one pad each. Default argparse is [1..5].
+  counts: [1, 2, 3]
+
+  # Accepted samples per (shape, count, pattern) bucket. Rejected attempts do
+  # not count. 10 shapes x 1 count x 2 patterns x 1 sample = 20 kept episodes.
+  samples: 20
+
+  # Object size, now polymorphic. Four forms:
+  #   0.4              — that number for every shape in `shapes`
+  #   0                — run the calibration sweep (see calibration:), then clamp
+  #                      per shape so the winner cannot exceed a pad cap
+  #   max              — each shape takes the largest size that fits it at EVERY
+  #                      count above (YAML or CLI). For counts including 3 that
+  #                      is the mapping written out below. Maximises tactile
+  #                      signal and gives essentially one object per pad; 0.6-0.8
+  #                      x cap buys sharing / empty-pad variety (README.md).
+  #   {shape: number}  — YAML only. Sets size per shape; a shape listed in
+  #                      `shapes` but missing here falls back to `max`. Unknown
+  #                      shape names are refused. Per shape, not per count:
+  #                      within a shape the size is constant, so count stays the
+  #                      only variable and cannot be read off the object size.
+  #
+  # Values are the n=3 caps from README.md (remeasured for zone placement).
+  # A shared value would refuse cylinder; `max` would produce the same mapping,
+  # written out here so the dataset records the sizes instead of the sentinel.
+  scale:
+    box: 0.50
+    disk: 0.50
+    cylinder: 0.30
+    I: 0.60
+    J: 0.55
+    L: 0.55
+    O: 0.75
+    S: 0.65
+    T: 0.70
+    Z: 0.65
+
+  # Seconds per episode. Sets the time dimension of every array (duration x
+  # sample_hz frames). Dominant compute cost of a kept sample.
+  duration: 10.0
+
+  # Sampling rate in Hz. duration x sample_hz is the frame count per episode.
+  sample_hz: 100.0
+
+  # Episodes tried per sample before the bucket is left short. Higher rescues
+  # hard (shape, count) cells at the cost of wall-clock time.
+  max_attempts: 30
+
+  # Seconds after which an attempt that has already lost an object is abandoned
+  # instead of simulated to the end. Throughput only — no effect on kept data.
+  # 0 disables (every attempt runs the full duration).
+  abort_check_time: 2.0
+
+  # Parallel worker processes. Samples are independent. Throughput only.
+  # Measured knee on a 10-core M-series is 8; lower it on a machine in use.
+  workers: 12
+
+  # Makes the whole run reproducible, including object poses. episode_rng keys
+  # off (seed, shape, count, sample, attempt).
+  seed: 7
+
+  # What every spawned object must satisfy for a sample to be kept.
+  # Choices: held | sensed
+  #   held   — kinematic: the object is still in the hand. Counts objects lying
+  #            in the unsensed pocket between palm pads and finger bases, so
+  #            the count label can be unsupported by taxels.
+  #   sensed — each object must actually touch a taxel membrane. Invalid with
+  #            sensor_mode: sparsh (the criterion is contact-derived).
+  # Held, not sensed, because sensor_mode below is pure sparsh. Switch both
+  # together: sensor_mode: both also writes the sparsh arrays and keeps
+  # acceptance: sensed valid, which gives the stronger count label.
+  acceptance: held
+
+  # Which tactile arrays are written into sensor_log.npz.
+  # Choices: contact | sparsh | both
+  #   contact — MuJoCo contact-wrench readout (existing default). tactile is (T, 368, 3).
+  #   sparsh  — Kelvin-Voigt batch sensor f = K*u + B*v. tactile is that readout.
+  #             Must not be paired with acceptance: sensed.
+  #   both    — time-aligned pair from the same episode: tactile stays contact,
+  #             tactile_sparsh is added. Required for render.heatmap_source: both.
+  sensor_mode: sparsh
+
+
+  # Directory a timestamped run_* folder is created inside. Relative paths
+  # resolve against this file, not the working directory.
+  output_root: ../../data/leapxela_full_3obj_sparsh
+
+# ---------------------------------------------------------------------------
+# grasp — how the hand closes (shapes the force trace; does not change labels)
+# ---------------------------------------------------------------------------
+grasp:
+
+  # Motion after the fingers close. Each listed pattern is a folder under
+  # count_N/ and gets `samples` of its own, so [squeeze, hold] with samples: 1
+  # writes count_3/squeeze/sample_000 and count_3/hold/sample_000. A single
+  # pattern keeps the temporal structure fixed so shape and count are the
+  # only variables.
+  #
+  # Choices: hold | pulse | squeeze | regrasp | tap | shear
+  #   hold    — close and stay at the grip target; no modulation.
+  #   pulse   — sinusoidal squeeze on the fingers at pulse_hz / pulse_amplitude.
+  #   squeeze — staircase of squeeze_steps levels, then back down; uses
+  #             pulse_amplitude as the top of the staircase.
+  #   regrasp — slow open/close between pregrip and grip (release, regrasps).
+  #   tap     — faster, shallower open/close (half the release of regrasp).
+  #   shear   — lateral drive on abduction/axial-roll joints; produces
+  #             tangential rather than normal signal. Uses shear_amplitude.
+  pattern: [squeeze, shear, hold, pulse, tap, regrasp]
+
+  # How far the fingers close, in [0, 1] of each actuator range. Raises contact
+  # force and taxel count; too high stalls fingers against each other.
+  grip_fraction: 0.85
+
+  # Thumb closure target, in [0, 1]. Lower than the fingers so the commanded
+  # pose does not drive the thumb into the index (both then stall).
+  thumb_grip_fraction: 0.35
+
+  # Seconds the thumb ramp lags the fingers.
+  thumb_delay: 0.5
+
+  # How far the fingers are already curled when the object is placed, in [0, 1].
+  # The measured cup depth that retains a cluster. Do not raise: 0.50 and above
+  # makes the fingers diverge (NaN QACC at t~0.03) rather than gripping harder.
+  pregrip_fraction: 0.40
+
+  # Modulation frequency in Hz for pulse (and the squeeze staircase timing is
+  # independent; this still scales pulse). Used by pattern: pulse.
+  pulse_hz: 1.0
+
+  # Modulation depth for pulse, and the top of the squeeze staircase. Fraction
+  # of remaining actuator span beyond the grip target. Used by pulse / squeeze.
+  pulse_amplitude: 0.15
+
+  # Lateral drive amplitude for pattern: shear, as a fraction of actuator span
+  # on abduction/axial-roll joints. Unused by the other patterns.
+  shear_amplitude: 0.15
+
+  # Number of staircase levels in pattern: squeeze. Must be >= 1. Unused by
+  # the other patterns.
+  squeeze_steps: 4
+
+# ---------------------------------------------------------------------------
+# placement — where objects start (decides whether they are felt at all)
+# ---------------------------------------------------------------------------
+placement:
+
+  # How objects are spawned onto the palm.
+  # Choices: per-pad | legacy
+  #   per-pad — laid flat in one of two zones (see zone_weights). Position
+  #             inside the zone is free as long as footprints do not overlap
+  #             and min_pad_coverage of each footprint sits over taxels. Two
+  #             objects can share a pad; three can cluster on the fingerward
+  #             strip; a large object can bridge the 11.6 mm pad-1/pad-2 seam.
+  #             Over-cap (shape, scale, count) combinations are refused.
+  #   legacy  — older jittered spawn around the pad-1/pad-2 midpoint. Measured
+  #             ~0.3 pad coverage, often 0.0 for the worst object at count 3.
+  #             Keep only to reproduce pre-existing runs. jitter/height apply here.
+  mode: per-pad
+
+  # How often each zone is drawn. Two non-negative weights: fingerward, wrist.
+  #   fingerward — pads 1 and 2 and the seam between them (84.1 x 21.8 mm, 86% taxel)
+  #   wrist      — pad 3 (36.2 x 21.7 mm, 100% taxel)
+  # Raising the first leaves pad 3 empty in more rollouts and clusters objects
+  # where the fingers close. [1, 0] never uses pad 3. Default [0.8, 0.2].
+  zone_weights: [0.9, 0.1]
+
+  # Least fraction of an object's footprint that must sit over taxels, in [0, 1].
+  # This is what keeps objects on the sensor now that they are not confined to a
+  # pad. Lowering it buys positional variety (including seam-bridging) at the
+  # cost of weaker readings; raising it pushes objects toward pad centres.
+  min_pad_coverage: 0.5
+
+  # Seconds the cluster settles before the grip closes. Objects can roll during
+  # it. Too short leaves them hovering; too long lets them walk off the pads.
+  settle_duration: 0.5
+
+  # Palm tilt in degrees. Negative tips the fingers down. Non-zero rolls
+  # objects into the unsensed pocket — measured, even -2 deg dropped a sphere
+  # from 24 sensed contacts to 0. Leave at 0 for per-pad collection.
+  palm_pitch: 0.0
+
+  # Adhesive force in N between OBJECTS ONLY, holding a multi-object cluster
+  # together. 0 = off. Never applied to object-hand or object-skin contacts, so
+  # the taxel signal is unbiased. Needs MuJoCo >= 3.11.
+  object_adhesion: 0.0
+
+  # Distance in metres over which object_adhesion keeps acting. Must be > 0
+  # (at 0 the contact dies the instant objects separate and adhesion does
+  # nothing at any strength) and must exceed the gap objects are placed at.
+  object_adhesion_gap: 0.01
+
+  # legacy mode only: half-width of the palm-plane placement region in metres.
+  # Ignored under per-pad.
+  jitter: 0.012
+
+  # legacy mode only: vertical stagger per object in metres, so they settle
+  # into a cluster rather than intersecting. Ignored under per-pad.
+  height: 0.008
+
+# ---------------------------------------------------------------------------
+# sparsh — Kelvin-Voigt sensor (only used when sensor_mode is sparsh or both)
+# ---------------------------------------------------------------------------
+sparsh:
+
+  # Stiffness K in f = K*u + B*v. K = 100 was fitted for sparsh-skin-sim's
+  # timestep and under-reads on this hand — see docs/SPARSH_SENSOR_PARITY.md.
+  stiffness: 100.0
+
+  # Damping B in the same law. Units of force per (metre/second) of slide velocity.
+  damping: 0.05
+
+  # History window (frames) for finite-difference velocity when use_qvel is false.
+  window: 5
+
+  # true  — use MuJoCo qvel for the damping term (default, smoother).
+  # false — finite-difference the slide displacement over `window` frames.
+  use_qvel: true
+
+  # EMA coefficient applied to the Sparsh velocity term, in [0, 1). Higher
+  # follows qvel more closely; lower damps noise in the B*v term.
+  velocity_smoothing: 0.3
+
+  # Newtons of compression-positive normal force per taxel that counts as
+  # active. Dominates reported activation density — the count drops ~5x
+  # between 5 mN and 10 mN.
+  activity_threshold: 0.005
+
+  # Minimum total normal force (N) a pure-sparsh episode must reach or it fails
+  # QA. Contact/both modes do not use this gate for acceptance.
+  min_peak_normal: 0.01
+
+  # Minimum post-close fraction of frames with any active Sparsh taxel, for
+  # pure-sparsh QA.
+  min_contact_fraction: 0.05
+
+  # Sparsh FK visual displacement scale in metres per Newton. Only affects
+  # sparsh_fk/positions_deformed (video / cloud), not the tactile arrays.
+  deform_scale: 0.02
+
+  # Cap in metres for those force-deformed taxel positions. Video/cloud only.
+  max_displacement: 0.015
+
+  # Path to a calibration JSON that overrides the gains and gates above.
+  # Relative paths resolve against this file. null leaves the values in this
+  # section in force. The shipped calibrator currently produces thresholds that
+  # reject every episode — leave unset until that is fixed
+  # (docs/SPARSH_SENSOR_PARITY.md). Run:
+  #   python -m leapxela.calibrate_sparsh_sensor
+  # then point at data/leapxela_generated/sparsh_sensor_calibration.json.
+  calibration: null
+
+# ---------------------------------------------------------------------------
+# render — video and heatmaps. None of this changes the tactile arrays.
+# ---------------------------------------------------------------------------
+render:
+
+  # Accepted samples per bucket that also get grasp.mp4. The video re-simulates
+  # the kept episode, so render cost is paid only for samples that survive.
+  #   -1 — render every accepted sample
+  #    0 — render none
+  #    N — the first N samples of each bucket (0-indexed)
+  video_samples: 2
+
+  # Taxel channel shown by the live heatmap in the video / PNG panels.
+  # Choices: normal | shear-x | shear-y | magnitude
+  #   normal    — contact-normal force (column 2); unsigned slate->red->yellow
+  #   shear-x   — tangential x (column 0); signed blue<-slate->red
+  #   shear-y   — tangential y (column 1); signed blue<-slate->red
+  #   magnitude — ||(fx, fy, fz)||; unsigned
+  heatmap_channel: normal
+
+  # Which sensor the heatmap PNGs / video overlay show.
+  # Choices: primary | contact | sparsh | both
+  #   primary — the sensor_mode's main readout (contact if contact/both, sparsh if sparsh)
+  #   contact — force the contact wrench regardless of sensor_mode
+  #   sparsh  — force the Kelvin-Voigt readout
+  #   both    — side-by-side panels; requires sensor_mode: both
+  heatmap_source: primary
+
+  # Heatmap full-scale force in N. Auto-expands if a frame exceeds it.
+  force_scale: 0.5
+
+  # Camera revolutions around the hand per episode. 0 = fixed view.
+  orbit_revolutions: 1.0
+
+  # Render the bare taxel point-cloud panel beside the hand view.
+  # true / false. Appearance only.
+  cloud_view: true
+
+  # Which fixed local grid the point cloud draws.
+  # Choices: surface | magnet
+  #   surface — sensing surface (flex vertices / taxel sites)
+  #   magnet  — calibrated magnet centres ~8 mm inside the surface
+  cloud_grid: surface
+
+  # Geometry the point-cloud panel draws.
+  # Choices: leapxela | sparsh | both
+  #   leapxela — MuJoCo taxel sites on the simulated hand, in scene coordinates
+  #   sparsh   — URDF forward kinematics as sparsh-skin-sim's demos/demo_fk.py
+  #              draws them, in its own nominal world frame
+  #   both     — the two side by side
+  cloud_source: sparsh
+
+  # sparsh cloud only: draw force-deformed taxel positions (what upstream's
+  # viewer shows by default). true / false. Ignored for cloud_source: leapxela.
+  cloud_deform: true
+
+  # Force at which a cloud arrow reaches full length, as a multiple of
+  # force_scale. Appearance only.
+  arrow_scale: 1.0
+
+# ---------------------------------------------------------------------------
+# calibration — object-size search, used only when collection.scale is 0
+# ---------------------------------------------------------------------------
+# This run sets an explicit scale mapping, so this section is unused. It is
+# filled in so the file is a complete record; flip collection.scale to 0 to
+# turn it on. Cells whose size cannot be placed at a given count are skipped
+# by the sweep rather than refused, and the winning size is then clamped per
+# shape to its cap.
+calibration:
+
+  # Candidate sizes ranked by worst-cell strict retention, then mean retention,
+  # then mean peak force. Candidates above a (shape, count) cap are skipped for
+  # that cell, so the list does not have to be trimmed to the tightest shape.
+  scales: [0.3, 0.45, 0.6, 0.75, 0.9, 1.0]
+
+  # Which object counts are probed during the search. Default includes 5.
+  # Prefer [1, 3] if you set scale: 0; count 5 is still a hard cell even with
+  # pad sharing.
+  counts: [1, 3]
+
+  # Independent episodes per (scale, shape, count) cell. More trials, less
+  # noisy choice, more time. None of these episodes are saved.
+  trials: 3
+
+  # Seconds per calibration episode. Shorter than a real episode: retention is
+  # decided by the close and the first squeeze cycles.
+  duration: 6.0

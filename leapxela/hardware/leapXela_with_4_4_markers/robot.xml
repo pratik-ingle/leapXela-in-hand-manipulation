@@ -1,0 +1,338 @@
+<?xml version="1.0" ?>
+<!-- Generated using onshape-to-robot -->
+<!-- Onshape https://cad.onshape.com/documents/8570a76a8c0c31c84724c6f7/w/c9d7fe5a7e1c98ade57ae24b/e/499423712fdad43c5ed79313 -->
+<mujoco model="leapXela_with_markers">
+  <compiler angle="radian" meshdir="assets" autolimits="true"/>
+  <default>
+    <default class="leapXela_with_markers">
+      <joint frictionloss="0.1" armature="0.005"/>
+      <position kp="50" dampratio="1"/>
+      <default class="visual">
+        <geom type="mesh" contype="0" conaffinity="0" group="2"/>
+      </default>
+      <default class="collision">
+        <geom group="3"/>
+      </default>
+    </default>
+  </default>
+  <worldbody>
+    <!-- Link leap_hand_xela_back_cover -->
+    <body name="leap_hand_xela_back_cover" pos="0 0 0" quat="1 0 0 0" childclass="leapXela_with_markers">
+      <freejoint name="leap_hand_xela_back_cover_freejoint"/>
+      <inertial pos="-0.000453272 -0.00768016 0.0745327" mass="1.56832" fullinertia="0.00361568 0.00457887 0.00189274 7.85185e-05 -0.00021118 0.000267856"/>
+      <!-- Part leap_hand_xela_motorholder -->
+      <geom type="mesh" class="visual" pos="0.0180627 0.023 0.0834096" quat="0 0.707107 0 -0.707107" mesh="leap_hand_xela_motorholder" material="leap_hand_xela_motorholder_material"/>
+      <geom type="mesh" class="collision" pos="0.0180627 0.023 0.0834096" quat="0 0.707107 0 -0.707107" mesh="leap_hand_xela_motorholder" material="leap_hand_xela_motorholder_material"/>
+      <!-- Part uspa46 -->
+      <geom type="mesh" class="visual" pos="-0.005515 -0.027 0.0631" quat="0 -0 -0 -1" mesh="uspa46" material="uspa46_material"/>
+      <geom type="mesh" class="collision" pos="-0.005515 -0.027 0.0631" quat="0 -0 -0 -1" mesh="uspa46" material="uspa46_material"/>
+      <!-- Part thp0_unified -->
+      <geom type="mesh" class="visual" pos="0.0235627 -0.013 0.0845" quat="0.707107 -0 -0 0.707107" mesh="thp0_unified" material="thp0_unified_material"/>
+      <geom type="mesh" class="collision" pos="0.0235627 -0.013 0.0845" quat="0.707107 -0 -0 0.707107" mesh="thp0_unified" material="thp0_unified_material"/>
+      <!-- Part p5_unified -->
+      <geom type="mesh" class="visual" pos="-0.03767 -0.009 0.1306" quat="0.5 0.5 -0.5 0.5" mesh="p5_unified" material="p5_unified_material"/>
+      <geom type="mesh" class="collision" pos="-0.03767 -0.009 0.1306" quat="0.5 0.5 -0.5 0.5" mesh="p5_unified" material="p5_unified_material"/>
+      <!-- Part top_palm -->
+      <geom type="mesh" class="visual" pos="0.00785 -0.023 0.123706" quat="0 -0 1 -0" mesh="top_palm" material="top_palm_material"/>
+      <geom type="mesh" class="collision" pos="0.00785 -0.023 0.123706" quat="0 -0 1 -0" mesh="top_palm" material="top_palm_material"/>
+      <!-- Part p5_unified_2 -->
+      <geom type="mesh" class="visual" pos="0.00778 -0.009 0.1306" quat="0.5 0.5 -0.5 0.5" mesh="p5_unified" material="p5_unified_material"/>
+      <geom type="mesh" class="collision" pos="0.00778 -0.009 0.1306" quat="0.5 0.5 -0.5 0.5" mesh="p5_unified" material="p5_unified_material"/>
+      <!-- Part uspa46_2 -->
+      <geom type="mesh" class="visual" pos="-0.005515 -0.027 0.0962" quat="0 -0 -0 -1" mesh="uspa46" material="uspa46_material"/>
+      <geom type="mesh" class="collision" pos="-0.005515 -0.027 0.0962" quat="0 -0 -0 -1" mesh="uspa46" material="uspa46_material"/>
+      <!-- Part p5_unified_3 -->
+      <geom type="mesh" class="visual" pos="0.05323 -0.009 0.1306" quat="0.5 0.5 -0.5 0.5" mesh="p5_unified" material="p5_unified_material"/>
+      <geom type="mesh" class="collision" pos="0.05323 -0.009 0.1306" quat="0.5 0.5 -0.5 0.5" mesh="p5_unified" material="p5_unified_material"/>
+      <!-- Part uspa46_3 -->
+      <geom type="mesh" class="visual" pos="0.044015 -0.027 0.0962" quat="0 -1 0 0" mesh="uspa46" material="uspa46_material"/>
+      <geom type="mesh" class="collision" pos="0.044015 -0.027 0.0962" quat="0 -1 0 0" mesh="uspa46" material="uspa46_material"/>
+      <!-- Part leap_hand_xela_back_cover -->
+      <geom type="mesh" class="visual" pos="-0.0293149 0.023 0.131221" quat="0.707107 -0 -0.707107 0" mesh="leap_hand_xela_back_cover" material="leap_hand_xela_back_cover_material"/>
+      <geom type="mesh" class="collision" pos="-0.0293149 0.023 0.131221" quat="0.707107 -0 -0.707107 0" mesh="leap_hand_xela_back_cover" material="leap_hand_xela_back_cover_material"/>
+      <!-- Part leap_hand_xela_side_cover -->
+      <geom type="mesh" class="visual" pos="-0.0503368 0 0.110009" quat="0.707104 0.707104 0.00183435 -0.00183435" mesh="leap_hand_xela_side_cover" material="leap_hand_xela_side_cover_material"/>
+      <geom type="mesh" class="collision" pos="-0.0503368 0 0.110009" quat="0.707104 0.707104 0.00183435 -0.00183435" mesh="leap_hand_xela_side_cover" material="leap_hand_xela_side_cover_material"/>
+      <!-- Part leap_hand_xela_bottom -->
+      <geom type="mesh" class="visual" pos="0 -0.023 0.0425" quat="0 0 -1 0" mesh="leap_hand_xela_bottom" material="leap_hand_xela_bottom_material"/>
+      <geom type="mesh" class="collision" pos="0 -0.023 0.0425" quat="0 0 -1 0" mesh="leap_hand_xela_bottom" material="leap_hand_xela_bottom_material"/>
+      <!-- Part palm_face -->
+      <geom type="mesh" class="visual" pos="-0.0283776 -0.029 0.131221" quat="0.707107 -0 -0.707107 0" mesh="palm_face" material="palm_face_material"/>
+      <geom type="mesh" class="collision" pos="-0.0283776 -0.029 0.131221" quat="0.707107 -0 -0.707107 0" mesh="palm_face" material="palm_face_material"/>
+      <!-- Part 4_4_origin -->
+      <geom type="mesh" class="visual" pos="0.01908 -0.026 0.128974" quat="0 -0 0.707107 0.707107" mesh="4_4_origin" material="4_4_origin_material"/>
+      <geom type="mesh" class="collision" pos="0.01908 -0.026 0.128974" quat="0 -0 0.707107 0.707107" mesh="4_4_origin" material="4_4_origin_material"/>
+      <!-- Part uspa44_mockup -->
+      <geom type="mesh" class="visual" pos="0.0140067 -0.0148736 0.120638" quat="0 0 0 -1" mesh="uspa44_mockup" material="uspa44_mockup_material"/>
+      <geom type="mesh" class="collision" pos="0.0140067 -0.0148736 0.120638" quat="0 0 0 -1" mesh="uspa44_mockup" material="uspa44_mockup_material"/>
+      <!-- Part 4_4_origin_2 -->
+      <geom type="mesh" class="visual" pos="-0.02637 -0.026 0.128974" quat="0 -0 0.707107 0.707107" mesh="4_4_origin" material="4_4_origin_material"/>
+      <geom type="mesh" class="collision" pos="-0.02637 -0.026 0.128974" quat="0 -0 0.707107 0.707107" mesh="4_4_origin" material="4_4_origin_material"/>
+      <!-- Part uspa44_mockup_2 -->
+      <geom type="mesh" class="visual" pos="-0.0314433 -0.0148736 0.120638" quat="0 0 0 -1" mesh="uspa44_mockup" material="uspa44_mockup_material"/>
+      <geom type="mesh" class="collision" pos="-0.0314433 -0.0148736 0.120638" quat="0 0 0 -1" mesh="uspa44_mockup" material="uspa44_mockup_material"/>
+      <!-- Part 4_4_origin_3 -->
+      <geom type="mesh" class="visual" pos="0.06453 -0.026 0.128974" quat="0 -0 0.707107 0.707107" mesh="4_4_origin" material="4_4_origin_material"/>
+      <geom type="mesh" class="collision" pos="0.06453 -0.026 0.128974" quat="0 -0 0.707107 0.707107" mesh="4_4_origin" material="4_4_origin_material"/>
+      <!-- Part uspa44_mockup_3 -->
+      <geom type="mesh" class="visual" pos="0.0594567 -0.0148736 0.120638" quat="0 0 0 -1" mesh="uspa44_mockup" material="uspa44_mockup_material"/>
+      <geom type="mesh" class="collision" pos="0.0594567 -0.0148736 0.120638" quat="0 0 0 -1" mesh="uspa44_mockup" material="uspa44_mockup_material"/>
+      <!-- Link p4_unified -->
+      <body name="p4_unified" pos="-0.02317 -0.0165 0.1436" quat="0 0.707107 -0 0.707107">
+        <!-- Joint from leap_hand_xela_back_cover to p4_unified -->
+        <joint axis="0 0 1" name="rf_mcp" type="hinge" range="-0.3141592653589784 2.2340214425527427"/>
+        <inertial pos="0.0342889 -0.0265621 -0.0145004" mass="0.0353104" fullinertia="6.90801e-06 1.04766e-05 1.10431e-05 2.26365e-06 1.79475e-07 -1.82708e-07"/>
+        <!-- Part p4_unified -->
+        <geom type="mesh" class="visual" pos="0.0048 -0 -0.0145" quat="0.5 0.5 0.5 -0.5" mesh="p4_unified" material="p4_unified_material"/>
+        <geom type="mesh" class="collision" pos="0.0048 -0 -0.0145" quat="0.5 0.5 0.5 -0.5" mesh="p4_unified" material="p4_unified_material"/>
+        <!-- Link p3_unified -->
+        <body name="p3_unified" pos="0.0326 -0.0123 -0.0145" quat="0.5 -0.5 -0.5 -0.5">
+          <!-- Joint from p4_unified to p3_unified -->
+          <joint axis="0 0 1" name="rf_rot" type="hinge" range="-1.0471975511965976 1.0471975511965976"/>
+          <inertial pos="-0.00015897 0.0101828 0.0187633" mass="0.0441471" fullinertia="6.27379e-06 5.09368e-06 5.48734e-06 -2.5547e-08 -4.4124e-08 -6.63435e-07"/>
+          <!-- Part p3_unified -->
+          <geom type="mesh" class="visual" pos="0 0.0075 -0" quat="0.5 -0.5 -0.5 -0.5" mesh="p3_unified" material="p3_unified_material"/>
+          <geom type="mesh" class="collision" pos="0 0.0075 -0" quat="0.5 -0.5 -0.5 -0.5" mesh="p3_unified" material="p3_unified_material"/>
+          <!-- Part 4_4_origin_4 -->
+          <geom type="mesh" class="visual" pos="0.0112619 -5.87232e-05 0.023" quat="0 -0 -1 0" mesh="4_4_origin" material="4_4_origin_material"/>
+          <geom type="mesh" class="collision" pos="0.0112619 -5.87232e-05 0.023" quat="0 -0 -1 0" mesh="4_4_origin" material="4_4_origin_material"/>
+          <!-- Part uspa44_mockup_4 -->
+          <geom type="mesh" class="visual" pos="0.0061886 -0.00839453 0.0118736" quat="0 -0 -0.707107 -0.707107" mesh="uspa44_mockup" material="uspa44_mockup_material"/>
+          <geom type="mesh" class="collision" pos="0.0061886 -0.00839453 0.0118736" quat="0 -0 -0.707107 -0.707107" mesh="uspa44_mockup" material="uspa44_mockup_material"/>
+          <!-- Link p2_unified -->
+          <body name="p2_unified" pos="0.0145 0.015 0.013" quat="0.5 0.5 0.5 0.5">
+            <!-- Joint from p3_unified to p2_unified -->
+            <joint axis="0 0 1" name="rf_pip" type="hinge" range="-0.506145483078337 1.8849555921538945"/>
+            <inertial pos="0.0313665 -0.000155579 -0.0146172" mass="0.0555392" fullinertia="1.34359e-05 8.85115e-06 1.45694e-05 -1.6174e-08 1.87861e-07 -1.02773e-07"/>
+            <!-- Part p2_unified -->
+            <geom type="mesh" class="visual" pos="0.00905 -0 -0.0145" quat="0.5 0.5 0.5 -0.5" mesh="p2_unified" material="p2_unified_material"/>
+            <geom type="mesh" class="collision" pos="0.00905 -0 -0.0145" quat="0.5 0.5 0.5 -0.5" mesh="p2_unified" material="p2_unified_material"/>
+            <!-- Part 4_4_origin_5 -->
+            <geom type="mesh" class="visual" pos="0.020626 0.0095 -0.0033" quat="0.5 0.5 0.5 -0.5" mesh="4_4_origin" material="4_4_origin_material"/>
+            <geom type="mesh" class="collision" pos="0.020626 0.0095 -0.0033" quat="0.5 0.5 0.5 -0.5" mesh="4_4_origin" material="4_4_origin_material"/>
+            <!-- Part uspa44_mockup_5 -->
+            <geom type="mesh" class="visual" pos="0.0122902 -0.0016264 -0.00837334" quat="0.707107 -0 0.707107 -0" mesh="uspa44_mockup" material="uspa44_mockup_material"/>
+            <geom type="mesh" class="collision" pos="0.0122902 -0.0016264 -0.00837334" quat="0.707107 -0 0.707107 -0" mesh="uspa44_mockup" material="uspa44_mockup_material"/>
+            <!-- Link fingertop_unfied -->
+            <body name="fingertop_unfied" pos="0.0361 -0 -0.0291" quat="0.707107 -0 0 0.707107">
+              <!-- Joint from p2_unified to fingertop_unfied -->
+              <joint axis="0 0 1" name="rf_dip" type="hinge" range="-0.3665191429188092 2.0420352248333655"/>
+              <inertial pos="-0.00193531 -0.0359351 0.0145854" mass="0.0384693" fullinertia="1.0779e-05 5.55855e-06 1.00656e-05 1.57487e-07 -2.8587e-08 -1.64744e-07"/>
+              <!-- Part fingertop_unfied -->
+              <geom type="mesh" class="visual" pos="-0.00135925 -0.025 0.0145" quat="0.5 -0.5 -0.5 -0.5" mesh="fingertop_unfied" material="fingertop_unfied_material"/>
+              <geom type="mesh" class="collision" pos="-0.00135925 -0.025 0.0145" quat="0.5 -0.5 -0.5 -0.5" mesh="fingertop_unfied" material="fingertop_unfied_material"/>
+            </body>
+          </body>
+        </body>
+      </body>
+      <!-- Link p4_unified_2 -->
+      <body name="p4_unified_2" pos="0.02228 -0.0165 0.1436" quat="0 0.707107 -0 0.707107">
+        <!-- Joint from leap_hand_xela_back_cover to p4_unified_2 -->
+        <joint axis="0 0 1" name="mf_mcp" type="hinge" range="-0.3141592653589793 2.234021442552742"/>
+        <inertial pos="0.0342889 -0.0265621 -0.0145004" mass="0.0353104" fullinertia="6.90801e-06 1.04766e-05 1.10431e-05 2.26365e-06 1.79475e-07 -1.82708e-07"/>
+        <!-- Part p4_unified_2 -->
+        <geom type="mesh" class="visual" pos="0.0048 -0 -0.0145" quat="0.5 0.5 0.5 -0.5" mesh="p4_unified" material="p4_unified_material"/>
+        <geom type="mesh" class="collision" pos="0.0048 -0 -0.0145" quat="0.5 0.5 0.5 -0.5" mesh="p4_unified" material="p4_unified_material"/>
+        <!-- Link p3_unified_2 -->
+        <body name="p3_unified_2" pos="0.0326 -0.0123 -0.0145" quat="0.5 -0.5 -0.5 -0.5">
+          <!-- Joint from p4_unified_2 to p3_unified_2 -->
+          <joint axis="0 0 1" name="mf_rot" type="hinge" range="-1.0471975511965976 1.0471975511965976"/>
+          <inertial pos="-0.00015897 0.0101828 0.0187633" mass="0.0441471" fullinertia="6.27379e-06 5.09368e-06 5.48734e-06 -2.5547e-08 -4.4124e-08 -6.63435e-07"/>
+          <!-- Part p3_unified_2 -->
+          <geom type="mesh" class="visual" pos="-0 0.0075 -0" quat="0.5 -0.5 -0.5 -0.5" mesh="p3_unified" material="p3_unified_material"/>
+          <geom type="mesh" class="collision" pos="-0 0.0075 -0" quat="0.5 -0.5 -0.5 -0.5" mesh="p3_unified" material="p3_unified_material"/>
+          <!-- Part 4_4_origin_6 -->
+          <geom type="mesh" class="visual" pos="0.0112619 -5.87232e-05 0.023" quat="0 -0 -1 0" mesh="4_4_origin" material="4_4_origin_material"/>
+          <geom type="mesh" class="collision" pos="0.0112619 -5.87232e-05 0.023" quat="0 -0 -1 0" mesh="4_4_origin" material="4_4_origin_material"/>
+          <!-- Part uspa44_mockup_6 -->
+          <geom type="mesh" class="visual" pos="0.0061886 -0.00839453 0.0118736" quat="0 0 0.707107 0.707107" mesh="uspa44_mockup" material="uspa44_mockup_material"/>
+          <geom type="mesh" class="collision" pos="0.0061886 -0.00839453 0.0118736" quat="0 0 0.707107 0.707107" mesh="uspa44_mockup" material="uspa44_mockup_material"/>
+          <!-- Link p2_unified_2 -->
+          <body name="p2_unified_2" pos="0.0145 0.015 0.013" quat="0.5 0.5 0.5 0.5">
+            <!-- Joint from p3_unified_2 to p2_unified_2 -->
+            <joint axis="0 0 1" name="mf_pip" type="hinge" range="-0.506145483078337 1.8849555921538945"/>
+            <inertial pos="0.0313665 -0.000155579 -0.0146172" mass="0.0555392" fullinertia="1.34359e-05 8.85115e-06 1.45694e-05 -1.6174e-08 1.87861e-07 -1.02773e-07"/>
+            <!-- Part p2_unified_2 -->
+            <geom type="mesh" class="visual" pos="0.00905 -0 -0.0145" quat="0.5 0.5 0.5 -0.5" mesh="p2_unified" material="p2_unified_material"/>
+            <geom type="mesh" class="collision" pos="0.00905 -0 -0.0145" quat="0.5 0.5 0.5 -0.5" mesh="p2_unified" material="p2_unified_material"/>
+            <!-- Part 4_4_origin_7 -->
+            <geom type="mesh" class="visual" pos="0.020626 0.0095 -0.0033" quat="0.5 0.5 0.5 -0.5" mesh="4_4_origin" material="4_4_origin_material"/>
+            <geom type="mesh" class="collision" pos="0.020626 0.0095 -0.0033" quat="0.5 0.5 0.5 -0.5" mesh="4_4_origin" material="4_4_origin_material"/>
+            <!-- Part uspa44_mockup_7 -->
+            <geom type="mesh" class="visual" pos="0.0122902 -0.0016264 -0.00837334" quat="0.707107 -0 0.707107 -0" mesh="uspa44_mockup" material="uspa44_mockup_material"/>
+            <geom type="mesh" class="collision" pos="0.0122902 -0.0016264 -0.00837334" quat="0.707107 -0 0.707107 -0" mesh="uspa44_mockup" material="uspa44_mockup_material"/>
+            <!-- Link fingertop_unfied_2 -->
+            <body name="fingertop_unfied_2" pos="0.0361 -0 -0.0291" quat="0.707107 -0 0 0.707107">
+              <!-- Joint from p2_unified_2 to fingertop_unfied_2 -->
+              <joint axis="0 0 1" name="mf_dip" type="hinge" range="-0.3665191429188092 2.0420352248333655"/>
+              <inertial pos="-0.00193531 -0.0359351 0.0145854" mass="0.0384693" fullinertia="1.0779e-05 5.55855e-06 1.00656e-05 1.57487e-07 -2.8587e-08 -1.64744e-07"/>
+              <!-- Part fingertop_unfied_2 -->
+              <geom type="mesh" class="visual" pos="-0.00135925 -0.025 0.0145" quat="0.5 -0.5 -0.5 -0.5" mesh="fingertop_unfied" material="fingertop_unfied_material"/>
+              <geom type="mesh" class="collision" pos="-0.00135925 -0.025 0.0145" quat="0.5 -0.5 -0.5 -0.5" mesh="fingertop_unfied" material="fingertop_unfied_material"/>
+            </body>
+          </body>
+        </body>
+      </body>
+      <!-- Link p4_unified_3 -->
+      <body name="p4_unified_3" pos="0.06773 -0.0165 0.1436" quat="0 0.707107 -0 0.707107">
+        <!-- Joint from leap_hand_xela_back_cover to p4_unified_3 -->
+        <joint axis="0 0 1" name="if_mcp" type="hinge" range="-0.3141592653589793 2.234021442552742"/>
+        <inertial pos="0.0342889 -0.0265621 -0.0145004" mass="0.0353104" fullinertia="6.90801e-06 1.04766e-05 1.10431e-05 2.26365e-06 1.79475e-07 -1.82708e-07"/>
+        <!-- Part p4_unified_3 -->
+        <geom type="mesh" class="visual" pos="0.0048 -0 -0.0145" quat="0.5 0.5 0.5 -0.5" mesh="p4_unified" material="p4_unified_material"/>
+        <geom type="mesh" class="collision" pos="0.0048 -0 -0.0145" quat="0.5 0.5 0.5 -0.5" mesh="p4_unified" material="p4_unified_material"/>
+        <!-- Link p3_unified_3 -->
+        <body name="p3_unified_3" pos="0.0326 -0.0123 -0.0145" quat="0.5 -0.5 -0.5 -0.5">
+          <!-- Joint from p4_unified_3 to p3_unified_3 -->
+          <joint axis="0 0 1" name="if_rot" type="hinge" range="-1.0471975511965976 1.0471975511965976"/>
+          <inertial pos="-0.00015897 0.0101828 0.0187633" mass="0.0441471" fullinertia="6.27379e-06 5.09368e-06 5.48734e-06 -2.5547e-08 -4.4124e-08 -6.63435e-07"/>
+          <!-- Part p3_unified_3 -->
+          <geom type="mesh" class="visual" pos="0 0.0075 -0" quat="0.5 -0.5 -0.5 -0.5" mesh="p3_unified" material="p3_unified_material"/>
+          <geom type="mesh" class="collision" pos="0 0.0075 -0" quat="0.5 -0.5 -0.5 -0.5" mesh="p3_unified" material="p3_unified_material"/>
+          <!-- Part 4_4_origin_8 -->
+          <geom type="mesh" class="visual" pos="0.0112619 -5.87232e-05 0.023" quat="0 -0 -1 0" mesh="4_4_origin" material="4_4_origin_material"/>
+          <geom type="mesh" class="collision" pos="0.0112619 -5.87232e-05 0.023" quat="0 -0 -1 0" mesh="4_4_origin" material="4_4_origin_material"/>
+          <!-- Part uspa44_mockup_8 -->
+          <geom type="mesh" class="visual" pos="0.0061886 -0.00839453 0.0118736" quat="0 -0 -0.707107 -0.707107" mesh="uspa44_mockup" material="uspa44_mockup_material"/>
+          <geom type="mesh" class="collision" pos="0.0061886 -0.00839453 0.0118736" quat="0 -0 -0.707107 -0.707107" mesh="uspa44_mockup" material="uspa44_mockup_material"/>
+          <!-- Link p2_unified_3 -->
+          <body name="p2_unified_3" pos="0.0145 0.015 0.013" quat="0.5 0.5 0.5 0.5">
+            <!-- Joint from p3_unified_3 to p2_unified_3 -->
+            <joint axis="0 0 1" name="if_pip" type="hinge" range="-0.506145483078337 1.8849555921538945"/>
+            <inertial pos="0.0313665 -0.000155579 -0.0146172" mass="0.0555392" fullinertia="1.34359e-05 8.85115e-06 1.45694e-05 -1.6174e-08 1.87861e-07 -1.02773e-07"/>
+            <!-- Part p2_unified_3 -->
+            <geom type="mesh" class="visual" pos="0.00905 -0 -0.0145" quat="0.5 0.5 0.5 -0.5" mesh="p2_unified" material="p2_unified_material"/>
+            <geom type="mesh" class="collision" pos="0.00905 -0 -0.0145" quat="0.5 0.5 0.5 -0.5" mesh="p2_unified" material="p2_unified_material"/>
+            <!-- Part 4_4_origin_9 -->
+            <geom type="mesh" class="visual" pos="0.020626 0.0095 -0.0033" quat="0.5 0.5 0.5 -0.5" mesh="4_4_origin" material="4_4_origin_material"/>
+            <geom type="mesh" class="collision" pos="0.020626 0.0095 -0.0033" quat="0.5 0.5 0.5 -0.5" mesh="4_4_origin" material="4_4_origin_material"/>
+            <!-- Part uspa44_mockup_9 -->
+            <geom type="mesh" class="visual" pos="0.0122902 -0.0016264 -0.00837334" quat="0.707107 -0 0.707107 -0" mesh="uspa44_mockup" material="uspa44_mockup_material"/>
+            <geom type="mesh" class="collision" pos="0.0122902 -0.0016264 -0.00837334" quat="0.707107 -0 0.707107 -0" mesh="uspa44_mockup" material="uspa44_mockup_material"/>
+            <!-- Link fingertop_unfied_3 -->
+            <body name="fingertop_unfied_3" pos="0.0361 -0 -0.0291" quat="0.707107 -0 0 0.707107">
+              <!-- Joint from p2_unified_3 to fingertop_unfied_3 -->
+              <joint axis="0 0 1" name="if_dip" type="hinge" range="-0.3665191429188092 2.0420352248333655"/>
+              <inertial pos="-0.00193531 -0.0359351 0.0145854" mass="0.0384693" fullinertia="1.0779e-05 5.55855e-06 1.00656e-05 1.57487e-07 -2.8587e-08 -1.64744e-07"/>
+              <!-- Part fingertop_unfied_3 -->
+              <geom type="mesh" class="visual" pos="-0.00135925 -0.025 0.0145" quat="0.5 -0.5 -0.5 -0.5" mesh="fingertop_unfied" material="fingertop_unfied_material"/>
+              <geom type="mesh" class="collision" pos="-0.00135925 -0.025 0.0145" quat="0.5 -0.5 -0.5 -0.5" mesh="fingertop_unfied" material="fingertop_unfied_material"/>
+            </body>
+          </body>
+        </body>
+      </body>
+      <!-- Link thp2_unified -->
+      <body name="thp2_unified" pos="0.0480627 -0.013 0.07" quat="0 0 1 -0">
+        <!-- Joint from leap_hand_xela_back_cover to thp2_unified -->
+        <joint axis="0 0 1" name="th_cmc" type="hinge" range="-0.3490658503988659 2.0943951023931953"/>
+        <inertial pos="-0.000232587 0.00882444 0.0117326" mass="0.0247742" fullinertia="3.63585e-06 2.65288e-06 4.33226e-06 2.0599e-08 8.412e-09 -1.4817e-08"/>
+        <!-- Part thp2_unified -->
+        <geom type="mesh" class="visual" pos="0 0.0075 0" quat="0.5 -0.5 -0.5 -0.5" mesh="thp2_unified" material="thp2_unified_material"/>
+        <geom type="mesh" class="collision" pos="0 0.0075 0" quat="0.5 -0.5 -0.5 -0.5" mesh="thp2_unified" material="thp2_unified_material"/>
+        <!-- Link clipper -->
+        <body name="clipper" pos="-0.0144 -0 0.013" quat="0.5 -0.5 -0.5 0.5">
+          <!-- Joint from thp2_unified to clipper -->
+          <joint axis="0 0 1" name="th_axl" type="hinge" range="-0.3490658503988659 2.0943951023931953"/>
+          <inertial pos="0.000911557 -0.00108086 0.00811114" mass="0.00468118" fullinertia="4.40805e-07 1.184e-06 1.12942e-06 -4.612e-09 -4.6465e-08 4.476e-09"/>
+          <!-- Part thconnector -->
+          <geom type="mesh" class="visual" pos="-0.0173 0 0.019" quat="0.707107 0.707107 0 0" mesh="thconnector" material="thconnector_material"/>
+          <geom type="mesh" class="collision" pos="-0.0173 0 0.019" quat="0.707107 0.707107 0 0" mesh="thconnector" material="thconnector_material"/>
+          <!-- Part clipper -->
+          <geom type="mesh" class="visual" pos="0.0155 -0.006 0.019" quat="0 -0.707107 -0.707107 0" mesh="clipper" material="clipper_material"/>
+          <geom type="mesh" class="collision" pos="0.0155 -0.006 0.019" quat="0 -0.707107 -0.707107 0" mesh="clipper" material="clipper_material"/>
+          <!-- Link thp1_unified -->
+          <body name="thp1_unified" pos="0.0145 -0 0.019" quat="0.5 0.5 -0.5 -0.5">
+            <!-- Joint from clipper to thp1_unified -->
+            <joint axis="0 0 1" name="th_mcp" type="hinge" range="-0.47123889803846897 2.443460952792061"/>
+            <inertial pos="-0.00378883 0.00992688 0.0144492" mass="0.0525253" fullinertia="9.92945e-06 8.09911e-06 1.12776e-05 -5.03531e-07 -8.1812e-08 1.46627e-07"/>
+            <!-- Part thp1_unified -->
+            <geom type="mesh" class="visual" pos="-0 0.0245 0.0145" quat="1 0 0 0" mesh="thp1_unified" material="thp1_unified_material"/>
+            <geom type="mesh" class="collision" pos="-0 0.0245 0.0145" quat="1 0 0 0" mesh="thp1_unified" material="thp1_unified_material"/>
+            <!-- Part 4_4_origin_10 -->
+            <geom type="mesh" class="visual" pos="-0.01 -0.0045 0.0258" quat="0.707107 0 0.707107 -0" mesh="4_4_origin" material="4_4_origin_material"/>
+            <geom type="mesh" class="collision" pos="-0.01 -0.0045 0.0258" quat="0.707107 0 0.707107 -0" mesh="4_4_origin" material="4_4_origin_material"/>
+            <!-- Part uspa44_mockup_10 -->
+            <geom type="mesh" class="visual" pos="0.0011264 -0.0128358 0.0207267" quat="0.5 -0.5 0.5 0.5" mesh="uspa44_mockup" material="uspa44_mockup_material"/>
+            <geom type="mesh" class="collision" pos="0.0011264 -0.0128358 0.0207267" quat="0.5 -0.5 0.5 0.5" mesh="uspa44_mockup" material="uspa44_mockup_material"/>
+            <!-- Link thfingertip_unified -->
+            <body name="thfingertip_unified" pos="-0 0.0446 0" quat="0 0 0 1">
+              <!-- Joint from thp1_unified to thfingertip_unified -->
+              <joint axis="0 0 1" name="th_ipl" type="hinge" range="-1.3439035240356338 1.8849555921538759"/>
+              <inertial pos="0.00138473 -0.0226657 0.0145301" mass="0.082534" fullinertia="3.92246e-05 1.25158e-05 4.25543e-05 -3.99678e-06 1.10873e-07 -6.8856e-08"/>
+              <!-- Part thfingertip_unified -->
+              <geom type="mesh" class="visual" pos="-0 -0.0275 0.014504" quat="0.707107 0.707107 0 -0" mesh="thfingertip_unified" material="thfingertip_unified_material"/>
+              <geom type="mesh" class="collision" pos="-0 -0.0275 0.014504" quat="0.707107 0.707107 0 -0" mesh="thfingertip_unified" material="thfingertip_unified_material"/>
+              <!-- Part 4_4_origin_11 -->
+              <geom type="mesh" class="visual" pos="0.01 0.0045 0.0258" quat="0 -0.707107 0 0.707107" mesh="4_4_origin" material="4_4_origin_material"/>
+              <geom type="mesh" class="collision" pos="0.01 0.0045 0.0258" quat="0 -0.707107 0 0.707107" mesh="4_4_origin" material="4_4_origin_material"/>
+              <!-- Part uspa44_mockup_11 -->
+              <geom type="mesh" class="visual" pos="-0.0011264 0.0128358 0.0207267" quat="0.5 0.5 0.5 -0.5" mesh="uspa44_mockup" material="uspa44_mockup_material"/>
+              <geom type="mesh" class="collision" pos="-0.0011264 0.0128358 0.0207267" quat="0.5 0.5 0.5 -0.5" mesh="uspa44_mockup" material="uspa44_mockup_material"/>
+            </body>
+          </body>
+        </body>
+      </body>
+    </body>
+  </worldbody>
+  <asset>
+    <mesh file="leap_hand_xela_back_cover.stl"/>
+    <mesh file="p4_unified.stl"/>
+    <mesh file="thp1_unified.stl"/>
+    <mesh file="leap_hand_xela_motorholder.stl"/>
+    <mesh file="uspa44_mockup.stl"/>
+    <mesh file="clipper.stl"/>
+    <mesh file="fingertop_unfied.stl"/>
+    <mesh file="leap_hand_xela_side_cover.stl"/>
+    <mesh file="leap_hand_xela_bottom.stl"/>
+    <mesh file="thfingertip_unified.stl"/>
+    <mesh file="p5_unified.stl"/>
+    <mesh file="uspa46.stl"/>
+    <mesh file="palm_face.stl"/>
+    <mesh file="thp2_unified.stl"/>
+    <mesh file="4_4_origin.stl"/>
+    <mesh file="thp0_unified.stl"/>
+    <mesh file="p3_unified.stl"/>
+    <mesh file="p2_unified.stl"/>
+    <mesh file="top_palm.stl"/>
+    <mesh file="thconnector.stl"/>
+    <material name="leap_hand_xela_motorholder_material" rgba="0.792157 0.819608 0.933333 1"/>
+    <material name="uspa46_material" rgba="0.792157 0.819608 0.933333 1"/>
+    <material name="thp0_unified_material" rgba="0.498039 0.498039 0.498039 1"/>
+    <material name="p5_unified_material" rgba="0.980392 0.713725 0.00392157 1"/>
+    <material name="top_palm_material" rgba="0.792157 0.819608 0.933333 1"/>
+    <material name="leap_hand_xela_back_cover_material" rgba="0.792157 0.819608 0.933333 1"/>
+    <material name="leap_hand_xela_side_cover_material" rgba="0.792157 0.819608 0.933333 1"/>
+    <material name="leap_hand_xela_bottom_material" rgba="0.792157 0.819608 0.933333 1"/>
+    <material name="palm_face_material" rgba="0.792157 0.819608 0.933333 1"/>
+    <material name="4_4_origin_material" rgba="0.615686 0.811765 0.929412 1"/>
+    <material name="uspa44_mockup_material" rgba="0.792157 0.819608 0.933333 1"/>
+    <material name="p4_unified_material" rgba="0.972549 0.529412 0.00392157 1"/>
+    <material name="p3_unified_material" rgba="0.972549 0.529412 0.00392157 1"/>
+    <material name="p2_unified_material" rgba="0.768627 0.886275 0.952941 1"/>
+    <material name="fingertop_unfied_material" rgba="0.917647 0.917647 0.917647 1"/>
+    <material name="thp2_unified_material" rgba="0.980392 0.713725 0.00392157 1"/>
+    <material name="thconnector_material" rgba="0.792157 0.819608 0.933333 1"/>
+    <material name="clipper_material" rgba="0.792157 0.819608 0.933333 1"/>
+    <material name="thp1_unified_material" rgba="0.647059 0.647059 0.647059 1"/>
+    <material name="thfingertip_unified_material" rgba="0.498039 0.498039 0.498039 1"/>
+  </asset>
+  <actuator>
+    <position class="leapXela_with_markers" name="rf_mcp" joint="rf_mcp" inheritrange="1"/>
+    <position class="leapXela_with_markers" name="rf_rot" joint="rf_rot" inheritrange="1"/>
+    <position class="leapXela_with_markers" name="rf_pip" joint="rf_pip" inheritrange="1"/>
+    <position class="leapXela_with_markers" name="rf_dip" joint="rf_dip" inheritrange="1"/>
+    <position class="leapXela_with_markers" name="mf_mcp" joint="mf_mcp" inheritrange="1"/>
+    <position class="leapXela_with_markers" name="mf_rot" joint="mf_rot" inheritrange="1"/>
+    <position class="leapXela_with_markers" name="mf_pip" joint="mf_pip" inheritrange="1"/>
+    <position class="leapXela_with_markers" name="mf_dip" joint="mf_dip" inheritrange="1"/>
+    <position class="leapXela_with_markers" name="if_mcp" joint="if_mcp" inheritrange="1"/>
+    <position class="leapXela_with_markers" name="if_rot" joint="if_rot" inheritrange="1"/>
+    <position class="leapXela_with_markers" name="if_pip" joint="if_pip" inheritrange="1"/>
+    <position class="leapXela_with_markers" name="if_dip" joint="if_dip" inheritrange="1"/>
+    <position class="leapXela_with_markers" name="th_cmc" joint="th_cmc" inheritrange="1"/>
+    <position class="leapXela_with_markers" name="th_axl" joint="th_axl" inheritrange="1"/>
+    <position class="leapXela_with_markers" name="th_mcp" joint="th_mcp" inheritrange="1"/>
+    <position class="leapXela_with_markers" name="th_ipl" joint="th_ipl" inheritrange="1"/>
+  </actuator>
+  <equality/>
+</mujoco>

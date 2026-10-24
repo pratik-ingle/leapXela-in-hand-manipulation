@@ -1,0 +1,88 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "leapxela"
+version = "0.1.0"
+description = "LeapXELA flex-taxel hand sim and dataset collection"
+requires-python = ">=3.11"
+authors = [{ name = "Pratik Ingle", email = "pratik.ingle135@gmail.com" }]
+
+# Env-agnostic only. mujoco and torch come from the [leapxela] extra.
+dependencies = [
+    "numpy==1.26.4",
+    "scipy==1.16.2",
+    "matplotlib==3.8.4",
+    "mediapy==1.2.2",
+    "opencv-python==4.11.0.86",
+    "pillow==10.3.0",
+    "tqdm==4.66.2",
+]
+
+[project.optional-dependencies]
+# LeapXELA flex-taxel hand. Pins 3.11.0 for exact Sparsh-sensor parity and
+# pair/adhesion. Tactile data is NOT comparable across the 3.10/3.11 boundary
+# (3.11 moved flex elasticity into the CG constraint solver), so this pin is
+# load-bearing, not cosmetic.
+#   conda run --no-capture-output -n leapxela pip install -e ".[leapxela]"
+leapxela = [
+    "mujoco==3.11.0",
+    "torch>=2.0",
+    "pytorch-kinematics>=0.7",
+    "einops>=0.7",
+    "pyyaml>=6",
+]
+
+dev = ["pytest>=8", "ruff>=0.5"]
+
+[project.scripts]
+leapxela-collect = "leapxela.collect_flex_dataset:main"
+leapxela-episode = "leapxela.episode:main"
+leapxela-build-hand = "leapxela.hand_builder:main"
+leapxela-calibrate-sparsh = "leapxela.calibrate_sparsh_sensor:main"
+
+[tool.setuptools.packages.find]
+include = ["leapxela*"]
+exclude = [
+    "data*",
+    "docs*",
+    "tests*",
+    "leapXELA_model-main*",
+    "sparsh-multisensory-touch-main*",
+    "LeapXELA_Hardware_ws*",
+    "sim*",
+]
+
+[tool.setuptools.package-data]
+leapxela = [
+    "configs/*.yaml",
+    "mjcf/*.xml",
+    "mjcf/*.json",
+    "mjcf/*.urdf",
+    "mjcf/assets/*",
+    "mjcf/assets/meshes/*",
+    "mjcf/textures/*.png",
+    "hardware/**/*.json",
+    "hardware/**/*.xml",
+    "hardware/**/*.py",
+    "hardware/**/*.stl",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+# sparsh_compare holds cross-env driver scripts, not test modules: they are run
+# under `conda run -n <env>` with an --impl flag, never collected by pytest.
+norecursedirs = ["sparsh_compare"]
+markers = [
+    "slow: end-to-end runs that step the full hand for seconds of sim time",
+]
+
+[tool.ruff]
+line-length = 100
+exclude = [
+    "leapxela/legacy",
+    "leapXELA_model-main",
+    "sparsh-multisensory-touch-main",
+    "sparsh-skin-sim",
+]

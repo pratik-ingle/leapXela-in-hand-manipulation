@@ -1,0 +1,43 @@
+# Paired contact + sparsh readouts, for comparing the two sensors on one grasp.
+#
+# `sensor_mode: both` writes tactile_contact and tactile_sparsh from the same
+# episode, so the two are time-aligned rather than collected separately.
+#
+# Run the calibration first; it writes the JSON referenced below:
+#   conda run -n leapxela python -m leapxela.calibrate_sparsh_sensor
+#   conda run -n leapxela python -m leapxela.collect_flex_dataset \
+#       --config leapxela/configs/sparsh_paired.yaml
+#
+# NOTE: the shipped calibrator currently derives noise-floor thresholds that
+# reject every episode (see docs/SPARSH_SENSOR_PARITY.md). `sparsh.calibration`
+# is therefore left unset here, so the sparsh gates keep their argparse defaults.
+# Point it at the JSON once those thresholds are fixed.
+
+collection:
+  shapes: [box, disk, T]
+  counts: [1, 2, 3]
+  samples: 20
+  scale: max          # per shape: disk 0.5, box 0.5, T 0.7
+  duration: 10.0
+  workers: 8
+  sensor_mode: both
+  # 'sensed' is contact-derived, which is why it is valid here but rejected
+  # under sensor_mode: sparsh.
+  acceptance: sensed
+  output_root: ../../data/leapxela_sparsh_paired
+
+grasp:
+  pattern: squeeze
+
+placement:
+  mode: per-pad
+
+sparsh:
+  stiffness: 100.0      # fitted for upstream's timestep; under-reads here
+  damping: 0.05
+  window: 5
+
+render:
+  heatmap_source: both  # side-by-side contact and sparsh panels
+  cloud_source: both    # MuJoCo taxel sites next to the URDF FK cloud
+  video_samples: 1

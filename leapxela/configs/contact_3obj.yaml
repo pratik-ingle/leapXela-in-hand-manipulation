@@ -1,0 +1,34 @@
+# Shape x count dataset on the contact sensor, sized so three objects still fit.
+#
+# `scale: max` gives each shape its own largest workable size (see the cap table
+# in README.md). Within a shape the size is constant across counts, so count
+# stays the only variable and cannot be read off the object size.
+#
+#   conda run -n leapxela python -m leapxela.collect_flex_dataset \
+#       --config leapxela/configs/contact_3obj.yaml
+
+collection:
+  shapes: [box, disk, T]
+  counts: [1, 2, 3]
+  samples: 20
+  # Each shape takes the largest size that fits it at every count above:
+  # disk 0.5, box 0.5, T 0.7. Per shape rather than per count on purpose --
+  # sizing each count separately would let a quantity model read the count
+  # off the object size instead of the tactile signal.
+  scale: max
+  duration: 10.0
+  workers: 8
+  sensor_mode: contact
+  # Requires every spawned object to actually touch a taxel, not merely stay
+  # near the palm -- the count label is then backed by tactile evidence.
+  acceptance: sensed
+  output_root: ../../data/leapxela_contact_3obj
+
+grasp:
+  pattern: squeeze
+
+placement:
+  mode: per-pad
+
+render:
+  video_samples: 1      # one video per bucket, for eyeballing the grasp

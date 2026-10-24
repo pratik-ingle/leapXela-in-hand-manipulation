@@ -1,0 +1,53 @@
+<mujoco model="scene">
+    <include file="robot_touch_grid.xml"/>
+
+    <visual>
+        <headlight diffuse="0.6 0.6 0.6" ambient="0.3 0.3 0.3" specular="0 0 0" />
+        <rgba haze="0.15 0.25 0.35 1" />
+        <global azimuth="160" elevation="-20" />
+    </visual>
+
+    <asset>
+        <texture type="skybox" builtin="gradient" rgb1="0.3 0.5 0.7" rgb2="0 0 0" width="512"
+            height="3072" />
+        <texture type="2d" name="groundplane" builtin="checker" mark="edge" rgb1="0.2 0.3 0.4"
+            rgb2="0.1 0.2 0.3"
+            markrgb="0.8 0.8 0.8" width="300" height="300" />
+        <material name="groundplane" texture="groundplane" texuniform="true" texrepeat="5 5"
+            reflectance="0.2" />
+        <mesh name="sphere" file="sphere.stl" scale="0.08 0.08 0.08"/>
+    </asset>
+
+    <worldbody>
+        <light pos="0 0 3.5" dir="0 0 -1" directional="true" />
+        <geom name="floor" size="0 0 0.05" pos="0 0 0" type="plane" material="groundplane" />
+       
+        <body name="ball_palm" pos="0 0.063 0.15">
+          <joint name="ball_palm_x" type="slide" axis="1 0 0" range="-0.06 0.08"/>
+          <joint name="ball_palm_y" type="slide" axis="0 1 0" range="-0.01 0.23"/>
+          <joint name="ball_palm_z" type="slide" axis="0 0 1" range="-0.015 0.005"/>
+          <geom type="mesh" mesh="sphere" rgba=".5 .7 .5 0.3" friction=".5" priority="1"/>
+          <!-- <geom type="sphere" size="0.015 0.015 0.015" rgba=".5 .7 .5 0.3" friction=".5" priority="1"/> -->
+        </body> 
+  
+        <body name="ball_thumb" pos="0.09 0.09 0.112">
+          <joint name="ball_thumb_x" type="slide" axis="1 0 0" range="-0.006 0.09"/>
+          <joint name="ball_thumb_y" type="slide" axis="0 1 0" range="-0.012 0.001"/>
+          <joint name="ball_thumb_z" type="slide" axis="0 0 1" range="-0.009 0.009"/>
+          <geom type="sphere" size="0.015 0.015 0.015" rgba=".5 .7 .5 0.3" friction=".5" priority="1"/>
+        </body> 
+    </worldbody>
+
+    <actuator>
+        <!-- ball palm actuators -->
+        <position name="ball_palm_x_act" joint="ball_palm_x" ctrlrange="-0.06 0.08"/>
+        <position name="ball_palm_y_act" joint="ball_palm_y" ctrlrange="-0.01 0.23"/>
+        <position name="ball_palm_z_act" joint="ball_palm_z" ctrlrange="-0.015 0.005"/>
+        
+        <!-- ball thumb actuators -->
+        <position name="ball_thumb_x_act" joint="ball_thumb_x" ctrlrange="-0.006 0.09"/>
+        <position name="ball_thumb_y_act" joint="ball_thumb_y" ctrlrange="-0.012 0.001"/>
+        <position name="ball_thumb_z_act" joint="ball_thumb_z" ctrlrange="-0.009 0.009"/>
+    </actuator>
+
+</mujoco>
